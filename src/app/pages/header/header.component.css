@@ -132,7 +132,7 @@
     left: 0;
     width: 100%;
     background-color: rgba(39, 38, 38, 0.918);
-    height: 90vh;
+    height: 50vh;
     z-index: 100;
     text-align: left;
     transition: top 0.5s ease;
@@ -161,7 +161,7 @@
         display: flex; /* Make the menu visible */
         flex-direction: column;
         justify-content: space-around;
-        top: 8.5%; 
+        top: 7%; 
     }
     .nav-bar-link-res li{
         padding-left: 70px;
