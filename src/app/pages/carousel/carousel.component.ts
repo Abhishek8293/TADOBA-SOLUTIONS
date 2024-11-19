@@ -21,28 +21,28 @@ export class CarouselComponent implements OnInit, OnDestroy {
   carouselData: CarouselData[] = [
     {
       imgUrl:
-        'https://res.cloudinary.com/dziu7iyz1/image/upload/v1731841312/solar-8244680_1280_hldyre.jpg',
+        './assets/images/service3.jpg',
       imgTitle: 'INSTALLATION',
       imgDescription:'To make the sliding transition smoother between images, we need to adjust both the CSS and TypeScript to ensure that transitions between images are fluid and instantaneous, ',
       navUrl: 'path/to/nav1',
     },
     {
       imgUrl:
-        'https://res.cloudinary.com/dziu7iyz1/image/upload/v1731841312/Tadoba_solar_service_20211222081314_omaxok.jpg',
+        './assets/images/service1.jpg',
       imgTitle: 'MAINTANANCE',
       imgDescription:'To make the sliding transition smoother between images, we need to adjust both the CSS and TypeScript to ensure that transitions between images are fluid and instantaneous',
       navUrl: 'path/to/nav2',
     },
     {
       imgUrl:
-        'https://res.cloudinary.com/dziu7iyz1/image/upload/v1731841312/cyber-2377718_1280_wau8ad.jpg',
+        './assets/images/service4.jpg',
       imgTitle: 'ELECTRONIC DEVICES',
       imgDescription:'To make the sliding transition smoother between images, we need to adjust both the CSS and TypeScript to ensure that transitions between images are fluid and instantaneous, ',
       navUrl: 'path/to/nav3',
     },
     {
       imgUrl:
-        'https://res.cloudinary.com/dziu7iyz1/image/upload/v1731841311/Tadoba_solar_service_20211221113632_zpmrlp.jpg',
+        './assets/images/service2.jpg',
       imgTitle: 'COMMISSIONING',
       imgDescription:'To make the sliding transition smoother between images, we need to adjust both the CSS and TypeScript to ensure that transitions between images are fluid and instantaneous',
       navUrl: 'path/to/nav4',
