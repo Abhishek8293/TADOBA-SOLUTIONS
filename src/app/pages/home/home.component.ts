@@ -22,7 +22,7 @@ interface ServiceCardData {
   standalone: true,
 
   imports: [
-    CarouselComponent,
+    CarouselComponent,  
     CommonModule,
     MatButtonModule,
     MatIconModule,
