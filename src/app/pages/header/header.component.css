@@ -4,9 +4,8 @@
     text-align: center;
     align-items: center;
     font-family: sans-serif;
-    border: 2px solid red;
-    /* padding-left: 10px;
-    padding-right: 10px; */
+    padding-left: 10px;
+    padding-right: 10px;
     height: 60px;
     margin: 0;
 }
@@ -66,10 +65,11 @@
 .nav-bar-link li:hover .services{
     display: block;
     position: absolute;
-    background-color: white;
+    justify-content: center;
     text-align: left;
     padding: 23px 23px 23px 0px;
     z-index: 999;
+    background-color: #fff;
 
 }
 
@@ -77,23 +77,44 @@
 .nav-bar-link li:hover .products{
     display: block;
     position: absolute;
-    background-color: white;
     text-align: left;
     padding: 23px 23px 23px 0px;
     z-index: 999;
+    background-color: #fff;
     
+}
+.nav-bar-link li:hover .products ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 50px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar-link li:hover .services ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 50px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .services ul li{
     margin-top: 10px;
     padding: 0px 0px 10px 0px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.404);
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.404); */
+    width: 100%;
 
 }
 .products ul li{
     margin-top: 10px;  
     padding: 0px 0px 10px 0px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.404); 
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.404);  */
+    width: 100%;
 }
 .nav-bar-link li button{
     padding: 3px 5px 3px 5px;
@@ -140,10 +161,11 @@
         display: flex; /* Make the menu visible */
         flex-direction: column;
         justify-content: space-around;
-        top: 11.8%; /* Slide into view */
+        top: 8.5%; 
     }
     .nav-bar-link-res li{
         padding-left: 70px;
+        list-style-type: none;
     }
     .nav-bar-link-res li a{
         font-size: 17px;
@@ -180,10 +202,11 @@
         display: flex; /* Make the menu visible */
         flex-direction: column;
         justify-content: space-around;
-        top: 11.8%; /* Slide into view */
+        top: 8.5%;
     }
     .nav-bar-link-res li{
         padding-left: 70px;
+        list-style-type: none;
     }
     .nav-bar-link-res li a{
         font-size: 17px;
