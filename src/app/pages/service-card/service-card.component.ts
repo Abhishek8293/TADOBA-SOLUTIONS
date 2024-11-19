@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, Input, input } from '@angular/core';
 import {MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
@@ -14,5 +14,10 @@ import { faScrewdriverWrench } from '@fortawesome/free-solid-svg-icons';
 })
 export class ServiceCardComponent {
   icon = faScrewdriverWrench;
+
+  @Input() imgUrl!: string;
+  @Input() title!: string;
+  @Input() description!: string;
+  @Input() navigation!: string;
 
 }

@@ -4,9 +4,8 @@
     text-align: center;
     align-items: center;
     font-family: sans-serif;
-    border: 2px solid red;
-    /* padding-left: 10px;
-    padding-right: 10px; */
+    padding-left: 10px;
+    padding-right: 10px;
     height: 60px;
     margin: 0;
 }
