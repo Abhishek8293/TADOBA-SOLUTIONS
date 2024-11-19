@@ -127,7 +127,6 @@
   align-items: center;
   background-color: #2B557F;
   padding-top: 50px;
-  padding-bottom: 50px;
   
 }
 .card{
@@ -230,17 +229,18 @@
 }
 .see-more-btn{
   font-size: 18px !important;
-  border-radius: 15px;
-  border: 2px solid white;
+  border: 3px solid #ffffff63;
   cursor: pointer;
-}
-.see-more-btn:hover{
-  transform: scale(1.1);
+  background-color: #ffffff63;
+  color: #ffffffcc;
 }
 
-.testimonial-section{
-  
+.see-more-btn:hover{
+  transform: scale(1.1);
+  background: none;
 }
+
+
 /* Mobile Media Query */
 @media (max-width: 426px) {
   .service-row {
