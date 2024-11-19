@@ -21,7 +21,6 @@
 /* About Us Properties */
 .about-us-div {
   padding: 20px;
-
 }
 /* .about-us-img{
   border: 2px solid red;
@@ -93,43 +92,42 @@
   height: 380px;
 }
 /* =========================================PRODUCT SECTION===================================== */
-.product-section{
+.product-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   color: white;
-  background-color: #2B557F;
+  background-color: #2b557f;
   padding-bottom: 50px;
 }
-.product-section-heading{
+.product-section-heading {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.see-more-product-button{
+.see-more-product-button {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-.see-more-product-button button{
+.see-more-product-button button {
   height: 50px;
   width: 150px;
   margin-right: 50px;
   font-size: 15px;
 }
-.see-more-product-button fa-icon{
+.see-more-product-button fa-icon {
   margin-left: 10px;
 }
-.products{
+.products {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  background-color: #2B557F;
+  background-color: #2b557f;
   padding-top: 50px;
-  
 }
-.card{
+.card {
   border: 1px solid red;
   display: flex;
   flex-direction: column;
@@ -140,59 +138,58 @@
   border: 1px solid #fff;
   border-radius: 5px;
   cursor: pointer;
-  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   margin-bottom: 50px;
 }
-.card .p-img{
+.card .p-img {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 280px;
   height: 300px;
-  
-  
 }
-.p-img img{
+.p-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 5px;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
-  
 }
-.p-detail{
+.p-detail {
   padding-left: 5px;
   padding-bottom: 5px;
 }
-.p-name{
+.p-name {
   font-weight: 500;
   margin-bottom: 16px;
   color: #373737;
 }
-.p-price-rating-availability{
+.p-price-rating-availability {
   display: flex;
   justify-content: start;
   align-items: center;
   margin-bottom: 15px;
 }
-.p-price{
+.p-price {
   color: #373737;
   font-weight: 500;
   font-size: 16px;
 }
-.star-icon{
+.star-icon {
   font-size: 18px;
   width: 18px;
   height: 18px;
 }
-.pra{
+.pra {
   margin-right: 10px;
-  color: #FF9D00;
+  color: #ff9d00;
 }
-.p-availability{
- background-color: #32c26c;
- height: 15px;
+.p-availability {
+  background-color: #32c26c;
+  height: 15px;
   width: 48px;
   border-radius: 5px;
   font-size: 10px;
@@ -201,11 +198,11 @@
   justify-content: center;
   align-items: center;
 }
-.view-details{
-  background-color: #2C547F;
+.view-details {
+  background-color: #2c547f;
   color: white;
   padding: 5px;
-  border: 1px solid #2C547F;
+  border: 1px solid #2c547f;
   border-radius: 5px;
   margin-right: 10px;
   font-weight: bold;
@@ -214,11 +211,11 @@
   height: 26px;
   width: 105px;
 }
-.add-cart{
-  background-color: #FF9D00;
+.add-cart {
+  background-color: #ff9d00;
   color: white;
   padding: 5px;
-  border: 1px solid #FF9D00;
+  border: 1px solid #ff9d00;
   border-radius: 5px;
   margin-right: 10px;
   font-weight: bold;
@@ -227,7 +224,7 @@
   height: 26px;
   width: 105px;
 }
-.see-more-btn{
+.see-more-btn {
   font-size: 18px !important;
   border: 3px solid #ffffff63;
   cursor: pointer;
@@ -241,6 +238,69 @@
 }
 
 
+
+
+.testimonial-section {
+  background-color: #f5f6fa;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.testimonial-section .heading-div{
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px 10px;
+}
+
+.testimonial-section .heading-div h6{
+  margin: 0;
+  color: #373737;
+}
+
+.testimonial-section .details-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 300px;
+}
+
+.testimonial-section .details-div .review-card {
+  width: 300px;
+  border-radius: 15px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.review-card p {
+  text-align: center;
+  color: #9b9b9b;
+  font-size: 16px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.review-card h5 {
+  text-align: center;
+  color: #1a2a36;
+  font-size: 20px;
+  margin: 2px;
+}
+
+.review-card h6 {
+  text-align: center;
+  color: #9b9b9b;
+  font-size: 16px;
+  margin: 2px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+
 /* Mobile Media Query */
 @media (max-width: 426px) {
   .service-row {
@@ -248,7 +308,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 25px;
     width: 100%;
   }
 
@@ -266,18 +326,38 @@
     text-align: justify;
     gap: 5px;
   }
-  .about-us-img img{
+  .about-us-img img {
     width: 100%;
     height: auto;
     object-fit: cover;
     margin-bottom: 5px;
   }
+  .testimonial-section .details-div{
+    overflow-x: auto;
+  }
+  .testimonial-section .details-div {
+    display: flex;
+    flex-direction: row; 
+    justify-content: flex-start; 
+    align-items: center; 
+    gap: 40px;
+    overflow-x: auto; 
+    padding: 10px; 
+    height: auto; 
+  }
+
+  .testimonial-section .details-div .review-card {
+    flex: 0 0 auto; 
+    width: 330px; 
+    border-radius: 15px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
 }
 
-
-
-@media (min-width:426px) and (max-width:768px) {
-  .quote-description-div{
+@media (min-width: 426px) and (max-width: 768px) {
+  .quote-description-div {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -296,16 +376,15 @@
     flex: 0 0 auto;
     width: 325px;
   }
-  .about-us-img img{
+  .about-us-img img {
     width: 100%;
     height: 60vh;
     object-fit: cover;
   }
-
 }
 
 /* Laptop Media Query */
-@media (min-width: 769px) and (max-width:1024px){
+@media (min-width: 769px) and (max-width: 1024px) {
   .quote-description-div {
     display: flex;
     justify-content: center;
@@ -346,18 +425,18 @@
   .service-row::-webkit-scrollbar-track {
     background: #f0f0f0;
   }
-  .about-us-img img{
+  .about-us-img img {
     width: 100%;
     height: 70vh;
     object-fit: cover;
   }
-  .about-us-div{
+  .about-us-div {
     display: flex;
   }
-  .about-us-img{
+  .about-us-img {
     width: 50%;
   }
-  .about-us-description-div{
+  .about-us-description-div {
     width: 50%;
     padding: 30px;
     display: flex;
@@ -367,8 +446,7 @@
   }
 }
 
-
-@media (min-width:1025px) and (max-width:1440px) {
+@media (min-width: 1025px) and (max-width: 1440px) {
   .quote-description-div {
     display: flex;
     justify-content: center;
@@ -409,18 +487,18 @@
   .service-row::-webkit-scrollbar-track {
     background: #f0f0f0;
   }
-  .about-us-img img{
+  .about-us-img img {
     width: 100%;
     height: 65vh;
     object-fit: cover;
   }
-  .about-us-div{
+  .about-us-div {
     display: flex;
   }
-  .about-us-img{
+  .about-us-img {
     width: 50%;
   }
-  .about-us-description-div{
+  .about-us-description-div {
     width: 50%;
     padding: 30px;
     display: flex;
@@ -430,8 +508,7 @@
   }
 }
 
-
-@media(min-width:1441px) {
+@media (min-width: 1441px) {
   .quote-description-div {
     display: flex;
     justify-content: center;
@@ -473,18 +550,18 @@
   .service-row::-webkit-scrollbar-track {
     background: #f0f0f0;
   }
-  .about-us-img img{
+  .about-us-img img {
     width: 100%;
     height: 70vh;
     object-fit: cover;
   }
-  .about-us-div{
+  .about-us-div {
     display: flex;
   }
-  .about-us-img{
+  .about-us-img {
     width: 50%;
   }
-  .about-us-description-div{
+  .about-us-description-div {
     width: 50%;
     padding: 30px;
     display: flex;
