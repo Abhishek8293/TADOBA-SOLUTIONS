@@ -1,7 +1,4 @@
-<<<<<<< Updated upstream
-import { CommonModule } from '@angular/common';
-import { Component, Input, OnDestroy, OnInit } from '@angular/core';
-=======
+
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import {
   Component,
@@ -17,7 +14,6 @@ import {
   PLATFORM_ID,
   HostListener,
 } from '@angular/core';
->>>>>>> Stashed changes
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 
@@ -68,7 +64,7 @@ export class CarouselComponent implements AfterViewInit, OnDestroy {
   ];
 
   @Input() indicators: boolean = true;
-  @Input() autoSlide: boolean = false;
+  @Input() autoSlide: boolean = true;
   @Input() slideInterval: number = 1000;
 
   selectedIndex: number = 0;
@@ -77,20 +73,14 @@ export class CarouselComponent implements AfterViewInit, OnDestroy {
   private swipeCoord: [number, number] = [0, 0];
   private swipeTime: number = new Date().getTime();
 
-<<<<<<< Updated upstream
-  ngOnInit(): void {
-    if (this.autoSlide && this.carouselData.length > 0) {
-      this.autoSlideImages();
-=======
   constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
   ngAfterViewInit(): void {
     if (isPlatformBrowser(this.platformId)) {
       setTimeout(() => {
         if (this.autoSlide && this.carouselData.length > 0) {
-          this.startAutoSlide();
+          this.autoSlideImages();
         }
       }, 0);
->>>>>>> Stashed changes
     }
   }
 
@@ -108,32 +98,9 @@ export class CarouselComponent implements AfterViewInit, OnDestroy {
 
   selectImage(index: number) {
     this.selectedIndex = index;
-    this.triggerTransition();
   }
 
   onPrevClick() {
-<<<<<<< Updated upstream
-    this.selectedIndex = this.selectedIndex === 0 ? this.carouselData.length - 1 : this.selectedIndex - 1;
-    this.triggerTransition();
-  }
-
-  onNextClick() {
-    this.selectedIndex = this.selectedIndex === this.carouselData.length - 1 ? 0 : this.selectedIndex + 1;
-    this.triggerTransition();
-  }
-
-  triggerTransition() {
-    // Ensure smooth transition on each image change
-    setTimeout(() => {
-      this.carouselData.forEach((_, i) => {
-        // Reset transitions after a short delay to allow the transitions to occur.
-        const imgElement = document.querySelector(`.img-container img:nth-child(${i + 1})`);
-        if (imgElement) {
-          imgElement.classList.remove('slide-out', 'slide-in');
-        }
-      });
-    }, 500); // Adjust time to match transition duration
-=======
     this.selectedIndex =
       this.selectedIndex === 0
         ? this.carouselData.length - 1
@@ -154,7 +121,6 @@ export class CarouselComponent implements AfterViewInit, OnDestroy {
     } else if (event.key === 'ArrowLeft') {
       this.onPrevClick();
     }
->>>>>>> Stashed changes
   }
 
   onSwipe(e: TouchEvent, when: string) {
