@@ -28,7 +28,8 @@
         <li><button class="signup-btn">SignUp</button></li>
     </ul>
     <div class="hamburger-menu" >
-        <fa-icon [icon]="hamBurgerMenu" (click)="toggleMenu()" ></fa-icon>
+        <!-- <fa-icon [icon]="hamBurgerMenu" (click)="toggleMenu()" ></fa-icon> -->
+        <fa-icon [icon]="isMenuOpen ? closeMenu : hamBurgerMenu"(click)="toggleMenu()"></fa-icon>
     </div>
     <ul  class="nav-bar-link-res" [class.active]="isMenuOpen">
         <li><a href="#"><fa-icon [icon]="service"></fa-icon>Services</a>

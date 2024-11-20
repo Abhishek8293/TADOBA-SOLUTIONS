@@ -7,6 +7,8 @@
   font-family: sans-serif;
   padding-top:20px ;
   box-sizing: border-box;
+  margin-left: 0;
+  margin-right:0 ;
 }
 .links {
   display: flex;
