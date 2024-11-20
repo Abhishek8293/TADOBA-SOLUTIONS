@@ -29,36 +29,32 @@ interface CarouselData {
   standalone: true,
   imports: [CommonModule, MatButtonModule, MatIconModule],
   templateUrl: './carousel.component.html',
-  styleUrl: './carousel.component.css',
+  styleUrls: ['./carousel.component.css'],
 })
 export class CarouselComponent implements AfterViewInit, OnDestroy {
   carouselData: CarouselData[] = [
     {
-      imgUrl:
-        './assets/images/service3.jpg',
+      imgUrl: './assets/images/service3.jpg',
       imgTitle: 'INSTALLATION',
-      imgDescription:'To make the sliding transition smoother between images, we need to adjust both the CSS and TypeScript to ensure that transitions between images are fluid and instantaneous, ',
+      imgDescription: 'Description for installation',
       navUrl: 'path/to/nav1',
     },
     {
-      imgUrl:
-        './assets/images/service1.jpg',
-      imgTitle: 'MAINTANANCE',
-      imgDescription:'To make the sliding transition smoother between images, we need to adjust both the CSS and TypeScript to ensure that transitions between images are fluid and instantaneous',
+      imgUrl: './assets/images/service1.jpg',
+      imgTitle: 'MAINTENANCE',
+      imgDescription: 'Description for maintenance',
       navUrl: 'path/to/nav2',
     },
     {
-      imgUrl:
-        './assets/images/service4.jpg',
+      imgUrl: './assets/images/service4.jpg',
       imgTitle: 'ELECTRONIC DEVICES',
-      imgDescription:'To make the sliding transition smoother between images, we need to adjust both the CSS and TypeScript to ensure that transitions between images are fluid and instantaneous, ',
+      imgDescription: 'Description for electronic devices',
       navUrl: 'path/to/nav3',
     },
     {
-      imgUrl:
-        './assets/images/service2.jpg',
+      imgUrl: './assets/images/service2.jpg',
       imgTitle: 'COMMISSIONING',
-      imgDescription:'To make the sliding transition smoother between images, we need to adjust both the CSS and TypeScript to ensure that transitions between images are fluid and instantaneous',
+      imgDescription: 'Description for commissioning',
       navUrl: 'path/to/nav4',
     },
   ];
@@ -67,9 +63,9 @@ export class CarouselComponent implements AfterViewInit, OnDestroy {
   @Input() autoSlide: boolean = true;
   @Input() slideInterval: number = 1000;
 
+
   selectedIndex: number = 0;
   private autoSlideInterval: any;
-
   private swipeCoord: [number, number] = [0, 0];
   private swipeTime: number = new Date().getTime();
 
@@ -90,11 +86,14 @@ export class CarouselComponent implements AfterViewInit, OnDestroy {
     }
   }
 
-  autoSlideImages() {
+  startAutoSlide() {
     this.autoSlideInterval = setInterval(() => {
-      this.onNextClick();
+      this.ngZone.run(() => {
+        this.onNextClick();
+      });
     }, this.slideInterval);
   }
+
 
   selectImage(index: number) {
     this.selectedIndex = index;
@@ -146,10 +145,8 @@ export class CarouselComponent implements AfterViewInit, OnDestroy {
         Math.abs(direction[0]) > Math.abs(direction[1] * 3)
       ) {
         if (direction[0] < 0) {
-          // Swipe left - next image
           this.onNextClick();
         } else {
-          // Swipe right - previous image
           this.onPrevClick();
         }
       }
