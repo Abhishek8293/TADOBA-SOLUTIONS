@@ -1,5 +1,19 @@
-import { CommonModule } from '@angular/common';
-import { Component, ElementRef, Input, OnDestroy, OnInit, Renderer2, ViewChild, NgZone } from '@angular/core';
+
+import { CommonModule, isPlatformBrowser } from '@angular/common';
+import {
+  Component,
+  ElementRef,
+  Input,
+  OnDestroy,
+  OnInit,
+  Renderer2,
+  ViewChild,
+  NgZone,
+  AfterViewInit,
+  Inject,
+  PLATFORM_ID,
+  HostListener,
+} from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 
@@ -17,7 +31,7 @@ interface CarouselData {
   templateUrl: './carousel.component.html',
   styleUrls: ['./carousel.component.css'],
 })
-export class CarouselComponent implements OnInit, OnDestroy {
+export class CarouselComponent implements AfterViewInit, OnDestroy {
   carouselData: CarouselData[] = [
     {
       imgUrl: './assets/images/service3.jpg',
@@ -46,19 +60,23 @@ export class CarouselComponent implements OnInit, OnDestroy {
   ];
 
   @Input() indicators: boolean = true;
-  @Input() autoSlide: boolean = false;
-  @Input() slideInterval: number = 2000;
+  @Input() autoSlide: boolean = true;
+  @Input() slideInterval: number = 1000;
+
 
   selectedIndex: number = 0;
   private autoSlideInterval: any;
   private swipeCoord: [number, number] = [0, 0];
   private swipeTime: number = new Date().getTime();
 
-  constructor(private ngZone: NgZone) {}
-
-  ngOnInit(): void {
-    if (this.autoSlide && this.carouselData.length > 0) {
-      this.startAutoSlide();
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
+  ngAfterViewInit(): void {
+    if (isPlatformBrowser(this.platformId)) {
+      setTimeout(() => {
+        if (this.autoSlide && this.carouselData.length > 0) {
+          this.autoSlideImages();
+        }
+      }, 0);
     }
   }
 
@@ -82,25 +100,50 @@ export class CarouselComponent implements OnInit, OnDestroy {
   }
 
   onPrevClick() {
-    this.selectedIndex = this.selectedIndex === 0 ? this.carouselData.length - 1 : this.selectedIndex - 1;
+    this.selectedIndex =
+      this.selectedIndex === 0
+        ? this.carouselData.length - 1
+        : this.selectedIndex - 1;
   }
 
   onNextClick() {
-    this.selectedIndex = this.selectedIndex === this.carouselData.length - 1 ? 0 : this.selectedIndex + 1;
+    this.selectedIndex =
+      this.selectedIndex === this.carouselData.length - 1
+        ? 0
+        : this.selectedIndex + 1;
+  }
+
+  @HostListener('document:keydown', ['$event'])
+  handleKeyboardEvent(event: KeyboardEvent): void {
+    if (event.key === 'ArrowRight') {
+      this.onNextClick();
+    } else if (event.key === 'ArrowLeft') {
+      this.onPrevClick();
+    }
   }
 
   onSwipe(e: TouchEvent, when: string) {
-    const coord: [number, number] = [e.changedTouches[0].clientX, e.changedTouches[0].clientY];
+    const coord: [number, number] = [
+      e.changedTouches[0].clientX,
+      e.changedTouches[0].clientY,
+    ];
     const time = new Date().getTime();
 
     if (when === 'start') {
       this.swipeCoord = coord;
       this.swipeTime = time;
     } else if (when === 'end') {
-      const direction = [coord[0] - this.swipeCoord[0], coord[1] - this.swipeCoord[1]];
+      const direction = [
+        coord[0] - this.swipeCoord[0],
+        coord[1] - this.swipeCoord[1],
+      ];
       const duration = time - this.swipeTime;
 
-      if (duration < 1000 && Math.abs(direction[0]) > 30 && Math.abs(direction[0]) > Math.abs(direction[1] * 3)) {
+      if (
+        duration < 1000 &&
+        Math.abs(direction[0]) > 30 &&
+        Math.abs(direction[0]) > Math.abs(direction[1] * 3)
+      ) {
         if (direction[0] < 0) {
           this.onNextClick();
         } else {
