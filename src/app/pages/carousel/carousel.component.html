@@ -1,6 +1,6 @@
 <div *ngIf="carouselData && carouselData.length > 0" class="carousel-container" (touchstart)="onSwipe($event, 'start')"
     (touchend)="onSwipe($event, 'end')">
-    <div class="img-container">
+    <div class="img-container" #imgContainer>
         <img *ngFor="let data of carouselData; let i=index" [src]="data.imgUrl" alt="Product Image"
             [ngClass]="{'image-active': selectedIndex === i, 'slide-out': selectedIndex === i - 1, 'slide-in': selectedIndex === i + 1}" />
         <div class="btn-div">

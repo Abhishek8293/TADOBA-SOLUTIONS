@@ -70,7 +70,6 @@
   align-items: center;
   background-color: #2b557f;
   padding-top: 50px;
-  padding-bottom: 50px;
 }
 .card {
   border: 1px solid red;
@@ -171,13 +170,17 @@
 }
 .see-more-btn {
   font-size: 18px !important;
-  border-radius: 15px;
-  border: 2px solid white;
+  border: 3px solid #ffffff63;
   cursor: pointer;
+  background-color: #ffffff63;
+  color: #ffffffcc;
 }
-.see-more-btn:hover {
+
+.see-more-btn:hover{
   transform: scale(1.1);
+  background: none;
 }
+
 
 /* Mobile Media Query */
 @media (max-width: 426px) {
