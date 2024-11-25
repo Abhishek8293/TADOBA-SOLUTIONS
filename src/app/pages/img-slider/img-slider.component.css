@@ -9,9 +9,8 @@
 
 .slider-wrapper {
   overflow: hidden;
-  margin: 0px 25px 20px;
-  padding: 5x;
-  /* border: 2px solid red; */
+  margin: 0px 25px 15px;
+  border-radius: 18px;
 }
 
 .card-list .card-item {
@@ -19,31 +18,42 @@
   height: 430px;
   border-radius: 15px;
   border: 1px solid rgb(255, 255, 255, 0.5);
-  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
+  display: block;
 }
+
 
 .card-list .card-item .card-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 15px;
+  position: absolute; 
+  top: 0;
+  left: 0;
+  z-index: 0;
   border: 1px solid rgb(255, 255, 255, 0.5);
 }
 
 .card-list .card-item .card-title {
   position: absolute;
-  bottom: 15px;
-  z-index: 1;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
   background: rgba(0, 0, 0, 0.5);
   padding: 5px 10px;
   border-radius: 5px;
   color: #fff;
   font-weight: 700;
-  margin: 10px;
   font-size: 20px;
   font-family: 'Roboto', sans-serif;
+  text-align: center;
+  z-index: 1;
+  white-space: nowrap; /* Prevent wrapping to the next line */
+  overflow: hidden; /* Prevent text overflow */
+  text-overflow: ellipsis; /* Add ellipsis if text overflows */
+  max-width: 90%; /* Ensure it fits within the card */
 }
 
 .card-list .card-item .card-title:hover{
@@ -64,6 +74,7 @@
 
 .swiper-slide-button::after{
     font-size: 30px;
+    padding: 10px;
 }
 
 @media (max-width: 768px) {
