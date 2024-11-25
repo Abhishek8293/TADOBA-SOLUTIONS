@@ -1,14 +1,19 @@
 .service-container {
-  /* width: 356px; */
-  border-radius: 8px;
+  width: 335px;
+  height: 430px;
+  border-radius: 15px;
   background-color: white;
   margin-bottom: 10px;
   position: relative;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.service-container:hover{
+  /* border: 1px solid red; */
 }
 .service-img {
   position: relative;
-  height: 230px;
-  /* width: 356px; */
+  height: 242px;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -22,16 +27,21 @@
 }
 
 .service-details-div {
-  padding: 10px;
+  padding: 35px 10px 10px 10px;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
 }
 
 .service-details-div h6 {
-  color: #373737;
-  font-size: 24px;
+  color: #1A2A36;
+  font-size: 20px;
   margin: 0;
-  font-weight: 500;
+  font-weight: 600;
   padding: 5px;
+  font-family: "Roboto", serif;
 }
 
 .service-details-div p {
@@ -40,34 +50,71 @@
   text-align: justify;
   margin: 0;
   padding: 5px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
 }
 
 .read-more-btn {
-  height: 30px;
-  width: 115px;
-  font-size: 12px;
-  background-color: #3b82f5;
-  color: white !important;
-  border-radius: 5px;
+  font-size: 14px;
+  color: #3d4494 !important;
   margin-top: 10px;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  font-weight: 500;
 }
-.cricle-div{
-    position: absolute; /* Position it absolutely within the parent */
-  top: 53%;           /* Position it at the halfway point of the container */
-  left: 15%;          /* Center horizontally */
-  transform: translate(-50%, -50%); /* Adjust to keep the circle centered */
-  width: 80px;       /* Set the width and height for the circle */
+.arrow-icon {
+  color: #3d4494;
+  margin-left: 0 !important;
+  margin-top: 3px !important;
+}
+.cricle-div {
+  position: absolute;
+  top: 55%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  width: 80px;
   height: 80px;
-  border-radius: 50%; /* This makes it a circle */
-  background-color: white; /* Circle color */
+  border-radius: 50%;
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #2B557F;       /* Text color */
+  color: #2b557f;
   font-weight: bold;
   font-size: 16px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-.tool-icon{
-   font-size: 40px;
+.tool-icon {
+  font-size: 40px;
+}
+
+/* Mobile Media Query */
+@media (max-width: 426px) {
+  
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  
+}
+
+/* Laptop Media Query */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .service-container{
+    width: 310px;
+    height: 435px;
+  }
+  .service-img{
+    height: 230px;
+  }
+  .cricle-div{
+    top: 52%;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  
+}
+
+@media (min-width: 1441px) {
+  
 }
