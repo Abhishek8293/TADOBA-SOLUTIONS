@@ -70,16 +70,29 @@
   align-items: center;
   gap: 10px;
   margin: 10px;
-  border: 1px solid #9c9c9c;
+  border: 1px solid white;
   padding: 5px;
   height: 30px;
   width: 30px;
   border-radius: 50%;
   line-height: 5px;
 }
+
+.youtube{
+  background-color: red;
+}
+.facebook{
+  background-color: rgb(93, 93, 231);
+}
+.twitter{
+  background-color: black;
+}
+.instagram{
+  background: linear-gradient(180deg, #f1d328, #f82f6c 50%, #211ef5 75%)
+}
 .sos-med fa-icon {
   font-size: 25px;
-  color: #9c9c9c;
+  color: white;
 }
 .copy-right {
   display: flex;
@@ -94,23 +107,40 @@
   margin: 3px;
   font-size: 12px;
 }
-.sec{
 
+@media(min-width:769px) and (max-width:1024px){
+  .container{
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
     
+  }
+  .links{
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .sec{
+    margin-right: 20px;
+    margin-left: 10px;
+  }
+  .social-copy{
+    flex-direction: column;
+    position: absolute;
+    top: 230px;
+    left: 590px;
+  }
 }
 
 
 @media (min-width: 426px) and (max-width:768px) {
-  .sec {
-    width: 300px;
-    /* margin-bottom: 50px; */
-    /* border: 1px solid white; */
-  }
-  .links {
-    display: flex;
+  .links{
     flex-wrap: wrap;
-    align-content: flex-start;
-    padding: 30px;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .sec{
+    margin-right: 30px;
   }
 }
 @media (max-width: 426px) {
