@@ -15,7 +15,7 @@ import { faScrewdriverWrench } from '@fortawesome/free-solid-svg-icons';
 export class ServiceCardComponent {
   icon = faScrewdriverWrench;
 
-  @Input() imgUrl!: string;
+  @Input()imgUrl!: string;
   @Input() title!: string;
   @Input() description!: string;
   @Input() navigation!: string;
