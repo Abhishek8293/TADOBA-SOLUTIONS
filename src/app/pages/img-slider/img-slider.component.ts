@@ -20,7 +20,8 @@ export class ImgSliderComponent {
       new Swiper('.slider-wrapper', {
         loop: true,
         grabCursor: true,
-        spaceBetween:10,
+        centerSlide:true,
+        spaceBetween:8,
         autoplay: {
           delay: 2000,
         },

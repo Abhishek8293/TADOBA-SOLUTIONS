@@ -5,7 +5,6 @@ import {
   Inject,
   PLATFORM_ID,
 } from '@angular/core';
-import { CarouselComponent } from '../carousel/carousel.component';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
@@ -16,7 +15,8 @@ import { FooterComponent } from '../footer/footer.component';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { HeaderComponent } from '../header/header.component';
 import { ImgSliderComponent } from '../img-slider/img-slider.component';
-import { log } from 'console';
+import { Product } from '../../models/Product';
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 interface ServiceCardData {
   imgUrl: string;

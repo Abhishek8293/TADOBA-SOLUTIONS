@@ -1,18 +1,17 @@
 <app-img-slider></app-img-slider>
 <div class="service-container">
     <h6>OUR BUSINESSES</h6>
-   <div class="service-card-list">
-    @for (data of serviceData; track $index) {
-        <app-service-card [imgUrl]="data.imgUrl" [title]="data.title" [description]="data.description"></app-service-card>
+    <div class="service-card-list">
+        @for (data of serviceData; track $index) {
+        <app-service-card [imgUrl]="data.imgUrl" [title]="data.title"
+            [description]="data.description"></app-service-card>
         }
-   </div>
-   <button mat-button class="explore-btn" >Explore More<mat-icon class="arrow-icon" iconPositionEnd>arrow_right_alt</mat-icon></button>
+    </div>
+    <button mat-button class="explore-btn">Explore More<mat-icon class="arrow-icon"
+            iconPositionEnd>arrow_right_alt</mat-icon></button>
 </div>
 
 
-
-
-<!-- 
 <div class="product-section">
     <div class="product-section-heading">
         <h3>OUR PRODUCTS</h3>
@@ -20,37 +19,122 @@
     <div class=" products">
         <div class="card" *ngFor="let product of products">
             <div class="p-img">
-              <img [src]="product.productImg" [alt]="product.productName" class="product-img" />
+                <img [src]="product.productImg" [alt]="product.productName" class="product-img" />
             </div>
-          
+
             <div class="p-detail">
-              <div class="p-name">{{ product.productName }}</div>
-          
-              <div class="p-rating-availability">
-                <div class="p-rating pra">
-                  <mat-icon
-                    *ngFor="let star of [1, 2, 3, 4, 5]; let i = index"
-                    [ngClass]="{
+                <div class="p-name">{{ product.productName }}</div>
+
+                <div class="p-rating-availability">
+                    <div class="p-rating pra">
+                        <mat-icon *ngFor="let star of [1, 2, 3, 4, 5]; let i = index" [ngClass]="{
                       'star-filled': i < product.productRating,
                       'star-outline': i >= product.productRating
-                    }"
-                  >
-                    {{ i < product.productRating ? 'star' : 'star_border' }}
-                  </mat-icon>
+                    }">
+                            {{ i < product.productRating ? 'star' : 'star_border' }} </mat-icon>
+                    </div>
+                    <div class="p-availability pra">{{ product.productAvailability }}</div>
                 </div>
-                <div class="p-availability pra">{{ product.productAvailability }}</div>
-              </div>
-          
-              <div class="p-price">
-                <fa-icon [icon]="rupee"></fa-icon>{{ product.productPrice }}.00
-              </div>
-                        <div class="add-to-cart-button">
-                <button class="view-details"><fa-icon [icon]="whatsapp"></fa-icon>CONTACT US</button>
-                <button class="add-cart"><fa-icon [icon]="viewDetails"></fa-icon>VIEW DETAILS</button>
-              </div>
+
+                <div class="p-price">
+                    <fa-icon [icon]="rupee"></fa-icon>{{ product.productPrice }}.00
+                </div>
+                <div class="add-to-cart-button">
+                    <button class="view-details"><fa-icon [icon]="whatsapp"></fa-icon>CONTACT US</button>
+                    <button class="add-cart"><fa-icon [icon]="viewDetails"></fa-icon>VIEW DETAILS</button>
+                </div>
             </div>
-          </div>
+        </div>
     </div>
     <div class="see-more-product-button"><button class="see-more-btn">See More<fa-icon
                 [icon]="rightArrow"></fa-icon></button></div>
-</div> -->
+</div>
+
+
+<!-- Awards & Achievements -->
+<div class="awards-container">
+    <h6>AWARDS & ACHIEVEMENTS</h6>
+    <div class="awards-card-list">
+        <div class="awards-card">
+            <img src="" alt="">
+        </div>
+        <div class="awards-card">
+            <img src="" alt="">
+        </div>
+        <div class="awards-card">
+            <img src="" alt="">
+        </div>
+        <div class="awards-card">
+            <img src="" alt="">
+        </div>
+    </div>
+    <button mat-button class="explore-btn">Explore More<mat-icon class="arrow-icon"
+            iconPositionEnd>arrow_right_alt</mat-icon></button>
+</div>
+
+
+<!-- Project Section -->
+<div class="project-container">
+    <h6>COMPLETED / ONGOING PROJECTS</h6>
+    <div class="project-sub-container">
+        <div class="completed-project-div">
+            <div class="heading-div">
+                <mat-icon>control_camera</mat-icon>
+                <h6>Completed Projects</h6>
+            </div>
+            <div class="project-details-div">
+                <div class="project-details-tile">
+                    <mat-icon>fiber_manual_record</mat-icon>
+                    <a href=""><h6>Vardhman Hospital Durg 15 KW</h6></a>
+                </div>
+                <div class="project-details-tile">
+                    <mat-icon>fiber_manual_record</mat-icon>
+                    <a href=""><h6>Industrial Shed 5 kW Jute Factory Raipur</h6></a>
+                </div>
+                <div class="project-details-tile">
+                    <mat-icon>fiber_manual_record</mat-icon>
+                    <a href=""><h6>Risali, Maroda Basti, Bhilai</h6></a>
+                </div>
+                <div class="project-details-tile">
+                    <mat-icon>fiber_manual_record</mat-icon>
+                    <a href=""><h6>Solar Pump (3 HP) Charama (Kanker)</h6></a>
+                </div>
+                <div class="project-details-tile">
+                    <mat-icon>fiber_manual_record</mat-icon>
+                    <a href=""><h6>Solar PV at Floating House Gangrel  Dam</h6></a>
+                </div>
+            </div>
+        </div>
+        <div class="ongoing-project-div">
+            <div class="heading-div">
+                <mat-icon>control_camera</mat-icon>
+                <h6>Ongoing Projects</h6>
+            </div>
+            <div class="project-details-div">
+                <div class="project-details-tile">
+                    <mat-icon>fiber_manual_record</mat-icon>
+                    <a href=""><h6>Vardhman Hospital Durg 15 KW</h6></a>
+                </div>
+                <div class="project-details-tile">
+                    <mat-icon>fiber_manual_record</mat-icon>
+                    <a href=""><h6>Industrial Shed 5 kW Jute Factory Raipur</h6></a>
+                </div>
+                <div class="project-details-tile">
+                    <mat-icon>fiber_manual_record</mat-icon>
+                    <a href=""><h6>Risali, Maroda Basti, Bhilai</h6></a>
+                </div>
+                <div class="project-details-tile">
+                    <mat-icon>fiber_manual_record</mat-icon>
+                    <a href=""><h6>Solar Pump (3 HP) Charama (Kanker)</h6></a>
+                </div>
+                <div class="project-details-tile">
+                    <mat-icon>fiber_manual_record</mat-icon>
+                    <a href=""><h6>Solar PV at Floating House Gangrel  Dam</h6></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button mat-button class="explore-btn">Explore More<mat-icon class="arrow-icon"
+            iconPositionEnd>arrow_right_alt</mat-icon></button>
+</div>
