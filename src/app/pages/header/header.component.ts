@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { faBars, faBoxOpen, faBuildingCircleArrowRight, faGears, faPaste, faPeopleGroup, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faBoxOpen, faBriefcase, faBuildingCircleArrowRight, faGears, faHouseMedicalCircleExclamation, faPaste, faPeopleGroup, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-header',
@@ -17,6 +17,7 @@ export class HeaderComponent {
   course=faPaste
   about=faPeopleGroup
   closeMenu = faTimes
+  career=faBriefcase
   isMenuOpen = false;
 
   toggleMenu() {

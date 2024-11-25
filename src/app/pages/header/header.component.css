@@ -153,6 +153,17 @@
     transform: scale(1.09)
 }
 
+
+/* Laptop */
+@media(min-width:769px) and (max-width:1024px){
+    .nav-bar-link li a{
+        font-size: small;
+    }
+    .signup-btn{
+        height: 30px;
+    }
+}
+/* tablet */
 @media (min-width: 425px) and (max-width: 768px){
     .nav-bar-link{
         display: none;

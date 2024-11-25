@@ -18,182 +18,38 @@
         <h3>OUR PRODUCTS</h3>
     </div>
     <div class=" products">
-        <div class="card ">
-            <div class="p-img"><img src="./assets/images/product/retail-product/solar-plate.png" alt="product image">
+        <div class="card" *ngFor="let product of products">
+            <div class="p-img">
+              <img [src]="product.productImg" [alt]="product.productName" class="product-img" />
             </div>
+          
             <div class="p-detail">
-                <div class="p-name">Solar Plate device</div>
-                <div class="p-price-rating-availability">
-                    <div class="p-price "><fa-icon [icon]="rupee"></fa-icon>1882.00 |</div>
-                    <div class="p-rating pra">
-                        <mat-icon class="star-icon">star_border</mat-icon>
-                        <mat-icon class="star-icon">star_border</mat-icon>
-                        <mat-icon class="star-icon">star_border</mat-icon>
-                        <mat-icon class="star-icon">star_border</mat-icon>
-                        <mat-icon class="star-icon">star_border</mat-icon>
-                    </div>
-                    <div class="p-availability pra">in stock</div>
+              <div class="p-name">{{ product.productName }}</div>
+          
+              <div class="p-rating-availability">
+                <div class="p-rating pra">
+                  <mat-icon
+                    *ngFor="let star of [1, 2, 3, 4, 5]; let i = index"
+                    [ngClass]="{
+                      'star-filled': i < product.productRating,
+                      'star-outline': i >= product.productRating
+                    }"
+                  >
+                    {{ i < product.productRating ? 'star' : 'star_border' }}
+                  </mat-icon>
                 </div>
-                <div class="add-to-cart-button">
-                    <button class="view-details">VIEW DETAILS</button>
-                    <button class="add-cart">ADD TO CART</button>
-                </div>
+                <div class="p-availability pra">{{ product.productAvailability }}</div>
+              </div>
+          
+              <div class="p-price">
+                <fa-icon [icon]="rupee"></fa-icon>{{ product.productPrice }}.00
+              </div>
+                        <div class="add-to-cart-button">
+                <button class="view-details"><fa-icon [icon]="whatsapp"></fa-icon>CONTACT US</button>
+                <button class="add-cart"><fa-icon [icon]="viewDetails"></fa-icon>VIEW DETAILS</button>
+              </div>
             </div>
-        </div>
-        <div class="card ">
-            <div class="p-img"><img src="./assets/images/product/own-product/water-controller-o.png"
-                    alt="product image"></div>
-            <div class="p-detail">
-                <div class="p-name">Water Controller device</div>
-                <div class="p-price-rating-availability">
-                    <div class="p-price "><fa-icon [icon]="rupee"></fa-icon>1882.00 |</div>
-                    <div class="p-rating pra">
-                        <mat-icon class="star-icon">star_border</mat-icon>
-                        <mat-icon class="star-icon">star_border</mat-icon>
-                        <mat-icon class="star-icon">star_border</mat-icon>
-                        <mat-icon class="star-icon">star_border</mat-icon>
-                        <mat-icon class="star-icon">star_border</mat-icon>
-                    </div>
-                    <div class="p-availability pra">in stock</div>
-                </div>
-                <div class="add-to-cart-button">
-                    <button class="view-details">VIEW DETAILS</button>
-                    <button class="add-cart">ADD TO CART</button>
-                </div>
-            </div>
-        </div>
-        <div class="card ">
-            <div class="p-img"><img src="./assets/images/product/retail-product/solar-plate.png" alt="product image">
-            </div>
-            <div class="p-detail">
-                <div class="p-name">Water Controller device</div>
-                <div class="p-price-rating-availability">
-                    <div class="p-price "><fa-icon [icon]="rupee"></fa-icon>1882.00 |</div>
-                    <div class="p-rating pra">
-                        <mat-icon class="star-icon">star_border</mat-icon>
-                        <mat-icon class="star-icon">star_border</mat-icon>
-                        <mat-icon class="star-icon">star_border</mat-icon>
-                        <mat-icon class="star-icon">star_border</mat-icon>
-                        <mat-icon class="star-icon">star_border</mat-icon>
-                    </div>
-                    <div class="p-availability pra">in stock</div>
-                </div>
-                <div class="add-to-cart-button">
-                    <button class="view-details">VIEW DETAILS</button>
-                    <button class="add-cart">ADD TO CART</button>
-                </div>
-            </div>
-        </div>
-        <div class="card ">
-            <div class="p-img"><img src="./assets/images/product/own-product/water-controller-o.png"
-                    alt="product image"></div>
-            <div class="p-detail">
-                <div class="p-name">Water Controller device</div>
-                <div class="p-price-rating-availability">
-                    <div class="p-price "><fa-icon [icon]="rupee"></fa-icon>1882.00 |</div>
-                    <div class="p-rating pra">
-                        <mat-icon class="star-icon">star_border</mat-icon>
-                        <mat-icon class="star-icon">star_border</mat-icon>
-                        <mat-icon class="star-icon">star_border</mat-icon>
-                        <mat-icon class="star-icon">star_border</mat-icon>
-                        <mat-icon class="star-icon">star_border</mat-icon>
-                    </div>
-                    <div class="p-availability pra">in stock</div>
-                </div>
-                <div class="add-to-cart-button">
-                    <button class="view-details">VIEW DETAILS</button>
-                    <button class="add-cart">ADD TO CART</button>
-                </div>
-            </div>
-        </div>
-        <div class="card ">
-            <div class="p-img"><img src="./assets/images/product/own-product/water-controller-o.png"
-                    alt="product image"></div>
-            <div class="p-detail">
-                <div class="p-name">Water Controller device</div>
-                <div class="p-price-rating-availability">
-                    <div class="p-price "><fa-icon [icon]="rupee"></fa-icon>1882.00 |</div>
-                    <div class="p-rating pra">
-                        <mat-icon class="star-icon">star_border</mat-icon>
-                        <mat-icon class="star-icon">star_border</mat-icon>
-                        <mat-icon class="star-icon">star_border</mat-icon>
-                        <mat-icon class="star-icon">star_border</mat-icon>
-                        <mat-icon class="star-icon">star_border</mat-icon>
-                    </div>
-                    <div class="p-availability pra">in stock</div>
-                </div>
-                <div class="add-to-cart-button">
-                    <button class="view-details">VIEW DETAILS</button>
-                    <button class="add-cart">ADD TO CART</button>
-                </div>
-            </div>
-        </div>
-        <div class="card ">
-            <div class="p-img"><img src="./assets/images/product/retail-product/solar-plate.png" alt="product image">
-            </div>
-            <div class="p-detail">
-                <div class="p-name">Water Controller device</div>
-                <div class="p-price-rating-availability">
-                    <div class="p-price "><fa-icon [icon]="rupee"></fa-icon>1882.00 |</div>
-                    <div class="p-rating pra">
-                        <mat-icon class="star-icon">star_border</mat-icon>
-                        <mat-icon class="star-icon">star_border</mat-icon>
-                        <mat-icon class="star-icon">star_border</mat-icon>
-                        <mat-icon class="star-icon">star_border</mat-icon>
-                        <mat-icon class="star-icon">star_border</mat-icon>
-                    </div>
-                    <div class="p-availability pra">in stock</div>
-                </div>
-                <div class="add-to-cart-button">
-                    <button class="view-details">VIEW DETAILS</button>
-                    <button class="add-cart">ADD TO CART</button>
-                </div>
-            </div>
-        </div>
-        <div class="card ">
-            <div class="p-img"><img src="./assets/images/product/own-product/water-controller-o.png"
-                    alt="product image"></div>
-            <div class="p-detail">
-                <div class="p-name">Water Controller device</div>
-                <div class="p-price-rating-availability">
-                    <div class="p-price "><fa-icon [icon]="rupee"></fa-icon>1882.00 |</div>
-                    <div class="p-rating pra">
-                        <mat-icon class="star-icon">star_border</mat-icon>
-                        <mat-icon class="star-icon">star_border</mat-icon>
-                        <mat-icon class="star-icon">star_border</mat-icon>
-                        <mat-icon class="star-icon">star_border</mat-icon>
-                        <mat-icon class="star-icon">star_border</mat-icon>
-                    </div>
-                    <div class="p-availability pra">in stock</div>
-                </div>
-                <div class="add-to-cart-button">
-                    <button class="view-details">VIEW DETAILS</button>
-                    <button class="add-cart">ADD TO CART</button>
-                </div>
-            </div>
-        </div>
-        <div class="card ">
-            <div class="p-img"><img src="./assets/images/product/retail-product/solar-plate.png" alt="product image">
-            </div>
-            <div class="p-detail">
-                <div class="p-name">Water Controller device</div>
-                <div class="p-price-rating-availability">
-                    <div class="p-price "><fa-icon [icon]="rupee"></fa-icon>1882.00 |</div>
-                    <div class="p-rating pra">
-                        <mat-icon class="star-icon">star_border</mat-icon>
-                        <mat-icon class="star-icon">star_border</mat-icon>
-                        <mat-icon class="star-icon">star_border</mat-icon>
-                        <mat-icon class="star-icon">star_border</mat-icon>
-                        <mat-icon class="star-icon">star_border</mat-icon>
-                    </div>
-                    <div class="p-availability pra">in stock</div>
-                </div>
-                <div class="add-to-cart-button">
-                    <button class="view-details">VIEW DETAILS</button>
-                    <button class="add-cart">ADD TO CART</button>
-                </div>
-            </div>
-        </div>
+          </div>
     </div>
     <div class="see-more-product-button"><button class="see-more-btn">See More<fa-icon
                 [icon]="rightArrow"></fa-icon></button></div>

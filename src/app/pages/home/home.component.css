@@ -41,7 +41,7 @@
   flex-direction: column;
   justify-content: center;
   color: white;
-  background-color: #2b557f;
+  background-color: #3D4494;
   padding-bottom: 50px;
 }
 .product-section-heading {
@@ -68,7 +68,7 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  background-color: #2b557f;
+  background-color: #3D4494;
   padding-top: 50px;
 }
 .card {
@@ -77,7 +77,7 @@
   flex-direction: column;
   justify-content: space-between;
   width: 290px;
-  height: 430px;
+  height: 530px;
   background-color: #fff;
   border: 1px solid #fff;
   border-radius: 5px;
@@ -88,11 +88,9 @@
   margin-bottom: 50px;
 }
 .card .p-img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 280px;
-  height: 300px;
+  height: 290px;
+  padding: 5px;
 }
 .p-img img {
   width: 100%;
@@ -102,6 +100,9 @@
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
+.product-img{
+  object-fit: cover;
+}
 .p-detail {
   padding-left: 5px;
   padding-bottom: 5px;
@@ -110,12 +111,22 @@
   font-weight: 500;
   margin-bottom: 16px;
   color: #373737;
+  padding-left: 5px;
+
 }
-.p-price-rating-availability {
+.p-rating-availability{
   display: flex;
   justify-content: start;
   align-items: center;
   margin-bottom: 15px;
+}
+.p-price {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-left: 5px;
+
 }
 .p-price {
   color: #373737;
@@ -143,42 +154,65 @@
   align-items: center;
 }
 .view-details {
-  background-color: #2c547f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #25D366;
   color: white;
-  padding: 5px;
-  border: 1px solid #2c547f;
+  border: 1px solid #25D366;
   border-radius: 5px;
   margin-right: 10px;
   font-weight: bold;
   cursor: pointer;
   font-size: 11px;
-  height: 26px;
-  width: 105px;
+  height: 38px;
+  width: 250px;
+  font-size: 14px;
+}
+.add-cart, fa-icon{
+  margin-right: 5px;
+  font-size: 14px;
+}
+.view-details fa-icon{
+  margin-right: 5px;
+  font-size: 14px;
 }
 .add-cart {
-  background-color: #ff9d00;
+  background-color: #3D4494;
   color: white;
-  padding: 5px;
-  border: 1px solid #ff9d00;
+  border: 1px solid #3D4494;
   border-radius: 5px;
   margin-right: 10px;
   font-weight: bold;
   cursor: pointer;
   font-size: 11px;
-  height: 26px;
-  width: 105px;
+  height: 38px;
+  width: 250px;
+  margin-top: 10px;
+  font-size: 14px;
 }
+.add-to-cart-button{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .see-more-btn {
   font-size: 18px !important;
-  border: 3px solid #ffffff63;
+  border: 3px solid #6F78DF;
   cursor: pointer;
-  background-color: #ffffff63;
+  background-color: #6F78DF;
   color: #ffffffcc;
 }
 
 .see-more-btn:hover{
   transform: scale(1.1);
   background: none;
+}
+.see-more-product-button{
+  background-color: #3D4494;
 }
 
 
@@ -218,6 +252,9 @@
     grid-template-columns: repeat(3, minmax(310px, 1fr));
     gap: 10px;
     /* border: 1px solid red; */
+  }
+  .see-more-product-button{
+    background-color: #3D4494;
   }
 }
 
