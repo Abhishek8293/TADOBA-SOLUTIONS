@@ -49,6 +49,8 @@
   justify-content: center;
   align-items: center;
   font-size: 24px;
+  font-weight: 600;
+  font-family: "Roboto", serif;
 }
 .see-more-product-button {
   display: flex;
@@ -164,7 +166,7 @@
 }
 
 .ongoing-project-div, .completed-project-div{
-  padding: 20px;
+  padding: 10px;
 }
 
 .completed-project-div .heading-div{
@@ -328,13 +330,13 @@ a{
   }
 }
 
-@media (min-width: 429px) and (max-width: 768px) {
+@media (min-width: 426px) and (max-width: 768px) {
   .service-container {
     padding: 10px;
   }
   .service-card-list {
     display: grid;
-    grid-template-columns: repeat(2, minmax(345px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(345px, 1fr));
     gap: 10px;
     place-items: center;
   }
@@ -343,8 +345,17 @@ a{
     grid-template-columns: repeat(2, minmax(345px, 1fr));
     gap: 20px;
     place-items: center;
+    width: 100%;
   }
   .project-sub-container{
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+  }
+  .project-container {
+    background-color: #fff;
+    padding:10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -359,8 +370,9 @@ a{
   }
   .service-card-list {
     display: grid;
-    grid-template-columns: repeat(3, minmax(310px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
     gap: 10px;
+    place-items: center;
     /* border: 1px solid red; */
   }
   .see-more-product-button{
@@ -369,10 +381,10 @@ a{
 
   .awards-card-list {
     display: grid;
-    grid-template-columns: repeat(3, minmax(316px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(345px, 1fr));
     gap: 10px;
     place-items: center;
-    /* border: 1px solid red; */
+    width: 100%;
   }
   .product-section{
     display: flex;
@@ -391,17 +403,33 @@ a{
   .app-product-card{
     margin: 0px 10px 0px 0px;
   }
+  .project-container {
+    background-color: #fff;
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
-@media (min-width: 1025px) and (max-width: 1440px) {
+@media (min-width: 1024px) and (max-width: 1440px) {
   .service-container {
-    padding: 10px;
+    padding: 5px;
   }
   .service-card-list {
     display: grid;
-    grid-template-columns: repeat(4, minmax(310px, 1fr));
-    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    gap: 5px;
+    place-items: center;
     /* border: 1px solid red; */
+  }
+  .awards-card-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(345px, 1fr));
+    gap: 20px;
+    place-items: center;
+    width: 100%;
   }
 }
 
