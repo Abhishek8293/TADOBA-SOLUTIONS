@@ -14,20 +14,29 @@
 }
 .contact-section h6 {
   margin: 0;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   font-family: "Open Sans", sans-serif;
   color: #373737;
 }
+.contact-section h6:hover{
+  color: #3D4494;
+}
 .contact-section mat-icon {
   color: #ff0000;
+  font-size: 16px;
+  height: 16px;
+  width: 16px;
 }
 .contact-section span {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
 }
 a {
   text-decoration: none;
+  margin: 0;
+  padding: 0;
+  line-height: 2px;
 }
 .social-section {
   padding: 5px;
@@ -46,8 +55,10 @@ a {
   color: white;
 }
 .social-section fa-icon {
-  font-size: 20px;
-  margin-top: 1px;
+  font-size: 22px;
+  color: #fff;
+  margin: 0;
+  padding: 0;
 }
 
 .social-section .instgram {
@@ -59,6 +70,7 @@ a {
     #d6249f 60%,
     #285aeb 90%
   );
+
 }
 
 .social-section .twitter {
@@ -79,34 +91,34 @@ a {
 }
 
 @media (min-width: 426px) and (max-width: 768px) {
-    .contact-section h6 {
-        margin: 0;
-        font-size: 12px;
-        font-weight: 500;
-        font-family: "Open Sans", sans-serif;
-        color: #373737;
-      }
-      .contact-section mat-icon {
-        font-size: 14px;
-        height: 14px;
-        width: 14px;
-        color: #ff0000;
-      }
-      .contact-section span {
-        font-size: 18px;
-        font-weight: 600;
-      }
-      .social-section .circle {
-        border-radius: 50%;
-        width: 30px;
-        height: 30px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: white;
-      }
-      .social-section fa-icon {
-        font-size: 16px;
-        margin-top: 2px;
-      }
+  .contact-section h6 {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: "Open Sans", sans-serif;
+    color: #373737;
+  }
+  .contact-section mat-icon {
+    font-size: 14px;
+    height: 14px;
+    width: 14px;
+    color: #ff0000;
+  }
+  .contact-section span {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .social-section .circle {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  .social-section fa-icon {
+    font-size: 16px;
+    margin-top: 2px;
+  }
 }

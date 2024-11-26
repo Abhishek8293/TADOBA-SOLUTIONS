@@ -57,8 +57,8 @@
   color: #fff;
   font-weight: 600;
   text-align: center;
-  margin-top: 20px;
-  margin-bottom: 40px;
+  margin-top: 40px;
+  margin-bottom: 20px;
   font-family: "Roboto", serif;
 }
 .see-more-product-button {
@@ -110,6 +110,7 @@
   flex-direction: column;
   justify-content: space-around;
   background-color: #F5F6FA;
+  padding-bottom: 50px;
 }
 .our-partner-heading{
   text-align: center;
@@ -146,6 +147,9 @@
   background-color: #FFFFFF;
   border: 1px solid rgb(218, 213, 213);
   border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .forte{
   display: flex;
@@ -184,6 +188,8 @@
 .partner-name{
   align-items: center;
   text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
 }
 
 
@@ -493,7 +499,7 @@ a{
 
   .awards-card-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(345px, 1fr));
+    grid-template-columns: repeat(3, minmax(345px, 1fr));
     gap: 10px;
     place-items: center;
     width: 100%;
@@ -537,11 +543,18 @@ a{
     /* border: 1px solid red; */
   }
   .awards-card-list {
+    /* border: 1px solid red; */
     display: grid;
-    grid-template-columns: repeat(2, minmax(345px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(3, minmax(315px, 1fr));
+    gap: 10px;
     place-items: center;
     width: 100%;
+  }
+  .awards-card{
+    background-color: #d9d9d9;
+    height: 200px;
+    width: 280px;
+    border-radius: 15px;
   }
 }
 
