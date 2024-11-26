@@ -66,79 +66,7 @@
     <button class="see-more-btn">See More<fa-icon [icon]="rightArrow"></fa-icon></button>
   </div>
 </div>
-<div class="our-partner-section">
-  <div class="our-partner-heading"><h6>OUR PARTNERS</h6></div>
-  <div class="partner-logo-and-name">
-    <div class="partner-logo-and-name-box">
-      <div class="partner-logo">
-        <img src="./assets/images/cleint-img/iit-log-wb.png" alt="iit-log-wb" class="partner-logo-img">
-      </div>
-      <div class="partner-name"><span>Indian Institute
-        Of <br> Technology
-        Bhilai</span></div>
-    </div>
-    <div class="partner-logo-and-name-box">
-      <div class="partner-logo">
-        <img src="./assets/images/cleint-img/igkv-wb.png" alt="iit-log-wb" class="partner-logo-img">
-      </div>
-      <div class="partner-name"><span>Indra Gandhi Krishi <br> 
-        Vishwavidyalaya Raipur, <br>
-         Chhattisgarh</span></div>
-    </div>
-    <div class="partner-logo-and-name-box">
-      <div class="partner-logo forte">
-        <img src="./assets/images/cleint-img/forte-wb.png" alt="iit-log-wb" class="partner-logo-img">
-      </div>
-      <div class="partner-name"><span>Foundation For 
-        Technology
-         and Entrepreneurship</span></div>
-    </div>
-    <div class="partner-logo-and-name-box">
-      <div class="partner-logo pt-ravi">
-        <img src="./assets/images/cleint-img/Pt._Ravishankar_Shukla_University_logo.png" alt="iit-log-wb" class="partner-logo-img">
-      </div>
-      <div class="partner-name"><span>Pt. Ravishankar Shukla
-        University, Raipur</span></div>
-    </div>
-    <div class="partner-logo-and-name-box">
-      <div class="partner-logo csreda">
-        <img src="./assets/images/cleint-img/csreda.png" alt="iit-log-wb" class="partner-logo-img">
-      </div>
-      <div class="partner-name"><span>Chhattisgarh State 
-        Renewable
-         Energy Development Agency</span></div>
-    </div>
-    <div class="partner-logo-and-name-box">
-      <div class="partner-logo vasu-Logistics">
-        <img src="./assets/images/cleint-img/footer-vasu-logo.png" alt="iit-log-wb" class="partner-logo-img">
-      </div>
-      <div class="partner-name"><span>Shree Vasu Logistics <br>
-        Limited</span></div>
-    </div>
-  </div>
-    <div class="product-section-heading">
-        <h3>RETAIL PRODUCTS</h3>
-    </div>
-    <div class="products laptop-small">
-        @for (product of products3; track $index) {
-        <app-product-card [productImg]="product.productImg" [productName]="product.productName"
-            [productRating]="product.productRating" [productAvailability]="product.productAvailability"
-            [productPrice]="product.productPrice">
-        </app-product-card>
-        }
-    </div>
-    <div class="products laptop-large">
-        @for (product of products; track $index) {
-        <app-product-card [productImg]="product.productImg" [productName]="product.productName"
-            [productRating]="product.productRating" [productAvailability]="product.productAvailability"
-            [productPrice]="product.productPrice">
-        </app-product-card>
-        }
-    </div>
-    <div class="see-more-product-button">
-        <button class="see-more-btn">See More<fa-icon [icon]="rightArrow"></fa-icon></button>
-    </div>
-</div>
+
 
 
 
@@ -248,4 +176,58 @@
 
     <button mat-button class="explore-btn">Explore More<mat-icon class="arrow-icon"
             iconPositionEnd>arrow_right_alt</mat-icon></button>
+</div>
+<!-- ======================================== Our Partner========================================= -->
+<div class="our-partner-section">
+  <div class="our-partner-heading">
+    <h6>OUR PARTNERS</h6>
+  </div>
+  <div class="partner-logo-and-name">
+    <div class="partner-logo-and-name-box">
+      <div class="partner-logo">
+        <img src="./assets/images/cleint-img/iit-log-wb.png" alt="iit-log-wb" class="partner-logo-img">
+      </div>
+      <div class="partner-name"><span>Indian Institute
+        Of <br> Technology
+        Bhilai</span></div>
+    </div>
+    <div class="partner-logo-and-name-box">
+      <div class="partner-logo">
+        <img src="./assets/images/cleint-img/igkv-wb.png" alt="iit-log-wb" class="partner-logo-img">
+      </div>
+      <div class="partner-name"><span>Indra Gandhi Krishi <br> 
+        Vishwavidyalaya Raipur, <br>
+         Chhattisgarh</span></div>
+    </div>
+    <div class="partner-logo-and-name-box">
+      <div class="partner-logo forte">
+        <img src="./assets/images/cleint-img/forte-wb.png" alt="iit-log-wb" class="partner-logo-img">
+      </div>
+      <div class="partner-name"><span>Foundation For 
+        Technology
+         and Entrepreneurship</span></div>
+    </div>
+    <div class="partner-logo-and-name-box">
+      <div class="partner-logo pt-ravi">
+        <img src="./assets/images/cleint-img/Pt._Ravishankar_Shukla_University_logo.png" alt="iit-log-wb" class="partner-logo-img">
+      </div>
+      <div class="partner-name"><span>Pt. Ravishankar Shukla
+        University, Raipur</span></div>
+    </div>
+    <div class="partner-logo-and-name-box">
+      <div class="partner-logo csreda">
+        <img src="./assets/images/cleint-img/csreda.png" alt="iit-log-wb" class="partner-logo-img">
+      </div>
+      <div class="partner-name"><span>Chhattisgarh State 
+        Renewable
+         Energy Development Agency</span></div>
+    </div>
+    <div class="partner-logo-and-name-box">
+      <div class="partner-logo vasu-Logistics">
+        <img src="./assets/images/cleint-img/footer-vasu-logo.png" alt="iit-log-wb" class="partner-logo-img">
+      </div>
+      <div class="partner-name"><span>Shree Vasu Logistics <br>
+        Limited</span></div>
+    </div>
+  </div>
 </div>
