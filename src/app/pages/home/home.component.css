@@ -110,6 +110,7 @@
   flex-direction: column;
   justify-content: space-around;
   background-color: #F5F6FA;
+  padding: 5px 5px 35px 5px;
 }
 .our-partner-heading{
   text-align: center;
