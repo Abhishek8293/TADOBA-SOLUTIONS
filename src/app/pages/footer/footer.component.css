@@ -4,7 +4,6 @@
   flex-direction: column;
   justify-content: space-between;
   background-color: #1a2936;
-  font-family: sans-serif;
   padding-top:20px ;
   box-sizing: border-box;
   margin-left: 0;
@@ -45,6 +44,7 @@
   color: #9c9c9c;
   font-size: 15px;
   transition: transform 0.4s ease, color 0.4s ease;
+  font-family: "Open Sans", sans-serif;
 }
 .links ul li:hover a{
   color: #F5F6FA;
@@ -70,7 +70,6 @@
   align-items: center;
   gap: 10px;
   margin: 10px;
-  border: 1px solid white;
   padding: 5px;
   height: 30px;
   width: 30px;
@@ -79,16 +78,23 @@
 }
 
 .youtube{
-  background-color: red;
+  background-color: #ff0000;
 }
 .facebook{
-  background-color: rgb(93, 93, 231);
+  background-color: #1877f2;
 }
 .twitter{
   background-color: black;
 }
 .instagram{
-  background: linear-gradient(180deg, #f1d328, #f82f6c 50%, #211ef5 75%)
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
 }
 .sos-med fa-icon {
   font-size: 25px;
@@ -101,12 +107,18 @@
   text-align: center;
   align-items: center;
   padding: 10px 20px;
+  font-family: "Open Sans", sans-serif;
 }
 .copy-right p {
   color: #9c9c9c;
   margin: 3px;
   font-size: 12px;
 }
+.sec h3{
+  font-size: 20px;
+  font-family: "Roboto", serif;
+}
+
 
 @media(min-width:769px) and (max-width:1024px){
   .container{

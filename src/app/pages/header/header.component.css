@@ -17,7 +17,7 @@
 }
 
 .nav-bar-link li {
-    margin-left: 35px;
+    margin-left: 25px;
     list-style-type: none;
     font-size: 15px;
 }
@@ -34,7 +34,7 @@
 }
 
 .tadoba-logo a img {
-    height: 45px;
+    height: 55px;
 }
 .search {
     display: flex;
