@@ -7,10 +7,11 @@ import { MatIconModule } from '@angular/material/icon';
 import { faYoutube,faFacebook,faInstagram,faXTwitter } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
+
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [HeaderComponent, HomeComponent,MatIconModule,FontAwesomeModule, FooterComponent],
+  imports: [HeaderComponent, HomeComponent,MatIconModule,FontAwesomeModule, FooterComponent,],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

@@ -22,9 +22,9 @@ export class ImgSliderComponent {
         grabCursor: true,
         centerSlide:true,
         spaceBetween:8,
-        autoplay: {
-          delay: 2000,
-        },
+        // autoplay: {
+        //   delay: 2000,
+        // },
         pagination: {
           el: '.swiper-pagination',
           clickable: true,
