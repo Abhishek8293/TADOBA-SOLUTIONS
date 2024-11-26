@@ -28,7 +28,7 @@
   color: #fff !important;
   border: none;
   margin-left: auto;
-  margin-top: 20px;
+  margin-top: 15px;
   font-family: "Open Sans", sans-serif;
   font-size: 15px;
 }
@@ -48,6 +48,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 24px;
 }
 .product-section-heading  h6 {
   font-size: 24px;
@@ -184,6 +185,214 @@
 }
 /* ==========================================================MEDIA QUERY ====================================== */
 
+/* Awards Section */
+.awards-container {
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.awards-card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(335px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+.awards-container h6 {
+  font-size: 24px;
+  color: #1a2a36;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-family: "Roboto", serif;
+}
+.awards-card{
+  background-color: #d9d9d9;
+  height: 230px;
+  width: 316px;
+  border-radius: 15px;
+}
+
+/* Project Section */
+.project-container {
+  background-color: #fff;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-container h6 {
+  font-size: 24px;
+  color: #1a2a36;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-family: "Roboto", serif;
+}
+
+
+.project-container .explore-btn {
+  width: 170px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #3d4494;
+  color: #fff !important;
+  border: none; 
+  margin: auto;
+  margin-top: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+}
+.project-sub-container{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.ongoing-project-div, .completed-project-div{
+  padding: 20px;
+}
+
+.completed-project-div .heading-div{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 5px;
+}
+
+.completed-project-div .heading-div mat-icon{
+  font-size: 30px;
+  height: 30px;
+  width: 30px;
+  color: #3D4494;
+  margin-right: 5px;
+}
+
+.completed-project-div .heading-div h6{
+  font-size: 22px;
+  font-weight: 700;
+  color: #3D4494;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+.completed-project-div .project-details-div{
+  margin-top: 10px;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.completed-project-div .project-details-div .project-details-tile{
+  display: inline-flex;
+  align-items: center;
+  height: 40px;
+  border-radius: 15px;
+  padding-left: 7px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #d9d9d9;
+  white-space: nowrap;
+  width: auto;
+}
+
+.completed-project-div .project-details-div .project-details-tile:hover{
+  background-color: #25D366;
+}
+
+.completed-project-div .project-details-div .project-details-tile mat-icon{
+  font-size: 20px;
+  height: 20px;
+  width: 20px;
+  color: #25D366;
+  margin-right: 5px;
+}
+
+
+.completed-project-div .project-details-div .project-details-tile h6{
+  font-size: 16px;
+  font-weight: 600;
+  color: #373737;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+
+/*  */
+
+.ongoing-project-div .heading-div{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 5px;
+}
+
+.ongoing-project-div .heading-div mat-icon{
+  font-size: 30px;
+  height: 30px;
+  width: 30px;
+  color: #3D4494;
+  margin-right: 5px;
+}
+
+.ongoing-project-div .heading-div h6{
+  font-size: 22px;
+  font-weight: 700;
+  color: #3D4494;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+.ongoing-project-div .project-details-div{
+  margin-top: 10px;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ongoing-project-div .project-details-div .project-details-tile{
+  display: inline-flex;
+  align-items: center;
+  height: 40px;
+  border-radius: 15px;
+  padding-left: 7px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #d9d9d9;
+  white-space: nowrap;
+  width: auto;
+}
+a{
+  text-decoration: none !important;
+}
+.ongoing-project-div .project-details-div .project-details-tile:hover{
+  background-color: #FF9D00;
+}
+.ongoing-project-div .project-details-div .project-details-tile mat-icon{
+  font-size: 20px;
+  height: 20px;
+  width: 20px;
+  color: #FF9D00;
+  margin-right: 5px;
+}
+.ongoing-project-div .project-details-div .project-details-tile h6{
+  font-size: 16px;
+  font-weight: 600;
+  color: #373737;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
 /* Mobile Media Query */
 @media (max-width: 426px) {
   .service-container {
@@ -196,6 +405,19 @@
     align-items: center;
     gap: 10px;
   }
+  .awards-card-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .project-sub-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 @media (min-width: 429px) and (max-width: 768px) {
@@ -207,6 +429,18 @@
     grid-template-columns: repeat(2, minmax(345px, 1fr));
     gap: 10px;
     place-items: center;
+  }
+  .awards-card-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(345px, 1fr));
+    gap: 20px;
+    place-items: center;
+  }
+  .project-sub-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -223,6 +457,14 @@
   }
   .see-more-product-button{
     background-color: #3D4494;
+  }
+
+  .awards-card-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(316px, 1fr));
+    gap: 10px;
+    place-items: center;
+    /* border: 1px solid red; */
   }
   .product-section{
     display: flex;
@@ -255,11 +497,18 @@
   }
 }
 
-@media (min-width: 1441px) {
+@media (min-width: 1440px) {
   .service-container {
     padding: 40px;
   }
   .service-card-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    /* border: 1px solid red; */
+  }
+  .awards-card-list {
     display: flex;
     justify-content: center;
     align-items: center;

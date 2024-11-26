@@ -8,9 +8,6 @@
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.service-container:hover{
-  /* border: 1px solid red; */
-}
 .service-img {
   position: relative;
   height: 242px;
@@ -109,6 +106,7 @@
   .cricle-div{
     top: 52%;
   }
+  
 }
 
 @media (min-width: 1025px) and (max-width: 1440px) {
