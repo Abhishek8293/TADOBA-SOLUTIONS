@@ -49,6 +49,15 @@
   justify-content: center;
   align-items: center;
 }
+.product-section-heading  h6 {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-family: "Roboto", serif;
+}
 .see-more-product-button {
   display: flex;
   justify-content: flex-end;
@@ -91,6 +100,89 @@
   background-color: #3D4494;
 }
 
+/* ==========================================================OUR PARTNERS SECTION ====================================== */
+
+.our-partner-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #F5F6FA;
+}
+.our-partner-heading{
+  text-align: center;
+  margin: 15px;
+}
+.our-partner-heading h6 {
+  font-size: 24px;
+  color: #1a2a36;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-family: "Roboto", serif;
+}
+.partner-logo-and-name{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-items: center;
+}
+
+.partner-logo-and-name-box{
+  width: 160px;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.partner-logo{
+  width: 160px;
+  height: 120px;
+  background-color: #FFFFFF;
+  border: 1px solid rgb(218, 213, 213);
+  border-radius: 15px;
+}
+.forte{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pt-ravi{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.csreda{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.vasu-Logistics{
+  background-color: #373737;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.partner-logo img{
+  width: 160px;
+}
+.pt-ravi img{
+  width: 90px;
+}
+.forte img{
+  width: 100px;
+}
+
+.partner-name{
+  align-items: center;
+  text-align: center;
+}
+/* ==========================================================MEDIA QUERY ====================================== */
 
 /* Mobile Media Query */
 @media (max-width: 426px) {
