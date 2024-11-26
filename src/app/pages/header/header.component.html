@@ -4,57 +4,98 @@
         <input type="text" name="search" id="search">
         <button></button>
     </div> -->
-    <ul  class="nav-bar-link">
+    <ul class="nav-bar-link">
         <li><a href="#"><fa-icon [icon]="product"></fa-icon>Products</a>
             <div class="products">
                 <ul>
-                    <li><a href="#">Manufactured Product</a></li>
-                    <li><a href="#">Affiliate Product</a></li>
+                    <li><a href="#">Our Products</a>
+                        <div class="our-product-sub-menu">
+                            <ul>
+                                <li><a href="#">Agricultural Products</a></li>
+                                <li><a href="#">Electromechanical Products</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">Retail Shop</a></li>
                 </ul>
             </div>
         </li>
-        <li><a href="#"><fa-icon [icon]="course"></fa-icon>Trainings & Workshops</a></li>
+        <li><a href="#"><fa-icon [icon]="course"></fa-icon>Trainings & Workshops</a>
+            <div class="trainings-workshops-sub-menu">
+                <ul>
+                    <li><a href="#">Agricultural Products</a></li>
+                    <li><a href="#">Electromechanical Products</a></li>
+                </ul>
+            </div>
+        </li>
         <li><a href="#"><fa-icon [icon]="service"></fa-icon>Services & Maintenance</a>
             <div class="services">
                 <ul>
-                    <li><a href="#">Solar Panal Installation</a></li>
-                    <li><a href="#">Water Overflow Solution</a></li>
-                    <li><a href="#">Training and Workshop</a></li>
+                    <li><a href="#">Solar Plant Installation</a></li>
+                    <li><a href="#">Customized Industrial Solutions</a>
+                        <div class="customized-industrial-solution-sub-menu">
+                            <ul>
+                                <li><a href="#">PCB Design & Fabrication</a></li>
+                                <li><a href="#">Electromechanical Circuitry Customization</a></li>
+                                <li><a href="#">3D Prototype Printing</a></li>
+                                <li><a href="#">Water Overflow Solutions</a></li>
+                            </ul>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </li>
-    
         <li><a href="#"><fa-icon [icon]="career"></fa-icon>Career</a></li>
         <li><a href="#"><fa-icon [icon]="about"></fa-icon>About Us</a></li>
         <li><button class="signup-btn">SignUp</button></li>
     </ul>
-    <div class="hamburger-menu" >
-        <!-- <fa-icon [icon]="hamBurgerMenu" (click)="toggleMenu()" ></fa-icon> -->
-        <fa-icon [icon]="isMenuOpen ? closeMenu : hamBurgerMenu"(click)="toggleMenu()"></fa-icon>
+    <div class="hamburger-menu">
+        <!-- <fa-icon [icon]="hamBurgerMenu" (click)="toggleMenu()"></fa-icon> -->
+        <fa-icon [icon]="isMenuOpen ? closeMenu : hamBurgerMenu" (click)="toggleMenu()"></fa-icon>
     </div>
-    <ul  class="nav-bar-link-res" [class.active]="isMenuOpen">
-        <li><a href="#"><fa-icon [icon]="service"></fa-icon>Services</a>
-            <div class="services">
+    <ul class="nav-bar-link-res" [class.active]="isMenuOpen">
+        <li><a href="#"><fa-icon [icon]="product"></fa-icon>Products</a>
+            <div class="products-res">
                 <ul>
-                    <li><a href="#">Solar Panal Installation</a></li>
-                    <li><a href="#">Water Overflow Solution</a></li>
-                    <li><a href="#">Training and Workshop</a></li>
+                    <li><a href="#">Our Products</a>
+                        <div class="our-product-sub-menu-res">
+                            <ul>
+                                <li><a href="#">Agricultural Products</a></li>
+                                <li><a href="#">Electromechanical Products</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">Retail Shop</a></li>
                 </ul>
             </div>
         </li>
-        <li><a href="#"><fa-icon [icon]="product"></fa-icon>Products</a>
-            <div class="products">
+        <li><a href="#"><fa-icon [icon]="course"></fa-icon>Trainings & Workshops</a>
+            <div class="trainings-workshops-sub-menu-res">
                 <ul>
-                    <li><a href="#">Manufactured Product</a></li>
-                    <li><a href="#">Affiliate Product</a></li>
+                    <li><a href="#">Agricultural Products</a></li>
+                    <li><a href="#">Electromechanical Products</a></li>
                 </ul>
-             </div>
+            </div>
         </li>
-        <li><a href="#"><fa-icon [icon]="dealer"></fa-icon>Dealer & Distributorship</a></li>
-        <li><a href="#"><fa-icon [icon]="course"></fa-icon>Courses</a></li>
+        <li><a href="#"><fa-icon [icon]="service"></fa-icon>Services & Maintenance</a>
+            <div class="services-res">
+                <ul>
+                    <li><a href="#">Solar Plant Installation</a></li>
+                    <li><a href="#">Customized Industrial Solutions</a>
+                        <div class="customized-industrial-solution-sub-menu-res">
+                            <ul>
+                                <li><a href="#">PCB Design & Fabrication</a></li>
+                                <li><a href="#">Electromechanical Circuitry Customization</a></li>
+                                <li><a href="#">3D Prototype Printing</a></li>
+                                <li><a href="#">Water Overflow Solutions</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li><a href="#"><fa-icon [icon]="career"></fa-icon>Career</a></li>
         <li><a href="#"><fa-icon [icon]="about"></fa-icon>About Us</a></li>
         <li><button class="signup-btn">SignUp</button></li>
     </ul>
-    
 </header>
-

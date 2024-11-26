@@ -183,9 +183,10 @@
   align-items: center;
   text-align: center;
 }
-/* ==========================================================MEDIA QUERY ====================================== */
 
-/* Awards Section */
+
+
+/* ================================================== Awards Section ======================================= */
 .awards-container {
   padding: 40px 30px;
   display: flex;
@@ -215,7 +216,7 @@
   border-radius: 15px;
 }
 
-/* Project Section */
+/* ===============================================Project Section ================================================*/
 .project-container {
   background-color: #fff;
   padding: 20px 20px;
@@ -393,6 +394,10 @@ a{
   font-family: "Open Sans", sans-serif;
 }
 
+
+
+/* ==========================================================MEDIA QUERY ====================================== */
+
 /* Mobile Media Query */
 @media (max-width: 426px) {
   .service-container {
@@ -418,6 +423,14 @@ a{
     justify-content: center;
     align-items: center;
   }
+  .partner-logo-and-name{
+    flex-wrap: wrap;
+  }
+  .partner-logo-and-name-box{
+    margin: 5px 5px 10px 5px;
+    width: 200px;
+    font-size: 12px;
+  }
 }
 
 @media (min-width: 429px) and (max-width: 768px) {
@@ -441,6 +454,13 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .partner-logo-and-name{
+    flex-wrap: wrap;
+  }
+  .partner-logo-and-name-box{
+    margin: 20px 10px 5px 15px;
+    width: 200px;
   }
 }
 

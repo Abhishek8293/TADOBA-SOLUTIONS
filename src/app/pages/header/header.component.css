@@ -55,13 +55,23 @@
     width: 40px;
 
 }
+/* ==================================================== hide sub menu defult view ========================================== */
 .services{
     display: none;
 }
 .products{
     display: none;
 }
-
+.trainings-workshops-sub-menu{
+    display: none;
+}
+.our-product-sub-menu{
+    display: none;
+}
+.customized-industrial-solution-sub-menu{
+    display: none;
+}
+/* ======================================================== hover section=========================== */
 .nav-bar-link li:hover .services{
     display: block;
     position: absolute;
@@ -70,7 +80,17 @@
     padding: 23px 23px 23px 0px;
     z-index: 999;
     background-color: #fff;
+    
 
+}
+.nav-bar-link li:hover .trainings-workshops-sub-menu{
+    display: block;
+    position: absolute;
+    justify-content: center;
+    text-align: left;
+    padding: 23px 23px 23px 0px;
+    z-index: 999;
+    background-color: #fff;
 }
 
 
@@ -83,7 +103,41 @@
     background-color: #fff;
     
 }
+
+.products li:hover .our-product-sub-menu{
+    display: block;
+    position: absolute;
+    text-align: left;
+    padding: 23px 23px 23px 0px;
+    z-index: 999;
+    background-color: #fff;
+    margin-left: 90px;
+    
+}
+
+.services li:hover .customized-industrial-solution-sub-menu{
+    display: block;
+    position: absolute;
+    text-align: left;
+    padding: 23px 23px 23px 0px;
+    z-index: 999;
+    background-color: #fff;
+    margin-left: 90px;
+    width: 300px;
+    
+}
+/* ================================================================ menu UL editing ======================================= */
+
 .nav-bar-link li:hover .products ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 50px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.nav-bar-link li:hover .trainings-workshops-sub-menu ul{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -102,8 +156,33 @@
     margin: 0;
     padding: 0;
 }
-
+.products li:hover .our-product-sub-menu ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 50px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.services li:hover .customized-industrial-solution-sub-menu ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 50px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+/* ======================================================================================= */
 .services ul li{
+    margin-top: 10px;
+    padding: 0px 0px 10px 0px;
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.404); */
+    width: 100%;
+
+}
+.trainings-workshops-sub-menu ul li{
     margin-top: 10px;
     padding: 0px 0px 10px 0px;
     /* border-bottom: 1px solid rgba(0, 0, 0, 0.404); */
@@ -116,6 +195,19 @@
     /* border-bottom: 1px solid rgba(0, 0, 0, 0.404);  */
     width: 100%;
 }
+.our-product-sub-menu ul li{
+    margin-top: 10px;  
+    padding: 0px 0px 10px 0px;
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.404);  */
+    width: 100%;
+}
+.customized-industrial-solution-sub-menu ul li{
+    margin-top: 10px;  
+    padding: 0px 0px 10px 0px;
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.404);  */
+    width: 100%;
+}
+/* ======================================================================== */
 .nav-bar-link li button{
     padding: 3px 5px 3px 5px;
     background-color: white;
@@ -132,7 +224,7 @@
     left: 0;
     width: 100%;
     background-color: rgba(39, 38, 38, 0.918);
-    height: 50vh;
+    height: 70vh;
     z-index: 100;
     text-align: left;
     transition: top 0.5s ease;
@@ -152,7 +244,7 @@
     background-color: #284e6d !important;
     transform: scale(1.09)
 }
-
+/* ===================================================== MEDIA QUERY ========================================== */
 
 /* Laptop */
 @media(min-width:769px) and (max-width:1024px){
@@ -204,6 +296,138 @@
         font-size: 20px;
         color: black;
     }
+    /* =================================== menu css======================= */
+    .products-res{
+        display: none;
+    }
+    .our-product-sub-menu-res{
+        display: none;
+    }
+    .trainings-workshops-sub-menu-res{
+        display: none;
+    }
+    .services-res{
+        display: none;
+    }
+    .customized-industrial-solution-sub-menu-res{
+        display: none;
+    }
+    /* ================= hover css================== */
+    .nav-bar-link-res li:hover .services-res{
+        display: block;
+        background-color: white;
+        
+        
+        
+    
+    }
+    .nav-bar-link-res li:hover .trainings-workshops-sub-menu-res{
+        display: block;
+        background-color: white;
+    }
+    
+    
+    .nav-bar-link-res li:hover .products-res{
+        display: block;
+        background-color: white;
+        
+    }
+    
+    .products-res li:hover .our-product-sub-menu-res{
+        display: block;
+        margin-left: 10px;
+        background-color: white;
+        
+    }
+    
+    .services-res li:hover .customized-industrial-solution-sub-menu-res{
+        display: block;
+        margin-left: 10px;
+        background-color: white;
+        width: 300px;
+        
+    }
+    /* ===================================================== */
+
+    .nav-bar-link-res li:hover .products-res ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 50px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .nav-bar-link-res li:hover .trainings-workshops-sub-menu-res ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 50px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .nav-bar-link-res li:hover .services-res ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 50px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .products-res li:hover .our-product-sub-menu-res ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 50px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .services-res li:hover .customized-industrial-solution-sub-menu-res ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 50px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    /* ======================================================================================= */
+.services-res ul li{
+    margin-top: 10px;
+    padding: 0px 0px 10px 0px;
+    width: 100%;
+
+}
+.trainings-workshops-sub-menu-res ul li{
+    margin-top: 10px;
+    padding: 0px 0px 10px 0px;
+    width: 100%;
+
+}
+.products-res ul li{
+    margin-top: 10px;  
+    padding: 0px 0px 10px 0px;
+    width: 100%;
+}
+.our-product-sub-menu-res ul li{
+    margin-top: 10px;  
+    padding: 0px 0px 10px 0px;
+    width: 100%;
+}
+.customized-industrial-solution-sub-menu-res ul li{
+    margin-top: 10px;  
+    padding: 0px 0px 10px 0px;
+    width: 100%;
+}
+    .nav-bar-link-res li ul li a{
+        color: black;
+    }
 }
 @media (max-width: 425px) {
     .nav-bar-link{
@@ -245,5 +469,139 @@
         font-size: 20px;
         color: black;
     }
+    /* =================================== menu css======================= */
+    .products-res{
+        display: none;
+    }
+    .our-product-sub-menu-res{
+        display: none;
+    }
+    .trainings-workshops-sub-menu-res{
+        display: none;
+    }
+    .services-res{
+        display: none;
+    }
+    .customized-industrial-solution-sub-menu-res{
+        display: none;
+    }
+    /* ================= hover css================== */
+    .nav-bar-link-res li:hover .services-res{
+        display: block;
+        background-color: white;
+        
+        
+        
+    
+    }
+    .nav-bar-link-res li:hover .trainings-workshops-sub-menu-res{
+        display: block;
+        background-color: white;
+    }
+    
+    
+    .nav-bar-link-res li:hover .products-res{
+        display: block;
+        background-color: white;
+        
+    }
+    
+    .products-res li:hover .our-product-sub-menu-res{
+        display: block;
+        margin-left: 10px;
+        background-color: white;
+        
+    }
+    
+    .services-res li:hover .customized-industrial-solution-sub-menu-res{
+        display: block;
+        margin-left: 10px;
+        background-color: white;
+        width: 300px;
+        
+    }
+    /* ===================================================== */
+
+    .nav-bar-link-res li:hover .products-res ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 50px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .nav-bar-link-res li:hover .trainings-workshops-sub-menu-res ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 50px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .nav-bar-link-res li:hover .services-res ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 50px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .products-res li:hover .our-product-sub-menu-res ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 50px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .services-res li:hover .customized-industrial-solution-sub-menu-res ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 50px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    /* ======================================================================================= */
+.services-res ul li{
+    margin-top: 10px;
+    padding: 0px 0px 10px 0px;
+    width: 100%;
+
+}
+.trainings-workshops-sub-menu-res ul li{
+    margin-top: 10px;
+    padding: 0px 0px 10px 0px;
+    width: 100%;
+
+}
+.products-res ul li{
+    margin-top: 10px;  
+    padding: 0px 0px 10px 0px;
+    width: 100%;
+}
+.our-product-sub-menu-res ul li{
+    margin-top: 10px;  
+    padding: 0px 0px 10px 0px;
+    width: 100%;
+}
+.customized-industrial-solution-sub-menu-res ul li{
+    margin-top: 10px;  
+    padding: 0px 0px 10px 0px;
+    width: 100%;
+}
+    .nav-bar-link-res li ul li a{
+        color: black;
+    }
+    
+    
     
 }
