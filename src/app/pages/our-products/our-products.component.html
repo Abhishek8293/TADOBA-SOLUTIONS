@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="cat-name-div">
+        <h3>Our Products</h3>
+        <mat-icon>chevron_right</mat-icon>
+        <h3>Electronics Products</h3>
+    </div>
+    <div class="product-list-section">
+        @for (data of products; track $index) {
+            <app-product-card
+                [productImg]="data.productImg"
+                [productName]="data.productName"
+                [productRating]="data.productRating"
+                [productAvailability]="data.productAvailability"
+                [productPrice]="data.productPrice"
+            ></app-product-card>
+        }
+    </div>
+</div>

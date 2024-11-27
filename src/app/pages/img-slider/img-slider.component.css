@@ -12,9 +12,14 @@
   overflow: hidden;
   margin: 0px 25px 15px;
   border-radius: 18px;
-  transform: none !important;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
 }
 
+.slider-wrapper.swiper-initialized {
+  opacity: 1;
+}
 .card-list .card-item {
   color: #fff;
   height: 430px;
@@ -78,9 +83,20 @@
     font-size: 30px;
     padding: 10px;
 }
-
+.swiper-slide {
+  width: calc(100% / 3); /* Default slides per view */
+  flex-shrink: 0; /* Prevent size adjustment */
+}
 @media (max-width: 768px) {
   .slider-wrapper .swiper-slide-button {
     display: none;
+  }
+  .swiper-slide {
+    width: calc(100% / 2);
+}
+}
+@media (max-width: 426px) {
+  .swiper-slide {
+      width: 100%;
   }
 }

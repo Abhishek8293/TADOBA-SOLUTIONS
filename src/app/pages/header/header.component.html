@@ -8,12 +8,12 @@
         <li><a href="#"><fa-icon [icon]="product"></fa-icon>Products</a>
             <div class="products">
                 <ul>
-                    <li><a href="#">Our Products</a>
+                    <li><a routerLink="our-products">Our Products</a>
                         <div class="our-product-sub-menu">
                             <ul>
                                 <li><a href="#">Electromechanic Products</a></li>
                                 <li><a href="#">Solar Products</a></li>
-                                <li><a href="#">Electromechanic Products</a></li>
+                                <li><a href="#">Agricultural Products</a></li>
                             </ul>
                         </div>
                     </li>
@@ -60,8 +60,9 @@
                     <li><a href="#">Our Products</a>
                         <div class="our-product-sub-menu-res">
                             <ul>
+                                <li><a href="#">Electromechanic Products</a></li>
+                                <li><a href="#">Solar Products</a></li>
                                 <li><a href="#">Agricultural Products</a></li>
-                                <li><a href="#">Electromechanical Products</a></li>
                             </ul>
                         </div>
                     </li>
@@ -72,8 +73,7 @@
         <li><a href="#"><fa-icon [icon]="course"></fa-icon>Trainings & Workshops</a>
             <div class="trainings-workshops-sub-menu-res">
                 <ul>
-                    <li><a href="#">Agricultural Products</a></li>
-                    <li><a href="#">Electromechanical Products</a></li>
+                    <li><a href="#">Certificate Program</a></li>
                 </ul>
             </div>
         </li>
@@ -94,7 +94,7 @@
                 </ul>
             </div>
         </li>
-        <li><a href="#"><fa-icon [icon]="career"></fa-icon>Career</a></li>
+        <li><a routerLink="career"><fa-icon [icon]="career"></fa-icon>Career</a></li>
         <li><a href="#"><fa-icon [icon]="about"></fa-icon>About Us</a></li>
         <li><button class="signup-btn">SignUp</button></li>
     </ul>
