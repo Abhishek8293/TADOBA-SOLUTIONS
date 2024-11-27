@@ -1,0 +1,96 @@
+.container {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container h6{
+  font-size: 22px;
+  color: #1a2a36;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.container h1{
+  font-size: 24px;
+  color: #1a2a36;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.container p{
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  margin: 0;
+}
+.form-section {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 15px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+input[type="file"] {
+  display: none;
+}
+
+.file-input-lable {
+  width: 130px;
+  font-family: "Roboto", serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: baseline;
+  color: #373737;
+  background-color: #e2e2e2;
+  border: 2px solid gainsboro;
+  text-align: center;
+  padding: 7px 10px;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  user-select: none;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.file-label {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  color: #000;
+}
+.upload-icon {
+  font-size: 20px;
+  height: 20px;
+  width: 20px;
+}
+.file-name {
+  font-size: 14px;
+  font-family: "Roboto", serif;
+  color: #555;
+  margin-top: 5px;
+  word-break: break-word;
+}
+.submit-btn {
+  background-color: #3D4494;
+  color: #fff !important;
+  padding: 5px !important;
+  margin-top: 10px;
+}
+
+
+@media (max-width: 426px) {
+    .form-section {
+        display: flex;
+        flex-direction: column;
+        width: 290px;
+        padding: 10px;
+        border-radius: 15px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      }
+  }
