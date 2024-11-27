@@ -12,6 +12,7 @@
   overflow: hidden;
   margin: 0px 25px 15px;
   border-radius: 18px;
+  transform: none !important;
 }
 
 .card-list .card-item {
