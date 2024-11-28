@@ -4,6 +4,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { OurProductsComponent } from './pages/our-products/our-products.component';
 import { ViewProductComponent } from './pages/view-product/view-product.component';
 import { AboutUsComponent } from './pages/about-us/about-us.component';
+import { TermsAndConditionComponent } from './pages/terms-and-condition/terms-and-condition.component';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 
 export const routes: Routes = [
     {path: '',component:HomeComponent},
@@ -12,6 +14,10 @@ export const routes: Routes = [
         path:'our-products',
         component:OurProductsComponent,
     },
+    {path:'product',component:ViewProductComponent},
+    {component:AboutUsComponent, path:"about-us"},
+    {path:'terms&conditions', component:TermsAndConditionComponent},
+    {path:'privacy-policy', component:PrivacyPolicyComponent}
 
     {path:'product/:productId',component:ViewProductComponent},
     {component:AboutUsComponent, path:"about-us"}
