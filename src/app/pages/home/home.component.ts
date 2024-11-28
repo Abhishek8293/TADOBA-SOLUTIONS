@@ -265,6 +265,4 @@ products3:Product[]=[
 
 
 
-
-
 }

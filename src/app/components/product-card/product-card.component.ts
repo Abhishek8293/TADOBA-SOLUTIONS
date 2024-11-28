@@ -34,4 +34,18 @@ export class ProductCardComponent {
   whatsapp=faWhatsapp;
   viewDetails=faEye;
 
+  phoneNumber: string = '+918319348293';
+
+
+  callNumber(): void {
+    window.location.href = `tel:${this.phoneNumber}`;
+  }
+
+  openWhatsApp(productId:string): void {
+    const currentUrl = `http://localhost:4200/products/${productId}`;
+    const whatsappUrl = `https://wa.me/${this.phoneNumber}?text=${currentUrl}`;
+        window.open(whatsappUrl, '_blank');
+  }
+
+
 }

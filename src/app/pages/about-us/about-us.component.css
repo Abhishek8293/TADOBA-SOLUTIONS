@@ -25,7 +25,7 @@
 }
 .about-us-des{
     position: absolute;
-    font-family: 'Inria Serif', serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 20px;
     top: 180px;
 
@@ -60,8 +60,8 @@
     font-size: 30px;
 }
 .col-text {
-    font-family: 'Inria Serif', serif;
-    font-size: 20px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 19px;
 }
 .about-us-img{
     border-top-left-radius: 82px;
@@ -89,12 +89,15 @@
 .vision-mission-des p{
     font-size: 20px;
     color: rgb(65, 64, 64);
-
+    line-height: 1.5;
+    font-family: "Open Sans", sans-serif;
 }
 
 .business-des p{
     font-size: 20px;
     color: rgb(65, 64, 64);
+    line-height: 1.5;
+    font-family: "Open Sans", sans-serif;
 }
 .business-des{
     margin-bottom: 20px;
@@ -102,6 +105,7 @@
 .business-heading h4{
     color: blueviolet;
     font-size: 30px;
+    font-family: "Open Sans", sans-serif;
 }
 .business-section{
     display: flex;
@@ -130,6 +134,8 @@
     align-items: flex-start;
     text-align: left;
     background-color: blueviolet;
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.5;
 }
 .business-brief-des-text-heading{
     padding-left: 20px;
@@ -137,7 +143,7 @@
 .business-brief-des-text-heading h5{
     font-size: 25px;
     color: white;
-    font-family: 'Inria Serif', serif;
+    font-family: "Open Sans", sans-serif;
 }
 .business-brief-text ul li{
     margin-bottom: 15px;
