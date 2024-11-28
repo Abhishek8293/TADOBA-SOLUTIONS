@@ -25,7 +25,7 @@
 
     <!-- btn div -->
     <div class="mobile-btn-div">
-        <button mat-button class="whatsapp-btn">
+        <button mat-button class="whatsapp-btn" (click)="openWhatsApp()" >
             <fa-icon [icon]="whatsapp"></fa-icon> Whatsapp Us
         </button>
 
@@ -42,14 +42,14 @@
                 <tr class="row" *ngFor="let data of product.productDescription; let i = index"
                     [ngClass]="{ 'even-row': i % 2 == 0, 'odd-row': i % 2 != 0 }">
                     <td *ngIf="i < 6" class="table-info-value">
-                        {{ data}}
+                        <mat-icon class="dot-icon">fiber_manual_record</mat-icon> {{ data}}
                     </td>
                 </tr>
             </tbody>
         </table>
         <!-- <button mat-button [routerLink]="['/details']">See All Details</button> -->
     </div>
-    <div class="review-rating-div">
+    <!-- <div class="review-rating-div">
         <div class="review-action-div">
             <h6 class="product-sub-heading">Ratings & Reviews</h6>
             <button mat-stroked-button>Rate Product</button>
@@ -109,7 +109,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 </div>
 
 
@@ -130,11 +130,11 @@
             </div>
         </div>
         <div class="div-2">
-            <button mat-button class="whatsapp-btn">
+            <button mat-button class="whatsapp-btn" (click)="openWhatsApp()" >
                 <fa-icon [icon]="whatsapp"></fa-icon> Whatsapp Us
             </button>
 
-            <button mat-button class="contact-btn">
+            <button mat-button class="contact-btn" (click)="callNumber()" >
                 <mat-icon>phone</mat-icon> Contact Us
             </button>
         </div>
@@ -163,6 +163,7 @@
             </div>
             <div class="large-price-div">
                 <h6 class="large-price">₹{{product.productPrice}}</h6>
+                <div class="badge">{{product.productAvailability}}</div>
             </div>
         </div>
         <div class="product-specifications">
@@ -173,7 +174,7 @@
                         <tr class="row" *ngFor="let data of product.productDescription; let i = index"
                             [ngClass]="{ 'even-row': i % 2 == 0, 'odd-row': i % 2 != 0 }">
                             <td *ngIf="i < 6" class="table-info-value">
-                                {{ data}}
+                                <mat-icon class="dot-icon">fiber_manual_record</mat-icon> {{ data}}
                             </td>
                         </tr>
                     </tbody>
@@ -181,7 +182,7 @@
                 <!-- <button mat-button [routerLink]="['/details']">See All Details</button> -->
             </div>
         </div>
-        <div class="large-review-rating-div">
+        <!-- <div class="large-review-rating-div">
             <div class="review-action-div">
                 <h6 class="product-sub-heading">Ratings & Reviews</h6>
                 <button mat-stroked-button>Rate Product</button>
@@ -244,6 +245,6 @@
             <div class="show-reviews">
                 <h6>Show REview</h6>
             </div>
-        </div>
+        </div> -->
     </div>
 </div>

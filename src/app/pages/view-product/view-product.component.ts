@@ -25,6 +25,8 @@ import { ourProductList, Product } from '../../models/Product';
   styleUrl: './view-product.component.css',
 })
 export class ViewProductComponent implements OnInit {
+
+  phoneNumber: string = '+918319348293';
   whatsapp = faWhatsapp;
   selectedImageIndex: number = 0;
   productId: string | null = null;
@@ -69,4 +71,16 @@ export class ViewProductComponent implements OnInit {
   navigateBack() {
     this.location.back();
   }
+
+  callNumber(): void {
+    window.location.href = `tel:${this.phoneNumber}`;
+  }
+
+  openWhatsApp(): void {
+    const currentUrl = window.location.href;
+    const whatsappUrl = `https://wa.me/${this.phoneNumber}?text=${currentUrl}`;
+        window.open(whatsappUrl, '_blank');
+  }
+
+
 }
