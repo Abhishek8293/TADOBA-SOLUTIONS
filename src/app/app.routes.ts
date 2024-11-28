@@ -18,4 +18,7 @@ export const routes: Routes = [
     {component:AboutUsComponent, path:"about-us"},
     {path:'terms&conditions', component:TermsAndConditionComponent},
     {path:'privacy-policy', component:PrivacyPolicyComponent}
+
+    {path:'product/:productId',component:ViewProductComponent},
+    {component:AboutUsComponent, path:"about-us"}
 ];

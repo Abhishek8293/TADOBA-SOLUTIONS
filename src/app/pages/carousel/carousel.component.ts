@@ -17,9 +17,6 @@ import {
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 
- export interface CarouselImage {
-  imgUrl: string;
-}
 
 @Component({
   selector: 'app-carousel',
@@ -31,7 +28,7 @@ import { MatButtonModule } from '@angular/material/button';
 export class CarouselComponent implements OnInit, OnDestroy {
 
 
-  @Input() images: CarouselImage[] = [];
+  @Input() images: string[] = [];
   @Input() indicators: boolean = true;
   @Input() autoSlide: boolean = false;
   @Input() slideInterval: number = 5000;

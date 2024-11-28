@@ -8,11 +8,12 @@
     <div class="product-list-section">
         @for (data of products; track $index) {
             <app-product-card
-                [productImg]="data.productImg"
+                [productImg]="data.productImgUrl[0]"
                 [productName]="data.productName"
                 [productRating]="data.productRating"
                 [productAvailability]="data.productAvailability"
                 [productPrice]="data.productPrice"
+                [productId]="data.productId"
             ></app-product-card>
         }
     </div>

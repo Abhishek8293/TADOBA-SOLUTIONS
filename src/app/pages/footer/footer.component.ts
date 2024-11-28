@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
@@ -7,7 +8,7 @@ import { faAngleRight, faCopyright, faEnvelope, faLocationDot, faPhone } from '@
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [FontAwesomeModule, RouterModule],
+  imports: [FontAwesomeModule,CommonModule,RouterModule],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.css'
 })

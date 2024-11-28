@@ -1,61 +1,56 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule, Location } from '@angular/common';
-import { CarouselComponent, CarouselImage } from '../carousel/carousel.component';
-import { RouterModule } from '@angular/router';
+import { CarouselComponent } from '../carousel/carousel.component';
+import { ActivatedRoute, RouterModule } from '@angular/router';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
-import {MatProgressBarModule} from '@angular/material/progress-bar';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-
-
+import { ourProductList, Product } from '../../models/Product';
 
 @Component({
   selector: 'app-view-product',
   standalone: true,
-  imports: [RouterModule, CommonModule, MatButtonModule, MatProgressBarModule, CarouselComponent,MatIconModule,FontAwesomeModule],
+  imports: [
+    RouterModule,
+    CommonModule,
+    MatButtonModule,
+    MatProgressBarModule,
+    CarouselComponent,
+    MatIconModule,
+    FontAwesomeModule,
+  ],
   templateUrl: './view-product.component.html',
   styleUrl: './view-product.component.css',
 })
-export class ViewProductComponent {
+export class ViewProductComponent implements OnInit {
 
-  whatsapp=faWhatsapp;
+  phoneNumber: string = '+918319348293';
+  whatsapp = faWhatsapp;
   selectedImageIndex: number = 0;
+  productId: string | null = null;
 
-  data: CarouselImage[] = [
-    { imgUrl: './assets/images/product/own-product/1.png' },
-    { imgUrl: './assets/images/product/own-product/3.png' },
-    { imgUrl: './assets/images/product/own-product/4.png' },
-  ];
+  product!: Product;
 
-  
-  smartphoneAttributes = [
-    { attributeName: "Brand", attributeValue: "Samsung" },
-    { attributeName: "Model", attributeValue: "Galaxy S23 Ultra" },
-    { attributeName: "Display Size", attributeValue: "6.8 inches" },
-    { attributeName: "Resolution", attributeValue: "1440 x 3088 pixels" },
-    { attributeName: "Operating System", attributeValue: "Android 13" },
-    { attributeName: "Processor", attributeValue: "Snapdragon 8 Gen 2" },
-    { attributeName: "RAM", attributeValue: "12 GB" },
-    { attributeName: "Internal Storage", attributeValue: "256 GB" },
-    { attributeName: "Battery Capacity", attributeValue: "5000 mAh" },
-    { attributeName: "Main Camera", attributeValue: "200 MP + 12 MP + 10 MP + 10 MP" },
-    { attributeName: "Front Camera", attributeValue: "12 MP" },
-    { attributeName: "Charging Speed", attributeValue: "45W Fast Charging" },
-    { attributeName: "Weight", attributeValue: "234 grams" },
-    { attributeName: "Connectivity", attributeValue: "5G, Wi-Fi 6, Bluetooth 5.3" },
-    { attributeName: "Water Resistance", attributeValue: "IP68" },
-  ];
+  constructor(private location: Location, private route: ActivatedRoute) {}
+  ngOnInit(): void {
+    this.route.paramMap.subscribe((params) => {
+      this.productId = params.get('productId');
+    });
+    this.product = this.getProductById(this.productId!);
+  }
 
-  constructor(private location: Location) {}
+  getProductById(productId: string): Product {
+    return ourProductList.find((p) => p.productId === productId)!;
+  }
 
   share() {
+    const currentUrl = window.location.href;
     if (navigator.share) {
       navigator
         .share({
-          title: 'Web Share API in Angular 18',
-          text: 'Check out this feature!',
-          url: 'https://google.com', // Use a simple URL for testing
+          url: currentUrl,
         })
         .then(() => console.log('Content shared successfully!'))
         .catch((error) => alert('Encountered error while sharing.'));
@@ -65,7 +60,6 @@ export class ViewProductComponent {
         .writeText('sample text copied to clipboard')
         .then(() => {
           console.log('Text copied to clipboard!');
-          // this.snackBarService.openSuccessSnackBar('Copied to clipboard!');
         });
     }
   }
@@ -76,6 +70,16 @@ export class ViewProductComponent {
 
   navigateBack() {
     this.location.back();
+  }
+
+  callNumber(): void {
+    window.location.href = `tel:${this.phoneNumber}`;
+  }
+
+  openWhatsApp(): void {
+    const currentUrl = window.location.href;
+    const whatsappUrl = `https://wa.me/${this.phoneNumber}?text=${currentUrl}`;
+        window.open(whatsappUrl, '_blank');
   }
 
 
