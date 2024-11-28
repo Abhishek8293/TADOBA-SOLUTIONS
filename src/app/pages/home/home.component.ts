@@ -21,6 +21,7 @@ import { ImgSliderComponent } from '../img-slider/img-slider.component';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { Product } from '../../models/Product';
 import { ProductCardComponent } from '../../components/product-card/product-card.component';
+import { RouterModule } from '@angular/router';
 
 interface ServiceCardData {
   imgUrl: string;
@@ -39,13 +40,12 @@ interface ServiceCardData {
     MatIconModule,
     FontAwesomeModule,
     ServiceCardComponent,
-    FooterComponent,
-    HeaderComponent,
     ImgSliderComponent,
     ProductCardComponent,
     MatFormFieldModule,
     MatInputModule,
-    FormsModule
+    FormsModule,
+    RouterModule
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
