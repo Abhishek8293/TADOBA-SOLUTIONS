@@ -94,66 +94,152 @@ export class HomeComponent implements OnInit {
     }
   ];
 
-// products:Product[]=[
-//   {
-//     productId:1,
-//     productName:"Auto ON/OFF  1/3 Phase With Dry Run Protection (Universal)",
-//     productRating:4.5,
-//     productAvailability:"in-stock",
-//     productPrice:566.00,
-//     productImg:"./assets/images/product/own-product/water-controller-o.png" 
-//  },
-//  {
-//   productId:2,
-//   productName:"Auto OFF  Single Phase With (Universal)",
-//   productRating:3.5,
-//   productAvailability:"in-stock",
-//   productPrice:566.00,
-//   productImg:"./assets/images/product/retail-product/solar-plate.png" 
-// },
-// {
-//   productId:3,
-//   productName:"Auto OFF  Single Phase (Tullu)",
-//   productRating:4.5,
-//   productAvailability:"in-stock",
-//   productPrice:566.00,
-//   productImg:"./assets/images/product/own-product/water-controller-o.png" 
-// },
-// {
-//   productId:4,
-//   productName:"36 Watt LED Street Light Lens Model With D2D",
-//   productRating:2.5,
-//   productAvailability:"in-stock",
-//   productPrice:566.00,
-//   productImg:"./assets/images/product/retail-product/solar-plate.png" 
-// }
-// ]
-// products3:Product[]=[
-//   {
-//     productId:1,
-//     productName:"Auto ON/OFF  1/3 Phase With Dry Run Protection (Universal)",
-//     productRating:4.5,
-//     productAvailability:"in-stock",
-//     productPrice:566.00,
-//     productImg:"./assets/images/product/own-product/water-controller-o.png" 
-//  },
-//  {
-//   productId:1,
-//   productName:"Auto OFF  Single Phase With (Universal)",
-//   productRating:3.5,
-//   productAvailability:"in-stock",
-//   productPrice:566.00,
-//   productImg:"./assets/images/product/retail-product/solar-plate.png" 
-// },
-// {
-//   productId:1,
-//   productName:"Auto OFF  Single Phase (Tullu)",
-//   productRating:4.5,
-//   productAvailability:"in-stock",
-//   productPrice:566.00,
-//   productImg:"./assets/images/product/own-product/water-controller-o.png" 
-// }
-// ]
+products:Product[]=[
+  {
+    productId: 'TSWC1PHS',
+    productName: 'Auto OFF Single Phase With (Submersible)',
+    productRating: 3.5,
+    productAvailability: 'in-stock',
+    productPrice: 559.0,
+    productImgUrl: [
+      './assets/images/product/own-product/TSWC1PHS.png',
+      './assets/images/product/own-product/TSWC1PHS-2.png',
+    ],
+    productCategory: 'Electronic',
+    productDescription: [
+      'Semi-Automatic Device',
+      'Overflow Controller for underground tank or overhead tank',
+      ' Work With Any Single Phase Motor For Home ,Office, Hospital,Restaurant.',
+      'LED base for long time durability.',
+      'Single tank controller.',
+      'Suitable for single phase contractor starter panel of submersible motor',
+      'Single/multi tank controller',
+    ],
+  },
+
+  {
+    productId: 'TSWC1PHT',
+    productName: 'Auto OFF Single Phase With (Tullu)',
+    productRating: 3.5,
+    productAvailability: 'in-stock',
+    productPrice: 659.00,
+    productImgUrl: [
+      './assets/images/product/own-product/TSWC1PHT.png',
+      './assets/images/product/own-product/TSWC1PHT-2.png',
+    ],
+    productCategory: 'Electronic',
+    productDescription: [
+      'Semi-Automatic Device',
+      'Overflow Controller for underground tank or overhead tank.',
+      'Work With Any Single Phase Motor For Home ,Office, Hospital, Restaurant.',
+      'LED base for long time durability',
+      'Single/ Multi tank controller.',
+    ],
+  },
+  {
+    productId: 'TSWC1PHU',
+    productName: 'Auto OFF Single Phase (Universal)',
+    productRating: 3.5,
+    productAvailability: 'in-stock',
+    productPrice: 759.0,
+    productImgUrl: [
+      './assets/images/product/own-product/TSWC1PHU.png',
+      './assets/images/product/own-product/TSWC1PHU-2.png',
+    ],
+    productCategory: 'Electronic',
+    productDescription: [
+      'Semi-Automatic Device',
+      'It’s an auto off device for submersible. ',
+      'Back side Hanging Clam.',
+      'LED base for long time durability',
+      'Single/ Multi tank controller.',
+      'Suitable for single phase contractor starter panel of submersible motor',
+    ],
+  },
+  {
+    productId: 'TSWC3PHU',
+    productName: 'Auto OFF Three Phase With (Universal)',
+    productRating: 3.5,
+    productAvailability: 'in-stock',
+    productPrice: 1159.0,
+    productImgUrl: [
+      './assets/images/product/own-product/TSWC3PHU.png',
+      './assets/images/product/own-product/TSWC3PHU-2.png',
+      './assets/images/product/own-product/TSWC3PHU-3.png',
+    ],
+    productCategory: 'Electronic',
+    productDescription: [
+      ' Semi-Automatic Device',
+      'Suitable for  three phase contractor starter panel of submersible motor',
+      'Work With Any Three Phase Motor For Home ,Office, Hospital, Restaurant.',
+      'LED base for long time durability.',
+      'Single/ Multi tank controller.',
+    ],
+  },
+]
+products3:Product[]=[
+  {
+    productId: 'TSWC1PHS',
+    productName: 'Auto OFF Single Phase With (Submersible)',
+    productRating: 3.5,
+    productAvailability: 'in-stock',
+    productPrice: 559.0,
+    productImgUrl: [
+      './assets/images/product/own-product/TSWC1PHS.png',
+      './assets/images/product/own-product/TSWC1PHS-2.png',
+    ],
+    productCategory: 'Electronic',
+    productDescription: [
+      'Semi-Automatic Device',
+      'Overflow Controller for underground tank or overhead tank',
+      ' Work With Any Single Phase Motor For Home ,Office, Hospital,Restaurant.',
+      'LED base for long time durability.',
+      'Single tank controller.',
+      'Suitable for single phase contractor starter panel of submersible motor',
+      'Single/multi tank controller',
+    ],
+  },
+
+  {
+    productId: 'TSWC1PHT',
+    productName: 'Auto OFF Single Phase With (Tullu)',
+    productRating: 3.5,
+    productAvailability: 'in-stock',
+    productPrice: 659.00,
+    productImgUrl: [
+      './assets/images/product/own-product/TSWC1PHT.png',
+      './assets/images/product/own-product/TSWC1PHT-2.png',
+    ],
+    productCategory: 'Electronic',
+    productDescription: [
+      'Semi-Automatic Device',
+      'Overflow Controller for underground tank or overhead tank.',
+      'Work With Any Single Phase Motor For Home ,Office, Hospital, Restaurant.',
+      'LED base for long time durability',
+      'Single/ Multi tank controller.',
+    ],
+  },
+  {
+    productId: 'TSWC1PHU',
+    productName: 'Auto OFF Single Phase (Universal)',
+    productRating: 3.5,
+    productAvailability: 'in-stock',
+    productPrice: 759.0,
+    productImgUrl: [
+      './assets/images/product/own-product/TSWC1PHU.png',
+      './assets/images/product/own-product/TSWC1PHU-2.png',
+    ],
+    productCategory: 'Electronic',
+    productDescription: [
+      'Semi-Automatic Device',
+      'It’s an auto off device for submersible. ',
+      'Back side Hanging Clam.',
+      'LED base for long time durability',
+      'Single/ Multi tank controller.',
+      'Suitable for single phase contractor starter panel of submersible motor',
+    ],
+  },
+]
 
 
 

@@ -26,7 +26,7 @@ export const ourProductList: Product[] = [
     productName: 'Auto OFF Single Phase With (Submersible)',
     productRating: 3.5,
     productAvailability: 'in-stock',
-    productPrice: 559.0,
+    productPrice: 559.00,
     productImgUrl: [
       './assets/images/product/own-product/TSWC1PHS.png',
       './assets/images/product/own-product/TSWC1PHS-2.png',
@@ -48,7 +48,7 @@ export const ourProductList: Product[] = [
     productName: 'Auto OFF Single Phase With (Tullu)',
     productRating: 3.5,
     productAvailability: 'in-stock',
-    productPrice: 659.0,
+    productPrice: 659.00,
     productImgUrl: [
       './assets/images/product/own-product/TSWC1PHT.png',
       './assets/images/product/own-product/TSWC1PHT-2.png',
@@ -67,7 +67,7 @@ export const ourProductList: Product[] = [
     productName: 'Auto OFF Single Phase (Universal)',
     productRating: 3.5,
     productAvailability: 'in-stock',
-    productPrice: 759.0,
+    productPrice: 759.00,
     productImgUrl: [
       './assets/images/product/own-product/TSWC1PHU.png',
       './assets/images/product/own-product/TSWC1PHU-2.png',
@@ -87,7 +87,7 @@ export const ourProductList: Product[] = [
     productName: 'Auto OFF Three Phase With (Universal)',
     productRating: 3.5,
     productAvailability: 'in-stock',
-    productPrice: 1159.0,
+    productPrice: 1159.00,
     productImgUrl: [
       './assets/images/product/own-product/TSWC3PHU.png',
       './assets/images/product/own-product/TSWC3PHU-2.png',
@@ -128,7 +128,7 @@ export const ourProductList: Product[] = [
       '36 Watts LED Street Light (Lens Model) With D2D(Dusk To Down)',
     productRating: 3.5,
     productAvailability: 'in-stock',
-    productPrice: 1799.0,
+    productPrice: 1799.00,
     productImgUrl: [
       './assets/images/product/own-product/TSACSLD2D.png',
       './assets/images/product/own-product/TSACSLD2D-2.jpeg',
@@ -148,7 +148,7 @@ export const ourProductList: Product[] = [
     productName: '36 Watts LED Street Light (Lens Model)',
     productRating: 3.5,
     productAvailability: 'in-stock',
-    productPrice: 1499.0,
+    productPrice: 1499.00,
     productImgUrl: [
       './assets/images/product/own-product/TSACSL.png',
       './assets/images/product/own-product/TSACSL-2.jpeg',
@@ -168,7 +168,7 @@ export const ourProductList: Product[] = [
     productName: '36 Watts LED Street Light (Lens Model) With Auto Timer D2D',
     productRating: 3.5,
     productAvailability: 'in-stock',
-    productPrice: 1999.0,
+    productPrice: 1999.00,
     productImgUrl: [
       './assets/images/product/own-product/TSACSLD2DWAT.png',
       './assets/images/product/own-product/TSACSLD2DWAT-2.jpeg',
@@ -188,7 +188,7 @@ export const ourProductList: Product[] = [
     productName: 'AC DC Bulb 9Watts',
     productRating: 3.5,
     productAvailability: 'in-stock',
-    productPrice: 599.0,
+    productPrice: 599.00,
     productImgUrl: [
       './assets/images/product/own-product/TSACDCB9W.png',
       './assets/images/product/own-product/TSACDCB9W-2.jpeg',
@@ -212,7 +212,7 @@ export const ourProductList: Product[] = [
     productName: 'Day Night Smart Switch D2D(Dusk To Down) AC',
     productRating: 3.5,
     productAvailability: 'in-stock',
-    productPrice: 459.0,
+    productPrice: 459.00,
     productImgUrl: [
       './assets/images/product/own-product/TSD2DAC.png',
       './assets/images/product/own-product/TSD2DAC-2.png',
@@ -229,7 +229,7 @@ export const ourProductList: Product[] = [
     productName: 'Day Night Smart Switch D2D(Dusk To Down) DC',
     productRating: 3.5,
     productAvailability: 'in-stock',
-    productPrice: 459.0,
+    productPrice: 459.00,
     productImgUrl: [
       './assets/images/product/own-product/TSD2DDC.png',
       './assets/images/product/own-product/TSD2DDC-2.png',
@@ -246,7 +246,7 @@ export const ourProductList: Product[] = [
     productName: ' Automatic DC Switch',
     productRating: 3.5,
     productAvailability: 'in-stock',
-    productPrice: 459.0,
+    productPrice: 459.00,
     productImgUrl: [
       './assets/images/product/own-product/TSACDCSW.png',
       './assets/images/product/own-product/TSACDCSW-2.png',
@@ -270,7 +270,7 @@ export const ourProductList: Product[] = [
     productName: ' Standlone CCTV Camera',
     productRating: 3.5,
     productAvailability: 'in-stock',
-    productPrice: 17859.0,
+    productPrice: 17859.00,
     productImgUrl: [
       './assets/images/product/own-product/TSSACCTV.png',
       './assets/images/product/own-product/TSSACCTV-2.png',
@@ -300,7 +300,7 @@ export const ourProductList: Product[] = [
     productName: 'AC DC Switch 12V',
     productRating: 3.5,
     productAvailability: 'in-stock',
-    productPrice: 12999.0,
+    productPrice: 12999.00,
     productImgUrl: ['./assets/images/product/own-product/TSACDC12V.jpg'],
     productCategory: 'Electronic',
     productDescription: [
@@ -320,11 +320,11 @@ export const ourProductList: Product[] = [
     productName: 'Automatic Day & Night Smart Switch',
     productRating: 3.5,
     productAvailability: 'in-stock',
-    productPrice: 12999.0,
+    productPrice: 12999.00,
     productImgUrl: [
       './assets/images/product/own-product/TSDNSS.jpg',
-      './assets/images/product/own-product/TSDNSS-2.jpg',
-      './assets/images/product/own-product/TSDNSS-3.jpg',
+      './assets/images/product/own-product/TSDNSS-2.jpeg',
+      './assets/images/product/own-product/TSDNSS-3.jpeg',
     ],
     productCategory: 'Electronic',
     productDescription: [
@@ -345,7 +345,7 @@ export const ourProductList: Product[] = [
     productName: 'Portable Soil Sensor Device With Display',
     productRating: 3.5,
     productAvailability: 'in-stock',
-    productPrice: 12999.0,
+    productPrice: 12999.00,
     productImgUrl: [
       './assets/images/product/own-product/TSPSSDD.jpg',
       './assets/images/product/own-product/TSPSSDD-2.jpg',
@@ -370,7 +370,7 @@ export const ourProductList: Product[] = [
     productName: 'Soil Sensor Device And Monitoring',
     productRating: 3.5,
     productAvailability: 'in-stock',
-    productPrice: 12999.0,
+    productPrice: 12999.00,
     productImgUrl: ['./assets/images/product/own-product/TSSSDM.jpg'],
     productCategory: 'Electronic',
     productDescription: [
@@ -391,7 +391,7 @@ export const ourProductList: Product[] = [
     productName: 'Soil Sensor Device And Monitoring With Lure Module',
     productRating: 3.5,
     productAvailability: 'in-stock',
-    productPrice: 12999.0,
+    productPrice: 12999.00,
     productImgUrl: [
       './assets/images/product/own-product/TSSSDMLM.jpg',
       './assets/images/product/own-product/TSSSDMLM-2.jpg',
@@ -416,7 +416,7 @@ export const ourProductList: Product[] = [
     productName: 'Water Level Sensor',
     productRating: 3.5,
     productAvailability: 'in-stock',
-    productPrice: 12999.0,
+    productPrice: 12999.00,
     productImgUrl: [
       './assets/images/product/own-product/TSWLS.jpg',
       './assets/images/product/own-product/TSWLS-2.jpg',
@@ -435,7 +435,7 @@ export const ourProductList: Product[] = [
     productName: 'Soil NPK Sensor',
     productRating: 3.5,
     productAvailability: 'in-stock',
-    productPrice: 12999.0,
+    productPrice: 12999.00,
     productImgUrl: [
       './assets/images/product/own-product/TSSNPKS.jpg',
       './assets/images/product/own-product/TSSNPKS-2.jpg',
@@ -456,7 +456,7 @@ export const ourProductList: Product[] = [
     productName: 'Sensor Cable',
     productRating: 3.5,
     productAvailability: 'in-stock',
-    productPrice: 12999.0,
+    productPrice: 12999.00,
     productImgUrl: [
       './assets/images/product/own-product/TSSC.jpg',
       './assets/images/product/own-product/TSSC-2.jpg',
@@ -473,7 +473,7 @@ export const ourProductList: Product[] = [
     productName: 'Push Button',
     productRating: 3.5,
     productAvailability: 'in-stock',
-    productPrice: 12999.0,
+    productPrice: 12999.00,
     productImgUrl: [
       './assets/images/product/own-product/TSPB.jpg',
     ],
@@ -492,7 +492,7 @@ export const ourProductList: Product[] = [
     productName: '16A Output Socket',
     productRating: 3.5,
     productAvailability: 'in-stock',
-    productPrice: 12999.0,
+    productPrice: 12999.00,
     productImgUrl: [
       './assets/images/product/own-product/TSOS.jpg',
       './assets/images/product/own-product/TSOS-2.jpg',
@@ -510,7 +510,7 @@ export const ourProductList: Product[] = [
     productName: 'Relay H90',
     productRating: 3.5,
     productAvailability: 'in-stock',
-    productPrice: 12999.0,
+    productPrice: 12999.00,
     productImgUrl: [
       './assets/images/product/own-product/TSRH90.jpg',
       './assets/images/product/own-product/TSRH90-2.jpg',
@@ -529,7 +529,7 @@ export const ourProductList: Product[] = [
     productName: 'Relay JQC3FC',
     productRating: 3.5,
     productAvailability: 'in-stock',
-    productPrice: 12999.0,
+    productPrice: 12999.00,
     productImgUrl: [
       './assets/images/product/own-product/TSRJQC3FC.jpg',
       './assets/images/product/own-product/TSRJQC3FC-2.jpg',
@@ -550,7 +550,7 @@ export const ourProductList: Product[] = [
     productName: 'Relay SK91',
     productRating: 3.5,
     productAvailability: 'in-stock',
-    productPrice: 12999.0,
+    productPrice: 12999.00,
     productImgUrl: [
       './assets/images/product/own-product/TSRSK91.jpg',
       './assets/images/product/own-product/TSRSK91-2.jpg',

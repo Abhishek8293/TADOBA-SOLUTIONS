@@ -21,17 +21,21 @@
     </div>
     <div class="products laptop-small">
         @for (product of products3; track $index) {
-        <app-product-card [productImg]="product.productImg" [productName]="product.productName"
+        <app-product-card [productImg]="product.productImgUrl[0]" [productName]="product.productName"
             [productRating]="product.productRating" [productAvailability]="product.productAvailability"
-            [productPrice]="product.productPrice">
+            [productPrice]="product.productPrice"
+            [productId]="product.productId"
+            >
         </app-product-card>
         }
     </div>
     <div class="products laptop-large">
         @for (product of products; track $index) {
-        <app-product-card [productImg]="product.productImg" [productName]="product.productName"
+        <app-product-card [productImg]="product.productImgUrl[0]" [productName]="product.productName"
             [productRating]="product.productRating" [productAvailability]="product.productAvailability"
-            [productPrice]="product.productPrice">
+            [productPrice]="product.productPrice"
+            [productId]="product.productId"
+            >
         </app-product-card>
         }
     </div>
@@ -48,17 +52,21 @@
     </div>
     <div class="products laptop-small">
         @for (product of products3; track $index) {
-        <app-product-card [productImg]="product.productImg" [productName]="product.productName"
+        <app-product-card [productImg]="product.productImgUrl[0]" [productName]="product.productName"
             [productRating]="product.productRating" [productAvailability]="product.productAvailability"
-            [productPrice]="product.productPrice">
+            [productPrice]="product.productPrice"
+            [productId]="product.productId"
+            >
         </app-product-card>
         }
     </div>
     <div class="products laptop-large">
         @for (product of products; track $index) {
-        <app-product-card [productImg]="product.productImg" [productName]="product.productName"
+        <app-product-card [productImg]="product.productImgUrl[0]" [productName]="product.productName"
             [productRating]="product.productRating" [productAvailability]="product.productAvailability"
-            [productPrice]="product.productPrice">
+            [productPrice]="product.productPrice"
+            [productId]="product.productId"
+            >
         </app-product-card>
         }
     </div>
