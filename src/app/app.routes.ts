@@ -4,6 +4,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { OurProductsComponent } from './pages/our-products/our-products.component';
 import { ViewProductComponent } from './pages/view-product/view-product.component';
 
+
 export const routes: Routes = [
     {path: '',component:HomeComponent},
     {path:'career',component:CareerComponent},

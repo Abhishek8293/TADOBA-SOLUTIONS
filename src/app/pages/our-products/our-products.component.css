@@ -16,7 +16,7 @@
 }
 
 .container h3{
-    font-size: 18px;
+    font-size: 16px;
     color: #373737;
     font-weight: 600;
     font-family: "Open Sans", sans-serif;
@@ -31,4 +31,10 @@
 }
 .cat-name-div mat-icon{
     margin-top: 10px;
+}
+.back-btn{
+    background-color: white;
+    color: #373737 !important;
+    border-radius: 25px;
+    margin-bottom: 20px;
 }
