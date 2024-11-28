@@ -1,0 +1,33 @@
+.container{
+    font-family: "Roboto", sans-serif;
+}
+.heading{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding-left: 60px;
+    margin: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    font-family: "Roboto", sans-serif;
+}
+.heading h3{
+    font-size: 30px;
+    font-family: "Roboto", sans-serif;
+    color: blueviolet;
+}
+.content{
+    padding: 10px;
+}
+ul{
+    list-style-type: none;
+}
+fa-icon{
+    margin-right: 10px;
+    color: rgb(230, 81, 27);
+}
+ul li{
+    margin-bottom: 15px;
+}
+.use-license-p{
+    margin-top: 15px;
+}
