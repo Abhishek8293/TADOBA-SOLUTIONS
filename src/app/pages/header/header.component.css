@@ -267,7 +267,7 @@
         display: flex; /* Make the menu visible */
         flex-direction: column;
         justify-content: space-around;
-        top: 7%; 
+        top: 19%; 
     }
     .nav-bar-link-res li{
         padding-left: 70px;
