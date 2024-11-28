@@ -1,4 +1,7 @@
 <app-img-slider></app-img-slider>
+
+
+<!-- Business Section -->
 <div class="service-container">
     <h6>OUR BUSINESSES</h6>
     <div class="service-card-list">
@@ -11,6 +14,7 @@
             iconPositionEnd>arrow_right_alt</mat-icon></button>
 </div>
 
+<!--Our Product Section -->
 <div class="product-section">
     <div class="product-section-heading">
         <h6>OUR PRODUCTS</h6>
@@ -32,39 +36,35 @@
         }
     </div>
     <div class="see-more-product-button">
-        <button class="see-more-btn">See More<fa-icon [icon]="rightArrow"></fa-icon></button>
+        <button class="see-more-btn" routerLink="/our-products" >See More<fa-icon [icon]="rightArrow"></fa-icon></button>
     </div>
 </div>
+
+<!-- Retail Product Section -->
 <div class="product-section">
 
-  <div class="product-section-heading">
-      <h6>RETAIL PRODUCTS</h6>
-  </div>
-  <div class="products laptop-small">
-    @for (product of products3; track $index) {
-    <app-product-card
-    [productImg]="product.productImg"
-    [productName]="product.productName"
-    [productRating]="product.productRating"
-    [productAvailability]="product.productAvailability"
-    [productPrice]="product.productPrice"
-  >
-  </app-product-card>
-}</div>
-<div class="products laptop-large">
-  @for (product of products; track $index) {
-  <app-product-card
-  [productImg]="product.productImg"
-  [productName]="product.productName"
-  [productRating]="product.productRating"
-  [productAvailability]="product.productAvailability"
-  [productPrice]="product.productPrice"
->
-</app-product-card>
-}</div>
-  <div class="see-more-product-button">
-    <button class="see-more-btn">See More<fa-icon [icon]="rightArrow"></fa-icon></button>
-  </div>
+    <div class="product-section-heading">
+        <h6>RETAIL PRODUCTS</h6>
+    </div>
+    <div class="products laptop-small">
+        @for (product of products3; track $index) {
+        <app-product-card [productImg]="product.productImg" [productName]="product.productName"
+            [productRating]="product.productRating" [productAvailability]="product.productAvailability"
+            [productPrice]="product.productPrice">
+        </app-product-card>
+        }
+    </div>
+    <div class="products laptop-large">
+        @for (product of products; track $index) {
+        <app-product-card [productImg]="product.productImg" [productName]="product.productName"
+            [productRating]="product.productRating" [productAvailability]="product.productAvailability"
+            [productPrice]="product.productPrice">
+        </app-product-card>
+        }
+    </div>
+    <div class="see-more-product-button">
+        <button class="see-more-btn">See More<fa-icon [icon]="rightArrow"></fa-icon></button>
+    </div>
 </div>
 
 
@@ -94,140 +94,119 @@
 
 <!-- Project Section -->
 <div class="project-container">
-    <h6>COMPLETED / ONGOING PROJECTS</h6>
+    <h6>RESEARCH & DEVELOPMENT PROJECTS</h6>
     <div class="project-sub-container">
-        <div class="completed-project-div">
-            <div class="heading-div">
-                <mat-icon>control_camera</mat-icon>
-                <h6>Completed Projects</h6>
-            </div>
-            <div class="project-details-div">
-                <div class="project-details-tile">
-                    <mat-icon>fiber_manual_record</mat-icon>
-                    <a href="">
-                        <h6>Vardhman Hospital Durg 15 KW</h6>
-                    </a>
-                </div>
-                <div class="project-details-tile">
-                    <mat-icon>fiber_manual_record</mat-icon>
-                    <a href="">
-                        <h6>Industrial Shed 5 kW Jute Factory Raipur</h6>
-                    </a>
-                </div>
-                <div class="project-details-tile">
-                    <mat-icon>fiber_manual_record</mat-icon>
-                    <a href="">
-                        <h6>Risali, Maroda Basti, Bhilai</h6>
-                    </a>
-                </div>
-                <div class="project-details-tile">
-                    <mat-icon>fiber_manual_record</mat-icon>
-                    <a href="">
-                        <h6>Solar Pump (3 HP) Charama (Kanker)</h6>
-                    </a>
-                </div>
-                <div class="project-details-tile">
-                    <mat-icon>fiber_manual_record</mat-icon>
-                    <a href="">
-                        <h6>Solar PV at Floating House Gangrel Dam</h6>
-                    </a>
-                </div>
-            </div>
+        <div class="project-details-tile">
+            <mat-icon>fiber_manual_record</mat-icon>
+            <h6>Vardhman Hospital Durg 15 KW</h6>
         </div>
-        <div class="ongoing-project-div">
-            <div class="heading-div">
-                <mat-icon>control_camera</mat-icon>
-                <h6>Ongoing Projects</h6>
-            </div>
-            <div class="project-details-div">
-                <div class="project-details-tile">
-                    <mat-icon>fiber_manual_record</mat-icon>
-                    <a href="">
-                        <h6>Vardhman Hospital Durg 15 KW</h6>
-                    </a>
-                </div>
-                <div class="project-details-tile">
-                    <mat-icon>fiber_manual_record</mat-icon>
-                    <a href="">
-                        <h6>Industrial Shed 5 kW Jute Factory Raipur</h6>
-                    </a>
-                </div>
-                <div class="project-details-tile">
-                    <mat-icon>fiber_manual_record</mat-icon>
-                    <a href="">
-                        <h6>Risali, Maroda Basti, Bhilai</h6>
-                    </a>
-                </div>
-                <div class="project-details-tile">
-                    <mat-icon>fiber_manual_record</mat-icon>
-                    <a href="">
-                        <h6>Solar Pump (3 HP) Charama (Kanker)</h6>
-                    </a>
-                </div>
-                <div class="project-details-tile">
-                    <mat-icon>fiber_manual_record</mat-icon>
-                    <a href="">
-                        <h6>Solar PV at Floating House Gangrel Dam</h6>
-                    </a>
-                </div>
-            </div>
+        <div class="project-details-tile">
+            <mat-icon>fiber_manual_record</mat-icon>
+            <h6>Industrial Shed 5 kW Jute Factory Raipur</h6>
+        </div>
+        <div class="project-details-tile">
+            <mat-icon>fiber_manual_record</mat-icon>
+            <h6>Risali, Maroda Basti, Bhilai</h6>
+        </div>
+        <div class="project-details-tile">
+            <mat-icon>fiber_manual_record</mat-icon>
+            <h6>Solar Pump (3 HP) Charama (Kanker)</h6>
+        </div>
+        <div class="project-details-tile">
+            <mat-icon>fiber_manual_record</mat-icon>
+            <h6>Solar PV at Floating House Gangrel Dam</h6>
         </div>
     </div>
-
-    <button mat-button class="explore-btn">Explore More<mat-icon class="arrow-icon"
-            iconPositionEnd>arrow_right_alt</mat-icon></button>
 </div>
+
+
 <!-- ======================================== Our Partner========================================= -->
 <div class="our-partner-section">
-  <div class="our-partner-heading">
-    <h6>OUR PARTNERS</h6>
-  </div>
-  <div class="partner-logo-and-name">
-    <div class="partner-logo-and-name-box">
-      <div class="partner-logo">
-        <img src="./assets/images/cleint-img/iit-log-wb.png" alt="iit-log-wb" class="partner-logo-img">
-      </div>
-      <div class="partner-name"><span>Indian Institute
-        Of <br> Technology
-        Bhilai</span></div>
+    <div class="our-partner-heading">
+        <h6>OUR PARTNERS</h6>
     </div>
-    <div class="partner-logo-and-name-box">
-      <div class="partner-logo">
-        <img src="./assets/images/cleint-img/igkv-wb.png" alt="iit-log-wb" class="partner-logo-img">
-      </div>
-      <div class="partner-name"><span>Indra Gandhi Krishi <br> 
-        Vishwavidyalaya Raipur, <br>
-         Chhattisgarh</span></div>
+    <div class="partner-logo-and-name">
+        <div class="partner-logo-and-name-box">
+            <div class="partner-logo">
+                <img src="./assets/images/cleint-img/iit-log-wb.png" alt="iit-log-wb" class="partner-logo-img">
+            </div>
+            <div class="partner-name"><span>Indian Institute
+                    Of <br> Technology
+                    Bhilai</span></div>
+        </div>
+        <div class="partner-logo-and-name-box">
+            <div class="partner-logo">
+                <img src="./assets/images/cleint-img/igkv-wb.png" alt="iit-log-wb" class="partner-logo-img">
+            </div>
+            <div class="partner-name"><span>Indra Gandhi Krishi <br>
+                    Vishwavidyalaya Raipur, <br>
+                    Chhattisgarh</span></div>
+        </div>
+        <div class="partner-logo-and-name-box">
+            <div class="partner-logo forte">
+                <img src="./assets/images/cleint-img/forte-wb.png" alt="iit-log-wb" class="partner-logo-img">
+            </div>
+            <div class="partner-name"><span>Foundation For
+                    Technology
+                    and Entrepreneurship</span></div>
+        </div>
+        <div class="partner-logo-and-name-box">
+            <div class="partner-logo pt-ravi">
+                <img src="./assets/images/cleint-img/Pt._Ravishankar_Shukla_University_logo.png" alt="iit-log-wb"
+                    class="partner-logo-img">
+            </div>
+            <div class="partner-name"><span>Pt. Ravishankar Shukla
+                    University, Raipur</span></div>
+        </div>
+        <div class="partner-logo-and-name-box">
+            <div class="partner-logo csreda">
+                <img src="./assets/images/cleint-img/csreda.png" alt="iit-log-wb" class="partner-logo-img">
+            </div>
+            <div class="partner-name"><span>Chhattisgarh State
+                    Renewable
+                    Energy Development Agency</span></div>
+        </div>
+        <div class="partner-logo-and-name-box">
+            <div class="partner-logo vasu-Logistics">
+                <img src="./assets/images/cleint-img/footer-vasu-logo.png" alt="iit-log-wb" class="partner-logo-img">
+            </div>
+            <div class="partner-name"><span>Shree Vasu Logistics <br>
+                    Limited</span></div>
+        </div>
     </div>
-    <div class="partner-logo-and-name-box">
-      <div class="partner-logo forte">
-        <img src="./assets/images/cleint-img/forte-wb.png" alt="iit-log-wb" class="partner-logo-img">
-      </div>
-      <div class="partner-name"><span>Foundation For 
-        Technology
-         and Entrepreneurship</span></div>
+</div>
+
+
+<!-- Quote Section -->
+
+<div class="quote-section">
+    <div class="quote-text-div">
+        <h6>Looking For Quality and Affordable Services?</h6>
+        <h5>Get an online quote</h5>
     </div>
-    <div class="partner-logo-and-name-box">
-      <div class="partner-logo pt-ravi">
-        <img src="./assets/images/cleint-img/Pt._Ravishankar_Shukla_University_logo.png" alt="iit-log-wb" class="partner-logo-img">
-      </div>
-      <div class="partner-name"><span>Pt. Ravishankar Shukla
-        University, Raipur</span></div>
-    </div>
-    <div class="partner-logo-and-name-box">
-      <div class="partner-logo csreda">
-        <img src="./assets/images/cleint-img/csreda.png" alt="iit-log-wb" class="partner-logo-img">
-      </div>
-      <div class="partner-name"><span>Chhattisgarh State 
-        Renewable
-         Energy Development Agency</span></div>
-    </div>
-    <div class="partner-logo-and-name-box">
-      <div class="partner-logo vasu-Logistics">
-        <img src="./assets/images/cleint-img/footer-vasu-logo.png" alt="iit-log-wb" class="partner-logo-img">
-      </div>
-      <div class="partner-name"><span>Shree Vasu Logistics <br>
-        Limited</span></div>
-    </div>
-  </div>
+    <form>
+        <div class="form-div">
+            <div class="form-sub-div">
+                <mat-form-field class="mat-form" appearance="outline">
+                    <mat-label>Name</mat-label>
+                    <input matInput>
+                </mat-form-field>
+                <mat-form-field class="mat-form" appearance="outline">
+                    <mat-label>Email</mat-label>
+                    <input matInput>
+                </mat-form-field>
+            </div>
+            <div class="form-sub-div">
+                <mat-form-field class="mat-form" appearance="outline">
+                    <mat-label>Mobile Number</mat-label>
+                    <input matInput>
+                </mat-form-field>
+                <mat-form-field class="mat-form" appearance="outline">
+                    <mat-label>Query</mat-label>
+                    <textarea matInput placeholder="Write your query"></textarea>
+                </mat-form-field>
+            </div>
+            <button mat-raised-button class="submit-quote-btn">Submit</button>
+        </div>
+    </form>
 </div>

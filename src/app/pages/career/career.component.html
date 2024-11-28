@@ -1,0 +1,42 @@
+<div class="container">
+    <h1>Join Our Team!</h1>
+    <p>We are always on the lookout for passionate and talented individuals to join our growing family. <br>
+         If you're looking for a challenging and rewarding career, we'd love to hear from you!
+    </p>
+    <h6>Submit Your Application Here</h6>
+    <p>
+       Note:-  Make sure to provide accurate details and upload your
+        most recent resume. <br>
+        Our team will get back to you shortly after reviewing your application.
+    </p>
+    <form (ngSubmit)="onSubmit($event)" #form="ngForm">
+        <div class="form-section">
+            <mat-form-field appearance="outline">
+                <mat-label>Full Name</mat-label>
+                <input matInput>
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Email</mat-label>
+                <input matInput type="email">
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Phone Number</mat-label>
+                <input matInput type="tel">
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Current Location</mat-label>
+                <input matInput>
+            </mat-form-field>
+
+            <div>
+                <mat-label class="file-label">Upload Resume</mat-label>
+                <input type="file" id="uploadBtn" accept="application/pdf" (change)="onFileSelected($event)" />
+                <label class="file-input-lable" for="uploadBtn">
+                    <mat-icon class="upload-icon">file_upload</mat-icon> Choose File
+                </label>
+                <div class="file-name" *ngIf="fileName">{{ fileName }}</div>
+            </div>
+            <button mat-raised-button type="submit" class="submit-btn">Submit Form</button>
+        </div>
+    </form>
+</div>

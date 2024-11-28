@@ -6,6 +6,7 @@
     font-family: sans-serif;
     padding-left: 10px;
     padding-right: 10px;
+    padding-top: 5px;
     height: 60px;
     margin: 0;
 }
@@ -17,7 +18,7 @@
 }
 
 .nav-bar-link li {
-    margin-left: 35px;
+    margin-left: 25px;
     list-style-type: none;
     font-size: 15px;
 }
@@ -34,7 +35,7 @@
 }
 
 .tadoba-logo a img {
-    height: 45px;
+    height: 55px;
 }
 .search {
     display: flex;
@@ -80,7 +81,7 @@
     padding: 23px 23px 23px 0px;
     z-index: 999;
     background-color: #fff;
-    
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 
 }
 .nav-bar-link li:hover .trainings-workshops-sub-menu{
@@ -91,6 +92,7 @@
     padding: 23px 23px 23px 0px;
     z-index: 999;
     background-color: #fff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
 
 
@@ -101,7 +103,7 @@
     padding: 23px 23px 23px 0px;
     z-index: 999;
     background-color: #fff;
-    
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
 
 .products li:hover .our-product-sub-menu{
@@ -112,6 +114,7 @@
     z-index: 999;
     background-color: #fff;
     margin-left: 90px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
     
 }
 
@@ -124,6 +127,7 @@
     background-color: #fff;
     margin-left: 90px;
     width: 300px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
     
 }
 /* ================================================================ menu UL editing ======================================= */
@@ -232,7 +236,7 @@
 
 .signup-btn{
     background-color: #2c547f !important;
-    color: white;
+    color: white !important;
     border-radius: 15px !important;
     height: 35px;
     width: 90px;
@@ -242,7 +246,7 @@
 }
 .signup-btn:hover{
     background-color: #284e6d !important;
-    transform: scale(1.09)
+    transform: scale(1.03)
 }
 /* ===================================================== MEDIA QUERY ========================================== */
 
