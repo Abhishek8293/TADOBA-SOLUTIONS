@@ -93,59 +93,67 @@ export class HomeComponent implements OnInit {
       navigation: 'Go to Service 4',
     }
   ];
-products:Product[]=[
-  {
-    productName:"Auto ON/OFF  1/3 Phase With Dry Run Protection (Universal)",
-    productRating:4.5,
-    productAvailability:"in-stock",
-    productPrice:566.00,
-    productImg:"./assets/images/product/own-product/water-controller-o.png" 
- },
- {
-  productName:"Auto OFF  Single Phase With (Universal)",
-  productRating:3.5,
-  productAvailability:"in-stock",
-  productPrice:566.00,
-  productImg:"./assets/images/product/retail-product/solar-plate.png" 
-},
-{
-  productName:"Auto OFF  Single Phase (Tullu)",
-  productRating:4.5,
-  productAvailability:"in-stock",
-  productPrice:566.00,
-  productImg:"./assets/images/product/own-product/water-controller-o.png" 
-},
-{
-  productName:"36 Watt LED Street Light Lens Model With D2D",
-  productRating:2.5,
-  productAvailability:"in-stock",
-  productPrice:566.00,
-  productImg:"./assets/images/product/retail-product/solar-plate.png" 
-}
-]
-products3:Product[]=[
-  {
-    productName:"Auto ON/OFF  1/3 Phase With Dry Run Protection (Universal)",
-    productRating:4.5,
-    productAvailability:"in-stock",
-    productPrice:566.00,
-    productImg:"./assets/images/product/own-product/water-controller-o.png" 
- },
- {
-  productName:"Auto OFF  Single Phase With (Universal)",
-  productRating:3.5,
-  productAvailability:"in-stock",
-  productPrice:566.00,
-  productImg:"./assets/images/product/retail-product/solar-plate.png" 
-},
-{
-  productName:"Auto OFF  Single Phase (Tullu)",
-  productRating:4.5,
-  productAvailability:"in-stock",
-  productPrice:566.00,
-  productImg:"./assets/images/product/own-product/water-controller-o.png" 
-}
-]
+
+// products:Product[]=[
+//   {
+//     productId:1,
+//     productName:"Auto ON/OFF  1/3 Phase With Dry Run Protection (Universal)",
+//     productRating:4.5,
+//     productAvailability:"in-stock",
+//     productPrice:566.00,
+//     productImg:"./assets/images/product/own-product/water-controller-o.png" 
+//  },
+//  {
+//   productId:2,
+//   productName:"Auto OFF  Single Phase With (Universal)",
+//   productRating:3.5,
+//   productAvailability:"in-stock",
+//   productPrice:566.00,
+//   productImg:"./assets/images/product/retail-product/solar-plate.png" 
+// },
+// {
+//   productId:3,
+//   productName:"Auto OFF  Single Phase (Tullu)",
+//   productRating:4.5,
+//   productAvailability:"in-stock",
+//   productPrice:566.00,
+//   productImg:"./assets/images/product/own-product/water-controller-o.png" 
+// },
+// {
+//   productId:4,
+//   productName:"36 Watt LED Street Light Lens Model With D2D",
+//   productRating:2.5,
+//   productAvailability:"in-stock",
+//   productPrice:566.00,
+//   productImg:"./assets/images/product/retail-product/solar-plate.png" 
+// }
+// ]
+// products3:Product[]=[
+//   {
+//     productId:1,
+//     productName:"Auto ON/OFF  1/3 Phase With Dry Run Protection (Universal)",
+//     productRating:4.5,
+//     productAvailability:"in-stock",
+//     productPrice:566.00,
+//     productImg:"./assets/images/product/own-product/water-controller-o.png" 
+//  },
+//  {
+//   productId:1,
+//   productName:"Auto OFF  Single Phase With (Universal)",
+//   productRating:3.5,
+//   productAvailability:"in-stock",
+//   productPrice:566.00,
+//   productImg:"./assets/images/product/retail-product/solar-plate.png" 
+// },
+// {
+//   productId:1,
+//   productName:"Auto OFF  Single Phase (Tullu)",
+//   productRating:4.5,
+//   productAvailability:"in-stock",
+//   productPrice:566.00,
+//   productImg:"./assets/images/product/own-product/water-controller-o.png" 
+// }
+// ]
 
 
 
