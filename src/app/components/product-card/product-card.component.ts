@@ -27,6 +27,7 @@ export class ProductCardComponent {
   @Input() productRating!: number; 
   @Input() productAvailability!: string; 
   @Input() productPrice!: number;
+  @Input() productId!: string;
 
   rupee = faIndianRupee;
   rating = faStar;

@@ -7,13 +7,9 @@
             <mat-icon class="share-icon">share</mat-icon>
         </button>
     </div>
-    <app-carousel [images]="data" [autoSlide]="false"></app-carousel>
+    <app-carousel [images]="product.productImgUrl" [autoSlide]="false"></app-carousel>
     <div class="product-name-div">
-        <p class="product-name">
-            iQOO Z9 5G (Brushed Green, 8GB RAM, 128GB Storage) | Dimensity 7200 5G
-            Processor | Sony IMX882 OIS Camera | 120Hz AMOLED with 1800 nits Local
-            Peak Brightness
-        </p>
+        <p class="product-name">{{product.productName}}</p>
     </div>
     <div class="rating-div">
         <mat-icon class="star">star</mat-icon>
@@ -24,7 +20,7 @@
         <h6 class="rating-count">(1,234)</h6>
     </div>
     <div class="price-div">
-        <h6 class="price">₹12,235</h6>
+        <h6 class="price">₹{{product.productPrice}}</h6>
     </div>
 
     <!-- btn div -->
@@ -43,13 +39,10 @@
         <h6 class="product-sub-heading">Product Details</h6>
         <table class="custom-striped-table">
             <tbody>
-                <tr class="row" *ngFor="let product of smartphoneAttributes; let i = index"
+                <tr class="row" *ngFor="let data of product.productDescription; let i = index"
                     [ngClass]="{ 'even-row': i % 2 == 0, 'odd-row': i % 2 != 0 }">
-                    <td *ngIf="i < 6" class="table-info-name">
-                        {{ product.attributeName }}
-                    </td>
                     <td *ngIf="i < 6" class="table-info-value">
-                        {{ product.attributeValue }}
+                        {{ data}}
                     </td>
                 </tr>
             </tbody>
@@ -126,14 +119,14 @@
     <div class="div-img">
         <div class="div-1">
             <div class="div-sub-img">
-                <div class="sub-img" *ngFor="let img of data; let i = index" [ngStyle]="{
+                <div class="sub-img" *ngFor="let img of product.productImgUrl; let i = index" [ngStyle]="{
             'background-color': i == selectedImageIndex ? 'lightgray' : 'white'
           }">
-                    <img class="sub-button-img" [src]="img.imgUrl" alt="Product Image" (click)="selectImage(i)" />
+                    <img class="sub-button-img" [src]="img" alt="Product Image" (click)="selectImage(i)" />
                 </div>
             </div>
             <div class="div-main-img">
-                <img class="main-img" [src]="data[selectedImageIndex].imgUrl" alt="Product Image" />
+                <img class="main-img" [src]="product.productImgUrl[selectedImageIndex]" alt="Product Image" />
             </div>
         </div>
         <div class="div-2">
@@ -158,11 +151,7 @@
                 </button>
             </div>
             <div class="product-info-title">
-                <p class="product-name">
-                    iQOO Z9 5G (Brushed Green, 8GB RAM, 128GB Storage) | Dimensity 7200 5G
-                    Processor | Sony IMX882 OIS Camera | 120Hz AMOLED with 1800 nits Local
-                    Peak Brightness | 44W Charger in The Box
-                </p>
+                <p class="product-name">{{product.productName}}</p>
             </div>
             <div class="large-rating-div">
                 <mat-icon class="star">star</mat-icon>
@@ -173,21 +162,18 @@
                 <h6 class="large-rating-count">1,234 Ratings & 123 Reviews</h6>
             </div>
             <div class="large-price-div">
-                <h6 class="large-price">₹12,235</h6>
+                <h6 class="large-price">₹{{product.productPrice}}</h6>
             </div>
         </div>
         <div class="product-specifications">
             <div class="">
-                <h6 class="product-sub-heading">Product Details</h6>
+                <h6 class="product-sub-heading">Product Description</h6>
                 <table class="custom-striped-table">
                     <tbody>
-                        <tr class="row" *ngFor="let product of smartphoneAttributes; let i = index"
+                        <tr class="row" *ngFor="let data of product.productDescription; let i = index"
                             [ngClass]="{ 'even-row': i % 2 == 0, 'odd-row': i % 2 != 0 }">
-                            <td *ngIf="i < 6" class="table-info-name">
-                                {{ product.attributeName }}
-                            </td>
                             <td *ngIf="i < 6" class="table-info-value">
-                                {{ product.attributeValue }}
+                                {{ data}}
                             </td>
                         </tr>
                     </tbody>
