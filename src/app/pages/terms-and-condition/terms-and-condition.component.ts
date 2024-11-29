@@ -11,6 +11,6 @@ import { faArrowRight, faBullseye } from '@fortawesome/free-solid-svg-icons';
   styleUrl: './terms-and-condition.component.css'
 })
 export class TermsAndConditionComponent {
-  bullete=faBullseye
+  bullete=faBullseye;
 
 }

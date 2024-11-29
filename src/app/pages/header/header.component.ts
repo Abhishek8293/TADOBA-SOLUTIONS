@@ -4,11 +4,18 @@ import { MatButtonModule } from '@angular/material/button';
 import { RouterModule } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faBars, faBoxOpen, faBriefcase, faBuildingCircleArrowRight, faGears, faHouseMedicalCircleExclamation, faPaste, faPeopleGroup, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { SignUpComponent } from '../sign-up/sign-up.component';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [FontAwesomeModule,MatButtonModule,CommonModule,RouterModule],
+  imports: [
+    FontAwesomeModule,
+    MatButtonModule,
+    CommonModule,
+    RouterModule,
+    SignUpComponent
+  ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
@@ -21,10 +28,20 @@ export class HeaderComponent {
   about=faPeopleGroup
   closeMenu = faTimes
   career=faBriefcase
+
+
   isMenuOpen = false;
+  isSignUpVisible=false;
 
   toggleMenu() {
     this.isMenuOpen = !this.isMenuOpen;
+  }
+  openSignUpPopup(){
+    this.isSignUpVisible=true;
+
+  }
+  closeSignUpPopup(): void {
+    this.isSignUpVisible = false;
   }
 
 }
