@@ -1,20 +1,22 @@
 <div class="container">
-    <button mat-raised-button class="back-btn" (click)="navigateBack()" ><mat-icon>arrow_back</mat-icon>Back</button>
+    <div class="top-div">
+        <button mat-raised-button class="back-btn" (click)="navigateBack()"><mat-icon>arrow_back</mat-icon>Back</button>
+        <div class="search-box">
+            <button class="btn-search"><mat-icon>search</mat-icon></button>
+            <input type="text" class="input-search" placeholder="Search Products" [(ngModel)]="searchTerm"
+                (input)="onSearch()">
+        </div>
+    </div>
     <div class="cat-name-div">
         <h3>Our Products</h3>
         <mat-icon>chevron_right</mat-icon>
         <h3>Electronics Products</h3>
     </div>
     <div class="product-list-section">
-        @for (data of products; track $index) {
-            <app-product-card
-                [productImg]="data.productImgUrl[0]"
-                [productName]="data.productName"
-                [productRating]="data.productRating"
-                [productAvailability]="data.productAvailability"
-                [productPrice]="data.productPrice"
-                [productId]="data.productId"
-            ></app-product-card>
+        @for (data of products; track $index;) {
+        <app-product-card [productImg]="data.productImgUrl[0]" [productName]="data.productName"
+            [productRating]="data.productRating" [productAvailability]="data.productAvailability"
+            [productPrice]="data.productPrice" [productId]="data.productId"></app-product-card>
         }
     </div>
 </div>
