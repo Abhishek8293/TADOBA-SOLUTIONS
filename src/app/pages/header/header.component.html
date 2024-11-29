@@ -43,7 +43,11 @@
         </li>
         <li><a routerLink="career"><fa-icon [icon]="career"></fa-icon>Career</a></li>
         <li><a routerLink="about-us"><fa-icon [icon]="about"></fa-icon>About Us</a></li>
-        <li><button mat-button class="signup-btn">SignUp</button></li>
+        <li><button mat-button class="signup-btn" (click)="openSignUpPopup()">SignUp</button></li>
+        <div class="backdrop" *ngIf="isSignUpVisible" (click)="closeSignUpPopup()" ></div>
+        <div class="modal" *ngIf="isSignUpVisible">
+        <app-sign-up></app-sign-up>
+        </div>
     </ul>
     <div class="hamburger-menu">
         <!-- <fa-icon [icon]="hamBurgerMenu" (click)="toggleMenu()"></fa-icon> -->
@@ -95,3 +99,5 @@
         <li><button class="signup-btn">SignUp</button></li>
     </ul>
 </header>
+
+

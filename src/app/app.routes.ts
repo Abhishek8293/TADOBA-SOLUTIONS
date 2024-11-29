@@ -6,18 +6,16 @@ import { ViewProductComponent } from './pages/view-product/view-product.componen
 import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { TermsAndConditionComponent } from './pages/terms-and-condition/terms-and-condition.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
+import { SignUpComponent } from './pages/sign-up/sign-up.component';
 
 export const routes: Routes = [
     {path: '',component:HomeComponent},
     {path:'career',component:CareerComponent},
-    {
-        path:'our-products',
-        component:OurProductsComponent,
-    },
+    {path:'our-products',component:OurProductsComponent},
     {path:'product',component:ViewProductComponent},
-    {component:AboutUsComponent, path:"about-us"},
+    {path:"about-us", component:AboutUsComponent},
     {path:'terms&conditions', component:TermsAndConditionComponent},
     {path:'privacy-policy', component:PrivacyPolicyComponent},
-
     {path:'product/:productId',component:ViewProductComponent},
+    {path:'sign-up', component:SignUpComponent},
 ];
