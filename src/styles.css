@@ -9,3 +9,10 @@ body {
   margin: 0;
   padding: 0;
 }
+
+@media (min-width:1790px){
+  body{
+    width: 85%;
+    margin: auto;
+  }
+}
