@@ -10,6 +10,12 @@
     height: 60px;
     margin: 0;
 }
+ a{
+    font-family: "Open Sans", sans-serif !important;
+    color: #373737 !important;
+    
+  }
+  
 
 .nav-bar-link {
     display: flex;
@@ -227,11 +233,17 @@
     top: -100%; /* Start off-screen */
     left: 0;
     width: 100%;
-    background-color: rgba(39, 38, 38, 0.918);
+    /* background-color: rgba(39, 38, 38, 0.918); */
+    background-color: #fff;
     height: 70vh;
-    z-index: 100;
+    z-index: 1000;
     text-align: left;
     transition: top 0.5s ease;
+}
+fa-icon{
+    margin-left: 5px;
+    font-size: 10px;
+
 }
 
 .signup-btn{
@@ -272,7 +284,7 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     z-index: 1100; 
   }
-  
+ 
 
 
 
@@ -301,10 +313,11 @@
     .nav-bar-link-res li{
         padding-left: 70px;
         list-style-type: none;
+        border-bottom: 1px solid #ececec;
     }
     .nav-bar-link-res li a{
         font-size: 17px;
-        color: white;
+        color: #373737;
         text-decoration: none;
     }
     .nav-bar-link-res li a fa-icon{
@@ -314,6 +327,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        
     }
     .nav-bar-link-res.active li button{
         border: 1px solid black;
@@ -344,10 +358,27 @@
     .customized-industrial-solution-sub-menu-res{
         display: none;
     }
+    .products-res  li {
+        border-bottom: 1px solid #ececec;
+        
+    }
+    .our-product-sub-menu-res li {
+        border-bottom: 1px solid #ececec;
+    }
+    .trainings-workshops-sub-menu-res li {
+        border-bottom: 1px solid #ececec;
+    }
+    .services-res li {
+        border-bottom: 1px solid #ececec;
+    }
+    .customized-industrial-solution-sub-menu-res li {
+        border-bottom: 1px solid #ececec;
+    }
     /* ================= hover css================== */
     .nav-bar-link-res li:hover .services-res{
         display: block;
         background-color: white;
+        margin-left: 30px;  
         
         
         
@@ -356,12 +387,14 @@
     .nav-bar-link-res li:hover .trainings-workshops-sub-menu-res{
         display: block;
         background-color: white;
+        margin-left: 30px;  
     }
     
     
     .nav-bar-link-res li:hover .products-res{
         display: block;
         background-color: white;
+        margin-left: 30px;  
         
     }
     
@@ -369,6 +402,7 @@
         display: block;
         margin-left: 10px;
         background-color: white;
+        margin-left: 30px;  
         
     }
     
@@ -377,6 +411,7 @@
         margin-left: 10px;
         background-color: white;
         width: 300px;
+        margin-left: 30px;  
         
     }
     /* ===================================================== */
@@ -389,6 +424,7 @@
         width: 100%;
         margin: 0;
         padding: 0;
+        margin-left: 30px;  
     }
     .nav-bar-link-res li:hover .trainings-workshops-sub-menu-res ul{
         display: flex;
@@ -398,6 +434,7 @@
         width: 100%;
         margin: 0;
         padding: 0;
+        margin-left: 30px;  
     }
     
     .nav-bar-link-res li:hover .services-res ul{
@@ -408,6 +445,7 @@
         width: 100%;
         margin: 0;
         padding: 0;
+        margin-left: 30px;  
     }
     .products-res li:hover .our-product-sub-menu-res ul{
         display: flex;
@@ -417,6 +455,7 @@
         width: 100%;
         margin: 0;
         padding: 0;
+        margin-left: 30px;  
     }
     .services-res li:hover .customized-industrial-solution-sub-menu-res ul{
         display: flex;
@@ -426,6 +465,7 @@
         width: 100%;
         margin: 0;
         padding: 0;
+        margin-left: 30px;  
     }
 
 
@@ -474,12 +514,19 @@
     .nav-bar-link-res li{
         padding-left: 70px;
         list-style-type: none;
+        border-bottom: 1px solid #ececec;
+        text-align: left;
     }
     .nav-bar-link-res li a{
         font-size: 17px;
-        color: white;
         text-decoration: none;
+        
     }
+    .nav-bar-link-res a{
+        font-family: "Open Sans", sans-serif;
+        color: #373737;
+    }
+
     .nav-bar-link-res li a fa-icon{
         margin-right: 5px;
     }
@@ -504,6 +551,7 @@
     /* =================================== menu css======================= */
     .products-res{
         display: none;
+        
     }
     .our-product-sub-menu-res{
         display: none;
@@ -514,8 +562,21 @@
     .services-res{
         display: none;
     }
-    .customized-industrial-solution-sub-menu-res{
-        display: none;
+    .products-res  li {
+        border-bottom: 1px solid #ececec;
+        
+    }
+    .our-product-sub-menu-res li {
+        border-bottom: 1px solid #ececec;
+    }
+    .trainings-workshops-sub-menu-res li {
+        border-bottom: 1px solid #ececec;
+    }
+    .services-res li {
+        border-bottom: 1px solid #ececec;
+    }
+    .customized-industrial-solution-sub-menu-res li {
+        border-bottom: 1px solid #ececec;
     }
     /* ================= hover css================== */
     .nav-bar-link-res li:hover .services-res{
@@ -535,6 +596,7 @@
     .nav-bar-link-res li:hover .products-res{
         display: block;
         background-color: white;
+        margin-left: 30px;
         
     }
     
@@ -562,6 +624,7 @@
         width: 100%;
         margin: 0;
         padding: 0;
+        margin-left: 30px;  
     }
     .nav-bar-link-res li:hover .trainings-workshops-sub-menu-res ul{
         display: flex;
@@ -571,6 +634,7 @@
         width: 100%;
         margin: 0;
         padding: 0;
+        margin-left: 30px;
     }
     
     .nav-bar-link-res li:hover .services-res ul{
@@ -581,6 +645,7 @@
         width: 100%;
         margin: 0;
         padding: 0;
+        margin-left: 30px;
     }
     .products-res li:hover .our-product-sub-menu-res ul{
         display: flex;
@@ -590,6 +655,7 @@
         width: 100%;
         margin: 0;
         padding: 0;
+        margin-left: 30px;
     }
     .services-res li:hover .customized-industrial-solution-sub-menu-res ul{
         display: flex;
@@ -599,6 +665,7 @@
         width: 100%;
         margin: 0;
         padding: 0;
+        margin-left: 30px;
     }
 
 

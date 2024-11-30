@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { RouterModule } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { faBars, faBoxOpen, faBriefcase, faBuildingCircleArrowRight, faGears, faHouseMedicalCircleExclamation, faPaste, faPeopleGroup, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faAngleDown, faBars, faBoxOpen, faBriefcase, faBuildingCircleArrowRight, faGears, faHouseMedicalCircleExclamation, faPaste, faPeopleGroup, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { SignUpComponent } from '../sign-up/sign-up.component';
 
 @Component({
@@ -28,6 +28,7 @@ export class HeaderComponent {
   about=faPeopleGroup
   closeMenu = faTimes
   career=faBriefcase
+  angleDown=faAngleDown
 
 
   isMenuOpen = false;
