@@ -5,7 +5,11 @@ import { MatIconModule } from '@angular/material/icon';
 import { RouterModule } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
-import { faEye, faIndianRupee, faStar } from '@fortawesome/free-solid-svg-icons';
+import {
+  faEye,
+  faIndianRupee,
+  faStar,
+} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-product-card',
@@ -15,37 +19,31 @@ import { faEye, faIndianRupee, faStar } from '@fortawesome/free-solid-svg-icons'
     MatButtonModule,
     MatIconModule,
     FontAwesomeModule,
-    RouterModule
+    RouterModule,
   ],
   templateUrl: './product-card.component.html',
-  styleUrl: './product-card.component.css'
+  styleUrl: './product-card.component.css',
 })
 export class ProductCardComponent {
-
-  @Input() productImg!: string; 
-  @Input() productName!: string; 
-  @Input() productRating!: number; 
-  @Input() productAvailability!: string; 
+  @Input() productImg!: string;
+  @Input() productName!: string;
+  @Input() productRating!: number;
+  @Input() productAvailability!: string;
   @Input() productPrice!: number;
   @Input() productId!: string;
 
   rupee = faIndianRupee;
   rating = faStar;
-  whatsapp=faWhatsapp;
-  viewDetails=faEye;
+  whatsapp = faWhatsapp;
+  viewDetails = faEye;
 
   phoneNumber: string = '+918319348293';
 
-
-  callNumber(): void {
-    window.location.href = `tel:${this.phoneNumber}`;
-  }
-
-  openWhatsApp(productId:string): void {
-    const currentUrl = `http://localhost:4200/products/${productId}`;
+  openWhatsApp(productId: string): void {
+    const currentUrl = encodeURIComponent(
+      `http://localhost:4200/products/${productId}`
+    );
     const whatsappUrl = `https://wa.me/${this.phoneNumber}?text=${currentUrl}`;
-        window.open(whatsappUrl, '_blank');
+    window.open(whatsappUrl, '_blank');
   }
-
-
 }
