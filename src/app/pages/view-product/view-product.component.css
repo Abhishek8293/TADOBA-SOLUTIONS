@@ -83,6 +83,7 @@
     justify-content: space-evenly;
     align-items: center;
     margin: 10px;
+    gap: 5px;
 }
 .product-details {
     /* border: 2px solid brown; */
