@@ -40,10 +40,11 @@ export class ProductCardComponent {
   phoneNumber: string = '+918319348293';
 
   openWhatsApp(productId: string): void {
-    const currentUrl = encodeURIComponent(
-      `http://localhost:4200/products/${productId}`
-    );
-    const whatsappUrl = `https://wa.me/${this.phoneNumber}?text=${currentUrl}`;
-    window.open(whatsappUrl, '_blank');
-  }
+   // Ensure that the productId is properly encoded if it contains spaces or special characters
+  const currentUrl = `https://tadobasolutions.netlify.app/product/${encodeURIComponent(productId)}`;
+  // Encode the entire URL, so any special characters are handled
+  const whatsappUrl = `https://wa.me/${this.phoneNumber}?text=${encodeURIComponent(currentUrl)}`;
+  window.open(whatsappUrl, '_blank');
+}
+
 }
