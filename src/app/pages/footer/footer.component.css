@@ -145,16 +145,30 @@
 }
 
 
-@media (min-width: 426px) and (max-width:768px) {
+@media (min-width: 426px) and (max-width:769px) {
   .links{
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: center;
+    display: grid; 
+    grid-template-rows: auto auto; 
+    grid-template-columns: auto auto auto; 
+    gap: 10px; 
   }
   .sec{
     margin-right: 30px;
   }
+  .links ul li a {
+    text-decoration: none;
+    color: #9c9c9c;
+    font-size: 13px;
+    transition: transform 0.4s ease, color 0.4s ease;
+    font-family: "Open Sans", sans-serif;
+  }
+  .links h3 {
+    color: #F5F6FA;
+    font-size: 18px;
+    margin: 5px;
+  }
 }
+
 @media (max-width: 426px) {
   .sec {
     margin-bottom: 27px;
