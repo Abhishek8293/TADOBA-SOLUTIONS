@@ -1,293 +1,303 @@
-.hero-section{
-    display: flex;
-    justify-content: space-around;
-    padding: 5px 70px 5px 5px;
 
+.hero-section {
+  display: flex;
+  justify-content: space-around;
+  padding: 5px 70px 5px 5px;
 }
-.about-us-text{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding-left: 65px;
-    position: relative;
-
+.about-us-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-left: 65px;
+  position: relative;
 }
-.heading{
-    display: flex;
-    align-items: flex-start;  
+.heading {
+  display: flex;
+  align-items: flex-start;
 }
-.heading h4{
-    font-family: 'Inria Serif', serif;
-    font-size: 60px;
-    color: blueviolet;
-    font-weight: bold;
+.heading h4 {
+  font-family: "Inria Serif", serif;
+  font-size: 60px;
+  color: blueviolet;
+  font-weight: bold;
 }
-.about-us-des{
-    position: absolute;
-    font-family: "Open Sans", sans-serif;
-    font-size: 20px;
-    top: 180px;
-
+.about-us-des {
+  position: absolute;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  top: 180px;
 }
-.about-us-des p{
-    line-height: 30px;
+.about-us-des p {
+  line-height: 30px;
 }
-.company-projects-reviews{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.company-projects-reviews {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-.col{
-    margin-right: 10px;
-    height: 70px;
-    width: 180px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-start;
+.col {
+  margin-right: 10px;
+  height: 70px;
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
 }
-.reviw{
-    border-right: 1.5px solid black;
+.reviw {
+  border-right: 1.5px solid black;
 }
-.experience{
-    border-right: 1.5px solid black;
+.experience {
+  border-right: 1.5px solid black;
 }
 .col-num {
-    color: blueviolet;
-    font-family: 'Inria Serif', serif;
-    font-weight: bold;
-    font-size: 30px;
+  color: blueviolet;
+  font-family: "Inria Serif", serif;
+  font-weight: bold;
+  font-size: 30px;
 }
 .col-text {
-    font-family: "Open Sans", sans-serif;
-    font-size: 19px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 19px;
 }
-.about-us-img{
-    border-top-left-radius: 82px;
-    border-bottom-right-radius: 82px;
-    height: 460px;
-    width: 590px;
+.about-us-img {
+  border-top-left-radius: 82px;
+  border-bottom-right-radius: 82px;
+  height: 460px;
+  width: 560px;
 }
-.about-us-img img{
-    width: 100%;
-    height: 100%;
+.about-us-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 /* ================================= vision-mission======================== */
-.vision-mission{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-    padding: 5px 60px 5px 60px;
+.vision-mission {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding: 5px 60px 5px 60px;
 }
-.vision-mision-heading h4{
-    color: blueviolet;
-    font-size: 30px;
+.vision-mision-heading h4 {
+  color: blueviolet;
+  font-size: 30px;
 }
-.vision-mission-des p{
-    font-size: 20px;
-    color: rgb(65, 64, 64);
-    line-height: 1.5;
-    font-family: "Open Sans", sans-serif;
+.vision-mission-des p {
+  font-size: 20px;
+  color: rgb(65, 64, 64);
+  line-height: 1.5;
+  font-family: "Open Sans", sans-serif;
 }
 
-.business-des p{
-    font-size: 20px;
-    color: rgb(65, 64, 64);
-    line-height: 1.5;
-    font-family: "Open Sans", sans-serif;
+.business-des p {
+  font-size: 20px;
+  color: rgb(65, 64, 64);
+  line-height: 1.5;
+  font-family: "Open Sans", sans-serif;
 }
-.business-des{
-    margin-bottom: 20px;
+.business-des {
+  margin-bottom: 20px;
 }
-.business-heading h4{
-    color: blueviolet;
-    font-size: 30px;
-    font-family: "Open Sans", sans-serif;
+.business-heading h4 {
+  color: blueviolet;
+  font-size: 30px;
+  font-family: "Open Sans", sans-serif;
 }
-.business-section{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-    padding: 5px 60px 5px 60px;
+.business-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding: 5px 60px 5px 60px;
 }
-.business-brief-des{
-    display: flex;
-    justify-content: space-around;
-    
+.business-brief-des {
+  display: flex;
+  justify-content: space-around;
 }
-.business-brief-des-img{
-    width: 640px;
-    height: 450px;
+.business-brief-des-img {
+  width: 640px;
+  height: 450px;
 }
-.business-brief-des-img img{
-    width: 100%;
-    height: 100%;
+.business-brief-des-img img {
+  width: 100%;
+  height: 100%;
 }
-.business-brief-text{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
-    background-color: blueviolet;
-    font-family: "Open Sans", sans-serif;
-    line-height: 1.5;
+.business-brief-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  background-color: blueviolet;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5;
 }
-.business-brief-des-text-heading{
-    padding-left: 20px;
+.business-brief-des-text-heading {
+  padding-left: 20px;
 }
-.business-brief-des-text-heading h5{
-    font-size: 25px;
-    color: white;
-    font-family: "Open Sans", sans-serif;
+.business-brief-des-text-heading h5 {
+  font-size: 25px;
+  color: white;
+  font-family: "Open Sans", sans-serif;
 }
-.business-brief-text ul li{
-    margin-bottom: 15px;
-    font-size: 20px;
+.business-brief-text ul li {
+  margin-bottom: 15px;
+  font-size: 20px;
 }
-.about-img-business{
-    object-fit: cover;
+.about-img-business {
+  object-fit: cover;
 }
-ul{
-    list-style-type: none;
-    margin-top: -20px;
+ul {
+  list-style-type: none;
+  margin-top: -20px;
 }
-ul li{
-    color: white;
+ul li {
+  color: white;
 }
-fa-icon{
-    margin-right: 7px;
-    color: white;
+fa-icon {
+  margin-right: 7px;
+  color: white;
 }
 /* ================================== media Query============================== */
 
 /* laptop */
-@media (min-width:426px) and (max-width:768px){
-    .hero-section{
-        padding:5px;
-    }
+@media (min-width: 426px) and (max-width: 768px) {
+  .hero-section {
+    padding: 5px;
+  }
 
-    .about-us-text{
-        width: 330px;
-
-    }
-    .headingh4{
-        font-size: 35px;
-    }
-    .about-us-des{
-        font-size: 16px;
-        top: 90px;
-    }
-    .about-us-img{
-        height: 340px;
-        width: 480px;
-    }
-    .heading{
-        margin-top: -50px;
-    }
-    /* .company-projects-reviews{
+  .about-us-text {
+    width: 330px;
+  }
+  .headingh4 {
+    font-size: 35px;
+  }
+  .about-us-des {
+    font-size: 16px;
+    top: 90px;
+  }
+  .about-us-img {
+    height: 340px;
+    width: 480px;
+  }
+  .heading {
+    margin-top: -50px;
+  }
+  /* .company-projects-reviews{
         flex-wrap: wrap;
     } */
-    .col{
-        width: 100px;
-        height: 50px;
-    }
-    .col-num{
-        font-size: 25px;
-    }
-    .col-text{
-        font-size: 11.1px;
-    }
-    .vision-mision-heading{
-        font-size: 25px;
-    }
-    .business-brief-des-img{
-        width: 300px;
-        
-    }
-    .business-brief-text{
-        width: 400px;
-    }
-    .business-brief-text ul li{
-        font-size: 15px;
-        line-height: 18px;
-        font-family: 'Inria Serif', serif;
-
-    }
-
-
-    
+  .col {
+    width: 100px;
+    height: 50px;
+  }
+  .col-num {
+    font-size: 25px;
+  }
+  .col-text {
+    font-size: 11.1px;
+  }
+  .vision-mision-heading {
+    font-size: 25px;
+  }
+  .business-brief-des-img {
+    width: 300px;
+  }
+  .business-brief-text {
+    width: 400px;
+  }
+  .business-brief-text ul li {
+    font-size: 15px;
+    line-height: 18px;
+    font-family: "Inria Serif", serif;
+  }
 }
 
 /* mobile */
-@media (min-width: 320px) and (max-width:425px){
-    .hero-section{
-        flex-direction: column;
-        position: relative;
-        
-    }
-    .heading{
-        margin-top: 10px;
-    }
-    .about-us-des{
-        text-align: center;
-        width: 410px;
-        margin-left: -65px;
-    }
-    .about-us-img{
-        border-top-left-radius: 0;
-        border-bottom-right-radius: 0;
-        position: absolute;
-        top: 20px;
-        width:410px;
-        height:150px;
-    }
-    .about-us-img img{
+@media (min-width: 320px) and (max-width: 425px) {
+  .hero-section {
+    flex-direction: column;
+    position: relative;
+  }
+  .heading {
+    margin-top: 10px;
+  }
+  .about-us-des {
+    text-align: center;
+    margin-left: -65px;
+    font-size: 16px;
+  }
+  .about-us-img {
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+    position: absolute;
+    top: 20px;
+    width: 382px;
+    height: 170px;
+  }
+  .about-us-img img {
     width: 100%;
     height: 100%;
-    }
-    .about-us-img{
-        object-fit: cover;
-    }
-    .company-projects-reviews{
-        margin-top: 170px;
-        margin-left: 60px;
-    }
-    .col{
-        text-align: center;
+    object-fit: cover;
+    opacity: 90%;
+  }
+  .company-projects-reviews {
+    margin-top: 170px;
+    margin-left: 40px;
+  }
+  .col {
+    text-align: center;
+  }
+  .col-num {
+    text-align: center;
+    width: 100%;
+  }
+  .col-text {
+    text-align: center;
+    width: 100%;
+  }
+  .reviw {
+    border-right: 0;
+  }
+  .experience {
+    border-right: 0;
+  }
 
-    }
-    .col-num{
-        text-align: center;
-        width: 100%;
-    }
-    .col-text{
-        text-align: center;
-        width: 100%;
-    }
-    .reviw{
-        border-right: 0;
-        
-    }
-    .experience{
-        border-right: 0;
-    }
-
-    .about-us-text{
-        z-index: 500;
-    }
-    .company-projects-reviews{
-        flex-direction: column;
-    }
-    .business-brief-des-img{
-        display: none;
-    }
-    .business-brief-text{
-        width: 410px;
-    }
-
+  .about-us-text {
+    z-index: 500;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+  .company-projects-reviews {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .business-brief-des-img {
+    display: none;
+  }
+  .business-brief-text {
+    /* width: 100%; */
+    padding: 5px;
+  }
+  .vision-mission{
+    padding: 5px 20px 5px 20px;
+  }
+  .vision-mission-des p{
+    font-size: 18px;
+  }
+  .business-section{
+    padding: 5px 20px 5px 20px;
+  }
+  .business-des p{
+    font-size: 18px;
+  }
+  .business-brief-text ul li {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
 }
