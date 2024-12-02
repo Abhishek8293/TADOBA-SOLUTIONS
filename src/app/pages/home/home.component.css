@@ -278,6 +278,20 @@
   margin: 0;
   font-family: "Open Sans", sans-serif;
 }
+.completed-badge{
+  background-color: #25d366;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+.project-details-tile:hover .completed-badge{
+  background-color: white;
+  color: #25d366;
+}
+
 
 /* Quote Section */
 
@@ -415,6 +429,15 @@
   .service-container {
     padding: 10px;
   }
+  .service-container h6{
+    font-size: 20px;
+  }
+  .product-section-heading h6{
+    font-size: 20px;
+  }
+  .awards-container h6{
+    font-size: 20px;
+  }
   .service-card-list {
     display: flex;
     flex-direction: column;
@@ -429,11 +452,52 @@
     align-items: center;
     gap: 10px;
   }
+  .project-container{
+    padding: 10px;
+  }
   .project-sub-container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
+  }
+  .project-container .sub-heading{
+    font-size: 20px;
+  }
+  .project-sub-container .project-details-tile {
+    display: inline-flex;
+    align-items: center;
+    height: 30px;
+    border-radius: 15px;
+    padding: 5px 10px;
+    background-color: #d9d9d9;
+    white-space: nowrap;
+    width: auto;
+  }
+  .project-sub-container .project-details-tile h6 {
+    font-size: 12px;
+    font-weight: 600;
+    color: #373737;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+  }
+  .completed-badge{
+    background-color: #25d366;
+    color: #fff;
+    font-size: 9px;
+    font-weight: 600;
+    padding: 5px 5px;
+    border-radius: 5px;
+    margin-left: 10px;
+  }
+  .our-partner-heading h6 {
+    font-size: 20px;
+    color: #1a2a36;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-family: "Roboto", serif;
   }
   .partner-logo-and-name {
     flex-wrap: wrap;
@@ -498,7 +562,7 @@
   }
   .project-container {
     background-color: #fff;
-    padding: 10px;
+    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -507,7 +571,7 @@
     flex-wrap: wrap;
   }
   .partner-logo-and-name-box {
-    margin: 20px 10px 5px 15px;
+    margin: 20px 10px 10px 15px;
     width: 200px;
   }
   .quote-section .form-div .mat-form {
@@ -564,7 +628,7 @@
   }
   .project-container {
     background-color: #fff;
-    padding: 10px;
+    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
