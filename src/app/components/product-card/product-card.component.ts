@@ -41,7 +41,7 @@ export class ProductCardComponent {
 
   openWhatsApp(productId: string): void {
     const currentUrl = encodeURIComponent(
-      `http://localhost:4200/products/${productId}`
+      `${window.location.href}/${productId}`
     );
     const whatsappUrl = `https://wa.me/${this.phoneNumber}?text=${currentUrl}`;
     window.open(whatsappUrl, '_blank');
