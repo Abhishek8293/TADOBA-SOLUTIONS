@@ -1,40 +1,40 @@
 <header class="container">
     <div class="tadoba-logo"><a href=" "><img src="./assets/images/logo.png" alt="Logo"></a></div>
     <ul class="nav-bar-link">
-        <li><a href="#"><fa-icon [icon]="product"></fa-icon>Products</a>
+        <li><a ><fa-icon [icon]="productIcon"></fa-icon>Products</a>
             <div class="products">
                 <ul>
                     <li><a routerLink="our-products">Our Products</a>
                         <div class="our-product-sub-menu">
                             <ul>
-                                <li><a href="#">Electromechanic Products</a></li>
-                                <li><a href="#">Solar Products</a></li>
-                                <li><a href="#">Agricultural Products</a></li>
+                                <li><a >Electromechanic Products</a></li>
+                                <li><a >Solar Products</a></li>
+                                <li><a >Agricultural Products</a></li>
                             </ul>
                         </div>
                     </li>
-                    <li><a href="#">Retail Products</a></li>
+                    <li><a >Retail Products</a></li>
                 </ul>
             </div>
         </li>
-        <li><a href="#"><fa-icon [icon]="course"></fa-icon>Trainings & Workshops</a>
+        <li><a ><fa-icon [icon]="course"></fa-icon>Trainings & Workshops</a>
             <div class="trainings-workshops-sub-menu">
                 <ul>
-                    <li><a href="#">Certificate Program</a></li>
+                    <li><a >Certificate Program</a></li>
                 </ul>
             </div>
         </li>
-        <li><a href="#"><fa-icon [icon]="service"></fa-icon>Services & Maintenance</a>
+        <li><a ><fa-icon [icon]="service"></fa-icon>Services & Maintenance</a>
             <div class="services">
                 <ul>
-                    <li><a href="#">Solar Pv Plant Installation</a></li>
-                    <li><a href="#">Customized Industrial Solutions</a>
+                    <li><a >Solar Pv Plant Installation</a></li>
+                    <li><a >Customized Industrial Solutions</a>
                         <div class="customized-industrial-solution-sub-menu">
                             <ul>
-                                <li><a href="#">PCB Design & Fabrication</a></li>
-                                <li><a href="#">Water Overflow Control Solutions</a></li>
-                                <li><a href="#">Electronic Circuitry Customization</a></li>
-                                <li><a href="#">3D Prototype Printing</a></li>
+                                <li><a >PCB Design & Fabrication</a></li>
+                                <li><a >Water Overflow Control Solutions</a></li>
+                                <li><a >Electronic Circuitry Customization</a></li>
+                                <li><a >3D Prototype Printing</a></li>
                             </ul>
                         </div>
                     </li>
@@ -54,40 +54,40 @@
         <fa-icon [icon]="isMenuOpen ? closeMenu : hamBurgerMenu" (click)="toggleMenu()"></fa-icon>
     </div>
     <ul class="nav-bar-link-res" [class.active]="isMenuOpen">
-        <li><a><fa-icon [icon]="product"></fa-icon>Products<fa-icon [icon]="angleDown"></fa-icon></a>
-            <div class="products-res">
+        <li><a (click)="toggleDropdown('products')"><fa-icon [icon]="productIcon"></fa-icon>Products<fa-icon [icon]="angleDown"></fa-icon></a>
+            <div class="products-res"  *ngIf="dropdowns['products']">
                 <ul>
-                    <li><a routerLink="our-products">Our Products<fa-icon [icon]="angleDown"></fa-icon></a>
-                        <div class="our-product-sub-menu-res">
+                    <li><a routerLink="our-products" (click)="toggleDropdown('ourProducts')">Our Products<fa-icon [icon]="angleDown"></fa-icon></a>
+                        <div class="our-product-sub-menu-res"  *ngIf="dropdowns['ourProducts']">
                             <ul>
-                                <li><a href="#">Electromechanic Products</a></li>
-                                <li><a href="#">Solar Products</a></li>
-                                <li><a href="#">Agricultural Products</a></li>
+                                <li><a >Electromechanic Products</a></li>
+                                <li><a >Solar Products</a></li>
+                                <li><a >Agricultural Products</a></li>
                             </ul>
                         </div>
                     </li>
-                    <li><a href="#">Retail Shop</a></li>
+                    <li><a >Retail Shop</a></li>
                 </ul>
             </div>
         </li>
-        <li><a><fa-icon [icon]="course"></fa-icon>Trainings & Workshops<fa-icon [icon]="angleDown"></fa-icon></a>
-            <div class="trainings-workshops-sub-menu-res">
+        <li><a (click)="toggleDropdown('trainings')"><fa-icon [icon]="course"></fa-icon>Trainings & Workshops<fa-icon [icon]="angleDown"></fa-icon></a>
+            <div class="trainings-workshops-sub-menu-res" *ngIf="dropdowns['trainings']">
                 <ul>
-                    <li><a href="#">Certificate Program</a></li>
+                    <li><a>Certificate Program</a></li>
                 </ul>
             </div>
         </li>
-        <li><a><fa-icon [icon]="service"></fa-icon>Services & Maintenance<fa-icon [icon]="angleDown"></fa-icon></a>
-            <div class="services-res">
+        <li><a (click)="toggleDropdown('services')"><fa-icon [icon]="service"></fa-icon>Services & Maintenance<fa-icon [icon]="angleDown"></fa-icon></a>
+            <div class="services-res" *ngIf="dropdowns['services']">
                 <ul>
-                    <li><a href="#">Solar Plant Installation</a></li>
-                    <li><a href="#">Customized Industrial Solutions<fa-icon [icon]="angleDown"></fa-icon></a>
-                        <div class="customized-industrial-solution-sub-menu-res">
+                    <li><a >Solar Plant Installation</a></li>
+                    <li><a (click)="toggleDropdown('customSolutions')">Customized Industrial Solutions<fa-icon [icon]="angleDown"></fa-icon></a>
+                        <div class="customized-industrial-solution-sub-menu-res" *ngIf="dropdowns['customSolutions']">
                             <ul>
-                                <li><a href="#">PCB Design & Fabrication</a></li>
-                                <li><a href="#">Electromechanical Circuitry Customization</a></li>
-                                <li><a href="#">3D Prototype Printing</a></li>
-                                <li><a href="#">Water Overflow Solutions</a></li>
+                                <li><a >PCB Design & Fabrication</a></li>
+                                <li><a >Electromechanical Circuitry Customization</a></li>
+                                <li><a >3D Prototype Printing</a></li>
+                                <li><a >Water Overflow Solutions</a></li>
                             </ul>
                         </div>
                     </li>
