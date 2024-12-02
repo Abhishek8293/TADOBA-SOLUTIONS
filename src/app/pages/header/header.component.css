@@ -290,7 +290,7 @@ fa-icon {
   }
 }
 /* tablet */
-@media (min-width: 425px) and (max-width: 768px) {
+@media (min-width: 426px) and (max-width: 768px) {
   .nav-bar-link {
     display: none;
   }
@@ -298,10 +298,10 @@ fa-icon {
     display: flex; /* Make the menu visible */
     flex-direction: column;
     justify-content: space-around;
-    top: 19%;
+    top: 17%;
   }
   .nav-bar-link-res li {
-    padding-left: 70px;
+    padding-left: 20px;
     list-style-type: none;
     border-bottom: 1px solid #ececec;
   }
@@ -478,7 +478,7 @@ fa-icon {
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 426px) {
   .nav-bar-link {
     display: none;
   }
@@ -497,11 +497,12 @@ fa-icon {
     list-style-type: none;
     text-align: left;
     border-bottom: 1px solid #ececec;
-    
+    padding: 5px;
   }
   .nav-bar-link-res li a {
-    font-size: 17px;
+    font-size: 16px;
     text-decoration: none;
+    padding: 5px;
   }
   .nav-bar-link-res a {
     font-family: "Open Sans", sans-serif;
@@ -544,22 +545,27 @@ fa-icon {
   .products-res li {
     border-bottom: 1px solid #ececec;
     width: 210px !important;
+    padding: 5px;
   }
   .our-product-sub-menu-res li {
     border-bottom: 1px solid #ececec;
     width: 210px !important;
+    padding: 5px;
   }
   .trainings-workshops-sub-menu-res li {
     border-bottom: 1px solid #ececec;
     width: 210px !important;
+    padding: 5px;
   }
   .services-res li {
     border-bottom: 1px solid #ececec;
     width: 210px !important;
+    padding: 5px;
   }
   .customized-industrial-solution-sub-menu-res li {
     border-bottom: 1px solid #ececec;
     width: 210px !important;
+    padding: 5px;
   }
   /* ================= hover css================== */
   .nav-bar-link-res li:hover .services-res {
