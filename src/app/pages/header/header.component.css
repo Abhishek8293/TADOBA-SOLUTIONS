@@ -229,11 +229,14 @@ a {
   width: 100vw;
   /* background-color: rgba(39, 38, 38, 0.918); */
   background-color: #fff;
-  height: 70vh;
   z-index: 1000;
   text-align: left;
   transition: top 0.5s ease;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 0px;
 }
 fa-icon {
   margin-left: 5px;
