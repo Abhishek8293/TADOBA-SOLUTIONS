@@ -16,6 +16,7 @@ import {
   faTimes,
 } from '@fortawesome/free-solid-svg-icons';
 import { SignUpComponent } from '../sign-up/sign-up.component';
+import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-header',
@@ -26,6 +27,7 @@ import { SignUpComponent } from '../sign-up/sign-up.component';
     CommonModule,
     RouterModule,
     SignUpComponent,
+    MatIconModule
   ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css',

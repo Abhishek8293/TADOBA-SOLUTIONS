@@ -35,5 +35,6 @@ export class OurProductsComponent {
       product.productName.toLowerCase().includes(term)
     );
   }
+  
 
 }
