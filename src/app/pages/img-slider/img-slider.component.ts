@@ -1,6 +1,7 @@
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import {
   AfterViewInit,
+  ChangeDetectionStrategy,
   Component,
   Inject,
   NgZone,
@@ -17,12 +18,16 @@ declare const Swiper: any;
   imports: [CommonModule, MatButtonModule, MatIconModule],
   templateUrl: './img-slider.component.html',
   styleUrl: './img-slider.component.css',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ImgSliderComponent implements AfterViewInit {
   constructor(
     @Inject(PLATFORM_ID) private platformId: Object,
     private ngZone: NgZone
   ) {}
+
+
+
   ngAfterViewInit(): void {
     if (isPlatformBrowser(this.platformId)) {
       this.ngZone.runOutsideAngular(() => {
@@ -46,9 +51,11 @@ export class ImgSliderComponent implements AfterViewInit {
           },
           on: {
             init: function () {
-                document.querySelector('.slider-wrapper')?.classList.add('swiper-initialized');
+              document
+                .querySelector('.slider-wrapper')
+                ?.classList.add('swiper-initialized');
             },
-        },
+          },
           breakpoints: {
             412: {
               slidesPerView: 1,
