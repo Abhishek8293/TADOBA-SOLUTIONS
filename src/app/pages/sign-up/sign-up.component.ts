@@ -5,11 +5,12 @@ import { RouterModule } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faEnvelope, faHouse, faLock, faPhone, faUser } from '@fortawesome/free-solid-svg-icons';
 import { User } from '../../models/User';
+import { MatButtonModule } from '@angular/material/button';
 
 @Component({
   selector: 'app-sign-up',
   standalone: true,
-  imports: [RouterModule, FontAwesomeModule, CommonModule, FormsModule],
+  imports: [RouterModule, FontAwesomeModule, CommonModule, FormsModule,MatButtonModule],
   templateUrl: './sign-up.component.html',
   styleUrl: './sign-up.component.css'
 })

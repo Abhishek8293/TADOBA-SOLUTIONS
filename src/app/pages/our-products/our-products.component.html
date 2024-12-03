@@ -19,4 +19,8 @@
             [productPrice]="data.productPrice" [productId]="data.productId"></app-product-card>
         }
     </div>
+
+   @if (products.length === 0) {
+    <p class="not-found-text">"No items found"</p>
+   }
 </div>

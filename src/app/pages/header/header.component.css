@@ -286,20 +286,50 @@ fa-icon {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   z-index: 1100;
 }
+.close-btn{
+  position: absolute;
+  top: 5px;
+  left: 870px;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1200;
+}
+
+.close-btn mat-icon{
+  color: #373737;
+}
+
 
 /* ===================================================== MEDIA QUERY ========================================== */
 
 /* Laptop */
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1025px) {
   .nav-bar-link li a {
     font-size: small;
   }
   .signup-btn {
     height: 30px;
   }
+  .modal {
+    position: fixed;
+    top: 12%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1100;
+  }
+  .close-btn{
+    position: absolute;
+    top: 5px;
+    left: 770px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1200;
+  }
 }
 /* tablet */
-@media (min-width: 426px) and (max-width: 768px) {
+@media (min-width: 426px) and (max-width: 769px) {
   .nav-bar-link {
     display: none;
   }
@@ -484,6 +514,23 @@ fa-icon {
   }
   .nav-bar-link-res li ul li a {
     color: black;
+  }
+  .modal {
+    position: fixed;
+    top: 12%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1100;
+  }
+  .close-btn{
+    position: absolute;
+    top: 5px;
+    left: 570px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1200;
   }
 }
 
@@ -686,5 +733,42 @@ fa-icon {
   }
   .nav-bar-link-res li ul li a {
     color: black;
+  }
+  .modal {
+    position: fixed;
+    top: 12%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1100;
+  }
+  .close-btn{
+    position: absolute;
+    top: 5px;
+    left: 290px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1200;
+  }
+}
+
+@media (max-width:376px) {
+  .modal {
+    position: fixed;
+    top: 12%;
+    left: 5%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1100;
+  }
+  .close-btn{
+    position: absolute;
+    top: 5px;
+    left: 290px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1200;
   }
 }
