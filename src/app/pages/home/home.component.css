@@ -509,6 +509,7 @@
   }
   .quote-section .form-div .mat-form {
     width: 315px !important;
+    margin-bottom: 5px;
   }
   .quote-section {
     background-color: #4e56b6;

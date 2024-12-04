@@ -192,29 +192,37 @@
         <h6>Looking For Quality and Affordable Services?</h6>
         <h5>Get an online quote</h5>
     </div>
-    <form>
+    <form [formGroup]="quoteForm">
         <div class="form-div">
             <div class="form-sub-div">
                 <mat-form-field class="mat-form" appearance="outline">
                     <mat-label>Name</mat-label>
-                    <input matInput>
+                    <input matInput formControlName="name">
+                    <mat-error *ngIf="quoteForm.controls['name'].hasError('required') && quoteForm.controls['name'].touched" >Name is required</mat-error>
                 </mat-form-field>
                 <mat-form-field class="mat-form" appearance="outline">
                     <mat-label>Email</mat-label>
-                    <input matInput>
+                    <input type="email" matInput formControlName="email">
+                    <mat-error *ngIf="quoteForm.controls['email'].hasError('required') && quoteForm.controls['email'].touched" >email is required</mat-error>
+                    <mat-error *ngIf="quoteForm.controls['email'].hasError('email') && quoteForm.controls['email'].touched" >enter valid email</mat-error>
                 </mat-form-field>
             </div>
             <div class="form-sub-div">
                 <mat-form-field class="mat-form" appearance="outline">
                     <mat-label>Mobile Number</mat-label>
-                    <input matInput>
+                    <input matInput formControlName="mobileNumber">
+                    <mat-error *ngIf="quoteForm.controls['mobileNumber'].hasError('required') && quoteForm.controls['mobileNumber'].touched" >mobile number is required</mat-error>
+                    <mat-error *ngIf="quoteForm.controls['mobileNumber'].hasError('pattern') && quoteForm.controls['mobileNumber'].touched">
+                        invalid mobile number
+                      </mat-error>
                 </mat-form-field>
                 <mat-form-field class="mat-form" appearance="outline">
                     <mat-label>Query</mat-label>
-                    <textarea matInput placeholder="Write your query"></textarea>
+                    <textarea matInput placeholder="Write your query" formControlName="query"></textarea>
+                    <mat-error *ngIf="quoteForm.controls['query'].hasError('required') && quoteForm.controls['query'].touched" >query is required</mat-error>
                 </mat-form-field>
             </div>
-            <button mat-raised-button class="submit-quote-btn">Submit</button>
+            <button mat-raised-button class="submit-quote-btn" type="submit" (click)="submitQuteForm()">Submit</button>
         </div>
     </form>
 </div>

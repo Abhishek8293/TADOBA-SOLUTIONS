@@ -4,11 +4,12 @@ import {
   HostListener,
   Inject,
   PLATFORM_ID,
+  inject,
 } from '@angular/core';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
-import {FormsModule} from '@angular/forms';
+import {FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators} from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { ServiceCardComponent } from '../../components/service-card/service-card.component';
@@ -22,6 +23,7 @@ import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { Product } from '../../models/Product';
 import { ProductCardComponent } from '../../components/product-card/product-card.component';
 import { RouterModule } from '@angular/router';
+import { SnackbarService } from '../../services/snackbar.service';
 
 interface ServiceCardData {
   imgUrl: string;
@@ -45,7 +47,8 @@ interface ServiceCardData {
     MatFormFieldModule,
     MatInputModule,
     FormsModule,
-    RouterModule
+    RouterModule,
+    ReactiveFormsModule
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
@@ -62,6 +65,12 @@ export class HomeComponent implements OnInit {
   screenWidth!: number;
 
   loopNumber: number = 4;
+
+  //service injection
+  snackBarService = inject(SnackbarService);
+
+  //quote form
+  quoteForm!: FormGroup;
 
   serviceData: ServiceCardData[] = [
     {
@@ -243,10 +252,14 @@ products3:Product[]=[
 
 
 
-  
-
-
-  constructor(@Inject(PLATFORM_ID) private platformId: any) {}
+  constructor(@Inject(PLATFORM_ID) private platformId: any,private fb:FormBuilder) {
+      this.quoteForm = this.fb.group({
+        name: ['', Validators.required],
+        email: ['', [Validators.required, Validators.email]],
+        mobileNumber: ['', [Validators.required, Validators.pattern('^[0-9]{10}$')]],
+        query: ['', Validators.required],
+      })
+  }
 
   ngOnInit(): void {
     if (isPlatformBrowser(this.platformId)) {
@@ -262,7 +275,14 @@ products3:Product[]=[
     }
   }
 
-
+  submitQuteForm(){
+    if (this.quoteForm.invalid) {
+      this.quoteForm.markAllAsTouched(); 
+    } else {
+      this.snackBarService.openSuccessSnackBar('Form submitted, we will reach you in some days');
+      console.log('Form submitted', this.quoteForm.value);
+    }
+  }
 
 
 }
