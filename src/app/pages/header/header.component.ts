@@ -36,7 +36,7 @@ import { MatIconModule } from '@angular/material/icon';
 export class HeaderComponent {
   hamBurgerMenu = faBars;
   service = faGears;
-  product = faBoxOpen;
+  productIcon = faBoxOpen;
   dealer = faBuildingCircleArrowRight;
   course = faPaste;
   about = faPeopleGroup;
@@ -52,6 +52,17 @@ export class HeaderComponent {
       this.isMenuOpen = false;
     });
   }
+  dropdowns: { [key: string]: boolean } = {
+    products: false,
+    ourProducts: false,
+    trainings: false,
+    services: false,
+    customSolutions: false,
+  };
+
+  toggleDropdown(menu: string): void {
+    this.dropdowns[menu] = !this.dropdowns[menu];
+  }
 
   toggleMenu() {
     this.isMenuOpen = !this.isMenuOpen;
@@ -64,4 +75,5 @@ export class HeaderComponent {
   closeSignUpPopup(): void {
     this.isSignUpVisible = false;
   }
+
 }
