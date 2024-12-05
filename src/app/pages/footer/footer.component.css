@@ -120,7 +120,7 @@
 }
 
 
-@media(min-width:769px) and (max-width:1024px){
+@media(min-width:769px) and (max-width:1025px){
   .container{
     flex-direction: row;
     flex-wrap: wrap;
@@ -141,6 +141,9 @@
     position: absolute;
     top: 230px;
     left: 590px;
+  }
+  .social-media{
+    margin-top: 40px;
   }
 }
 
