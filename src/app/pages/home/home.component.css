@@ -425,7 +425,7 @@
 /* ==========================================================MEDIA QUERY ====================================== */
 
 /* Mobile Media Query */
-@media (max-width: 426px) {
+@media (max-width: 441px) {
   .service-container {
     padding: 10px;
   }
@@ -539,7 +539,7 @@
   }
 }
 
-@media (min-width: 426px) and (max-width: 768px) {
+@media (min-width: 441px) and (max-width: 768px) {
   .service-container {
     padding: 10px;
   }
