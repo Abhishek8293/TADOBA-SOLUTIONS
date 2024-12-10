@@ -329,7 +329,7 @@ fa-icon {
   }
 }
 /* tablet */
-@media (min-width: 426px) and (max-width: 769px) {
+@media (min-width: 441px) and (max-width: 769px) {
   .nav-bar-link {
     display: none;
   }
@@ -534,7 +534,7 @@ fa-icon {
   }
 }
 
-@media (max-width: 426px) {
+@media (max-width: 441px) {
   .nav-bar-link {
     display: none;
   }

@@ -9,7 +9,7 @@ import { Quote } from '../models/Quote';
 })
 export class ApiService {
 
-  private readonly BASE_URL_QUOTE: string = 'http://localhost:8080/api/v1/quotes';
+  private readonly BASE_URL_QUOTE: string = 'https://api.tadobasolutions.com/api/v1/quotes';
 
   constructor(private http:HttpClient) { }
 

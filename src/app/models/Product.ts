@@ -107,7 +107,7 @@ export const ourProductList: Product[] = [
     productName: 'Auto ON/OFF 1/3 Phase With Dry Run Protection(Universal)',
     productRating: 3.5,
     productAvailability: 'in-stock',
-    productPrice: 2359.0,
+    productPrice: 1799.0,
     productImgUrl: [
       './assets/images/product/own-product/TSWC13PHDRU.png',
       './assets/images/product/own-product/TSWC13PHDRU-2.png',

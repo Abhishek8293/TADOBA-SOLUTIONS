@@ -115,13 +115,13 @@ a {
 }
 
 /* Mobile Media Query */
-@media (max-width: 426px) {
+@media (max-width: 441px) {
   .top-bar {
     display: none;
   }
 }
 
-@media (min-width: 426px) and (max-width: 768px) {
+@media (min-width: 441px) and (max-width: 768px) {
   .contact-section h6 {
     margin: 0;
     font-size: 12px;
