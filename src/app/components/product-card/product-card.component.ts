@@ -37,13 +37,13 @@ export class ProductCardComponent {
   whatsapp = faWhatsapp;
   viewDetails = faEye;
 
-  phoneNumber: string = '+918319348293';
+  whatsappNumber: string = '+918896444447';
 
   openWhatsApp(productId: string): void {
    // Ensure that the productId is properly encoded if it contains spaces or special characters
-  const currentUrl = `https://tadobasolutions.netlify.app/product/${encodeURIComponent(productId)}`;
+  const currentUrl = `https://tadobasolutions.com/product/${encodeURIComponent(productId)}`;
   // Encode the entire URL, so any special characters are handled
-  const whatsappUrl = `https://wa.me/${this.phoneNumber}?text=${encodeURIComponent(currentUrl)}`;
+  const whatsappUrl = `https://wa.me/${this.whatsappNumber}?text=${encodeURIComponent(currentUrl)}`;
   window.open(whatsappUrl, '_blank');
 }
 
