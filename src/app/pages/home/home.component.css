@@ -1,5 +1,5 @@
 .service-container {
-  background-color: #ffffff;
+  background-color: #f5f6fa;
   padding: 40px 30px;
   margin-top: 10px;
   display: flex;
@@ -7,17 +7,24 @@
 }
 .service-card-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(335px, 1fr));
+  grid-template-columns: repeat(auto-fit, 1fr);
   gap: 20px;
   padding: 20px;
 }
-.service-container h6 {
-  font-size: 24px;
-  color: #1a2a36;
-  font-weight: 600;
+.heading-div{
+  background-color: none;
+  padding: 10px;
+  /* border-left: 10px solid #3d4494; */
+  border-radius: 5px;
+  margin-bottom: 30px;
   text-align: center;
-  margin-top: 20px;
-  margin-bottom: 40px;
+}
+.service-container h6 {
+  font-size: 22px;
+  color: #1a2a36;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  margin: 0;
   font-family: "Roboto", serif;
 }
 .explore-btn {
@@ -107,7 +114,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  background-color: #F5F6FA;
+  background-color: #f5f6fa;
   padding-bottom: 50px;
 }
 .our-partner-heading {
@@ -216,7 +223,7 @@
 .awards-card {
   background-color: #d9d9d9;
   height: 230px;
-  width: 316px;
+  width: 300px;
   border-radius: 15px;
 }
 
@@ -278,7 +285,7 @@
   margin: 0;
   font-family: "Open Sans", sans-serif;
 }
-.completed-badge{
+.completed-badge {
   background-color: #25d366;
   color: #fff;
   font-size: 12px;
@@ -287,11 +294,10 @@
   border-radius: 5px;
   margin-left: 10px;
 }
-.project-details-tile:hover .completed-badge{
+.project-details-tile:hover .completed-badge {
   background-color: white;
   color: #25d366;
 }
-
 
 /* Quote Section */
 
@@ -429,13 +435,13 @@
   .service-container {
     padding: 10px;
   }
-  .service-container h6{
+  .service-container h6 {
     font-size: 20px;
   }
-  .product-section-heading h6{
+  .product-section-heading h6 {
     font-size: 20px;
   }
-  .awards-container h6{
+  .awards-container h6 {
     font-size: 20px;
   }
   .service-card-list {
@@ -452,7 +458,7 @@
     align-items: center;
     gap: 10px;
   }
-  .project-container{
+  .project-container {
     padding: 10px;
   }
   .project-sub-container {
@@ -461,7 +467,7 @@
     align-items: flex-start;
     width: 100%;
   }
-  .project-container .sub-heading{
+  .project-container .sub-heading {
     font-size: 20px;
   }
   .project-sub-container .project-details-tile {
@@ -481,7 +487,7 @@
     margin: 0;
     font-family: "Open Sans", sans-serif;
   }
-  .completed-badge{
+  .completed-badge {
     background-color: #25d366;
     color: #fff;
     font-size: 9px;
@@ -545,8 +551,8 @@
   }
   .service-card-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(345px, 1fr));
-    gap: 10px;
+    grid-template-columns: repeat(2, 350px);
+    gap: 20px;
     place-items: center;
   }
   .awards-card-list {
@@ -588,14 +594,17 @@
 }
 
 /* Laptop Media Query */
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1025px) {
   .service-container {
     padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .service-card-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
-    gap: 10px;
+    grid-template-columns: repeat(2, 350px);
+    gap: 20px;
     place-items: center;
     /* border: 1px solid red; */
   }
@@ -605,7 +614,7 @@
 
   .awards-card-list {
     display: grid;
-    grid-template-columns: repeat(3, minmax(345px, 1fr));
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
     gap: 10px;
     place-items: center;
     width: 100%;
@@ -636,14 +645,14 @@
   }
 }
 
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 1025px) and (max-width: 1441px) {
   .service-container {
     padding: 5px;
   }
   .service-card-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
-    gap: 5px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
     place-items: center;
     /* border: 1px solid red; */
   }
