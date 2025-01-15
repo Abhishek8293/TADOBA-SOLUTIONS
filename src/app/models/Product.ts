@@ -339,7 +339,7 @@ export const ourProductList: Product[] = [
   },
   {
     productId: 'TSWS',
-    productName: 'Whether Station',
+    productName: 'Weather Station',
     productRating: 3.5,
     productAvailability: 'in-stock',
     productPrice: 27700.00,
@@ -471,8 +471,7 @@ export const ourProductList: Product[] = [
       'Durable and efficient for use in industrial automation and control systems.',
       'Handles heavy-duty applications with reliable switching capabilities.',
       'High-capacity relay suitable for both low and high-power applications.'
-    ]
-                  
+    ]            
   },
   {
     productId: 'TSRSK91',

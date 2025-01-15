@@ -3,11 +3,12 @@
 
 <!-- Business Section -->
 <div class="service-container">
-    <h6>OUR BUSINESSES</h6>
+    <div class="heading-div">
+        <h6>OUR BUSINESSES</h6>
+    </div>
     <div class="service-card-list">
         @for (data of serviceData; track $index) {
-        <app-service-card [imgUrl]="data.imgUrl" [title]="data.title"
-            [description]="data.description"></app-service-card>
+        <app-service-card [imgUrl]="data.imgUrl" [title]="data.title"></app-service-card>
         }
     </div>
     <button mat-button class="explore-btn">Explore More<mat-icon class="arrow-icon"
@@ -23,9 +24,7 @@
         @for (product of products3; track $index) {
         <app-product-card [productImg]="product.productImgUrl[0]" [productName]="product.productName"
             [productRating]="product.productRating" [productAvailability]="product.productAvailability"
-            [productPrice]="product.productPrice"
-            [productId]="product.productId"
-            >
+            [productPrice]="product.productPrice" [productId]="product.productId">
         </app-product-card>
         }
     </div>
@@ -33,14 +32,12 @@
         @for (product of products; track $index) {
         <app-product-card [productImg]="product.productImgUrl[0]" [productName]="product.productName"
             [productRating]="product.productRating" [productAvailability]="product.productAvailability"
-            [productPrice]="product.productPrice"
-            [productId]="product.productId"
-            >
+            [productPrice]="product.productPrice" [productId]="product.productId">
         </app-product-card>
         }
     </div>
     <div class="see-more-product-button">
-        <button class="see-more-btn" routerLink="/our-products" >See More<fa-icon [icon]="rightArrow"></fa-icon></button>
+        <button class="see-more-btn" routerLink="/our-products">See More<fa-icon [icon]="rightArrow"></fa-icon></button>
     </div>
 </div>
 
@@ -54,9 +51,7 @@
         @for (product of products3; track $index) {
         <app-product-card [productImg]="product.productImgUrl[0]" [productName]="product.productName"
             [productRating]="product.productRating" [productAvailability]="product.productAvailability"
-            [productPrice]="product.productPrice"
-            [productId]="product.productId"
-            >
+            [productPrice]="product.productPrice" [productId]="product.productId">
         </app-product-card>
         }
     </div>
@@ -64,9 +59,7 @@
         @for (product of products; track $index) {
         <app-product-card [productImg]="product.productImgUrl[0]" [productName]="product.productName"
             [productRating]="product.productRating" [productAvailability]="product.productAvailability"
-            [productPrice]="product.productPrice"
-            [productId]="product.productId"
-            >
+            [productPrice]="product.productPrice" [productId]="product.productId">
         </app-product-card>
         }
     </div>
@@ -198,28 +191,39 @@
                 <mat-form-field class="mat-form" appearance="outline">
                     <mat-label>Name</mat-label>
                     <input matInput formControlName="name">
-                    <mat-error *ngIf="quoteForm.controls['name'].hasError('required') && quoteForm.controls['name'].touched" >Name is required</mat-error>
+                    <mat-error
+                        *ngIf="quoteForm.controls['name'].hasError('required') && quoteForm.controls['name'].touched">Name
+                        is required</mat-error>
                 </mat-form-field>
                 <mat-form-field class="mat-form" appearance="outline">
                     <mat-label>Email</mat-label>
                     <input type="email" matInput formControlName="email">
-                    <mat-error *ngIf="quoteForm.controls['email'].hasError('required') && quoteForm.controls['email'].touched" >email is required</mat-error>
-                    <mat-error *ngIf="quoteForm.controls['email'].hasError('email') && quoteForm.controls['email'].touched" >enter valid email</mat-error>
+                    <mat-error
+                        *ngIf="quoteForm.controls['email'].hasError('required') && quoteForm.controls['email'].touched">email
+                        is required</mat-error>
+                    <mat-error
+                        *ngIf="quoteForm.controls['email'].hasError('email') && quoteForm.controls['email'].touched">enter
+                        valid email</mat-error>
                 </mat-form-field>
             </div>
             <div class="form-sub-div">
                 <mat-form-field class="mat-form" appearance="outline">
                     <mat-label>Mobile Number</mat-label>
                     <input matInput formControlName="mobileNumber">
-                    <mat-error *ngIf="quoteForm.controls['mobileNumber'].hasError('required') && quoteForm.controls['mobileNumber'].touched" >mobile number is required</mat-error>
-                    <mat-error *ngIf="quoteForm.controls['mobileNumber'].hasError('pattern') && quoteForm.controls['mobileNumber'].touched">
+                    <mat-error
+                        *ngIf="quoteForm.controls['mobileNumber'].hasError('required') && quoteForm.controls['mobileNumber'].touched">mobile
+                        number is required</mat-error>
+                    <mat-error
+                        *ngIf="quoteForm.controls['mobileNumber'].hasError('pattern') && quoteForm.controls['mobileNumber'].touched">
                         invalid mobile number
-                      </mat-error>
+                    </mat-error>
                 </mat-form-field>
                 <mat-form-field class="mat-form" appearance="outline">
                     <mat-label>Query</mat-label>
                     <textarea matInput placeholder="Write your query" formControlName="query"></textarea>
-                    <mat-error *ngIf="quoteForm.controls['query'].hasError('required') && quoteForm.controls['query'].touched" >query is required</mat-error>
+                    <mat-error
+                        *ngIf="quoteForm.controls['query'].hasError('required') && quoteForm.controls['query'].touched">query
+                        is required</mat-error>
                 </mat-form-field>
             </div>
             <button mat-raised-button class="submit-quote-btn" type="submit" (click)="submitQuteForm()">Submit</button>
