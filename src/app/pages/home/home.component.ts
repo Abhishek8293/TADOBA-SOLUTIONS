@@ -103,7 +103,7 @@ export class HomeComponent implements OnInit {
     },
     {
       imgUrl: './assets/images/service/3d-printing.png',
-      title: '3D Prototype Designing & Printing',
+      title: '3D Prototype Design & Printing',
       navigation: 'Go to Service 4',
     },
   ];

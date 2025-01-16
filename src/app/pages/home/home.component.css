@@ -20,9 +20,9 @@
   text-align: center;
 }
 .service-container h6 {
-  font-size: 22px;
+  font-size: 24px;
   color: #1a2a36;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 1.5px;
   margin: 0;
   font-family: "Roboto", serif;
@@ -66,6 +66,7 @@
   margin-top: 40px;
   margin-bottom: 20px;
   font-family: "Roboto", serif;
+  letter-spacing: 1.5px;
 }
 .see-more-product-button {
   display: flex;
@@ -129,6 +130,7 @@
   margin-top: 20px;
   margin-bottom: 40px;
   font-family: "Roboto", serif;
+  letter-spacing: 1.5px;
 }
 .partner-logo-and-name {
   display: flex;
@@ -155,6 +157,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.partner-logo:hover{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .forte {
   display: flex;
@@ -192,9 +197,14 @@
 .partner-name {
   align-items: center;
   text-align: center;
-  font-family: "Open Sans", sans-serif;
-  font-size: 12px;
+  font-family: "Roboto", serif;
+  font-size: 10px;
   margin-top: 5px;
+  letter-spacing: 1px;
+  color: #1a2a36;
+}
+.partner-name span{
+  font-weight: 400;
 }
 
 /* ================================================== Awards Section ======================================= */
@@ -219,6 +229,7 @@
   margin-top: 20px;
   margin-bottom: 40px;
   font-family: "Roboto", serif;
+  letter-spacing: 1.5px;
 }
 .awards-card {
   background-color: #d9d9d9;
@@ -245,6 +256,7 @@
   margin-top: 20px;
   margin-bottom: 40px;
   font-family: "Roboto", serif;
+  letter-spacing: 1.5px;
 }
 
 .project-sub-container {
@@ -449,7 +461,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
   }
   .awards-card-list {
     display: flex;
@@ -596,14 +608,14 @@
 /* Laptop Media Query */
 @media (min-width: 769px) and (max-width: 1025px) {
   .service-container {
-    padding: 10px;
+    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   .service-card-list {
     display: grid;
-    grid-template-columns: repeat(2, 350px);
+    grid-template-columns: repeat(3, 310px);
     gap: 20px;
     place-items: center;
     /* border: 1px solid red; */

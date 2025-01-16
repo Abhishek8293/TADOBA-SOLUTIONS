@@ -1,20 +1,12 @@
 .container{
-    font-family: "Roboto", sans-serif;
+    font-family: "Open Sans", sans-serif;
     padding: 20px;
-}
-.heading{
-    height: 60px;
-    display: flex;
-    align-items: center;
-    padding-left: 60px;
-    margin: 10px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    font-family: "Roboto", sans-serif;
+    color: rgb(88, 87, 87);
 }
 .heading h3{
     font-size: 30px;
     font-family: "Roboto", sans-serif;
-    color: blueviolet;
+    color: #1a2936;
 }
 .content{
     padding: 10px;
