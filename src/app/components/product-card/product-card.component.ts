@@ -33,7 +33,6 @@ export class ProductCardComponent {
   @Input() productId!: string;
 
   rupee = faIndianRupee;
-  rating = faStar;
   whatsapp = faWhatsapp;
   viewDetails = faEye;
 
