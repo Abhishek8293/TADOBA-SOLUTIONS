@@ -7,6 +7,7 @@ import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { TermsAndConditionComponent } from './pages/terms-and-condition/terms-and-condition.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { SignUpComponent } from './pages/sign-up/sign-up.component';
+import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 
 export const routes: Routes = [
     {path: '',component:HomeComponent},
@@ -18,4 +19,5 @@ export const routes: Routes = [
     {path:'privacy-policy', component:PrivacyPolicyComponent},
     {path:'product/:productId',component:ViewProductComponent},
     {path:'sign-up', component:SignUpComponent},
+    {path:'contact-us', component:ContactUsComponent}
 ];
