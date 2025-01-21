@@ -5,9 +5,10 @@ import { OurProductsComponent } from './pages/our-products/our-products.componen
 import { ViewProductComponent } from './pages/view-product/view-product.component';
 import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { TermsAndConditionComponent } from './pages/terms-and-condition/terms-and-condition.component';
-import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
+import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.component';
 import { SignUpComponent } from './pages/sign-up/sign-up.component';
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
+import { EvWorkshopComponent } from './pages/workshops/ev-workshop/ev-workshop.component';
 
 export const routes: Routes = [
     {path: '',component:HomeComponent},
@@ -19,5 +20,6 @@ export const routes: Routes = [
     {path:'privacy-policy', component:PrivacyPolicyComponent},
     {path:'product/:productId',component:ViewProductComponent},
     {path:'sign-up', component:SignUpComponent},
-    {path:'contact-us', component:ContactUsComponent}
+    {path:'contact-us', component:ContactUsComponent},
+    {path:'ev-workshop',component:EvWorkshopComponent}
 ];

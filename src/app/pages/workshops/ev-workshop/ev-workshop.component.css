@@ -1,0 +1,53 @@
+.container {
+  margin: 10px 0px;
+  padding: 40px 30px;
+  font-family: "Open Sans", sans-serif;
+  color: #373737;
+  /* background-color: #fff; */
+}
+.workshop-heading{
+    font-size: 22px;
+    text-align: center;
+}
+.outer-panel {
+  margin: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid transparent; /* Initially set the border as transparent */
+  transition: border-color 0.2s ease-in-out; /* Smooth transition for border color */
+}
+.session-panel {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid transparent; /* Initially set the border as transparent */
+  transition: border-color 0.2s ease-in-out; /* Smooth transition for border color */
+}
+/* Panel title */
+.outer-panel-titile {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+}
+.session-panel-titile {
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Hover effect with visible border */
+.outer-panel:hover {
+  border-color: #2c547f; /* Change border color on hover */
+}
+
+.outer-panel:hover .mat-expansion-panel-header {
+  background-color: #f4f4f4; /* Slight gray background on hover */
+}
+
+.bullet-list{
+    padding: 5px;
+    margin-left: 15px;
+    font-size: 15px;
+}
+.bullet-list li{
+    list-style-type: disc;
+    margin: 5px;
+}

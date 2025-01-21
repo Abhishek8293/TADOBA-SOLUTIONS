@@ -1,0 +1,156 @@
+<div class="container">
+    <h6 class="workshop-heading">Electric Vehicles (EVs) Workshop Program</h6>
+    <mat-accordion>
+
+        <!-- Chapter 1 -->
+        <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)"
+            class="outer-panel">
+            <mat-expansion-panel-header>
+                <mat-panel-title class="outer-panel-titile"> 1. Introduction to Electric Vehicles and Fundamentals</mat-panel-title>
+            </mat-expansion-panel-header>
+            <!-- Session 1 -->
+            <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)" class="session-panel">
+                <mat-expansion-panel-header>
+                    <mat-panel-title class="session-panel-titile">Session 1. Overview</mat-panel-title>
+                </mat-expansion-panel-header>
+                <ul class="bullet-list">
+                    <li>History and evolution of electric vehicles.</li>
+                    <li>Key differences between EVs and conventional vehicles.</li>
+                    <li>Importance of EVs in addressing environmental concerns.</li>
+                    <li>Activity: Brainstorming session—how EVs can impact your daily life and community.</li>
+                </ul>
+            </mat-expansion-panel>
+            <!-- Session 2 -->
+            <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)" class="session-panel">
+                <mat-expansion-panel-header>
+                    <mat-panel-title class="session-panel-titile">Session 2. Basics of EV Technology</mat-panel-title>
+                </mat-expansion-panel-header>
+                <ul class="bullet-list">
+                    <li>Core components of an EV: Battery, motor, controller, and drivetrain.</li>
+                    <li>How electric propulsion works: Torque, power, and efficiency.</li>
+                    <li>Interactive Demo: Break down an EV model or virtual simulation of an EV system.</li>
+                </ul>
+            </mat-expansion-panel>
+            <!-- Session 3 -->
+            <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)" class="session-panel">
+                <mat-expansion-panel-header>
+                    <mat-panel-title class="session-panel-titile">Session 3. Battery Technology and Energy Storage</mat-panel-title>
+                </mat-expansion-panel-header>
+                <ul class="bullet-list">
+                    <li>Types of EV batteries: Lithium-ion, solid-state, and alternatives.</li>
+                    <li>Key parameters: Capacity, energy density, and charging time.</li>
+                    <li>Activity: Analyze and compare battery specifications for popular EV models.</li>
+                </ul>
+            </mat-expansion-panel>
+        </mat-expansion-panel>
+
+        <!-- Chapter 2 -->
+        <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)"
+            class="outer-panel">
+            <mat-expansion-panel-header>
+                <mat-panel-title class="outer-panel-titile">2. Practical Understanding and Design Insights</mat-panel-title>
+            </mat-expansion-panel-header>
+            <!-- Session 1 -->
+            <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)" class="session-panel">
+                <mat-expansion-panel-header>
+                    <mat-panel-title class="session-panel-titile">Session 1. Electric Drive Systems</mat-panel-title>
+                </mat-expansion-panel-header>
+                <ul class="bullet-list">
+                    <li>Introduction to motors used in EVs: BLDC, PMSM, and induction motors.</li>
+                    <li>Motor control principles and energy management.</li>
+                    <li>Live Demo: Small-scale motor operation and its integration with an EV drivetrain.</li>
+                </ul>
+            </mat-expansion-panel>
+            <!-- Session 2 -->
+            <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)" class="session-panel">
+                <mat-expansion-panel-header>
+                    <mat-panel-title class="session-panel-titile">Session 2. EV Power Electronics</mat-panel-title>
+                </mat-expansion-panel-header>
+                <ul class="bullet-list">
+                    <li>Role of inverters, converters, and controllers in EVs.</li>
+                    <li>Basics of thermal management in EV electronics.</li>
+                    <li>Interactive Session: Learn how regenerative braking works with a simple demonstration.</li>
+                </ul>
+            </mat-expansion-panel>
+            <!-- Session 3 -->
+            <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)" class="session-panel">
+                <mat-expansion-panel-header>
+                    <mat-panel-title class="session-panel-titile">Session 3. Charging Infrastructure and Grid Integration</mat-panel-title>
+                </mat-expansion-panel-header>
+                <ul class="bullet-list">
+                    <li>Types of chargers: Slow, fast, and ultra-fast charging.</li>
+                    <li>Smart charging and Vehicle-to-Grid (V2G) technology.</li>
+                    <li>Activity: Group discussion—what would an ideal EV charging network look like in your city?</li>
+                </ul>
+            </mat-expansion-panel>
+            <!-- Session 4 -->
+            <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)" class="session-panel">
+                <mat-expansion-panel-header>
+                    <mat-panel-title class="session-panel-titile">Session 4. Hands-on Project</mat-panel-title>
+                </mat-expansion-panel-header>
+                <ul class="bullet-list">
+                    <li>Build a small EV prototype or create a simple circuit for an EV subsystem.</li>
+                    <li>Option 1 : Design a basic motor-controller system.</li>
+                    <li>Option 2 : Build a solar-powered EV charging station model.</li>
+                    <li>Showcase results and explain design choices.</li>
+                </ul>
+            </mat-expansion-panel>
+        </mat-expansion-panel>
+
+        <!-- Chapter 3 -->
+        <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)"
+            class="outer-panel">
+            <mat-expansion-panel-header>
+                <mat-panel-title class="outer-panel-titile">3. Advanced Topics and Future Trends</mat-panel-title>
+            </mat-expansion-panel-header>
+            <!-- Session 1 -->
+            <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)" class="session-panel">
+                <mat-expansion-panel-header>
+                    <mat-panel-title class="session-panel-titile">Session 1. Emerging EV Trends</mat-panel-title>
+                </mat-expansion-panel-header>
+                <ul class="bullet-list">
+                    <li>Autonomous EVs and connectivity: The role of AI and IoT.</li>
+                    <li>Innovations in battery technology: Solid-state batteries and beyond.</li>
+                    <li>Global policies and subsidies driving EV adoption.</li>
+                </ul>
+            </mat-expansion-panel>
+            <!-- Session 2 -->
+            <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)" class="session-panel">
+                <mat-expansion-panel-header>
+                    <mat-panel-title class="session-panel-titile">Session 2. Simulation and Design Tools</mat-panel-title>
+                </mat-expansion-panel-header>
+                <ul class="bullet-list">
+                    <li>Introduction to EV simulation tools like MATLAB/Simulink.</li>
+                    <li>Demonstration of battery and motor design simulation.</li>
+                    <li>Hands-on Activity: Simulate a basic EV system on a free simulation tool.</li>
+                </ul>
+            </mat-expansion-panel>
+             <!-- Session 3 -->
+             <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)" class="session-panel">
+                <mat-expansion-panel-header>
+                    <mat-panel-title class="session-panel-titile">Session 3. Sustainability and the EV Ecosystem</mat-panel-title>
+                </mat-expansion-panel-header>
+                <ul class="bullet-list">
+                    <li>Recycling and reusing EV batteries.</li>
+                    <li>Impact of EVs on renewable energy adoption.</li>
+                    <li>Future of the EV supply chain and opportunities.</li>
+                    <li>Activity: Debate—Are EVs the ultimate solution to sustainability challenges?</li>
+                </ul>
+            </mat-expansion-panel>
+        </mat-expansion-panel>
+
+        <!-- Chapter 4 -->
+        <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)"
+            class="outer-panel">
+            <mat-expansion-panel-header>
+                <mat-panel-title class="outer-panel-titile">4. Additional Elements for Engagement</mat-panel-title>
+            </mat-expansion-panel-header>
+            <ul class="bullet-list">
+                <li>Gamified Learning: Create a quiz competition after each day to reinforce learning.</li>
+                <li>Career Insights: Invite an EV industry expert for a guest lecture or Q&A session.</li>
+                <li>Certificates: Provide certificates with special mentions for participants who excel.</li>
+                <li>Interactive Booths: Showcase real EV components or a demo electric bike/car.</li>
+            </ul>
+        </mat-expansion-panel>
+    </mat-accordion>
+</div>
