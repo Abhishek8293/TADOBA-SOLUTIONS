@@ -14,7 +14,7 @@ export class Product {
     this.productRating = 0;
     this.productAvailability = '';
     this.productPrice = 0;
-    this.productImgUrl = [];
+    this.productImgUrl = [''];
     this.productCategory = '';
     this.productDescription = [];
   }
