@@ -45,7 +45,7 @@
         </li>
         <li><a routerLink="career"><fa-icon [icon]="career"></fa-icon>Career</a></li>
         <li><a routerLink="about-us"><fa-icon [icon]="about"></fa-icon>About Us</a></li>
-        <!-- <li><button mat-button class="signup-btn" (click)="openSignUpPopup()">SignUp</button></li> -->
+        <li><button mat-button class="signup-btn" (click)="openSignUpPopup()">SignUp</button></li>
     </ul>
 
     <!-- Sign Up Page -->
@@ -79,6 +79,7 @@
         <li><a (click)="toggleDropdown('trainings')"><fa-icon [icon]="course"></fa-icon>Trainings & Workshops<fa-icon [icon]="angleDown"></fa-icon></a>
             <div class="trainings-workshops-sub-menu-res" *ngIf="dropdowns['trainings']">
                 <ul>
+                    <li><a routerLink="ev-workshop" >Electric Vehicles (EVs) Workshop Program</a></li>
                     <li><a>Certificate Program</a></li>
                 </ul>
             </div>

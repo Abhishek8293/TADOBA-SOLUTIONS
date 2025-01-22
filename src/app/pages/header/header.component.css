@@ -286,7 +286,7 @@ fa-icon {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   z-index: 1100;
 }
-.close-btn{
+.close-btn {
   position: absolute;
   top: 5px;
   left: 870px;
@@ -295,10 +295,9 @@ fa-icon {
   z-index: 1200;
 }
 
-.close-btn mat-icon{
+.close-btn mat-icon {
   color: #373737;
 }
-
 
 /* ===================================================== MEDIA QUERY ========================================== */
 
@@ -319,7 +318,7 @@ fa-icon {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     z-index: 1100;
   }
-  .close-btn{
+  .close-btn {
     position: absolute;
     top: 5px;
     left: 770px;
@@ -524,7 +523,7 @@ fa-icon {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     z-index: 1100;
   }
-  .close-btn{
+  .close-btn {
     position: absolute;
     top: 5px;
     left: 570px;
@@ -743,7 +742,7 @@ fa-icon {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     z-index: 1100;
   }
-  .close-btn{
+  .close-btn {
     position: absolute;
     top: 5px;
     left: 290px;
@@ -753,7 +752,7 @@ fa-icon {
   }
 }
 
-@media (max-width:376px) {
+@media (max-width: 376px) {
   .modal {
     position: fixed;
     top: 12%;
@@ -763,7 +762,7 @@ fa-icon {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     z-index: 1100;
   }
-  .close-btn{
+  .close-btn {
     position: absolute;
     top: 5px;
     left: 290px;
