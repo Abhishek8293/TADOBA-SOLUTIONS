@@ -51,6 +51,17 @@
   list-style-type: disc;
   margin: 5px;
 }
+.module-img{
+  width: 300px;
+  height: auto;
+  object-fit: cover;
+  margin-top: 5px;
+}
+.content-div{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
 
 /* Media Query */
 
@@ -86,6 +97,19 @@
     margin-left: 15px;
     font-size: 13px;
   }
+  .content-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .module-img{
+    width: 250px;
+    height: auto;
+    object-fit: cover;
+    margin-top: 5px;
+  }
+  
 }
 
 @media (min-width: 441px) and (max-width: 768px) {
