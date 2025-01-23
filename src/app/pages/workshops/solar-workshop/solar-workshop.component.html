@@ -1,0 +1,70 @@
+<div class="container">
+    <h6 class="workshop-heading">Solar PV Plant Workshop</h6>
+    <mat-accordion>
+
+        <!-- Module 1 -->
+        <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)" class="outer-panel">
+            <mat-expansion-panel-header>
+                <mat-panel-title class="outer-panel-titile">1. Solar Photovoltaic (PV) Operation & OFF-Grid PV Plant</mat-panel-title>
+            </mat-expansion-panel-header>
+            <ul class="bullet-list">
+                <li>Solar PV Cell to Module, Series/Parallel, String, Array.</li>
+                <li>Installation Requirements.</li>
+                <li>Plant Operation & Site safety.</li>
+                <li>Single Line Diagram (SLD).</li>
+                <li>9 W AC/DC Bulb/Fan to kW of PV Plant Field Installation.</li>
+                <li>Load Estimation, Battery Back-up Hrs. Calculation w.r.t. Load.</li>
+                <li>Wire (AC/DC) Sizing, Earthing, Lightning Arrestor (LA).</li>
+                <li>Structure (Roof-mounted/Industrial Shed/Ground Mounted/Elevated).</li>
+            </ul>
+        </mat-expansion-panel>
+
+        <!-- Module 2 -->
+        <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)" class="outer-panel">
+            <mat-expansion-panel-header>
+                <mat-panel-title class="outer-panel-titile">2. ON-Grid PV Plant</mat-panel-title>
+            </mat-expansion-panel-header>
+            <ul class="bullet-list">
+                <li>ACDB/DCDB.</li>
+                <li>Generation Meter, Net Meter.</li>
+                <li>Complete Connection Through CSPDCL Grid.</li>
+            </ul>
+        </mat-expansion-panel>
+
+        <!-- Module 3 -->
+        <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)" class="outer-panel">
+            <mat-expansion-panel-header>
+                <mat-panel-title class="outer-panel-titile">3. Hybrid PV Plant</mat-panel-title>
+            </mat-expansion-panel-header>
+            <ul class="bullet-list">
+                <li>PV Plant with ON-Grid and Battery back-up with critical Load.</li>
+                <li>Live 5kW plant Installation.</li>
+            </ul>
+        </mat-expansion-panel>
+
+        <!-- Module 4 -->
+        <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)" class="outer-panel">
+            <mat-expansion-panel-header>
+                <mat-panel-title class="outer-panel-titile">4. Basics of Wind Energy and Hydrogen Energy</mat-panel-title>
+            </mat-expansion-panel-header>
+            <ul class="bullet-list">
+                <li>Small Wind Energy System Installation.</li>
+                <li>Basics of Hydrogen Energy Practical study.</li>
+            </ul>
+        </mat-expansion-panel>
+
+        <!-- Module 5 -->
+        <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)" class="outer-panel">
+            <mat-expansion-panel-header>
+                <mat-panel-title class="outer-panel-titile">5. Software Simulation, Site Safety Training, Marketing & Solar PV Plant Visit</mat-panel-title>
+            </mat-expansion-panel-header>
+            <ul class="bullet-list">
+                <li>PV System Design.</li>
+                <li>How to convince the People.</li>
+                <li>Site Safety Training.</li>
+                <li>Solar PV Plant Visit.</li>
+            </ul>
+        </mat-expansion-panel>
+
+    </mat-accordion>
+</div>
