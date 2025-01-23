@@ -9,6 +9,9 @@ import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.co
 import { SignUpComponent } from './pages/sign-up/sign-up.component';
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { EvWorkshopComponent } from './pages/workshops/ev-workshop/ev-workshop.component';
+import { WorkshopComponent } from './pages/workshop/workshop.component';
+import { IiotWorkshopComponent } from './pages/workshops/iiot-workshop/iiot-workshop.component';
+import { SolarWorkshopComponent } from './pages/workshops/solar-workshop/solar-workshop.component';
 
 export const routes: Routes = [
     {path: '',component:HomeComponent},
@@ -21,5 +24,8 @@ export const routes: Routes = [
     {path:'product/:productId',component:ViewProductComponent},
     {path:'sign-up', component:SignUpComponent},
     {path:'contact-us', component:ContactUsComponent},
-    {path:'ev-workshop',component:EvWorkshopComponent}
+    {path:'workshop',component:WorkshopComponent},
+    {path:'ev-workshop',component:EvWorkshopComponent},
+    {path:'iiot-workshop',component:IiotWorkshopComponent},
+    {path:'solar-pv-pant-workshop',component:SolarWorkshopComponent},
 ];

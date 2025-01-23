@@ -1,0 +1,123 @@
+.container {
+  margin: 10px 0px;
+  padding: 40px 30px;
+  font-family: "Open Sans", sans-serif;
+  color: #373737;
+  /* background-color: #fff; */
+}
+.workshop-heading {
+  font-size: 22px;
+  text-align: center;
+}
+.outer-panel {
+  margin: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  transition: border-color 0.2s ease-in-out;
+}
+.session-panel {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  transition: border-color 0.2s ease-in-out;
+}
+.outer-panel-titile {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+}
+.session-panel-titile {
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+}
+
+.outer-panel:hover {
+  border-color: #2c547f;
+}
+.session-panel:hover {
+  border: 2px solid lightgray;
+}
+.outer-panel:hover .mat-expansion-panel-header {
+  background-color: #f4f4f4;
+}
+
+.bullet-list {
+  padding: 5px;
+  margin-left: 15px;
+  font-size: 15px;
+}
+.bullet-list li {
+  list-style-type: disc;
+  margin: 5px;
+}
+
+/* Media Query */
+
+@media (max-width: 441px) {
+  .workshop-heading {
+    font-size: 18px;
+    text-align: center;
+  }
+  .outer-panel {
+    margin: 15px 0px;
+    padding: 10px 0px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: border-color 0.2s ease-in-out;
+  }
+  .session-panel {
+    margin: 10px 0px;
+    padding: 10px 0px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: border-color 0.2s ease-in-out;
+  }
+  .outer-panel-titile {
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+  }
+  .session-panel-titile {
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+  }
+  .bullet-list {
+    padding: 5px;
+    margin-left: 15px;
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 441px) and (max-width: 768px) {
+  .workshop-heading {
+    font-size: 20px;
+    text-align: center;
+  }
+  .outer-panel {
+    margin: 15px 0px;
+    padding: 10px 0px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: border-color 0.2s ease-in-out;
+  }
+  .session-panel {
+    margin: 10px 0px;
+    padding: 10px 0px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: border-color 0.2s ease-in-out;
+  }
+  .outer-panel-titile {
+    font-size: 17px;
+    font-family: "Roboto", sans-serif;
+  }
+  .session-panel-titile {
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+  }
+  .bullet-list {
+    padding: 5px;
+    margin-left: 15px;
+    font-size: 14px;
+  }
+}
