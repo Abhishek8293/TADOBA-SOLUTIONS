@@ -5,9 +5,12 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background: white;
+  text-align: center;
+  transition: box-shadow 0.3s ease-in-out;
 }
-.img-div{
-  /* border: 1px solid red; */
+
+.img-div {
   background-color: #f57433;
   border-radius: 20px;
   width: 100%;
@@ -21,8 +24,7 @@ img {
   width: 170px;
   padding: 10px;
 }
-
-mat-card-title{
+mat-card-title {
   font-family: "Open Sans", sans-serif;
   font-weight: 500;
   color: #1a2a36;
@@ -36,8 +38,25 @@ button {
   height: 40px !important;
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+  font-weight: 600;
+  letter-spacing: 1px;
+  position: relative;
+  overflow: hidden;
+}
+button:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+  background-color: #ff7033; /* Slightly lighter orange */
+  box-shadow: 0px 4px 15px rgba(245, 116, 51, 0.5); /* Soft glow */
+}
+button:active {
+  transform: scale(0.98); /* Slight press effect */
+  box-shadow: 0px 2px 10px rgba(245, 116, 51, 0.3);
 }
 
-.service-card:hover{
+.service-card:hover {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }

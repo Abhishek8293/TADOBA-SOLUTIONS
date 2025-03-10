@@ -16,7 +16,7 @@
 }
 .contact-section h6 {
   margin: 0;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   font-family: "Open Sans", sans-serif;
   color: #373737;
@@ -26,12 +26,12 @@
 }
 .contact-section mat-icon {
   color: #ff0000;
-  font-size: 16px;
-  height: 16px;
-  width: 16px;
+  font-size: 18px;
+  height: 18px;
+  width: 18px;
 }
 .contact-section span {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600;
 }
 a {

@@ -87,13 +87,13 @@ export class HomeComponent implements OnInit {
 
   serviceData: ServiceCardData[] = [
     {
-      imgUrl: './assets/images/service/solar-energy.png',
-      title: 'Solar PV Plant Installation',
+      imgUrl: './assets/images/service/electromechanical.png',
+      title: 'Electromechanical Product Design & Development',
       navigation: 'Go to Service 1',
     },
     {
-      imgUrl: './assets/images/service/pcb-board.png',
-      title: 'PCB Design & Fabrication',
+      imgUrl: './assets/images/service/solar-energy.png',
+      title: 'Solar PV Plant/EV/Batteries',
       navigation: 'Go to Service 2',
     },
     {
@@ -102,8 +102,18 @@ export class HomeComponent implements OnInit {
       navigation: 'Go to Service 3',
     },
     {
+      imgUrl: './assets/images/service/pcb-board.png',
+      title: 'PCB Design, Development & Fabrication',
+      navigation: 'Go to Service 4',
+    },
+    {
       imgUrl: './assets/images/service/3d-printing.png',
-      title: '3D Prototype Design & Printing',
+      title: '3D Prototype Product Design & Printing',
+      navigation: 'Go to Service 4',
+    },
+    {
+      imgUrl: './assets/images/service/3d-printing.png',
+      title: 'Digital Agri Villages & Solutions',
       navigation: 'Go to Service 4',
     },
   ];

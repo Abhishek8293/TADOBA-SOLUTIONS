@@ -29,12 +29,14 @@ a {
 .nav-bar-link li a {
   text-decoration: none;
   color: #2b557f;
+  font-weight:600 ;
 }
 .nav-bar-link li a:hover {
   color: #2c547f !important;
 }
 .nav-bar-link li a fa-icon {
   margin-right: 5px;
+  font-size: 12px;
 }
 
 .tadoba-logo a img {
