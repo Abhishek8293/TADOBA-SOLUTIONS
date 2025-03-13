@@ -1,35 +1,36 @@
-<div class="-product-card">
-    <div class="card">
-      <div class="p-img-container">
-        <div class="p-img">
-          <img [src]="productImg" [alt]="productName" class="product-img" />
-        </div>
-      </div>
-      
-        <div class="p-detail">
-          <div class="p-name">{{productName}}</div>
-          <div class="p-rating-availability">
-            <div class="p-rating pra">
-              <mat-icon
-                *ngFor="let star of [1, 2, 3, 4, 5]; let i = index"
-                [ngClass]="{
-                  'star-filled': i < productRating,
-                  'star-outline': i >= productRating
-                }"
-              >
-                {{ i < productRating ? 'star' : 'star_border' }}
-              </mat-icon>
-            </div>
-            <div class="p-availability pra">{{ productAvailability }}</div>
-          </div>
-      
-          <div class="p-price">
-            <fa-icon [icon]="rupee"></fa-icon>{{ productPrice }}.00
-          </div>
-          <div class="add-to-cart-button">
-            <button mat-button class="view-details"  (click)="openWhatsApp(productId)"><fa-icon [icon]="whatsapp"></fa-icon>CONTACT US</button>
-            <button mat-button class="add-cart" [routerLink]="['/product',productId]"><fa-icon [icon]="viewDetails"></fa-icon>VIEW DETAILS</button>
-          </div>
-        </div>
+<div class="product-card">
+  <div class="card">
+    <div class="p-img-container">
+      <img [src]="productImg" [alt]="productName" class="product-img" />
     </div>
+
+    <div class="p-detail">
+      <div class="p-name">{{ productName }}</div>
+
+      <div class="p-rating-availability">
+        <div class="p-rating">
+          <mat-icon
+            *ngFor="let star of [1, 2, 3, 4, 5]; let i = index"
+            [ngClass]="{ 'star-filled': i < productRating }"
+          >
+            {{ i < productRating ? 'star' : 'star_border' }}
+          </mat-icon>
+        </div>
+        <div class="p-availability">{{ productAvailability }}</div>
+      </div>
+
+      <div class="p-price">
+        <fa-icon [icon]="rupee" class="rupee-icon"></fa-icon>{{productPrice}}.00
+      </div>
+
+      <div class="add-to-cart-button">
+        <button mat-button class="contact-btn" (click)="openWhatsApp(productId)">
+          <fa-icon [icon]="whatsapp"></fa-icon> CONTACT US
+        </button>
+        <button mat-button class="view-btn" [routerLink]="['/product', productId]">
+          <fa-icon [icon]="viewDetails"></fa-icon> VIEW DETAILS
+        </button>
+      </div>
+    </div>
+  </div>
 </div>
