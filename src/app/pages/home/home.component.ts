@@ -112,7 +112,7 @@ export class HomeComponent implements OnInit {
       navigation: 'Go to Service 4',
     },
     {
-      imgUrl: './assets/images/service/3d-printing.png',
+      imgUrl: './assets/images/service/agri.png',
       title: 'Digital Agri Villages & Solutions',
       navigation: 'Go to Service 4',
     },

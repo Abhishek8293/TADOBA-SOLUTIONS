@@ -4,13 +4,13 @@
   margin-top: 10px;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center content */
+  align-items: center; 
 }
 
 .service-card-list {
   display: flex;
-  flex-wrap: wrap; /* Ensures wrapping when needed */
-  justify-content: center; /* Centers cards */
+  flex-wrap: wrap; 
+  justify-content: center; 
   gap: 25px;
   padding: 20px;
 }
@@ -21,9 +21,9 @@
   text-align: center;
 }
 .service-container h6 {
-  font-size: 28px;
+  font-size: 30px;
   color: #1a2a36;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 1.5px;
   margin: 0;
   font-family: "Roboto", serif;
@@ -55,12 +55,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 28px;
-  font-weight: 600;
+  font-size: 30px;
+  font-weight: 700;
   font-family: "Roboto", serif;
 }
 .product-section-heading h6 {
-  font-size: 24px;
+  font-size: 30px;
   color: #fff;
   font-weight: 600;
   text-align: center;
@@ -124,9 +124,9 @@
   margin: 15px;
 }
 .our-partner-heading h6 {
-  font-size: 28px;
+  font-size: 30px;
   color: #1a2a36;
-  font-weight: 600;
+  font-weight: 700;
   text-align: center;
   margin-top: 20px;
   margin-bottom: 40px;
@@ -223,9 +223,9 @@
   padding: 20px;
 }
 .awards-container h6 {
-  font-size: 28px;
+  font-size: 30px;
   color: #1a2a36;
-  font-weight: 600;
+  font-weight: 700;
   text-align: center;
   margin-top: 20px;
   margin-bottom: 40px;
@@ -236,6 +236,13 @@
   background-color: #d9d9d9;
   height: 230px;
   width: 300px;
+  border-radius: 15px;
+  border: 2px solid white;
+}
+.awards-card img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
   border-radius: 15px;
 }
 
@@ -250,9 +257,9 @@
 }
 
 .project-container h6 {
-  font-size: 28px;
+  font-size: 30px;
   color: #1a2a36;
-  font-weight: 600;
+  font-weight: 700;
   text-align: center;
   margin-top: 20px;
   margin-bottom: 40px;
