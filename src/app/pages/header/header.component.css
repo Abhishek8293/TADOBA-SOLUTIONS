@@ -29,7 +29,7 @@ a {
 .nav-bar-link li a {
   text-decoration: none;
   color: #2b557f;
-  font-weight:600 ;
+  font-weight: 600;
 }
 .nav-bar-link li a:hover {
   color: #2c547f !important;
@@ -304,9 +304,6 @@ fa-icon {
 
 /* Laptop */
 @media (min-width: 769px) and (max-width: 1025px) {
-  .nav-bar-link li a {
-    font-size: small;
-  }
   .signup-btn {
     height: 30px;
   }
@@ -326,6 +323,14 @@ fa-icon {
     font-size: 24px;
     cursor: pointer;
     z-index: 1200;
+  }
+  .nav-bar-link a{
+    font-size: 13px;
+  }
+  .nav-bar-link li {
+    margin-left: 20px;
+    list-style-type: none;
+    font-size: 14px;
   }
 }
 /* tablet */

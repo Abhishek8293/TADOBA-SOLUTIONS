@@ -124,7 +124,7 @@ export class HomeComponent implements OnInit {
       productName: 'Auto OFF Single Phase With (Submersible)',
       productRating: 3.5,
       productAvailability: 'in-stock',
-      productPrice: 559.0,
+      productPrice: 1799.00,
       productImgUrl: [
         './assets/images/product/own-product/TSWC1PHS.png',
         './assets/images/product/own-product/TSWC1PHS-2.png',
