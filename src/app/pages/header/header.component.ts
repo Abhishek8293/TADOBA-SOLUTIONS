@@ -27,12 +27,11 @@ import { MatIconModule } from '@angular/material/icon';
     CommonModule,
     RouterModule,
     SignUpComponent,
-    MatIconModule
+    MatIconModule,
   ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css',
 })
-
 export class HeaderComponent {
   hamBurgerMenu = faBars;
   service = faGears;
@@ -68,12 +67,10 @@ export class HeaderComponent {
     this.isMenuOpen = !this.isMenuOpen;
   }
 
-
   openSignUpPopup() {
     this.isSignUpVisible = true;
   }
   closeSignUpPopup(): void {
     this.isSignUpVisible = false;
   }
-
 }

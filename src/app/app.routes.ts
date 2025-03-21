@@ -12,6 +12,7 @@ import { EvWorkshopComponent } from './pages/workshops/ev-workshop/ev-workshop.c
 import { WorkshopComponent } from './pages/workshop/workshop.component';
 import { IiotWorkshopComponent } from './pages/workshops/iiot-workshop/iiot-workshop.component';
 import { SolarWorkshopComponent } from './pages/workshops/solar-workshop/solar-workshop.component';
+import { ThreeDComponent } from './pages/workshops/three-d/three-d.component';
 
 export const routes: Routes = [
     {path: '',component:HomeComponent},
@@ -27,5 +28,6 @@ export const routes: Routes = [
     {path:'workshop',component:WorkshopComponent},
     {path:'ev-workshop',component:EvWorkshopComponent},
     {path:'iiot-workshop',component:IiotWorkshopComponent},
-    {path:'solar-pv-pant-workshop',component:SolarWorkshopComponent},
+    {path:'solar-pv-plant-workshop',component:SolarWorkshopComponent},
+    {path:'3d-workshop',component:ThreeDComponent}
 ];
