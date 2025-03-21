@@ -7,7 +7,7 @@
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 5px;
-  height: 60px;
+  height: 80px;
   margin: 0;
 }
 a {
@@ -30,6 +30,8 @@ a {
   text-decoration: none;
   color: #2b557f;
   font-weight: 600;
+  display: flex;
+  align-items: center;
 }
 .nav-bar-link li a:hover {
   color: #2c547f !important;
@@ -38,9 +40,17 @@ a {
   margin-right: 5px;
   font-size: 12px;
 }
-
-.tadoba-logo a img {
-  height: 55px;
+.tadoba-logo {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+.tadoba-logo .tadoba{
+  height: 70px;
+}
+.tadoba-logo .ibitf-logo{
+  height: 90px;
+  margin-left: 10px;
 }
 .search {
   display: flex;
@@ -324,7 +334,7 @@ fa-icon {
     cursor: pointer;
     z-index: 1200;
   }
-  .nav-bar-link a{
+  .nav-bar-link a {
     font-size: 13px;
   }
   .nav-bar-link li {
