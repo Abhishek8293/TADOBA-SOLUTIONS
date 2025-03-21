@@ -7,7 +7,7 @@
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 5px;
-  height: 80px;
+  height: 90px;
   margin: 0;
 }
 a {
@@ -24,12 +24,12 @@ a {
 .nav-bar-link li {
   margin-left: 25px;
   list-style-type: none;
-  font-size: 15px;
+  font-size: 16px;
 }
 .nav-bar-link li a {
   text-decoration: none;
   color: #2b557f;
-  font-weight: 600;
+  font-weight: 700;
   display: flex;
   align-items: center;
 }
@@ -46,10 +46,10 @@ a {
   align-items: center;
 }
 .tadoba-logo .tadoba{
-  height: 70px;
+  height: 60px;
 }
 .tadoba-logo .ibitf-logo{
-  height: 90px;
+  height: 125px;
   margin-left: 10px;
 }
 .search {
@@ -344,7 +344,8 @@ fa-icon {
   }
 }
 /* tablet */
-@media (min-width: 441px) and (max-width: 769px) {
+@media (min-width: 441px) and (max-width: 1025px) {
+
   .nav-bar-link {
     display: none;
   }
@@ -352,7 +353,7 @@ fa-icon {
     display: flex; /* Make the menu visible */
     flex-direction: column;
     justify-content: space-around;
-    top: 17%;
+    top: 18%;
   }
   .nav-bar-link-res li {
     padding-left: 20px;
@@ -547,6 +548,18 @@ fa-icon {
     cursor: pointer;
     z-index: 1200;
   }
+  .tadoba-logo {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+  }
+  .tadoba-logo .tadoba{
+    height: 45px;
+  }
+  .tadoba-logo .ibitf-logo{
+    height: 115px;
+    margin-left: 10px;
+  }
 }
 
 @media (max-width: 441px) {
@@ -558,7 +571,7 @@ fa-icon {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-start;
-    top: 8.5%;
+    top: 10%;
     padding-left: 5px;
   }
   .nav-bar-link-res ul {
@@ -766,6 +779,18 @@ fa-icon {
     cursor: pointer;
     z-index: 1200;
   }
+  .tadoba-logo {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+  }
+  .tadoba-logo .tadoba{
+    height: 45px;
+  }
+  .tadoba-logo .ibitf-logo{
+    height: 115px;
+    margin-left: 5px;
+  }
 }
 
 @media (max-width: 376px) {
@@ -785,5 +810,17 @@ fa-icon {
     font-size: 24px;
     cursor: pointer;
     z-index: 1200;
+  }
+  .tadoba-logo {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+  }
+  .tadoba-logo .tadoba{
+    height: 40px;
+  }
+  .tadoba-logo .ibitf-logo{
+    height: 110px;
+    margin-left: 5px;
   }
 }

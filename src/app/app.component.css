@@ -20,7 +20,7 @@
 .contact-section h6 {
   margin: 0;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 700;
   font-family: "Open Sans", sans-serif;
   color: #373737;
 }
@@ -32,6 +32,11 @@
   font-size: 18px;
   height: 18px;
   width: 18px;
+}
+.contact-section fa-icon {
+  font-size: 17px;
+  margin-top: 2px;
+  color: red;
 }
 .contact-section span {
   font-size: 20px;
@@ -123,7 +128,9 @@ a {
 .back-to-top:focus {
   outline: none;
 }
-
+app-header{
+  margin-bottom: 40px;
+}
 /* Mobile Media Query */
 @media (max-width: 441px) {
   .top-bar {
@@ -131,11 +138,11 @@ a {
   }
 }
 
-@media (min-width: 441px) and (max-width: 768px) {
+@media (min-width: 441px) and (max-width: 769px) {
   .contact-section h6 {
     margin: 0;
-    font-size: 12px;
-    font-weight: 500;
+    font-size: 13px;
+    font-weight: 600;
     font-family: "Open Sans", sans-serif;
     color: #373737;
   }
@@ -162,13 +169,25 @@ a {
     font-size: 16px;
     margin-top: 2px;
   }
-  
+  .top-bar {
+    background-color: #fff;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    position: relative; /* Fix the top-bar at the top */
+    top: 0;
+    left: 0;
+    z-index: 1100; /* Ensure it stays above the navbar */
+  }
 }
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .contact-section h6 {
     margin: 0;
-    font-size: 12px;
-    font-weight: 500;
+    font-size: 14px;
+    font-weight: 700;
     font-family: "Open Sans", sans-serif;
     color: #373737;
   }
