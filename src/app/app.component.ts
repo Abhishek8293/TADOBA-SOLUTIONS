@@ -9,6 +9,7 @@ import {
   faFacebook,
   faInstagram,
   faXTwitter,
+  faWhatsapp
 } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { CommonModule } from '@angular/common';
@@ -36,6 +37,7 @@ export class AppComponent {
   facebook = faFacebook;
   youtube = faYoutube;
   twitter = faXTwitter;
+  whatsapp = faWhatsapp;
 
   showButton = false;
 
