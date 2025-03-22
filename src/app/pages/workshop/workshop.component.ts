@@ -15,24 +15,24 @@ export class WorkshopComponent {
     {
       title: 'Electric Vehicles (EVs) Workshop',
       description:
-        'Gain insights into EV technology, design, and sustainability.',
+        'A hands-on EV workshop covering vehicle technology, battery management, motor systems, inverters, vehicle dynamics, simulation with MATLAB, and fault diagnosis using OBD scanners.',
       link: '/ev-workshop',
     },
     {
-      title: 'Advanced IIoT Workshop',
+      title: 'Advanced IIoT Workshop with Embedded Systems',
       description:
-        'Learn IoT architecture, embedded systems, and smart city applications.',
+        'An advanced IoT workshop covering system architecture, embedded design, LoRa & GSM/GPRS communication, edge computing, and hands-on project development in smart agriculture, cities, and traffic management.',
       link: '/iiot-workshop',
     },
     {
       title: 'Solar PV Plant Workshop',
       description:
-        'Hands-on training in solar photovoltaic systems and hybrid installations.',
+        'A hands-on workshop covering Solar PV systems, including OFF-Grid, ON-Grid, and Hybrid plants, along with wind and hydrogen energy basics, software simulation, site safety, and a solar plant visit.',
       link: '/solar-pv-plant-workshop',
     },
     {
-      title: '3D Designing & Fabrication',
-      description: 'Practical training in 3D modeling, CAD, and 3D printing.',
+      title: 'Hands-on Training On 3D Desiging and Fabrication',
+      description: 'A practical workshop on 3D design, modeling, and printing, covering essential tools, techniques, and real-world applications.',
       link: '/3d-workshop',
     },
   ];

@@ -154,20 +154,25 @@
 /* Media Query for Tablets (769px - 1024px) */
 @media (min-width: 769px) and (max-width: 1024px) {
   .footer-links {
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 15px;
+    justify-content: center;
   }
 
   .footer-section {
-    width: 220px;
+    width: auto;
   }
 
-  .footer-section:first-child { /* Our Businesses */
-    width: 300px;
+  .footer-section:first-child, 
+  .footer-section:nth-child(2),
+  .footer-section:nth-child(3) {
+    grid-column: span 1;
   }
 
-  .footer-section:last-child { /* Contact Us */
-    width: 280px;
+  .footer-section:nth-child(4),
+  .footer-section:last-child {
+    grid-column: span 1;
   }
 }
 
@@ -186,5 +191,12 @@
   .footer-section ul li {
     display: inline-block;
     margin: 5px;
+  }
+  .footer-section ul li a{
+    font-size: 14px;
+  }
+  .footer-section:first-child {
+    /* Our Businesses */
+    width: 355px;
   }
 }
