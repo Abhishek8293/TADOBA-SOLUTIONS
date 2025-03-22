@@ -1,96 +1,18 @@
-<div class="container">
-    <h6 class="workshop-heading">Electric Vehicles (EVs) Workshop Program</h6>
-    <mat-accordion>
+<div class="workshop-container">
+    <h2 class="workshop-heading">Electric Vehicles (EVs) Workshop Program</h2>
 
-        <!-- Chapter 1 -->
-        <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)"
-            class="outer-panel">
-            <mat-expansion-panel-header>
-                <mat-panel-title class="outer-panel-titile"> 1. Introduction to e-Vehicle & Battery
-                    Technology</mat-panel-title>
-            </mat-expansion-panel-header>
-            <div class="content-div">
-                <img src="./assets/images/workshops/ev/module1.png" alt="OFF-Grid" class="module-img">
+    <div class="workshop-list">
+        <div class="workshop-card" *ngFor="let module of workshopModules">
+            <!-- Show image only if it exists -->
+            <div class="image-wrapper" *ngIf="module.image">
+                <img [src]="module.image" [alt]="module.title" class="module-img">
+            </div>
+            <div class="module-content">
+                <h3 class="module-title">{{ module.title }}</h3>
                 <ul class="bullet-list">
-                    <li>Overview of Electric Vehicles</li>
-                    <li>Types  of EVs and Traction systems</li>
-                    <li> Benefits and limitations of EV adoption</li>
-                    <li>Batteries and Battery Management System(BMS)</li>
-                    <li>Types of batteries used in EVs.</li>
-                    <li>Importance and functioning of BMS.</li>
-                    <li>Practical activity: Hands-on with battery and BMS.</li>
+                    <li *ngFor="let point of module.points">{{ point }}</li>
                 </ul>
             </div>
-        </mat-expansion-panel>
-
-        <!-- Chapter 2 -->
-        <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)"
-            class="outer-panel">
-            <mat-expansion-panel-header>
-                <mat-panel-title class="outer-panel-titile">2. Types of Motors in EVs</mat-panel-title>
-            </mat-expansion-panel-header>
-            <div class="content-div">
-                <img src="./assets/images/workshops/ev/module2.jpg" alt="OFF-Grid" class="module-img">
-                <ul class="bullet-list">
-                    <li>Fundamentals of Motor Functioning in EVs</li>
-                    <li>Overview of motor types (AC, DC, BLDC, etc.).</li>
-                    <li>Hands-On Motor Analysis</li>
-                    <li>Exploring and comparing different motor types.</li>
-                </ul>
-            </div>
-        </mat-expansion-panel>
-
-        <!-- Chapter 3 -->
-        <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)"
-            class="outer-panel">
-            <mat-expansion-panel-header>
-                <mat-panel-title class="outer-panel-titile">3. Inverters & Vehicle Dynamics in EVs</mat-panel-title>
-            </mat-expansion-panel-header>
-            <div class="content-div">
-                <img src="./assets/images/workshops/ev/module3.jpg" alt="OFF-Grid" class="module-img">
-                <ul class="bullet-list">
-                    <li>Importance of inverters and DC-DC converters in EVs.</li>
-                    <li>Design principles and operations.</li>
-                    <li>Hands-on activity: Working with inverters.</li>
-                    <li>Fundamentals of Vehicle Dynamics</li>
-                    <li>Understanding weight distribution, acceleration, and stability.</li>
-                    <li>Tractive Force Calculations</li>
-                </ul>
-            </div>
-        </mat-expansion-panel>
-
-        <!-- Chapter 4 -->
-        <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)"
-            class="outer-panel">
-            <mat-expansion-panel-header>
-                <mat-panel-title class="outer-panel-titile">4. Simulation in the EV Industry</mat-panel-title>
-            </mat-expansion-panel-header>
-            <div class="content-div">
-                <img src="./assets/images/workshops/ev/module4.png" alt="OFF-Grid" class="module-img">
-                <ul class="bullet-list">
-                    <li>Introduction to MATLAB and Simulink</li>
-                    <li>Overview of the interface and key features.</li>
-                    <li>Creating basic EV models in MATLAB.</li>
-                    <li>Running simulations and interpreting results.</li>
-                </ul>
-            </div>
-        </mat-expansion-panel>
-
-        <!-- Chapter 5 -->
-        <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)"
-            class="outer-panel">
-            <mat-expansion-panel-header>
-                <mat-panel-title class="outer-panel-titile">5. Fault Analysis Using On-Board Daignostic (OBD)
-                    scanner</mat-panel-title>
-            </mat-expansion-panel-header>
-            <div class="content-div">
-                <img src="./assets/images/workshops/ev/module5.png" alt="OFF-Grid" class="module-img">
-                <ul class="bullet-list">
-                    <li>Basics of OBD Scanners</li>
-                    <li>Understanding OBD systems and applications in EVs.</li>
-                    <li>Using an OBD scanner for EV diagnosis.</li>
-                </ul>
-            </div>
-        </mat-expansion-panel>
-    </mat-accordion>
+        </div>
+    </div>
 </div>
