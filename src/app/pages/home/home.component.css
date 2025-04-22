@@ -210,17 +210,7 @@
 
 /* ================================================== Awards Section ======================================= */
 .awards-container {
-  padding: 40px 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.awards-card-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(335px, 1fr));
-  gap: 20px;
-  padding: 20px;
+  padding: 20px 0;
 }
 .awards-container h6 {
   font-size: 30px;
@@ -231,19 +221,6 @@
   margin-bottom: 40px;
   font-family: "Roboto", serif;
   letter-spacing: 1.5px;
-}
-.awards-card {
-  background-color: #d9d9d9;
-  height: 230px;
-  width: 300px;
-  border-radius: 15px;
-  border: 2px solid white;
-}
-.awards-card img{
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 15px;
 }
 
 /* ===============================================Project Section ================================================*/

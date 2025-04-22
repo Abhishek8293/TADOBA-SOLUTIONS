@@ -37,6 +37,7 @@ import { SnackbarService } from '../../services/snackbar.service';
 import { ApiService } from '../../services/api.service';
 import { Quote } from '../../models/Quote';
 import { ApiResponse } from '../../models/ApiResponse';
+import { AwardsSliderComponent } from "../../components/awards-slider/awards-slider.component";
 
 interface ServiceCardData {
   imgUrl: string;
@@ -61,7 +62,8 @@ interface ServiceCardData {
     FormsModule,
     RouterModule,
     ReactiveFormsModule,
-  ],
+    AwardsSliderComponent
+],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })
