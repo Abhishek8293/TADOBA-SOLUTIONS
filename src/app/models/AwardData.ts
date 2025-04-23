@@ -6,4 +6,13 @@ export class AwardsData {
         this.title = '';
     }
   }
-  
+
+
+export class SliderData{
+    imgUrl:string;
+
+
+    constructor() {
+        this.imgUrl = '';
+    }
+}

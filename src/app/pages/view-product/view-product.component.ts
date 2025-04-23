@@ -7,7 +7,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { ourProductList, Product } from '../../models/Product';
+import { ourProductList, Product, retailProductList } from '../../models/Product';
 
 @Component({
   selector: 'app-view-product',
@@ -42,8 +42,17 @@ export class ViewProductComponent implements OnInit {
   }
 
   getProductById(productId: string): Product {
-    return ourProductList.find((p) => p.productId === productId)!;
+    const product =
+      ourProductList.find((p) => p.productId === productId) ||
+      retailProductList.find((p) => p.productId === productId);
+  
+    if (!product) {
+      throw new Error(`Product with ID "${productId}" not found.`);
+    }
+  
+    return product;
   }
+  
 
   share() {
     const currentUrl = window.location.href;

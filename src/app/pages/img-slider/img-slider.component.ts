@@ -9,6 +9,7 @@ import {
 } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { SliderData } from '../../models/AwardData';
 
 declare const Swiper: any;
 
@@ -21,6 +22,16 @@ declare const Swiper: any;
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ImgSliderComponent implements AfterViewInit {
+
+
+    data:SliderData [] = [
+      {
+        imgUrl: 'assets/images/slider/farmeye+.jpg',
+      },
+    ]
+
+
+
   constructor(
     @Inject(PLATFORM_ID) private platformId: Object,
     private ngZone: NgZone
