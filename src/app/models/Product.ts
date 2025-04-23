@@ -123,67 +123,6 @@ export const ourProductList: Product[] = [
   //   ],
   // },
   {
-    productId: ' TSACSLD2D',
-    productName:
-      '36 Watts LED Street Light (Lens Model) With D2D(Dusk To Down)',
-    productRating: 3.5,
-    productAvailability: 'in-stock',
-    productPrice: 750.00,
-    productImgUrl: [
-      './assets/images/product/own-product/TSACSLD2D.png',
-      './assets/images/product/own-product/TSACSLD2D-2.jpeg',
-    ],
-    productCategory: 'Electronic',
-    productDescription: [
-      '2400 Lumens: IP65',
-      'Wide Operating Voltage Range from 110V to 270V AC',
-      'Die-cast Aluminum Body for effective heat dissipation',
-      'Over Voltage protection up to 440V AC',
-      'Body Colour: Dark Grey',
-      ' Input Voltage:  85V-265V',
-    ],
-  },
-  {
-    productId: ' TSACSL',
-    productName: '36 Watts LED Street Light (Lens Model)',
-    productRating: 3.5,
-    productAvailability: 'in-stock',
-    productPrice: 650.00,
-    productImgUrl: [
-      './assets/images/product/own-product/TSACSL.png',
-      './assets/images/product/own-product/TSACSL-2.jpeg',
-    ],
-    productCategory: 'Electronic',
-    productDescription: [
-      '2400 Lumens: IP65',
-      ' Wide Operating Voltage Range from 110V to 270V AC',
-      ' Die-cast Aluminum Body for effective heat dissipation',
-      ' Over Voltage protection up to 440V AC',
-      ' Body Colour: Grey',
-      'Input Voltage:  85V-265V',
-    ],
-  },
-  {
-    productId: ' TSACSLD2DWAT',
-    productName: '36 Watts LED Street Light (Lens Model) With Auto Timer D2D',
-    productRating: 3.5,
-    productAvailability: 'in-stock',
-    productPrice: 950.00,
-    productImgUrl: [
-      './assets/images/product/own-product/TSACSLD2DWAT.png',
-      './assets/images/product/own-product/TSACSLD2DWAT-2.jpeg',
-    ],
-    productCategory: 'Electronic',
-    productDescription: [
-      '2400 Lumens: IP65',
-      'Wide Operating Voltage Range from 110V to 270V AC',
-      'Die-cast Aluminum Body for effective heat dissipation',
-      'Over Voltage protection up to 440V AC',
-      'Body Colour: Grey',
-      'Input Voltage:  85V-265V',
-    ],
-  },
-  {
     productId: ' TSD2DAC',
     productName: 'Day Night Smart Switch D2D(Dusk To Down) AC',
     productRating: 3.5,
@@ -217,36 +156,7 @@ export const ourProductList: Product[] = [
   //     'Rated input voltage 12V DC',
   //   ],
   // },
-  {
-    productId: '  TSSACCTV',
-    productName: ' Standlone CCTV Camera',
-    productRating: 3.5,
-    productAvailability: 'in-stock',
-    productPrice: 13700.00,
-    productImgUrl: [
-      './assets/images/product/own-product/TSSACCTV.png',
-      './assets/images/product/own-product/TSSACCTV-2.png',
-      './assets/images/product/own-product/TSSACCTV-3.jpeg',
-      './assets/images/product/own-product/TSSACCTV-4.jpeg',
-    ],
-    productCategory: 'Electronic',
-    productDescription: [
-      'Solar Panel Size: 20 Watts Polycrystalline',
-      'Battery Size: 7000 mAh LiPo',
-      'Battery Backup : 48 Hours',
-      'Charge Controller: Inbuilt Charge Controller',
-      'Mounting Type: Wall/Pole Mounting',
-      'Circuit Enclosure: IP65 Enclousure of Battery and Charge Controller',
-      'Outer Structure: Rust Proof Coated High Grade Metal Structure ',
-      'Nut Bolt Accessories: Stainless Steel Material',
-      '4G Bullet Camera Support All SIM Cards',
-      ' Dual Light Colour Vision support thanks to powerful LED lights',
-      ' 3MP Resolution to Clearly See Objects and Human in Day and Night',
-      'Crystal Clear Audio Recording Helps Clear Hear and Monitor Area Built in mic and speaker',
-      ' Memory support up to 64 GB SD card provide 4 6 day data backup',
-      ' Real time data wireless data transmission.',
-    ],
-  },
+  
   // {
   //   productId: 'TSACDC12V',
   //   productName: 'AC DC Switch 12V',
@@ -360,6 +270,61 @@ export const ourProductList: Product[] = [
       'Ideal for smart farming, environmental monitoring, and security applications.',
     ],
   },
+ 
+];
+
+
+export const retailProductList: Product[] = [
+  {
+    productId: '  TSSTPT',
+    productName: 'ST13005A High-Voltage NPN Power Transistor',
+    productRating: 3.5,
+    productAvailability: 'in-stock',
+    productPrice: 5.00,
+    productImgUrl: [
+      './assets/images/product/retail-product/TSSTPT.png',
+      './assets/images/product/retail-product/TSSTPT-2.png',
+      './assets/images/product/retail-product/TSSTPT-3.png',
+    ],
+    productCategory: 'Electronic',
+    productDescription: [
+      'Supports up to 400V collector-emitter voltage.',
+      'Fast switching performance for efficient power control.',
+      'Standard TO-220 package for easy mounting and cooling.',
+      'Low saturation voltage ensures high efficiency.',
+      'Suitable for SMPS, inverters, and lighting ballasts.'
+    ],
+  },
+  {
+    productId: '  TSSACCTV',
+    productName: ' Standlone CCTV Camera',
+    productRating: 3.5,
+    productAvailability: 'in-stock',
+    productPrice: 13700.00,
+    productImgUrl: [
+      './assets/images/product/retail-product/TSSACCTV-2.png',
+      './assets/images/product/retail-product/TSSACCTV.png',
+      './assets/images/product/retail-product/TSSACCTV-3.jpeg',
+      './assets/images/product/retail-product/TSSACCTV-4.jpeg',
+    ],
+    productCategory: 'Electronic',
+    productDescription: [
+      'Solar Panel Size: 20 Watts Polycrystalline',
+      'Battery Size: 7000 mAh LiPo',
+      'Battery Backup : 48 Hours',
+      'Charge Controller: Inbuilt Charge Controller',
+      'Mounting Type: Wall/Pole Mounting',
+      'Circuit Enclosure: IP65 Enclousure of Battery and Charge Controller',
+      'Outer Structure: Rust Proof Coated High Grade Metal Structure ',
+      'Nut Bolt Accessories: Stainless Steel Material',
+      '4G Bullet Camera Support All SIM Cards',
+      ' Dual Light Colour Vision support thanks to powerful LED lights',
+      ' 3MP Resolution to Clearly See Objects and Human in Day and Night',
+      'Crystal Clear Audio Recording Helps Clear Hear and Monitor Area Built in mic and speaker',
+      ' Memory support up to 64 GB SD card provide 4 6 day data backup',
+      ' Real time data wireless data transmission.',
+    ],
+  },
   {
     productId: 'TSWLS',
     productName: 'Water Level Sensor',
@@ -367,8 +332,8 @@ export const ourProductList: Product[] = [
     productAvailability: 'in-stock',
     productPrice: 25.00,
     productImgUrl: [
-      './assets/images/product/own-product/TSWLS.jpg',
-      './assets/images/product/own-product/TSWLS-2.jpg',
+      './assets/images/product/retail-product/TSWLS.jpg',
+      './assets/images/product/retail-product/TSWLS-2.jpg',
     ],
     productCategory: 'Electronic',
     productDescription: [
@@ -387,8 +352,8 @@ export const ourProductList: Product[] = [
     productAvailability: 'in-stock',
     productPrice: 6.00,
     productImgUrl: [
-      './assets/images/product/own-product/TSSC.jpg',
-      './assets/images/product/own-product/TSSC-2.jpg',
+      './assets/images/product/retail-product/TSSC.jpg',
+      './assets/images/product/retail-product/TSSC-2.jpg',
     ],
     productCategory: 'Electronic',
     productDescription: [
@@ -404,7 +369,7 @@ export const ourProductList: Product[] = [
     productAvailability: 'in-stock',
     productPrice: 12.00,
     productImgUrl: [
-      './assets/images/product/own-product/TSPB.jpg',
+      './assets/images/product/retail-product/TSPB.jpg',
     ],
     productCategory: 'Electronic',
     productDescription: [
@@ -423,8 +388,8 @@ export const ourProductList: Product[] = [
     productAvailability: 'in-stock',
     productPrice: 26.00,
     productImgUrl: [
-      './assets/images/product/own-product/TSOS.jpg',
-      './assets/images/product/own-product/TSOS-2.jpg',
+      './assets/images/product/retail-product/TSOS.jpg',
+      './assets/images/product/retail-product/TSOS-2.jpg',
     ],
     productCategory: 'Electronic',
     productDescription: [
@@ -441,8 +406,8 @@ export const ourProductList: Product[] = [
     productAvailability: 'in-stock',
     productPrice: 85.00,
     productImgUrl: [
-      './assets/images/product/own-product/TSRH90.jpg',
-      './assets/images/product/own-product/TSRH90-2.jpg',
+      './assets/images/product/retail-product/TSRH90.jpg',
+      './assets/images/product/retail-product/TSRH90-2.jpg',
     ],
     productCategory: 'Electronic',
     productDescription: [
@@ -460,8 +425,8 @@ export const ourProductList: Product[] = [
     productAvailability: 'in-stock',
     productPrice: 16.00,
     productImgUrl: [
-      './assets/images/product/own-product/TSRJQC3FC.jpg',
-      './assets/images/product/own-product/TSRJQC3FC-2.jpg',
+      './assets/images/product/retail-product/TSRJQC3FC.jpg',
+      './assets/images/product/retail-product/TSRJQC3FC-2.jpg',
     ],
     productCategory: 'Electronic',
     productDescription: [
@@ -480,8 +445,8 @@ export const ourProductList: Product[] = [
     productAvailability: 'in-stock',
     productPrice: 86.00,
     productImgUrl: [
-      './assets/images/product/own-product/TSRSK91.jpg',
-      './assets/images/product/own-product/TSRSK91-2.jpg',
+      './assets/images/product/retail-product/TSRSK91.jpg',
+      './assets/images/product/retail-product/TSRSK91-2.jpg',
     ],
     productCategory: 'Electronic',
     productDescription: [
@@ -492,5 +457,66 @@ export const ourProductList: Product[] = [
       'Durable and efficient for industrial and automation use.'
     ]                   
   },
+  {
+    productId: ' TSACSLD2D',
+    productName:
+      '36 Watts LED Street Light (Lens Model) With D2D(Dusk To Down)',
+    productRating: 3.5,
+    productAvailability: 'in-stock',
+    productPrice: 750.00,
+    productImgUrl: [
+      './assets/images/product/retail-product/TSACSLD2D.png',
+      './assets/images/product/retail-product/TSACSLD2D-2.jpeg',
+    ],
+    productCategory: 'Electronic',
+    productDescription: [
+      '2400 Lumens: IP65',
+      'Wide Operating Voltage Range from 110V to 270V AC',
+      'Die-cast Aluminum Body for effective heat dissipation',
+      'Over Voltage protection up to 440V AC',
+      'Body Colour: Dark Grey',
+      ' Input Voltage:  85V-265V',
+    ],
+  },
+  {
+    productId: ' TSACSL',
+    productName: '36 Watts LED Street Light (Lens Model)',
+    productRating: 3.5,
+    productAvailability: 'in-stock',
+    productPrice: 650.00,
+    productImgUrl: [
+      './assets/images/product/retail-product/TSACSL.png',
+      './assets/images/product/retail-product/TSACSL-2.jpeg',
+    ],
+    productCategory: 'Electronic',
+    productDescription: [
+      '2400 Lumens: IP65',
+      ' Wide Operating Voltage Range from 110V to 270V AC',
+      ' Die-cast Aluminum Body for effective heat dissipation',
+      ' Over Voltage protection up to 440V AC',
+      ' Body Colour: Grey',
+      'Input Voltage:  85V-265V',
+    ],
+  },
+  {
+    productId: ' TSACSLD2DWAT',
+    productName: '36 Watts LED Street Light (Lens Model) With Auto Timer D2D',
+    productRating: 3.5,
+    productAvailability: 'in-stock',
+    productPrice: 950.00,
+    productImgUrl: [
+      './assets/images/product/retail-product/TSACSLD2DWAT.png',
+      './assets/images/product/retail-product/TSACSLD2DWAT-2.jpeg',
+    ],
+    productCategory: 'Electronic',
+    productDescription: [
+      '2400 Lumens: IP65',
+      'Wide Operating Voltage Range from 110V to 270V AC',
+      'Die-cast Aluminum Body for effective heat dissipation',
+      'Over Voltage protection up to 440V AC',
+      'Body Colour: Grey',
+      'Input Voltage:  85V-265V',
+    ],
+  },
 
-];
+]

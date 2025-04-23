@@ -13,11 +13,13 @@ import { WorkshopComponent } from './pages/workshop/workshop.component';
 import { IiotWorkshopComponent } from './pages/workshops/iiot-workshop/iiot-workshop.component';
 import { SolarWorkshopComponent } from './pages/workshops/solar-workshop/solar-workshop.component';
 import { ThreeDComponent } from './pages/workshops/three-d/three-d.component';
+import { RetailProductsComponent } from './pages/retail-products/retail-products.component';
 
 export const routes: Routes = [
     {path: '',component:HomeComponent},
     {path:'career',component:CareerComponent},
     {path:'our-products',component:OurProductsComponent},
+    {path:'retail-products',component:RetailProductsComponent},
     {path:'product',component:ViewProductComponent},
     {path:"about-us", component:AboutUsComponent},
     {path:'terms&conditions', component:TermsAndConditionComponent},

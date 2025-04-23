@@ -21,17 +21,17 @@
         <h6>OUR PRODUCTS</h6>
     </div>
     <div class="products laptop-small">
-        @for (product of products3; track $index) {
+        @for (product of ourProducts3; track $index) {
         <app-product-card [productImg]="product.productImgUrl[0]" [productName]="product.productName"
-            [productRating]="product.productRating" [productAvailability]="product.productAvailability"
+            [productRating]="+product.productRating" [productAvailability]="product.productAvailability"
             [productPrice]="product.productPrice" [productId]="product.productId">
         </app-product-card>
         }
     </div>
     <div class="products laptop-large">
-        @for (product of products; track $index) {
+        @for (product of ourProducts; track $index) {
         <app-product-card [productImg]="product.productImgUrl[0]" [productName]="product.productName"
-            [productRating]="product.productRating" [productAvailability]="product.productAvailability"
+            [productRating]="+product.productRating" [productAvailability]="product.productAvailability"
             [productPrice]="product.productPrice" [productId]="product.productId">
         </app-product-card>
         }
@@ -48,23 +48,23 @@
         <h6>RETAIL PRODUCTS</h6>
     </div>
     <div class="products laptop-small">
-        @for (product of products3; track $index) {
+        @for (product of retailProducts3; track $index) {
         <app-product-card [productImg]="product.productImgUrl[0]" [productName]="product.productName"
-            [productRating]="product.productRating" [productAvailability]="product.productAvailability"
+            [productRating]="+product.productRating" [productAvailability]="product.productAvailability"
             [productPrice]="product.productPrice" [productId]="product.productId">
         </app-product-card>
         }
     </div>
     <div class="products laptop-large">
-        @for (product of products; track $index) {
+        @for (product of retailProducts; track $index) {
         <app-product-card [productImg]="product.productImgUrl[0]" [productName]="product.productName"
-            [productRating]="product.productRating" [productAvailability]="product.productAvailability"
+            [productRating]="+product.productRating" [productAvailability]="product.productAvailability"
             [productPrice]="product.productPrice" [productId]="product.productId">
         </app-product-card>
         }
     </div>
     <div class="see-more-product-button">
-        <button class="see-more-btn">See More<fa-icon [icon]="rightArrow"></fa-icon></button>
+        <button class="see-more-btn" routerLink="/retail-products">See More<fa-icon [icon]="rightArrow"></fa-icon></button>
     </div>
 </div>
 
@@ -96,15 +96,14 @@
     </div>
     <div class="partner-logo-and-name">
         <div class="partner-logo-and-name-box">
-            <div class="partner-logo">
-                <img src="./assets/images/cleint-img/iit-log-wb.png" alt="iit-log-wb" class="partner-logo-img">
+            <div class="partner-logo ibitf">
+                <img src="./assets/images/cleint-img/ibitf.png" alt="iit-log-wb" class="partner-logo-img">
             </div>
-            <div class="partner-name"><span>Indian Institute
-                    Of <br> Technology
-                    Bhilai</span></div>
+            <div class="partner-name"><span>IIT Bhilai Innovation & <br> Technology
+                    Foundation</span></div>
         </div>
         <div class="partner-logo-and-name-box">
-            <div class="partner-logo">
+            <div class="partner-logo igkv">
                 <img src="./assets/images/cleint-img/igkv-wb.png" alt="iit-log-wb" class="partner-logo-img">
             </div>
             <div class="partner-name"><span>Indra Gandhi Krishi <br>

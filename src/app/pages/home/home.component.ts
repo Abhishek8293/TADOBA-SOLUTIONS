@@ -115,12 +115,12 @@ export class HomeComponent implements OnInit {
     },
     {
       imgUrl: './assets/images/service/agri.png',
-      title: 'Digital Agri Villages & Solutions',
+      title: 'Digital Agri Village Products & Solutions',
       navigation: 'Go to Service 4',
     },
   ];
 
-  products: Product[] = [
+  ourProducts: Product[] = [
     {
       productId: 'TSWC1PHS',
       productName: 'Auto OFF Single Phase With (Submersible)',
@@ -166,47 +166,48 @@ export class HomeComponent implements OnInit {
       ],
     },
     {
-      productId: ' TSACSL',
-      productName: '36 Watts LED Street Light (Lens Model)',
+      productId: ' TSD2DAC',
+      productName: 'Day Night Smart Switch D2D(Dusk To Down) AC',
       productRating: 3.5,
       productAvailability: 'in-stock',
-      productPrice: 650.0,
+      productPrice: 150.00,
       productImgUrl: [
-        './assets/images/product/own-product/TSACSL.png',
-        './assets/images/product/own-product/TSACSL-2.jpeg',
+        './assets/images/product/own-product/TSD2DAC.png',
+        './assets/images/product/own-product/TSD2DAC-2.png',
       ],
       productCategory: 'Electronic',
       productDescription: [
-        '2400 Lumens: IP65',
-        ' Wide Operating Voltage Range from 110V to 270V AC',
-        ' Die-cast Aluminum Body for effective heat dissipation',
-        ' Over Voltage protection up to 440V AC',
-        ' Body Colour: Grey',
-        'Input Voltage:  85V-265V',
+        'Load current up to 6A',
+        'Load voltage 230V AC',
+        'Rated input voltage 230V AC',
       ],
     },
     {
-      productId: 'TSRJQC3FC',
-      productName: 'Relay JQC3FC (Cube-Type)',
+      productId: 'TSPSSDD',
+      productName: 'FarmEye+ (Solar Power IOT Enabled Soil Health Monitoring System)',
       productRating: 3.5,
       productAvailability: 'in-stock',
-      productPrice: 16.0,
+      productPrice: 50700.00,
       productImgUrl: [
-        './assets/images/product/own-product/TSRJQC3FC.jpg',
-        './assets/images/product/own-product/TSRJQC3FC-2.jpg',
+        './assets/images/product/own-product/TSPSSDD.png',
+        './assets/images/product/own-product/TSPSSDD-2.jpg',
       ],
       productCategory: 'Electronic',
       productDescription: [
-        'Voltage: 6V, Ampere: 7A, SPDT (Single Pole Double Throw) PCB Mount.',
-        'Specs: Relay T-Type JQC3FC, 6V 7A, PCB Mount, Through-Hole design.',
-        'Compact and high-performance relay ideal for switching applications.',
-        'Durable and efficient for use in industrial automation and control systems.',
-        'Handles heavy-duty applications with reliable switching capabilities.',
-        'High-capacity relay suitable for both low and high-power applications.',
+        'Measures soil Nitrogen, Phosphorus, and Potassium (NPK) levels for nutrient analysis.',
+        'Monitors Electrical Conductivity (EC) to assess soil salinity and nutrient balance.',
+        'pH measurement for detecting soil acidity or alkalinity.',
+        'Real-time soil temperature monitoring for optimized planting and crop management.',
+        'Detects soil moisture levels to manage irrigation effectively.',
+        'Portable and lightweight design for convenient field use.',
+        'Integrated display screen shows real-time measurements.',
+        'Battery-powered for operation in remote locations.',
+        'Ideal for data-driven decisions to enhance soil health and crop productivity.',
+        'Empowers sustainable farming by addressing nutrient, salinity, pH, and moisture imbalances.',
       ],
     },
   ];
-  products3: Product[] = [
+  ourProducts3: Product[] = [
     {
       productId: 'TSWC1PHS',
       productName: 'Auto OFF Single Phase With (Submersible)',
@@ -252,14 +253,153 @@ export class HomeComponent implements OnInit {
       ],
     },
     {
+      productId: ' TSD2DAC',
+      productName: 'Day Night Smart Switch D2D(Dusk To Down) AC',
+      productRating: 3.5,
+      productAvailability: 'in-stock',
+      productPrice: 150.00,
+      productImgUrl: [
+        './assets/images/product/own-product/TSD2DAC.png',
+        './assets/images/product/own-product/TSD2DAC-2.png',
+      ],
+      productCategory: 'Electronic',
+      productDescription: [
+        'Load current up to 6A',
+        'Load voltage 230V AC',
+        'Rated input voltage 230V AC',
+      ],
+    },
+  ];
+
+
+  // 
+  
+  retailProducts: Product[] = [
+    {
+      productId: 'TSPB',
+      productName: 'Push Button',
+      productRating: 3.5,
+      productAvailability: 'in-stock',
+      productPrice: 12.00,
+      productImgUrl: [
+        './assets/images/product/retail-product/TSPB.jpg',
+      ],
+      productCategory: 'Electronic',
+      productDescription: [
+        'Latching switch: Push ON, push again OFF.',
+        'Made of durable plastic and alloy for long service life.',
+        'High-precision mechanism ensures reliable operation.',
+        'Rating: 1.5A at 125V; 3A at 250V.',
+        'Type: Momentary reset with 2-pin terminal.',
+        'Flush mount design with red button.',
+      ]    
+    },
+    {
+      productId: 'TSOS',
+      productName: '16A Output Socket',
+      productRating: 3.5,
+      productAvailability: 'in-stock',
+      productPrice: 26.00,
+      productImgUrl: [
+        './assets/images/product/retail-product/TSOS.jpg',
+        './assets/images/product/retail-product/TSOS-2.jpg',
+      ],
+      productCategory: 'Electronic',
+      productDescription: [
+        '16A output socket for reliable power delivery.',
+        'High-capacity outlet for heavy-duty applications.',
+        'Efficient power supply for industrial and construction use.',
+        'Ideal for powering high-energy devices and large events.'
+      ]       
+    },
+    {
       productId: ' TSACSL',
       productName: '36 Watts LED Street Light (Lens Model)',
       productRating: 3.5,
       productAvailability: 'in-stock',
       productPrice: 650.0,
       productImgUrl: [
-        './assets/images/product/own-product/TSACSL.png',
-        './assets/images/product/own-product/TSACSL-2.jpeg',
+        './assets/images/product/retail-product/TSACSL.png',
+        './assets/images/product/retail-product/TSACSL-2.jpeg',
+      ],
+      productCategory: 'Electronic',
+      productDescription: [
+        '2400 Lumens: IP65',
+        ' Wide Operating Voltage Range from 110V to 270V AC',
+        ' Die-cast Aluminum Body for effective heat dissipation',
+        ' Over Voltage protection up to 440V AC',
+        ' Body Colour: Grey',
+        'Input Voltage:  85V-265V',
+      ],
+    },
+    {
+      productId: 'TSRJQC3FC',
+      productName: 'Relay JQC3FC (Cube-Type)',
+      productRating: 3.5,
+      productAvailability: 'in-stock',
+      productPrice: 16.0,
+      productImgUrl: [
+        './assets/images/product/retail-product/TSRJQC3FC.jpg',
+        './assets/images/product/retail-product/TSRJQC3FC-2.jpg',
+      ],
+      productCategory: 'Electronic',
+      productDescription: [
+        'Voltage: 6V, Ampere: 7A, SPDT (Single Pole Double Throw) PCB Mount.',
+        'Specs: Relay T-Type JQC3FC, 6V 7A, PCB Mount, Through-Hole design.',
+        'Compact and high-performance relay ideal for switching applications.',
+        'Durable and efficient for use in industrial automation and control systems.',
+        'Handles heavy-duty applications with reliable switching capabilities.',
+        'High-capacity relay suitable for both low and high-power applications.',
+      ],
+    },
+  ];
+  retailProducts3: Product[] = [
+    {
+      productId: 'TSPB',
+      productName: 'Push Button',
+      productRating: 3.5,
+      productAvailability: 'in-stock',
+      productPrice: 12.00,
+      productImgUrl: [
+        './assets/images/product/retail-product/TSPB.jpg',
+      ],
+      productCategory: 'Electronic',
+      productDescription: [
+        'Latching switch: Push ON, push again OFF.',
+        'Made of durable plastic and alloy for long service life.',
+        'High-precision mechanism ensures reliable operation.',
+        'Rating: 1.5A at 125V; 3A at 250V.',
+        'Type: Momentary reset with 2-pin terminal.',
+        'Flush mount design with red button.',
+      ]    
+    },
+    {
+      productId: 'TSOS',
+      productName: '16A Output Socket',
+      productRating: 3.5,
+      productAvailability: 'in-stock',
+      productPrice: 26.00,
+      productImgUrl: [
+        './assets/images/product/retail-product/TSOS.jpg',
+        './assets/images/product/retail-product/TSOS-2.jpg',
+      ],
+      productCategory: 'Electronic',
+      productDescription: [
+        '16A output socket for reliable power delivery.',
+        'High-capacity outlet for heavy-duty applications.',
+        'Efficient power supply for industrial and construction use.',
+        'Ideal for powering high-energy devices and large events.'
+      ]       
+    },
+    {
+      productId: ' TSACSL',
+      productName: '36 Watts LED Street Light (Lens Model)',
+      productRating: 3.5,
+      productAvailability: 'in-stock',
+      productPrice: 650.0,
+      productImgUrl: [
+        './assets/images/product/retail-product/TSACSL.png',
+        './assets/images/product/retail-product/TSACSL-2.jpeg',
       ],
       productCategory: 'Electronic',
       productDescription: [
