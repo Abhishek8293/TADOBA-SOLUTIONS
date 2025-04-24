@@ -162,7 +162,9 @@
                 <mat-icon class="star">star</mat-icon>
                 <!-- <h6 class="large-rating-count">1,234 Ratings & 123 Reviews</h6> -->
             </div>
+           @if (product.productType == 'OUR') {
             <div class="brand-badge">TADOBA SOLUTIONS</div>
+           }
             <div class="large-price-div">
                 <h6 class="large-price">₹{{product.productPrice}}</h6>
                 <div class="badge">{{product.productAvailability}}</div>

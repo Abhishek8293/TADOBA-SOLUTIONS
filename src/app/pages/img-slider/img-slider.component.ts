@@ -26,7 +26,31 @@ export class ImgSliderComponent implements AfterViewInit {
 
     data:SliderData [] = [
       {
-        imgUrl: 'assets/images/slider/farmeye+.jpg',
+        imgUrl: 'assets/images/slider/single-phase.png',
+      },
+      {
+        imgUrl: 'assets/images/slider/energy-meter-ac.png',
+      },
+      {
+        imgUrl: 'assets/images/slider/farmeye-plus-iot.png',
+      },
+      {
+        imgUrl: 'assets/images/slider/electric-rickshaw.png',
+      },
+      {
+        imgUrl: 'assets/images/slider/three-phase.png',
+      },
+      {
+        imgUrl: 'assets/images/slider/energy-meter-dc.png',
+      },
+      {
+        imgUrl: 'assets/images/slider/farmeye-plus-portable.png',
+      },
+      {
+        imgUrl: 'assets/images/slider/electric-cycle.png',
+      },
+      {
+        imgUrl: 'assets/images/slider/gas-detection.png',
       },
     ]
 

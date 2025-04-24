@@ -4,9 +4,11 @@ export class Product {
   productRating: number;
   productAvailability: string;
   productPrice: number;
+  productType:string;
   productImgUrl: string[];
   productCategory: string;
   productDescription: string[];
+
 
   constructor() {
     this.productId = '';
@@ -17,6 +19,7 @@ export class Product {
     this.productImgUrl = [''];
     this.productCategory = '';
     this.productDescription = [];
+    this.productType = '';
   }
 }
 
@@ -27,6 +30,7 @@ export const ourProductList: Product[] = [
     productRating: 3.5,
     productAvailability: 'in-stock',
     productPrice: 1799.00,
+    productType:'OUR',
     productImgUrl: [
       './assets/images/product/own-product/TSWC1PHS.png',
       './assets/images/product/own-product/TSWC1PHS-2.png',
@@ -49,6 +53,7 @@ export const ourProductList: Product[] = [
     productRating: 3.5,
     productAvailability: 'in-stock',
     productPrice: 1799.00,
+    productType:'OUR',
     productImgUrl: [
       './assets/images/product/own-product/TSWC1PHT.png',
       './assets/images/product/own-product/TSWC1PHT-2.png',
@@ -68,6 +73,7 @@ export const ourProductList: Product[] = [
     productRating: 3.5,
     productAvailability: 'in-stock',
     productPrice: 1799.00,
+    productType:'OUR',
     productImgUrl: [
       './assets/images/product/own-product/TSWC1PHU.png',
       './assets/images/product/own-product/TSWC1PHU-2.png',
@@ -88,6 +94,7 @@ export const ourProductList: Product[] = [
     productRating: 3.5,
     productAvailability: 'in-stock',
     productPrice: 2499.00,
+    productType:'OUR',
     productImgUrl: [
       './assets/images/product/own-product/TSWC3PHU.png',
       './assets/images/product/own-product/TSWC3PHU-2.png',
@@ -102,32 +109,13 @@ export const ourProductList: Product[] = [
       'Single/ Multi tank controller.',
     ],
   },
-  // {
-  //   productId: ' TSWC13PHDRU',
-  //   productName: 'Auto ON/OFF 1/3 Phase With Dry Run Protection(Universal)',
-  //   productRating: 3.5,
-  //   productAvailability: 'in-stock',
-  //   productPrice: 1799.0,
-  //   productImgUrl: [
-  //     './assets/images/product/own-product/TSWC13PHDRU.png',
-  //     './assets/images/product/own-product/TSWC13PHDRU-2.png',
-  //     './assets/images/product/own-product/TSWC13PHDRU-3.png',
-  //   ],
-  //   productCategory: 'Electronic',
-  //   productDescription: [
-  //     'Fully-Automatic Device',
-  //     'Suitable for  single/three phase contractor starter panel of submersible motor',
-  //     'Work With Any single/three Phase Motor For Home ,Office, Hospital, Restaurant.',
-  //     'LED base for long time durability.',
-  //     'Single/ Multi tank controller.',
-  //   ],
-  // },
   {
     productId: ' TSD2DAC',
     productName: 'Day Night Smart Switch D2D(Dusk To Down) AC',
     productRating: 3.5,
     productAvailability: 'in-stock',
     productPrice: 150.00,
+    productType:'OUR',
     productImgUrl: [
       './assets/images/product/own-product/TSD2DAC.png',
       './assets/images/product/own-product/TSD2DAC-2.png',
@@ -139,75 +127,13 @@ export const ourProductList: Product[] = [
       'Rated input voltage 230V AC',
     ],
   },
-  // {
-  //   productId: '  TSD2DDC',
-  //   productName: 'Day Night Smart Switch D2D(Dusk To Down) DC',
-  //   productRating: 3.5,
-  //   productAvailability: 'in-stock',
-  //   productPrice: 459.00,
-  //   productImgUrl: [
-  //     './assets/images/product/own-product/TSD2DDC.png',
-  //     './assets/images/product/own-product/TSD2DDC-2.png',
-  //   ],
-  //   productCategory: 'Electronic',
-  //   productDescription: [
-  //     'Load wattage up to 100W',
-  //     'Load voltage 12V DC',
-  //     'Rated input voltage 12V DC',
-  //   ],
-  // },
-  
-  // {
-  //   productId: 'TSACDC12V',
-  //   productName: 'AC DC Switch 12V',
-  //   productRating: 3.5,
-  //   productAvailability: 'in-stock',
-  //   productPrice: 12999.00,
-  //   productImgUrl: ['./assets/images/product/own-product/TSACDC12V.jpg'],
-  //   productCategory: 'Electronic',
-  //   productDescription: [
-  //     'Converts AC power to 12V DC for powering devices.',
-  //     'Built-in battery backup ensures uninterrupted operation.',
-  //     'Automatic switching between AC and battery power.',
-  //     'Compact, lightweight, and portable design.',
-  //     'Supports battery charging when AC power is restored.',
-  //     'Offers overcharge, overcurrent, and short-circuit protection.',
-  //     'Ideal for emergency backups, mobile electronics, and off-grid setups.',
-  //     'Automatically powers DC loads when the main supply is off.',
-  //     'Compatible with various DC devices and battery-powered systems.',
-  //   ],
-  // },
-  // {
-  //   productId: 'TSDNSS',
-  //   productName: 'Automatic Day & Night Smart Switch',
-  //   productRating: 3.5,
-  //   productAvailability: 'in-stock',
-  //   productPrice: 12999.00,
-  //   productImgUrl: [
-  //     './assets/images/product/own-product/TSDNSS.jpg',
-  //     './assets/images/product/own-product/TSDNSS-2.jpeg',
-  //     './assets/images/product/own-product/TSDNSS-3.jpeg',
-  //   ],
-  //   productCategory: 'Electronic',
-  //   productDescription: [
-  //     'Load wattage: Up to 100W.',
-  //     'Load voltage: 220-250V AC / 12V DC.',
-  //     'Rated input voltage: 220-250V AC / 12V DC.',
-  //     'Saves up to 60% energy with automatic operation.',
-  //     'Auto ON during night and auto OFF during daytime.',
-  //     'Low power consumption for efficient performance.',
-  //     'Available in both AC and DC types.',
-  //     'Ideal for street lighting, garden lighting, and outdoor signs.',
-  //     'Enhances security by automating outdoor lighting.',
-  //     'Cost-effective with long-term energy savings and reduced maintenance.',
-  //   ],
-  // },
   {
     productId: 'TSPSSDD',
     productName: 'FarmEye+ (Solar Power IOT Enabled Soil Health Monitoring System)',
     productRating: 3.5,
     productAvailability: 'in-stock',
     productPrice: 50700.00,
+    productType:'OUR',
     productImgUrl: [
       './assets/images/product/own-product/TSPSSDD.png',
       './assets/images/product/own-product/TSPSSDD-2.jpg',
@@ -232,6 +158,7 @@ export const ourProductList: Product[] = [
     productRating: 3.5,
     productAvailability: 'in-stock',
     productPrice: 27500.00,
+    productType:'OUR',
     productImgUrl: ['./assets/images/product/own-product/TSSSDM.png'],
     productCategory: 'Electronic',
     productDescription: [
@@ -253,6 +180,7 @@ export const ourProductList: Product[] = [
     productRating: 3.5,
     productAvailability: 'in-stock',
     productPrice: 27700.00,
+    productType:'OUR',
     productImgUrl: [
       './assets/images/product/own-product/TSWS.jpg',
     ],
@@ -275,32 +203,58 @@ export const ourProductList: Product[] = [
 
 
 export const retailProductList: Product[] = [
-  {
-    productId: '  TSSTPT',
-    productName: 'ST13005A High-Voltage NPN Power Transistor',
-    productRating: 3.5,
-    productAvailability: 'in-stock',
-    productPrice: 5.00,
-    productImgUrl: [
-      './assets/images/product/retail-product/TSSTPT.png',
-      './assets/images/product/retail-product/TSSTPT-2.png',
-      './assets/images/product/retail-product/TSSTPT-3.png',
-    ],
-    productCategory: 'Electronic',
-    productDescription: [
-      'Supports up to 400V collector-emitter voltage.',
-      'Fast switching performance for efficient power control.',
-      'Standard TO-220 package for easy mounting and cooling.',
-      'Low saturation voltage ensures high efficiency.',
-      'Suitable for SMPS, inverters, and lighting ballasts.'
-    ],
-  },
+  // {
+  //   productId: '  TSMSP',
+  //   productName: 'MACWIN Solar Panel',
+  //   productRating: 3.5,
+  //   productAvailability: 'in-stock',
+  //   productPrice: 5.00,
+  //   productType:'RETAIL',
+  //   productImgUrl: [
+  //     './assets/images/product/retail-product/TSMSP.png',
+  //     './assets/images/product/retail-product/TSMSP-2.png',
+  //     './assets/images/product/retail-product/TSMSP-3.png',
+  //     './assets/images/product/retail-product/TSMSP-4.png',
+  //   ],
+  //   productCategory: 'Electronic',
+  //   productDescription: [
+  //     'Moduel Type : MSE40',
+  //     'Pmax : 40 W',
+  //     'Voltage(Vmax) : 17.84 V',
+  //     'Current(Imax) : 2.25 A',
+  //     'Open Circuit Voltage (Voc) : 21.95 V',
+  //     'Short Circuit Current(Isc) : 2.44 A',
+  //     'System Voltage : 1000 V DC'
+  //   ],
+  // },
+  // {
+  //   productId: '  TSSTPT',
+  //   productName: 'ST13005A High-Voltage NPN Power Transistor',
+  //   productRating: 3.5,
+  //   productAvailability: 'in-stock',
+  //   productPrice: 5.00,
+  //   productType:'RETAIL',
+  //   productImgUrl: [
+  //     './assets/images/product/retail-product/TSSTPT.png',
+  //     './assets/images/product/retail-product/TSSTPT-2.png',
+  //     './assets/images/product/retail-product/TSSTPT-3.png',
+  //   ],
+  //   productCategory: 'Electronic',
+  //   productDescription: [
+  //     'Supports up to 400V collector-emitter voltage.',
+  //     'Fast switching performance for efficient power control.',
+  //     'Standard TO-220 package for easy mounting and cooling.',
+  //     'Low saturation voltage ensures high efficiency.',
+  //     'Suitable for SMPS, inverters, and lighting ballasts.'
+  //   ],
+  // },
   {
     productId: '  TSSACCTV',
     productName: ' Standlone CCTV Camera',
     productRating: 3.5,
     productAvailability: 'in-stock',
     productPrice: 13700.00,
+    productType:'RETAIL',
     productImgUrl: [
       './assets/images/product/retail-product/TSSACCTV-2.png',
       './assets/images/product/retail-product/TSSACCTV.png',
@@ -331,6 +285,7 @@ export const retailProductList: Product[] = [
     productRating: 3.5,
     productAvailability: 'in-stock',
     productPrice: 25.00,
+    productType:'RETAIL',
     productImgUrl: [
       './assets/images/product/retail-product/TSWLS.jpg',
       './assets/images/product/retail-product/TSWLS-2.jpg',
@@ -351,6 +306,7 @@ export const retailProductList: Product[] = [
     productRating: 3.5,
     productAvailability: 'in-stock',
     productPrice: 6.00,
+    productType:'RETAIL',
     productImgUrl: [
       './assets/images/product/retail-product/TSSC.jpg',
       './assets/images/product/retail-product/TSSC-2.jpg',
@@ -368,6 +324,7 @@ export const retailProductList: Product[] = [
     productRating: 3.5,
     productAvailability: 'in-stock',
     productPrice: 12.00,
+    productType:'RETAIL',
     productImgUrl: [
       './assets/images/product/retail-product/TSPB.jpg',
     ],
@@ -387,6 +344,7 @@ export const retailProductList: Product[] = [
     productRating: 3.5,
     productAvailability: 'in-stock',
     productPrice: 26.00,
+    productType:'RETAIL',
     productImgUrl: [
       './assets/images/product/retail-product/TSOS.jpg',
       './assets/images/product/retail-product/TSOS-2.jpg',
@@ -405,6 +363,7 @@ export const retailProductList: Product[] = [
     productRating: 3.5,
     productAvailability: 'in-stock',
     productPrice: 85.00,
+    productType:'RETAIL',
     productImgUrl: [
       './assets/images/product/retail-product/TSRH90.jpg',
       './assets/images/product/retail-product/TSRH90-2.jpg',
@@ -424,6 +383,7 @@ export const retailProductList: Product[] = [
     productRating: 3.5,
     productAvailability: 'in-stock',
     productPrice: 16.00,
+    productType:'RETAIL',
     productImgUrl: [
       './assets/images/product/retail-product/TSRJQC3FC.jpg',
       './assets/images/product/retail-product/TSRJQC3FC-2.jpg',
@@ -444,6 +404,7 @@ export const retailProductList: Product[] = [
     productRating: 3.5,
     productAvailability: 'in-stock',
     productPrice: 86.00,
+    productType:'RETAIL',
     productImgUrl: [
       './assets/images/product/retail-product/TSRSK91.jpg',
       './assets/images/product/retail-product/TSRSK91-2.jpg',
@@ -464,6 +425,7 @@ export const retailProductList: Product[] = [
     productRating: 3.5,
     productAvailability: 'in-stock',
     productPrice: 750.00,
+    productType:'RETAIL',
     productImgUrl: [
       './assets/images/product/retail-product/TSACSLD2D.png',
       './assets/images/product/retail-product/TSACSLD2D-2.jpeg',
@@ -484,6 +446,7 @@ export const retailProductList: Product[] = [
     productRating: 3.5,
     productAvailability: 'in-stock',
     productPrice: 650.00,
+    productType:'RETAIL',
     productImgUrl: [
       './assets/images/product/retail-product/TSACSL.png',
       './assets/images/product/retail-product/TSACSL-2.jpeg',
@@ -504,6 +467,7 @@ export const retailProductList: Product[] = [
     productRating: 3.5,
     productAvailability: 'in-stock',
     productPrice: 950.00,
+    productType:'RETAIL',
     productImgUrl: [
       './assets/images/product/retail-product/TSACSLD2DWAT.png',
       './assets/images/product/retail-product/TSACSLD2DWAT-2.jpeg',
