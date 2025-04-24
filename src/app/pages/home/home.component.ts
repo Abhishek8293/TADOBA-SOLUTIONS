@@ -127,6 +127,7 @@ export class HomeComponent implements OnInit {
       productRating: 3.5,
       productAvailability: 'in-stock',
       productPrice: 1799.00,
+      productType:'OUR',
       productImgUrl: [
         './assets/images/product/own-product/TSWC1PHS.png',
         './assets/images/product/own-product/TSWC1PHS-2.png',
@@ -150,6 +151,7 @@ export class HomeComponent implements OnInit {
       productRating: 3.5,
       productAvailability: 'in-stock',
       productPrice: 27500.0,
+      productType:'OUR',
       productImgUrl: ['./assets/images/product/own-product/TSSSDM.png'],
       productCategory: 'Electronic',
       productDescription: [
@@ -171,6 +173,7 @@ export class HomeComponent implements OnInit {
       productRating: 3.5,
       productAvailability: 'in-stock',
       productPrice: 150.00,
+      productType:'OUR',
       productImgUrl: [
         './assets/images/product/own-product/TSD2DAC.png',
         './assets/images/product/own-product/TSD2DAC-2.png',
@@ -188,6 +191,7 @@ export class HomeComponent implements OnInit {
       productRating: 3.5,
       productAvailability: 'in-stock',
       productPrice: 50700.00,
+      productType:'OUR',
       productImgUrl: [
         './assets/images/product/own-product/TSPSSDD.png',
         './assets/images/product/own-product/TSPSSDD-2.jpg',
@@ -214,6 +218,7 @@ export class HomeComponent implements OnInit {
       productRating: 3.5,
       productAvailability: 'in-stock',
       productPrice: 559.0,
+      productType:'OUR',
       productImgUrl: [
         './assets/images/product/own-product/TSWC1PHS.png',
         './assets/images/product/own-product/TSWC1PHS-2.png',
@@ -237,6 +242,7 @@ export class HomeComponent implements OnInit {
       productRating: 3.5,
       productAvailability: 'in-stock',
       productPrice: 27500.0,
+      productType:'OUR',
       productImgUrl: ['./assets/images/product/own-product/TSSSDM.png'],
       productCategory: 'Electronic',
       productDescription: [
@@ -258,6 +264,7 @@ export class HomeComponent implements OnInit {
       productRating: 3.5,
       productAvailability: 'in-stock',
       productPrice: 150.00,
+      productType:'OUR',
       productImgUrl: [
         './assets/images/product/own-product/TSD2DAC.png',
         './assets/images/product/own-product/TSD2DAC-2.png',
@@ -281,6 +288,7 @@ export class HomeComponent implements OnInit {
       productRating: 3.5,
       productAvailability: 'in-stock',
       productPrice: 12.00,
+      productType:'RETAIL',
       productImgUrl: [
         './assets/images/product/retail-product/TSPB.jpg',
       ],
@@ -300,6 +308,7 @@ export class HomeComponent implements OnInit {
       productRating: 3.5,
       productAvailability: 'in-stock',
       productPrice: 26.00,
+      productType:'RETAIL',
       productImgUrl: [
         './assets/images/product/retail-product/TSOS.jpg',
         './assets/images/product/retail-product/TSOS-2.jpg',
@@ -318,6 +327,7 @@ export class HomeComponent implements OnInit {
       productRating: 3.5,
       productAvailability: 'in-stock',
       productPrice: 650.0,
+      productType:'RETAIL',
       productImgUrl: [
         './assets/images/product/retail-product/TSACSL.png',
         './assets/images/product/retail-product/TSACSL-2.jpeg',
@@ -338,6 +348,7 @@ export class HomeComponent implements OnInit {
       productRating: 3.5,
       productAvailability: 'in-stock',
       productPrice: 16.0,
+      productType:'RETAIL',
       productImgUrl: [
         './assets/images/product/retail-product/TSRJQC3FC.jpg',
         './assets/images/product/retail-product/TSRJQC3FC-2.jpg',
@@ -360,6 +371,7 @@ export class HomeComponent implements OnInit {
       productRating: 3.5,
       productAvailability: 'in-stock',
       productPrice: 12.00,
+      productType:'RETAIL',
       productImgUrl: [
         './assets/images/product/retail-product/TSPB.jpg',
       ],
@@ -379,6 +391,7 @@ export class HomeComponent implements OnInit {
       productRating: 3.5,
       productAvailability: 'in-stock',
       productPrice: 26.00,
+      productType:'RETAIL',
       productImgUrl: [
         './assets/images/product/retail-product/TSOS.jpg',
         './assets/images/product/retail-product/TSOS-2.jpg',
@@ -397,6 +410,7 @@ export class HomeComponent implements OnInit {
       productRating: 3.5,
       productAvailability: 'in-stock',
       productPrice: 650.0,
+      productType:'RETAIL',
       productImgUrl: [
         './assets/images/product/retail-product/TSACSL.png',
         './assets/images/product/retail-product/TSACSL-2.jpeg',
