@@ -4,13 +4,13 @@
   margin-top: 10px;
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
 }
 
 .service-card-list {
   display: flex;
-  flex-wrap: wrap; 
-  justify-content: center; 
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 25px;
   padding: 20px;
 }
@@ -115,14 +115,16 @@
 .our-partner-section {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  align-items: center; /* Center content horizontally */
   background-color: #f5f6fa;
-  padding-bottom: 50px;
+  padding: 10px 45px 50px 45px;
 }
+
 .our-partner-heading {
   text-align: center;
   margin: 15px;
 }
+
 .our-partner-heading h6 {
   font-size: 30px;
   color: #1a2a36;
@@ -133,20 +135,24 @@
   font-family: "Roboto", serif;
   letter-spacing: 1.5px;
 }
+
 .partner-logo-and-name {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  grid-template-rows: repeat(2, auto); 
+  gap: 30px;
+  width: 100%;
+  max-width: 1200px; 
+  justify-items: center;
+  align-items: start;
 }
 
 .partner-logo-and-name-box {
-  width: 160px;
-  height: 160px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
+  text-align: center;
+  padding: 10px;
 }
 
 .partner-logo {
@@ -159,63 +165,51 @@
   justify-content: center;
   align-items: center;
 }
-.partner-logo:hover{
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-.igkv{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.forte {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.pt-ravi {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.csreda {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.vasu-Logistics {
-  background-color: #373737;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.partner-logo:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .partner-logo img {
-  width: 160px;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
 }
+
 .pt-ravi img {
   width: 90px;
 }
 .forte img {
   width: 100px;
 }
-.igkv img{
+.igkv img {
   width: 140px;
 }
-.ibitf img{
+.ibitf img {
   width: 110px;
 }
+.abhiyantri img {
+  width: 95px;
+}
+.mguevv img {
+  width: 110px;
+}
+
 .partner-name {
-  align-items: center;
-  text-align: center;
   font-family: "Roboto", serif;
-  font-size: 10px;
-  margin-top: 5px;
+  font-size: 13px;
+  margin-top: 8px;
   letter-spacing: 1px;
   color: #1a2a36;
 }
-.partner-name span{
-  font-weight: 400;
+
+.partner-name span {
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.vasu-Logistics {
+  background-color: #373737;
 }
 
 /* ================================================== Awards Section ======================================= */
@@ -470,12 +464,16 @@
     font-family: "Roboto", serif;
   }
   .partner-logo-and-name {
-    flex-wrap: wrap;
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
+
   .partner-logo-and-name-box {
-    margin: 5px 5px 10px 5px;
-    width: 200px;
-    font-size: 12px;
+    width: 100%;
+  }
+
+  .our-partner-section {
+    padding: 10px 20px 30px 20px;
   }
   .quote-section .form-div .mat-form {
     width: 315px !important;
@@ -509,7 +507,7 @@
   }
 }
 
-@media (min-width: 441px) and (max-width: 768px) {
+@media (min-width: 441px) and (max-width: 769px) {
   .service-container {
     padding: 10px;
   }
@@ -539,11 +537,21 @@
     align-items: center;
   }
   .partner-logo-and-name {
-    flex-wrap: wrap;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(4, auto);  
+    gap: 20px;
   }
+
   .partner-logo-and-name-box {
-    margin: 20px 10px 10px 15px;
-    width: 200px;
+    width: 100%;
+  }
+
+  .our-partner-section {
+    padding: 10px 40px 40px 40px;
+  }
+
+  .our-partner-section {
+    padding: 10px 20px 30px 20px;
   }
   .quote-section .form-div .mat-form {
     width: 350px !important;
@@ -603,6 +611,35 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .partner-logo-and-name {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: repeat(3, auto); /* 3 rows */
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .partner-logo-and-name-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .partner-logo-img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .partner-name {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.4;
   }
 }
 

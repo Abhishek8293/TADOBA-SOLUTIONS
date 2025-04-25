@@ -44,16 +44,16 @@
 }
 
 .card-title {
-  color: #1a2936;
-  font-size: 11px;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 500;
+  color: #1a2a36;
+  font-size: 13px;
+  font-family: "Roboto", serif;
+  font-weight: 600;
   text-align: center;
   white-space: normal;
   word-wrap: break-word;
   line-height: 1.4;
   padding: 0 8px;
-  height: 30px; /* Fixed height */
+  height: 40px; /* Fixed height */
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 2; /* Show max 2 lines */
@@ -107,7 +107,7 @@
   }
 
   .card-list .card-item .card-img {
-    height: 220px !important;
+    height: 200px !important;
     object-fit: cover;
   }
 }

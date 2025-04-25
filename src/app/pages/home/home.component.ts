@@ -126,7 +126,7 @@ export class HomeComponent implements OnInit {
       productName: 'Auto OFF Single Phase With (Submersible)',
       productRating: 3.5,
       productAvailability: 'in-stock',
-      productPrice: 1799.00,
+      productPrice: '1799.00',
       productType:'OUR',
       productImgUrl: [
         './assets/images/product/own-product/TSWC1PHS.png',
@@ -150,7 +150,7 @@ export class HomeComponent implements OnInit {
         'FarmEye+ (Portable Soil Health Monitoring System With Display)',
       productRating: 3.5,
       productAvailability: 'in-stock',
-      productPrice: 27500.0,
+      productPrice: '27500.0',
       productType:'OUR',
       productImgUrl: ['./assets/images/product/own-product/TSSSDM.png'],
       productCategory: 'Electronic',
@@ -172,7 +172,7 @@ export class HomeComponent implements OnInit {
       productName: 'Day Night Smart Switch D2D(Dusk To Down) AC',
       productRating: 3.5,
       productAvailability: 'in-stock',
-      productPrice: 150.00,
+      productPrice: '150.00',
       productType:'OUR',
       productImgUrl: [
         './assets/images/product/own-product/TSD2DAC.png',
@@ -190,7 +190,7 @@ export class HomeComponent implements OnInit {
       productName: 'FarmEye+ (Solar Power IOT Enabled Soil Health Monitoring System)',
       productRating: 3.5,
       productAvailability: 'in-stock',
-      productPrice: 50700.00,
+      productPrice: '50700.00',
       productType:'OUR',
       productImgUrl: [
         './assets/images/product/own-product/TSPSSDD.png',
@@ -217,7 +217,7 @@ export class HomeComponent implements OnInit {
       productName: 'Auto OFF Single Phase With (Submersible)',
       productRating: 3.5,
       productAvailability: 'in-stock',
-      productPrice: 559.0,
+      productPrice: '559.00',
       productType:'OUR',
       productImgUrl: [
         './assets/images/product/own-product/TSWC1PHS.png',
@@ -241,7 +241,7 @@ export class HomeComponent implements OnInit {
         'FarmEye+ (Portable Soil Health Monitoring System With Display)',
       productRating: 3.5,
       productAvailability: 'in-stock',
-      productPrice: 27500.0,
+      productPrice: '27500.00',
       productType:'OUR',
       productImgUrl: ['./assets/images/product/own-product/TSSSDM.png'],
       productCategory: 'Electronic',
@@ -263,7 +263,7 @@ export class HomeComponent implements OnInit {
       productName: 'Day Night Smart Switch D2D(Dusk To Down) AC',
       productRating: 3.5,
       productAvailability: 'in-stock',
-      productPrice: 150.00,
+      productPrice: '150.00',
       productType:'OUR',
       productImgUrl: [
         './assets/images/product/own-product/TSD2DAC.png',
@@ -287,7 +287,7 @@ export class HomeComponent implements OnInit {
       productName: 'Push Button',
       productRating: 3.5,
       productAvailability: 'in-stock',
-      productPrice: 12.00,
+      productPrice: '12.00',
       productType:'RETAIL',
       productImgUrl: [
         './assets/images/product/retail-product/TSPB.jpg',
@@ -307,7 +307,7 @@ export class HomeComponent implements OnInit {
       productName: '16A Output Socket',
       productRating: 3.5,
       productAvailability: 'in-stock',
-      productPrice: 26.00,
+      productPrice: '26.00',
       productType:'RETAIL',
       productImgUrl: [
         './assets/images/product/retail-product/TSOS.jpg',
@@ -326,7 +326,7 @@ export class HomeComponent implements OnInit {
       productName: '36 Watts LED Street Light (Lens Model)',
       productRating: 3.5,
       productAvailability: 'in-stock',
-      productPrice: 650.0,
+      productPrice: '650.00',
       productType:'RETAIL',
       productImgUrl: [
         './assets/images/product/retail-product/TSACSL.png',
@@ -347,7 +347,7 @@ export class HomeComponent implements OnInit {
       productName: 'Relay JQC3FC (Cube-Type)',
       productRating: 3.5,
       productAvailability: 'in-stock',
-      productPrice: 16.0,
+      productPrice: '16.00',
       productType:'RETAIL',
       productImgUrl: [
         './assets/images/product/retail-product/TSRJQC3FC.jpg',
@@ -370,7 +370,7 @@ export class HomeComponent implements OnInit {
       productName: 'Push Button',
       productRating: 3.5,
       productAvailability: 'in-stock',
-      productPrice: 12.00,
+      productPrice: '12.00',
       productType:'RETAIL',
       productImgUrl: [
         './assets/images/product/retail-product/TSPB.jpg',
@@ -390,7 +390,7 @@ export class HomeComponent implements OnInit {
       productName: '16A Output Socket',
       productRating: 3.5,
       productAvailability: 'in-stock',
-      productPrice: 26.00,
+      productPrice: '26.00',
       productType:'RETAIL',
       productImgUrl: [
         './assets/images/product/retail-product/TSOS.jpg',
@@ -409,7 +409,7 @@ export class HomeComponent implements OnInit {
       productName: '36 Watts LED Street Light (Lens Model)',
       productRating: 3.5,
       productAvailability: 'in-stock',
-      productPrice: 650.0,
+      productPrice: '650.00',
       productType:'RETAIL',
       productImgUrl: [
         './assets/images/product/retail-product/TSACSL.png',

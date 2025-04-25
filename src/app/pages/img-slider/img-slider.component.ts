@@ -45,12 +45,22 @@ export class ImgSliderComponent implements AfterViewInit {
       },
       {
         imgUrl: 'assets/images/slider/farmeye-plus-portable.png',
+
+      },
+      {
+        imgUrl: 'assets/images/slider/swapping-station.png',
       },
       {
         imgUrl: 'assets/images/slider/electric-cycle.png',
       },
       {
         imgUrl: 'assets/images/slider/gas-detection.png',
+      },
+      {
+        imgUrl: 'assets/images/slider/lithophane.png',
+      },
+      {
+        imgUrl: 'assets/images/slider/swapping-system.png',
       },
     ]
 

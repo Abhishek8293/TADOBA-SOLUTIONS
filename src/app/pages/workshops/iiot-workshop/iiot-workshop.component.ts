@@ -12,7 +12,7 @@ export class IiotWorkshopComponent {
 
   workshopModules = [
     {
-      title: '1. Advanced IoT Concepts & Architecture',
+      title: '1. Advanced IIoT Concepts & Architecture',
       image: './assets/images/workshops/iiot/module1.png',
       points: [
         'In-depth study of IoT architecture and system design.',
