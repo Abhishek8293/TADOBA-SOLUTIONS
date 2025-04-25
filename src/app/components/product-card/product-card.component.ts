@@ -29,7 +29,7 @@ export class ProductCardComponent {
   @Input() productName!: string;
   @Input() productRating!: number;
   @Input() productAvailability!: string;
-  @Input() productPrice!: number;
+  @Input() productPrice!: string;
   @Input() productId!: string;
 
   rupee = faIndianRupee;

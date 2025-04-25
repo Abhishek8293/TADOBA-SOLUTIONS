@@ -23,7 +23,7 @@ declare const Swiper: any;
 export class AwardsSliderComponent implements AfterViewInit {
   awards = [
     {
-      imgUrl: 'assets/images/awards/awards1.jpg',
+      imgUrl: 'assets/images/awards/awards1.JPG',
       title: 'Battery Swapping Compartment with Team Tadoba',
     },
     {

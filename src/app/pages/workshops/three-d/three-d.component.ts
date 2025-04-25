@@ -13,7 +13,7 @@ export class ThreeDComponent {
   workshopModules = [
     {
       title: '1. Foundations of 3D Design',
-      image: '',
+      image: './assets/images/workshops/3d/module1.png',
       points: [
         'Overview of manufacturing: Subtractive (CNC machining) vs. additive (3D printing).',
         'Why 3D design matters: Speed, customization, and prototyping.',
@@ -32,7 +32,7 @@ export class ThreeDComponent {
     },
     {
       title: '2. 2D to 3D Conversion & Advanced Modeling',
-      image: '',
+      image: './assets/images/workshops/3d/module2.jpg',
       points: [
         'Troubleshoot common CAD errors (e.g., unconstrained sketches).',
         'Discuss real-world applications of 3D modeling (e.g., product design).',
@@ -49,7 +49,7 @@ export class ThreeDComponent {
     },
     {
       title: '3. 3D Printing, Post-Processing & Final Projects',
-      image: '',
+      image: './assets/images/workshops/3d/module3.png',
       points: [
         'Technologies: FDM (common), SLA (resin), SLS (industrial).',
         'Materials: PLA (beginner-friendly), ABS (durable), PETG (flexible).',

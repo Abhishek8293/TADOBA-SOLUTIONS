@@ -1,17 +1,25 @@
 <div class="workshop-container">
     <h2 class="workshop-heading">Hands-on Training On 3D Desiging and Fabrication</h2>
-
+    <div class="register-section">
+        <div class="qr-box">
+            <img src="./assets/images/workshops/training-qr.jpg" alt="Register QR Code" class="qr-image" />
+        </div>
+        <div class="register-text">
+            <p>Scan the QR code for Registration <br> or</p>
+            <a href="https://forms.gle/8n8P5xcC9z5dXAx1A" target="_blank" class="register-link">Click Here</a>
+        </div>
+    </div>
     <div class="workshop-list">
         <div class="workshop-card" *ngFor="let module of workshopModules">
-            <!-- Show image only if it exists -->
-            <div class="image-wrapper" *ngIf="module.image">
-                <img [src]="module.image" [alt]="module.title" class="module-img">
-            </div>
             <div class="module-content">
                 <h3 class="module-title">{{ module.title }}</h3>
                 <ul class="bullet-list">
                     <li *ngFor="let point of module.points">{{ point }}</li>
                 </ul>
+            </div>
+            <!-- Show image only if it exists -->
+            <div class="image-wrapper" *ngIf="module.image">
+                <img [src]="module.image" [alt]="module.title" class="module-img">
             </div>
         </div>
     </div>

@@ -3,7 +3,7 @@ export class Product {
   productName: string;
   productRating: number;
   productAvailability: string;
-  productPrice: number;
+  productPrice: string;
   productType:string;
   productImgUrl: string[];
   productCategory: string;
@@ -15,7 +15,7 @@ export class Product {
     this.productName = '';
     this.productRating = 0;
     this.productAvailability = '';
-    this.productPrice = 0;
+    this.productPrice = '';
     this.productImgUrl = [''];
     this.productCategory = '';
     this.productDescription = [];
@@ -26,10 +26,10 @@ export class Product {
 export const ourProductList: Product[] = [
   {
     productId: 'TSWC1PHS',
-    productName: 'Auto OFF Single Phase (Submersible)',
+    productName: 'AquaController-AO (1-Φ Submersible)',
     productRating: 3.5,
     productAvailability: 'in-stock',
-    productPrice: 1799.00,
+    productPrice: '1799.00',
     productType:'OUR',
     productImgUrl: [
       './assets/images/product/own-product/TSWC1PHS.png',
@@ -49,10 +49,10 @@ export const ourProductList: Product[] = [
 
   {
     productId: 'TSWC1PHT',
-    productName: 'Auto OFF Single Phase (Tullu)',
+    productName: 'AquaController-AO (Tullu)',
     productRating: 3.5,
     productAvailability: 'in-stock',
-    productPrice: 1799.00,
+    productPrice: '1799.00',
     productType:'OUR',
     productImgUrl: [
       './assets/images/product/own-product/TSWC1PHT.png',
@@ -60,6 +60,7 @@ export const ourProductList: Product[] = [
     ],
     productCategory: 'Electronic',
     productDescription: [
+      'Water Overflow Controller',
       'Semi-Automatic Device',
       'Overflow Controller for underground tank or overhead tank.',
       'Work With Any Single Phase Motor For Home ,Office, Hospital, Restaurant.',
@@ -69,10 +70,10 @@ export const ourProductList: Product[] = [
   },
   {
     productId: 'TSWC1PHU',
-    productName: 'Auto OFF Single Phase (Universal)',
+    productName: 'AquaController-AO (1-Φ Universal)',
     productRating: 3.5,
     productAvailability: 'in-stock',
-    productPrice: 1799.00,
+    productPrice: '1799.00',
     productType:'OUR',
     productImgUrl: [
       './assets/images/product/own-product/TSWC1PHU.png',
@@ -80,6 +81,7 @@ export const ourProductList: Product[] = [
     ],
     productCategory: 'Electronic',
     productDescription: [
+      'Water Overflow Controller',
       'Semi-Automatic Device',
       'It’s an auto off device for submersible. ',
       'Back side Hanging Clam.',
@@ -90,18 +92,20 @@ export const ourProductList: Product[] = [
   },
   {
     productId: 'TSWC3PHU',
-    productName: 'Auto OFF Three Phase With (Universal)',
+    productName: 'AquaController-AO (3-Φ Universal)',
     productRating: 3.5,
     productAvailability: 'in-stock',
-    productPrice: 2499.00,
+    productPrice: '2999.00',
     productType:'OUR',
     productImgUrl: [
-      './assets/images/product/own-product/TSWC3PHU.png',
       './assets/images/product/own-product/TSWC3PHU-2.png',
+      './assets/images/product/own-product/TSWC3PHU.png',
       './assets/images/product/own-product/TSWC3PHU-3.png',
+      './assets/images/product/own-product/TSWC3PHU-4.png',
     ],
     productCategory: 'Electronic',
     productDescription: [
+      'Water Overflow Controller',
       ' Semi-Automatic Device',
       'Suitable for  three phase contractor starter panel of submersible motor',
       'Work With Any Three Phase Motor For Home ,Office, Hospital, Restaurant.',
@@ -114,7 +118,7 @@ export const ourProductList: Product[] = [
     productName: 'Day Night Smart Switch D2D(Dusk To Down) AC',
     productRating: 3.5,
     productAvailability: 'in-stock',
-    productPrice: 150.00,
+    productPrice: '150.00',
     productType:'OUR',
     productImgUrl: [
       './assets/images/product/own-product/TSD2DAC.png',
@@ -132,7 +136,7 @@ export const ourProductList: Product[] = [
     productName: 'FarmEye+ (Solar Power IOT Enabled Soil Health Monitoring System)',
     productRating: 3.5,
     productAvailability: 'in-stock',
-    productPrice: 50700.00,
+    productPrice: '50700.00',
     productType:'OUR',
     productImgUrl: [
       './assets/images/product/own-product/TSPSSDD.png',
@@ -157,7 +161,7 @@ export const ourProductList: Product[] = [
     productName: 'FarmEye+ (Portable Soil Health Monitoring System With Display)', 
     productRating: 3.5,
     productAvailability: 'in-stock',
-    productPrice: 27500.00,
+    productPrice: '27500.00',
     productType:'OUR',
     productImgUrl: ['./assets/images/product/own-product/TSSSDM.png'],
     productCategory: 'Electronic',
@@ -179,7 +183,7 @@ export const ourProductList: Product[] = [
     productName: 'Weather Station',
     productRating: 3.5,
     productAvailability: 'in-stock',
-    productPrice: 27700.00,
+    productPrice: '27700.00',
     productType:'OUR',
     productImgUrl: [
       './assets/images/product/own-product/TSWS.jpg',
@@ -198,68 +202,18 @@ export const ourProductList: Product[] = [
       'Ideal for smart farming, environmental monitoring, and security applications.',
     ],
   },
- 
-];
-
-
-export const retailProductList: Product[] = [
-  // {
-  //   productId: '  TSMSP',
-  //   productName: 'MACWIN Solar Panel',
-  //   productRating: 3.5,
-  //   productAvailability: 'in-stock',
-  //   productPrice: 5.00,
-  //   productType:'RETAIL',
-  //   productImgUrl: [
-  //     './assets/images/product/retail-product/TSMSP.png',
-  //     './assets/images/product/retail-product/TSMSP-2.png',
-  //     './assets/images/product/retail-product/TSMSP-3.png',
-  //     './assets/images/product/retail-product/TSMSP-4.png',
-  //   ],
-  //   productCategory: 'Electronic',
-  //   productDescription: [
-  //     'Moduel Type : MSE40',
-  //     'Pmax : 40 W',
-  //     'Voltage(Vmax) : 17.84 V',
-  //     'Current(Imax) : 2.25 A',
-  //     'Open Circuit Voltage (Voc) : 21.95 V',
-  //     'Short Circuit Current(Isc) : 2.44 A',
-  //     'System Voltage : 1000 V DC'
-  //   ],
-  // },
-  // {
-  //   productId: '  TSSTPT',
-  //   productName: 'ST13005A High-Voltage NPN Power Transistor',
-  //   productRating: 3.5,
-  //   productAvailability: 'in-stock',
-  //   productPrice: 5.00,
-  //   productType:'RETAIL',
-  //   productImgUrl: [
-  //     './assets/images/product/retail-product/TSSTPT.png',
-  //     './assets/images/product/retail-product/TSSTPT-2.png',
-  //     './assets/images/product/retail-product/TSSTPT-3.png',
-  //   ],
-  //   productCategory: 'Electronic',
-  //   productDescription: [
-  //     'Supports up to 400V collector-emitter voltage.',
-  //     'Fast switching performance for efficient power control.',
-  //     'Standard TO-220 package for easy mounting and cooling.',
-  //     'Low saturation voltage ensures high efficiency.',
-  //     'Suitable for SMPS, inverters, and lighting ballasts.'
-  //   ],
-  // },
   {
     productId: '  TSSACCTV',
     productName: ' Standlone CCTV Camera',
     productRating: 3.5,
     productAvailability: 'in-stock',
-    productPrice: 13700.00,
-    productType:'RETAIL',
+    productPrice: '13700.00',
+    productType:'OUR',
     productImgUrl: [
-      './assets/images/product/retail-product/TSSACCTV-2.png',
-      './assets/images/product/retail-product/TSSACCTV.png',
-      './assets/images/product/retail-product/TSSACCTV-3.jpeg',
-      './assets/images/product/retail-product/TSSACCTV-4.jpeg',
+      './assets/images/product/own-product/TSSACCTV-2.png',
+      './assets/images/product/own-product/TSSACCTV.png',
+      './assets/images/product/own-product/TSSACCTV-3.jpeg',
+      './assets/images/product/own-product/TSSACCTV-4.jpeg',
     ],
     productCategory: 'Electronic',
     productDescription: [
@@ -279,12 +233,62 @@ export const retailProductList: Product[] = [
       ' Real time data wireless data transmission.',
     ],
   },
+ 
+];
+
+
+export const retailProductList: Product[] = [
+  {
+    productId: '  TSMSP',
+    productName: 'Solar Panel',
+    productRating: 3.5,
+    productAvailability: 'in-stock',
+    productPrice: 'contact us',
+    productType:'RETAIL',
+    productImgUrl: [
+      './assets/images/product/retail-product/TSMSP.png',
+      './assets/images/product/retail-product/TSMSP-2.png',
+      './assets/images/product/retail-product/TSMSP-3.png',
+      './assets/images/product/retail-product/TSMSP-4.png',
+    ],
+    productCategory: 'Electronic',
+    productDescription: [
+      'Moduel Type : MSE40',
+      'Pmax : 40 W',
+      'Voltage(Vmax) : 17.84 V',
+      'Current(Imax) : 2.25 A',
+      'Open Circuit Voltage (Voc) : 21.95 V',
+      'Short Circuit Current(Isc) : 2.44 A',
+      'System Voltage : 1000 V DC'
+    ],
+  },
+  {
+    productId: '  TSSTPT',
+    productName: 'ST13005A High-Voltage NPN Power Transistor',
+    productRating: 3.5,
+    productAvailability: 'in-stock',
+    productPrice: 'contact us',
+    productType:'RETAIL',
+    productImgUrl: [
+      './assets/images/product/retail-product/TSSTPT.png',
+      './assets/images/product/retail-product/TSSTPT-2.png',
+      './assets/images/product/retail-product/TSSTPT-3.png',
+    ],
+    productCategory: 'Electronic',
+    productDescription: [
+      'Supports up to 400V collector-emitter voltage.',
+      'Fast switching performance for efficient power control.',
+      'Standard TO-220 package for easy mounting and cooling.',
+      'Low saturation voltage ensures high efficiency.',
+      'Suitable for SMPS, inverters, and lighting ballasts.'
+    ],
+  },
   {
     productId: 'TSWLS',
     productName: 'Water Level Sensor',
     productRating: 3.5,
     productAvailability: 'in-stock',
-    productPrice: 25.00,
+    productPrice: '25.00',
     productType:'RETAIL',
     productImgUrl: [
       './assets/images/product/retail-product/TSWLS.jpg',
@@ -305,7 +309,7 @@ export const retailProductList: Product[] = [
     productName: 'Sensor Cable',
     productRating: 3.5,
     productAvailability: 'in-stock',
-    productPrice: 6.00,
+    productPrice: '6.00',
     productType:'RETAIL',
     productImgUrl: [
       './assets/images/product/retail-product/TSSC.jpg',
@@ -323,7 +327,7 @@ export const retailProductList: Product[] = [
     productName: 'Push Button',
     productRating: 3.5,
     productAvailability: 'in-stock',
-    productPrice: 12.00,
+    productPrice: '12.00',
     productType:'RETAIL',
     productImgUrl: [
       './assets/images/product/retail-product/TSPB.jpg',
@@ -343,7 +347,7 @@ export const retailProductList: Product[] = [
     productName: '16A Output Socket',
     productRating: 3.5,
     productAvailability: 'in-stock',
-    productPrice: 26.00,
+    productPrice: '26.00',
     productType:'RETAIL',
     productImgUrl: [
       './assets/images/product/retail-product/TSOS.jpg',
@@ -362,7 +366,7 @@ export const retailProductList: Product[] = [
     productName: 'Relay H90 (T-Type)',
     productRating: 3.5,
     productAvailability: 'in-stock',
-    productPrice: 85.00,
+    productPrice: '85.00',
     productType:'RETAIL',
     productImgUrl: [
       './assets/images/product/retail-product/TSRH90.jpg',
@@ -382,7 +386,7 @@ export const retailProductList: Product[] = [
     productName: 'Relay JQC3FC (Cube-Type)',
     productRating: 3.5,
     productAvailability: 'in-stock',
-    productPrice: 16.00,
+    productPrice: '16.00',
     productType:'RETAIL',
     productImgUrl: [
       './assets/images/product/retail-product/TSRJQC3FC.jpg',
@@ -403,7 +407,7 @@ export const retailProductList: Product[] = [
     productName: 'Relay SK91 (Box-Type)',
     productRating: 3.5,
     productAvailability: 'in-stock',
-    productPrice: 86.00,
+    productPrice: '86.00',
     productType:'RETAIL',
     productImgUrl: [
       './assets/images/product/retail-product/TSRSK91.jpg',
@@ -424,7 +428,7 @@ export const retailProductList: Product[] = [
       '36 Watts LED Street Light (Lens Model) With D2D(Dusk To Down)',
     productRating: 3.5,
     productAvailability: 'in-stock',
-    productPrice: 750.00,
+    productPrice: '750.00',
     productType:'RETAIL',
     productImgUrl: [
       './assets/images/product/retail-product/TSACSLD2D.png',
@@ -445,7 +449,7 @@ export const retailProductList: Product[] = [
     productName: '36 Watts LED Street Light (Lens Model)',
     productRating: 3.5,
     productAvailability: 'in-stock',
-    productPrice: 650.00,
+    productPrice: '650.00',
     productType:'RETAIL',
     productImgUrl: [
       './assets/images/product/retail-product/TSACSL.png',
@@ -466,7 +470,7 @@ export const retailProductList: Product[] = [
     productName: '36 Watts LED Street Light (Lens Model) With Auto Timer D2D',
     productRating: 3.5,
     productAvailability: 'in-stock',
-    productPrice: 950.00,
+    productPrice: '950.00',
     productType:'RETAIL',
     productImgUrl: [
       './assets/images/product/retail-product/TSACSLD2DWAT.png',
