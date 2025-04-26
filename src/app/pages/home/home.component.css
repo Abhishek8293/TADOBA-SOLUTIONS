@@ -109,6 +109,15 @@
 .see-more-product-button {
   background-color: #3d4494;
 }
+/* Stat Section */
+
+.stat-section{
+  background-color: #ffffff;
+  padding: 20px 50px 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /* ==========================================================OUR PARTNERS SECTION ====================================== */
 
@@ -668,6 +677,13 @@
     width: 280px;
     border-radius: 15px;
   }
+  .stat-section{
+    background-color: #ffffff;
+    padding: 20px 50px 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -687,5 +703,12 @@
     align-items: center;
     gap: 30px;
     /* border: 1px solid red; */
+  }
+  .stat-section{
+    background-color: #ffffff;
+    padding: 20px 50px 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }

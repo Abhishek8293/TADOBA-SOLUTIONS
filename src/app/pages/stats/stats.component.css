@@ -1,0 +1,76 @@
+.container {
+  display: grid;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+.card {
+  width: 230px;
+  padding: 20px;
+  background-color: #f9fbfd;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.05);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.icon-container {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50%;
+  margin: 0 auto 16px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ebedf5;
+}
+
+.icon {
+  width: 26px;
+  height: 26px;
+}
+
+.number {
+  font-size: 32px;
+  font-weight: 700;
+  color: #0a0a0a;
+  margin-bottom: 8px;
+}
+
+.heading {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1e1e1e;
+  margin-bottom: 6px;
+}
+
+.subheading {
+  font-size: 14px;
+  color: #6b7280; /* subtle gray */
+}
+
+/* For screens >= 1025px → 2 rows × 3 columns */
+@media (min-width: 1024px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+  }
+
+}
+
+/* For screens between 426px and 769px → 2 columns × 3 rows */
+@media (min-width: 426px) and (max-width: 769px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+  }
+}
+
+/* For screens below 426px → single column */
+@media (max-width: 425px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}

@@ -38,6 +38,7 @@ import { ApiService } from '../../services/api.service';
 import { Quote } from '../../models/Quote';
 import { ApiResponse } from '../../models/ApiResponse';
 import { AwardsSliderComponent } from "../../components/awards-slider/awards-slider.component";
+import { StatsComponent } from "../stats/stats.component";
 
 interface ServiceCardData {
   imgUrl: string;
@@ -62,7 +63,8 @@ interface ServiceCardData {
     FormsModule,
     RouterModule,
     ReactiveFormsModule,
-    AwardsSliderComponent
+    AwardsSliderComponent,
+    StatsComponent
 ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
@@ -443,6 +445,7 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.updateVisitCount();
     if (isPlatformBrowser(this.platformId)) {
       this.screenWidth = window.innerWidth;
     }
@@ -482,4 +485,17 @@ export class HomeComponent implements OnInit {
       });
     }
   }
+
+
+  updateVisitCount(){
+    this.apiService.UpdateVisitCount().subscribe({
+      next: (responseData:ApiResponse<string>) =>{
+      },
+      error: (error) => {
+        console.error('Something Went Wrong', error);
+      },
+    })
+  }
+
+
 }
