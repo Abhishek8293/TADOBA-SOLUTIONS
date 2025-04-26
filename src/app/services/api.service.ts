@@ -19,5 +19,17 @@ export class ApiService {
     return this.http.post<ApiResponse<string>>(url,formData);
   }
 
+  getVisitCount():Observable<ApiResponse<number>>{
+    const endpoint = `/get-visit-count`;
+    const url = `${this.BASE_URL_QUOTE}${endpoint}`;
+    return this.http.get<ApiResponse<number>>(url);
+  }
+
+  UpdateVisitCount():Observable<ApiResponse<string>>{
+    const endpoint = `/update-visit-count`;
+    const url = `${this.BASE_URL_QUOTE}${endpoint}`;
+    return this.http.get<ApiResponse<string>>(url);
+  }
+
 
 }
