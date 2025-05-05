@@ -50,9 +50,37 @@
   font-size: 14px;
   color: #6b7280; /* subtle gray */
 }
+@media (min-width: 1025px){
+  .container {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(1, auto);
+    padding: 50px 20px;
+  }
+  .card{
+    width: 180px;
+    height: 150px;
+    padding: 12px;
+  }
+  .icon-container{
+    height: 40px;
+    width: 40px;
+  }
+  .icon{
+    width: 20px;
+    height: 20px;
+  }
+  .number{
+    font-size: 26px;
+  }
+  .heading{
+    font-size: 16px;
+  }
+  .subheading{
+    font-size: 12px;
+  }
+}
 
-/* For screens >= 1025px → 2 rows × 3 columns */
-@media (min-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1025px) {
   .container {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, auto);
@@ -60,7 +88,6 @@
 
 }
 
-/* For screens between 426px and 769px → 2 columns × 3 rows */
 @media (min-width: 426px) and (max-width: 769px) {
   .container {
     grid-template-columns: repeat(2, 1fr);
@@ -68,7 +95,6 @@
   }
 }
 
-/* For screens below 426px → single column */
 @media (max-width: 425px) {
   .container {
     grid-template-columns: 1fr;

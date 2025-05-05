@@ -1,5 +1,5 @@
 <div class="workshop-container">
-    <h2 class="workshop-heading">Hands-on Training On 3D Desiging and Fabrication</h2>
+    <h2 class="workshop-heading">From Concept to Creation: Mastering 3D Design, and Hands-on Practices.</h2>
     <div class="register-section">
         <div class="qr-box">
             <img src="./assets/images/workshops/training-qr.jpg" alt="Register QR Code" class="qr-image" />
@@ -21,6 +21,12 @@
             <div class="image-wrapper" *ngIf="module.image">
                 <img [src]="module.image" [alt]="module.title" class="module-img">
             </div>
+        </div>
+    </div>
+    <div class="workshop-gallery">
+        <h3 class="gallery-title">Hands-On Project</h3>
+        <div class="gallery-grid">
+            <img *ngFor="let img of workshopImages" [src]="img" alt="Workshop image" class="gallery-img">
         </div>
     </div>
 </div>

@@ -1,5 +1,5 @@
 <div class="workshop-container">
-    <h2 class="workshop-heading">Advanced IIoT Workshop with Embedded Systems</h2>
+    <h2 class="workshop-heading">Unlocking the Future: Advanced IIoT Workshop with Embedded Systems.</h2>
     <div class="register-section">
         <div class="qr-box">
             <img src="./assets/images/workshops/training-qr.jpg" alt="Register QR Code" class="qr-image" />
@@ -23,4 +23,11 @@
             </div>
         </div>
     </div>
+    <div class="workshop-gallery">
+        <h3 class="gallery-title">Hands-On Project</h3>
+        <div class="gallery-grid">
+            <img *ngFor="let img of workshopImages" [src]="img" alt="Workshop image" class="gallery-img">
+        </div>
+    </div>
+
 </div>

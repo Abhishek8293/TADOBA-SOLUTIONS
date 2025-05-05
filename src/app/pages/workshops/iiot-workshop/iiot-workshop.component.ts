@@ -63,5 +63,17 @@ export class IiotWorkshopComponent {
       ]
     }
   ];
+
+
+  workshopImages: string[] = [
+    './assets/images/workshops/iiot/iiotg1.png',
+    './assets/images/workshops/iiot/iiotg2.png',
+    './assets/images/workshops/iiot/iiotg3.png',
+    './assets/images/workshops/iiot/iiotg4.png',
+    './assets/images/workshops/iiot/iiotg5.png',
+    './assets/images/workshops/iiot/iiotg6.png',
+    './assets/images/workshops/iiot/iiotg7.png',
+  ];
+  
   
 }
