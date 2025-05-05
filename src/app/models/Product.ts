@@ -118,7 +118,7 @@ export const ourProductList: Product[] = [
     productName: 'Day Night Smart Switch D2D(Dusk To Down) AC',
     productRating: 3.5,
     productAvailability: 'in-stock',
-    productPrice: '150.00',
+    productPrice: '450.00',
     productType:'OUR',
     productImgUrl: [
       './assets/images/product/own-product/TSD2DAC.png',
@@ -207,7 +207,7 @@ export const ourProductList: Product[] = [
     productName: ' Standlone CCTV Camera',
     productRating: 3.5,
     productAvailability: 'in-stock',
-    productPrice: '13700.00',
+    productPrice: '18700.00',
     productType:'OUR',
     productImgUrl: [
       './assets/images/product/own-product/TSSACCTV-2.png',
@@ -309,7 +309,7 @@ export const retailProductList: Product[] = [
     productName: 'Sensor Cable',
     productRating: 3.5,
     productAvailability: 'in-stock',
-    productPrice: '6.00',
+    productPrice: '6.00 /mtr.',
     productType:'RETAIL',
     productImgUrl: [
       './assets/images/product/retail-product/TSSC.jpg',
@@ -386,7 +386,7 @@ export const retailProductList: Product[] = [
     productName: 'Relay JQC3FC (Cube-Type)',
     productRating: 3.5,
     productAvailability: 'in-stock',
-    productPrice: '16.00',
+    productPrice: '25.00',
     productType:'RETAIL',
     productImgUrl: [
       './assets/images/product/retail-product/TSRJQC3FC.jpg',

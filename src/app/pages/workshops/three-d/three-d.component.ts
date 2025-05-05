@@ -70,6 +70,19 @@ export class ThreeDComponent {
       ]
     }
   ];
+
+  workshopImages: string[] = [
+    './assets/images/workshops/3d/3dg1.png',
+    './assets/images/workshops/3d/3dg2.png',
+    './assets/images/workshops/3d/3dg3.png',
+    './assets/images/workshops/3d/3dg4.png',
+    './assets/images/workshops/3d/3dg5.png',
+    './assets/images/workshops/3d/3dg6.png',
+    './assets/images/workshops/3d/3dg7.png',
+    './assets/images/workshops/3d/3dg8.png',
+    './assets/images/workshops/3d/3dg9.png',
+    './assets/images/workshops/3d/3dg10.png',
+  ];
   
 
 }

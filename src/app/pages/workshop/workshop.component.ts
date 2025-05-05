@@ -13,27 +13,32 @@ import { RouterModule } from '@angular/router';
 export class WorkshopComponent {
   workshops = [
     {
-      title: 'Electric Vehicles (EVs) Workshop',
+      title: 'EV Battery & Technology',
       description:
-        'A hands-on EV workshop covering vehicle technology, battery management, motor systems, inverters, vehicle dynamics, simulation with MATLAB, and fault diagnosis using OBD scanners.',
+        'Discover innovative EV battery solutions and advanced technologies that drive sustainability and performance.',
       link: '/ev-workshop',
+      backgroundColor: '#27ae60', 
     },
     {
-      title: 'Advanced IIoT Workshop with Embedded Systems',
+      title: 'IIoT with Embedded System',
       description:
-        'An advanced IoT workshop covering system architecture, embedded design, LoRa & GSM/GPRS communication, edge computing, and hands-on project development in smart agriculture, cities, and traffic management.',
+        'Explore industrial IoT integration with embedded systems for automation, monitoring, and efficiency.',
       link: '/iiot-workshop',
+      backgroundColor: '#8e44ad', 
     },
     {
-      title: 'Solar PV Plant Workshop',
+      title: 'Solar PV Plant Installation & Application',
       description:
-        'A hands-on workshop covering Solar PV systems, including OFF-Grid, ON-Grid, and Hybrid plants, along with wind and hydrogen energy basics, software simulation, site safety, and a solar plant visit.',
+        'Learn the design, installation, and application of solar photovoltaic systems for clean energy solutions.',
       link: '/solar-pv-plant-workshop',
+      backgroundColor: '#e67e22', 
     },
     {
-      title: 'Hands-on Training On 3D Desiging and Fabrication',
-      description: 'A practical workshop on 3D design, modeling, and printing, covering essential tools, techniques, and real-world applications.',
+      title: '3D Designing & Printing',
+      description:
+        'Understand 3D modeling and printing technologies for prototyping and industrial design applications.',
       link: '/3d-workshop',
+      backgroundColor: '#2980b9', 
     },
   ];
 }
