@@ -2,11 +2,12 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { RouterModule } from '@angular/router';
+import { WorkshopRegistrationComponent } from "../../components/workshop-registration/workshop-registration.component";
 
 @Component({
   selector: 'app-workshop',
   standalone: true,
-  imports: [CommonModule, RouterModule, MatButtonModule],
+  imports: [CommonModule, RouterModule, MatButtonModule, WorkshopRegistrationComponent],
   templateUrl: './workshop.component.html',
   styleUrl: './workshop.component.css',
 })

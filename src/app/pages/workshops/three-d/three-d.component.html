@@ -1,14 +1,6 @@
 <div class="workshop-container">
     <h2 class="workshop-heading">From Concept to Creation: Mastering 3D Design, and Hands-on Practices.</h2>
-    <div class="register-section">
-        <div class="qr-box">
-            <img src="./assets/images/workshops/training-qr.jpg" alt="Register QR Code" class="qr-image" />
-        </div>
-        <div class="register-text">
-            <p>Scan the QR code for Registration <br> or</p>
-            <a href="https://forms.gle/8n8P5xcC9z5dXAx1A" target="_blank" class="register-link">Click Here</a>
-        </div>
-    </div>
+    <app-workshop-registration></app-workshop-registration>
     <div class="workshop-list">
         <div class="workshop-card" *ngFor="let module of workshopModules">
             <div class="module-content">

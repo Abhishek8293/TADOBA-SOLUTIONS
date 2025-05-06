@@ -109,6 +109,10 @@
 .learn-more-btn:hover {
   background-color: #e0d1ff;
 }
+.workshop-wrapper {
+  max-width: 1300px !important;
+  margin: auto;
+}
 
 @media (min-width: 769px) and (max-width: 1025px) {
   .card-container {

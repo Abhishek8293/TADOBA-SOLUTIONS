@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component, signal } from '@angular/core';
+import { WorkshopRegistrationComponent } from "../../../components/workshop-registration/workshop-registration.component";
 
 @Component({
   selector: 'app-iiot-workshop',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, WorkshopRegistrationComponent],
   templateUrl: './iiot-workshop.component.html',
   styleUrl: './iiot-workshop.component.css',
 })
