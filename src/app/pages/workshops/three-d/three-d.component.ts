@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component, signal } from '@angular/core';
+import { WorkshopRegistrationComponent } from "../../../components/workshop-registration/workshop-registration.component";
 
 @Component({
   selector: 'app-three-d',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, WorkshopRegistrationComponent],
   templateUrl: './three-d.component.html',
   styleUrl: './three-d.component.css'
 })

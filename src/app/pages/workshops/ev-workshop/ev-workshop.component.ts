@@ -1,16 +1,16 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
+import { WorkshopRegistrationComponent } from '../../../components/workshop-registration/workshop-registration.component';
 
 @Component({
   selector: 'app-ev-workshop',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, WorkshopRegistrationComponent],
   templateUrl: './ev-workshop.component.html',
   styleUrls: ['./ev-workshop.component.css'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class EvWorkshopComponent {
-
   workshopModules = [
     {
       title: '1. Introduction to e-Vehicle & Battery Technology',
@@ -22,8 +22,8 @@ export class EvWorkshopComponent {
         'Batteries and Battery Management System(BMS)',
         'Types of batteries used in EVs',
         'Importance and functioning of BMS',
-        'Practical activity: Hands-on with battery and BMS'
-      ]
+        'Practical activity: Hands-on with battery and BMS',
+      ],
     },
     {
       title: '2. Types of Motors in EVs',
@@ -32,8 +32,8 @@ export class EvWorkshopComponent {
         'Fundamentals of Motor Functioning in EVs',
         'Overview of motor types (AC, DC, BLDC, etc.)',
         'Hands-On Motor Analysis',
-        'Exploring and comparing different motor types'
-      ]
+        'Exploring and comparing different motor types',
+      ],
     },
     {
       title: '3. Inverters & Vehicle Dynamics in EVs',
@@ -44,8 +44,8 @@ export class EvWorkshopComponent {
         'Hands-on activity: Working with inverters',
         'Fundamentals of Vehicle Dynamics',
         'Understanding weight distribution, acceleration, and stability',
-        'Tractive Force Calculations'
-      ]
+        'Tractive Force Calculations',
+      ],
     },
     {
       title: '4. Simulation in the EV Industry',
@@ -54,8 +54,8 @@ export class EvWorkshopComponent {
         'Introduction to MATLAB and Simulink',
         'Overview of the interface and key features',
         'Creating basic EV models in MATLAB',
-        'Running simulations and interpreting results'
-      ]
+        'Running simulations and interpreting results',
+      ],
     },
     {
       title: '5. Fault Analysis Using On-Board Diagnostic (OBD) Scanner',
@@ -63,10 +63,13 @@ export class EvWorkshopComponent {
       points: [
         'Basics of OBD Scanners',
         'Understanding OBD systems and applications in EVs',
-        'Using an OBD scanner for EV diagnosis'
-      ]
-    }
+        'Using an OBD scanner for EV diagnosis',
+      ],
+    },
   ];
 
-  
+  workshopImages: string[] = [
+    './assets/images/workshops/ev/eg1.png',
+    './assets/images/workshops/ev/eg2.png',
+  ];
 }

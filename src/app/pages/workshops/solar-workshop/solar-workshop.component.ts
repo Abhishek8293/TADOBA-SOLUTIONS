@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component, signal } from '@angular/core';
+import { WorkshopRegistrationComponent } from "../../../components/workshop-registration/workshop-registration.component";
 
 @Component({
   selector: 'app-solar-workshop',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, WorkshopRegistrationComponent],
   templateUrl: './solar-workshop.component.html',
   styleUrl: './solar-workshop.component.css',
 })
@@ -60,6 +61,17 @@ export class SolarWorkshopComponent {
         'Solar PV Plant Visit.'
       ]
     }
+  ];
+
+  workshopImages: string[] = [
+    './assets/images/workshops/solar-pv/sg1.png',
+    './assets/images/workshops/solar-pv/sg2.png',
+    './assets/images/workshops/solar-pv/sg3.png',
+    './assets/images/workshops/solar-pv/sg4.png',
+    './assets/images/workshops/solar-pv/sg5.png',
+    './assets/images/workshops/solar-pv/sg6.png',
+    './assets/images/workshops/solar-pv/sg7.png',
+    './assets/images/workshops/solar-pv/sg8.png',
   ];
   
 }
