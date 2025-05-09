@@ -1,11 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { Component, signal } from '@angular/core';
 import { WorkshopRegistrationComponent } from "../../../components/workshop-registration/workshop-registration.component";
+import { WorkshopGalleryComponent } from "../../../components/workshop-gallery/workshop-gallery.component";
 
 @Component({
   selector: 'app-three-d',
   standalone: true,
-  imports: [CommonModule, WorkshopRegistrationComponent],
+  imports: [CommonModule, WorkshopRegistrationComponent, WorkshopGalleryComponent],
   templateUrl: './three-d.component.html',
   styleUrl: './three-d.component.css'
 })
@@ -72,18 +73,19 @@ export class ThreeDComponent {
     }
   ];
 
-  workshopImages: string[] = [
-    './assets/images/workshops/3d/3dg1.png',
-    './assets/images/workshops/3d/3dg2.png',
-    './assets/images/workshops/3d/3dg3.png',
-    './assets/images/workshops/3d/3dg4.png',
-    './assets/images/workshops/3d/3dg5.png',
-    './assets/images/workshops/3d/3dg6.png',
-    './assets/images/workshops/3d/3dg7.png',
-    './assets/images/workshops/3d/3dg8.png',
-    './assets/images/workshops/3d/3dg9.png',
-    './assets/images/workshops/3d/3dg10.png',
+  printing3dImages = [
+    { src: './assets/images/workshops/3d/3dg4.png', title: '3D Workshop' },
+    { src: './assets/images/workshops/3d/3dg1.png', title: 'Designing in CAD' },
+    { src: './assets/images/workshops/3d/3dg3.png', title: 'Technical Design Stage' },
+    // { src: './assets/images/workshops/3d/3dg5.png', title: 'Quality Check' },
+    { src: './assets/images/workshops/3d/3dg6.png', title: 'Finalized Design' },
+    { src: './assets/images/workshops/3d/3dg10.png', title: 'Printing in Process..' },
+    // { src: './assets/images/workshops/3d/3dg8.png', title: 'Completed Prototypes' },
+    { src: './assets/images/workshops/3d/3dg7.png', title: 'Final Product' },
+    { src: './assets/images/workshops/3d/3dg9.png', title: 'Solar Power Bank 3D Model' },
+    { src: './assets/images/workshops/3d/3dg2.png', title: 'In-House Designed Product' },
   ];
+  
   
 
 }
