@@ -1,11 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
 import { WorkshopRegistrationComponent } from '../../../components/workshop-registration/workshop-registration.component';
+import { WorkshopGalleryComponent } from "../../../components/workshop-gallery/workshop-gallery.component";
 
 @Component({
   selector: 'app-ev-workshop',
   standalone: true,
-  imports: [CommonModule, WorkshopRegistrationComponent],
+  imports: [CommonModule, WorkshopRegistrationComponent, WorkshopGalleryComponent],
   templateUrl: './ev-workshop.component.html',
   styleUrls: ['./ev-workshop.component.css'],
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -68,8 +69,10 @@ export class EvWorkshopComponent {
     },
   ];
 
-  workshopImages: string[] = [
-    './assets/images/workshops/ev/eg1.png',
-    './assets/images/workshops/ev/eg2.png',
+  evWorkshopImages = [
+    { src: './assets/images/workshops/ev/eg1.png', title: 'Coverting Regular Cycle to e-Cycle' },
+    { src: './assets/images/workshops/ev/eg2.png', title: 'Retrofitting Solar Powered e-Rickshaw' },
+    { src: './assets/images/workshops/ev/eg3.png', title: 'Retrofitting e-Scooter' },
   ];
+  
 }

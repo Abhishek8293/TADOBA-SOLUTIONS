@@ -1,11 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { Component, signal } from '@angular/core';
 import { WorkshopRegistrationComponent } from "../../../components/workshop-registration/workshop-registration.component";
+import { WorkshopGalleryComponent } from "../../../components/workshop-gallery/workshop-gallery.component";
 
 @Component({
   selector: 'app-solar-workshop',
   standalone: true,
-  imports: [CommonModule, WorkshopRegistrationComponent],
+  imports: [CommonModule, WorkshopRegistrationComponent, WorkshopGalleryComponent],
   templateUrl: './solar-workshop.component.html',
   styleUrl: './solar-workshop.component.css',
 })
@@ -63,15 +64,15 @@ export class SolarWorkshopComponent {
     }
   ];
 
-  workshopImages: string[] = [
-    './assets/images/workshops/solar-pv/sg1.png',
-    './assets/images/workshops/solar-pv/sg2.png',
-    './assets/images/workshops/solar-pv/sg3.png',
-    './assets/images/workshops/solar-pv/sg4.png',
-    './assets/images/workshops/solar-pv/sg5.png',
-    './assets/images/workshops/solar-pv/sg6.png',
-    './assets/images/workshops/solar-pv/sg7.png',
-    './assets/images/workshops/solar-pv/sg8.png',
-  ];
+  solarPvImages = [
+    { src: './assets/images/workshops/solar-pv/sg1.png', title: 'Off Grid Solar Inverter Installation' },
+    { src: './assets/images/workshops/solar-pv/sg2.png', title: 'Panel Mounting' },
+    { src: './assets/images/workshops/solar-pv/sg3.png', title: 'Solar Panel Setup' },
+    { src: './assets/images/workshops/solar-pv/sg4.png', title: 'Vardhman hospital durg 15 KW' },
+    { src: './assets/images/workshops/solar-pv/sg5.png', title: 'Industrial Shed 5 kW Jute Factory Raipur' },
+    { src: './assets/images/workshops/solar-pv/sg6.png', title: 'Solar Pump (3HP) Charma (Kanker)' },
+    { src: './assets/images/workshops/solar-pv/sg7.png', title: 'Solar PV at Floating House Gangrel Dam' },
+    { src: './assets/images/workshops/solar-pv/sg8.png', title: 'Bhilai Institute of Technology, Raipur' },
+  ];  
   
 }

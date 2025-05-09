@@ -15,11 +15,5 @@
             </div>
         </div>
     </div>
-    <div class="workshop-gallery">
-        <h3 class="gallery-title">Hands-On Project</h3>
-        <div class="gallery-grid">
-            <img *ngFor="let img of workshopImages" [src]="img" alt="Workshop image" class="gallery-img">
-        </div>
-    </div>
-
+    <app-workshop-gallery [galleryData]="solarWorkshopImages"></app-workshop-gallery>
 </div>

@@ -1,11 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { Component, signal } from '@angular/core';
 import { WorkshopRegistrationComponent } from "../../../components/workshop-registration/workshop-registration.component";
+import { WorkshopGalleryComponent } from "../../../components/workshop-gallery/workshop-gallery.component";
 
 @Component({
   selector: 'app-iiot-workshop',
   standalone: true,
-  imports: [CommonModule, WorkshopRegistrationComponent],
+  imports: [CommonModule, WorkshopRegistrationComponent, WorkshopGalleryComponent],
   templateUrl: './iiot-workshop.component.html',
   styleUrl: './iiot-workshop.component.css',
 })
@@ -66,15 +67,16 @@ export class IiotWorkshopComponent {
   ];
 
 
-  workshopImages: string[] = [
-    './assets/images/workshops/iiot/iiotg1.png',
-    './assets/images/workshops/iiot/iiotg2.png',
-    './assets/images/workshops/iiot/iiotg3.png',
-    './assets/images/workshops/iiot/iiotg4.png',
-    './assets/images/workshops/iiot/iiotg5.png',
-    './assets/images/workshops/iiot/iiotg6.png',
-    './assets/images/workshops/iiot/iiotg7.png',
+  solarWorkshopImages = [
+    { src: './assets/images/workshops/iiot/iiotg1.png', title: 'Peer-to-Peer Energy Trading' },
+    { src: './assets/images/workshops/iiot/iiotg2.png', title: 'Weather Station' },
+    { src: './assets/images/workshops/iiot/iiotg3.png', title: 'Lo-Ra Communication' },
+    { src: './assets/images/workshops/iiot/iiotg4.png', title: 'Hardware Programming' },
+    { src: './assets/images/workshops/iiot/iiotg5.png', title: 'Hardware Connection & Programming' },
+    { src: './assets/images/workshops/iiot/iiotg6.png', title: 'Debug the Program' },
+    { src: './assets/images/workshops/iiot/iiotg7.png', title: 'Final Showcase' },
   ];
+  
   
   
 }
