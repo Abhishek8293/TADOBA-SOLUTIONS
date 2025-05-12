@@ -75,6 +75,8 @@ export class IiotWorkshopComponent {
     { src: './assets/images/workshops/iiot/iiotg5.png', title: 'Hardware Connection & Programming' },
     { src: './assets/images/workshops/iiot/iiotg6.png', title: 'Debug the Program' },
     { src: './assets/images/workshops/iiot/iiotg7.png', title: 'Final Showcase' },
+    { src: './assets/images/workshops/iiot/iiotg8.png', title: 'LoRa Pumping System Receiver & Transmitter' },
+    { src: './assets/images/workshops/iiot/iiotg9.png', title: 'Battery Swapping System' },
   ];
   
   

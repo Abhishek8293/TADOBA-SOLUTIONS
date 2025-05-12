@@ -43,12 +43,14 @@
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 /* =========================================PRODUCT SECTION===================================== */
+.all-products {
+  background: linear-gradient(135deg, #3d4494, #6a5acd);
+}
 .product-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   color: white;
-  background-color: #3d4494;
   padding-bottom: 50px;
 }
 .product-section-heading {
@@ -88,7 +90,6 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  background-color: #3d4494;
   padding-top: 50px;
 }
 .laptop-small {
@@ -106,12 +107,10 @@
   transform: scale(1.1);
   background: none;
 }
-.see-more-product-button {
-  background-color: #3d4494;
-}
+
 /* Stat Section */
 
-.stat-section{
+.stat-section {
   background-color: #ffffff;
   padding: 20px 50px 20px 50px;
   display: flex;
@@ -147,11 +146,11 @@
 
 .partner-logo-and-name {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); 
-  grid-template-rows: repeat(2, auto); 
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, auto);
   gap: 30px;
   width: 100%;
-  max-width: 1200px; 
+  max-width: 1200px;
   justify-items: center;
   align-items: start;
 }
@@ -546,8 +545,8 @@
     align-items: center;
   }
   .partner-logo-and-name {
-    grid-template-columns: repeat(2, 1fr); 
-    grid-template-rows: repeat(4, auto);  
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
     gap: 20px;
   }
 
@@ -588,9 +587,6 @@
     gap: 20px;
     place-items: center;
     /* border: 1px solid red; */
-  }
-  .see-more-product-button {
-    background-color: #3d4494;
   }
 
   .awards-card-list {
@@ -677,7 +673,7 @@
     width: 280px;
     border-radius: 15px;
   }
-  .stat-section{
+  .stat-section {
     background-color: #ffffff;
     padding: 20px 50px 20px 50px;
     display: flex;
@@ -704,7 +700,7 @@
     gap: 30px;
     /* border: 1px solid red; */
   }
-  .stat-section{
+  .stat-section {
     background-color: #ffffff;
     padding: 20px 50px 20px 50px;
     display: flex;
