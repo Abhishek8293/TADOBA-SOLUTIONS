@@ -84,6 +84,7 @@ export class ThreeDComponent {
     { src: './assets/images/workshops/3d/3dg7.png', title: 'Final Product' },
     { src: './assets/images/workshops/3d/3dg9.png', title: 'Solar Power Bank 3D Model' },
     { src: './assets/images/workshops/3d/3dg2.png', title: 'In-House Designed Product' },
+    { src: './assets/images/workshops/3d/3dg11.png', title: 'Design & Printed Models' },
   ];
   
   

@@ -71,8 +71,10 @@ export class EvWorkshopComponent {
 
   evWorkshopImages = [
     { src: './assets/images/workshops/ev/eg1.png', title: 'Coverting Regular Cycle to e-Cycle' },
+    { src: './assets/images/workshops/ev/eg5.png', title: 'Process of Retrofitting' },
     { src: './assets/images/workshops/ev/eg2.png', title: 'Retrofitting Solar Powered e-Rickshaw' },
     { src: './assets/images/workshops/ev/eg3.png', title: 'Retrofitting e-Scooter' },
+    { src: './assets/images/workshops/ev/eg4.png', title: 'Battery Swapping System' },
   ];
   
 }

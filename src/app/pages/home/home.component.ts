@@ -445,7 +445,7 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.updateVisitCount();
+    // this.updateVisitCount();
     if (isPlatformBrowser(this.platformId)) {
       this.screenWidth = window.innerWidth;
     }

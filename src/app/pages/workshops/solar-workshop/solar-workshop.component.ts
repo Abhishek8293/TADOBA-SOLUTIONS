@@ -73,6 +73,10 @@ export class SolarWorkshopComponent {
     { src: './assets/images/workshops/solar-pv/sg6.png', title: 'Solar Pump (3HP) Charma (Kanker)' },
     { src: './assets/images/workshops/solar-pv/sg7.png', title: 'Solar PV at Floating House Gangrel Dam' },
     { src: './assets/images/workshops/solar-pv/sg8.png', title: 'Bhilai Institute of Technology, Raipur' },
+    { src: './assets/images/workshops/solar-pv/sg9.png', title: 'Risali, Maroda Basti, Bhilai' },
+    { src: './assets/images/workshops/solar-pv/sg10.png', title: 'Industrial Shed 5 kW Shankar Nagar Raipur'},
+    { src: './assets/images/workshops/solar-pv/sg11.png', title: '' },
+    { src: './assets/images/workshops/solar-pv/sg12.png', title: 'Solar PV Water Proof Parking Stand' },
   ];  
   
 }
