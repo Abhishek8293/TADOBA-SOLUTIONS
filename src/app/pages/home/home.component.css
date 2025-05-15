@@ -17,7 +17,7 @@
 .heading-div {
   padding: 10px;
   border-radius: 5px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   text-align: center;
 }
 .service-container h6 {
@@ -27,6 +27,16 @@
   letter-spacing: 1.5px;
   margin: 0;
   font-family: "Roboto", serif;
+}
+.subheading {
+  margin: 0 auto;
+  padding: 0 16px 24px 16px;
+  font-size: 1.35rem;
+  line-height: 1.8;
+  color: #444;
+  text-align: justify;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
 }
 .explore-btn {
   width: 170px;
@@ -513,6 +523,9 @@
     margin-bottom: 10px;
     font-family: "Roboto", serif;
   }
+  .subheading {
+    font-size: .9rem;
+  }
 }
 
 @media (min-width: 441px) and (max-width: 769px) {
@@ -570,6 +583,9 @@
     justify-content: center;
     align-items: center;
     padding: 30px 20px;
+  }
+   .subheading {
+    font-size: 1rem;
   }
 }
 
@@ -645,6 +661,9 @@
     margin-top: 10px;
     font-size: 14px;
     line-height: 1.4;
+  }
+   .subheading {
+    font-size: 1.1rem;
   }
 }
 

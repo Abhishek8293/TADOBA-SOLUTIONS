@@ -75,6 +75,7 @@ export class EvWorkshopComponent {
     { src: './assets/images/workshops/ev/eg2.png', title: 'Retrofitting Solar Powered e-Rickshaw' },
     { src: './assets/images/workshops/ev/eg3.png', title: 'Retrofitting e-Scooter' },
     { src: './assets/images/workshops/ev/eg4.png', title: 'Battery Swapping System' },
+    { src: './assets/images/workshops/ev/eg6.png', title: 'Battery Packs' },
   ];
   
 }
