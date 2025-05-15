@@ -1,7 +1,7 @@
 <header class="container">
     <div class="tadoba-logo">
         <a href="#"><img class="tadoba" src="./assets/images/logo.png" alt="Logo"></a>
-        <a href="https://www.ibitf.co.in/" target="_blank"><img class="ibitf-logo" src="./assets/images/logo3.png"
+        <a href="https://www.ibitf.co.in/" target="_blank"><img class="ibitf-logo" src="./assets/images/ibitf-logo.png"
                 alt="Logo"></a>
     </div>
     <ul class="nav-bar-link">
@@ -35,12 +35,12 @@
         <li><a><fa-icon [icon]="service"></fa-icon>Services & Maintenance</a>
             <div class="services">
                 <ul>
-                    <li><a>Solar Pv Plant Installation</a></li>
-                    <li><a>Digital Agri Villages & Solutions</a></li>
+                    <li><a routerLink="solar-pv-plant">Solar Pv Plant Installation</a></li>
+                    <li><a routerLink="digital-agri-village">Digital Agri Villages & Solutions</a></li>
                     <li><a>Customized Industrial Solutions <mat-icon>arrow_right</mat-icon></a>
                         <div class="customized-industrial-solution-sub-menu">
                             <ul>
-                                <li><a>Water Overflow Control Solutions</a></li>
+                                <li><a routerLink="water-overflow-controller">Water Overflow Control Solutions</a></li>
                                 <li><a>Electromechanical Product Design & Development</a></li>
                                 <li><a>PCB Design, Development & Fabrication</a></li>
                                 <li><a>3D Prototype Product Design & Printing</a></li>
@@ -99,13 +99,13 @@
                     [icon]="angleDown"></fa-icon></a>
             <div class="services-res" *ngIf="dropdowns['services']">
                 <ul>
-                    <li><a>Solar PV Plant Installation</a></li>
-                    <li><a>Digital Agri Villages & Solutions</a></li>
+                    <li><a routerLink="solar-pv-plant">Solar PV Plant Installation</a></li>
+                    <li><a routerLink="digital-agri-village">Digital Agri Villages & Solutions</a></li>
                     <li><a (click)="toggleDropdown('customSolutions')">Customized Industrial Solutions<fa-icon
                                 [icon]="angleDown"></fa-icon></a>
                         <div class="customized-industrial-solution-sub-menu-res" *ngIf="dropdowns['customSolutions']">
                             <ul>
-                                <li><a>Water Overflow Control Solutions</a></li>
+                                <li><a routerLink="water-overflow-controller">Water Overflow Control Solutions</a></li>
                                 <li><a>Electromechanical Product Design & Development</a></li>
                                 <li><a>PCB Design, Development & Fabrication</a></li>
                                 <li><a>3D Prototype Product Design & Printing</a></li>

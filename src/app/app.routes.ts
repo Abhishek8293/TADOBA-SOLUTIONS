@@ -14,6 +14,9 @@ import { IiotWorkshopComponent } from './pages/workshops/iiot-workshop/iiot-work
 import { SolarWorkshopComponent } from './pages/workshops/solar-workshop/solar-workshop.component';
 import { ThreeDComponent } from './pages/workshops/three-d/three-d.component';
 import { RetailProductsComponent } from './pages/retail-products/retail-products.component';
+import { SolarPvComponent } from './pages/service&maintenance/solar-pv/solar-pv.component';
+import { DigitAgriVillagesComponent } from './pages/service&maintenance/digit-agri-villages/digit-agri-villages.component';
+import { WaterOverflowControllerComponent } from './pages/service&maintenance/water-overflow-controller/water-overflow-controller.component';
 
 export const routes: Routes = [
     {path: '',component:HomeComponent},
@@ -31,5 +34,8 @@ export const routes: Routes = [
     {path:'ev-workshop',component:EvWorkshopComponent},
     {path:'iiot-workshop',component:IiotWorkshopComponent},
     {path:'solar-pv-plant-workshop',component:SolarWorkshopComponent},
-    {path:'3d-workshop',component:ThreeDComponent}
+    {path:'3d-workshop',component:ThreeDComponent},
+    {path:'solar-pv-plant',component:SolarPvComponent},
+    {path:'digital-agri-village',component:DigitAgriVillagesComponent},
+    {path:'water-overflow-controller',component:WaterOverflowControllerComponent}
 ];
