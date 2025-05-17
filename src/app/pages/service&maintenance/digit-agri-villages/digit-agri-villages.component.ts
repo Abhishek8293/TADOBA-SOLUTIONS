@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 @Component({
@@ -10,5 +10,11 @@ import { RouterModule } from '@angular/router';
   styleUrl: './digit-agri-villages.component.css'
 })
 export class DigitAgriVillagesComponent {
+
+  @ViewChild('targetSection') targetSection!:ElementRef;
+
+  scrollToProductSection(){
+    this.targetSection.nativeElement.scrollIntoView({behavior:'smooth'});
+  }
 
 }

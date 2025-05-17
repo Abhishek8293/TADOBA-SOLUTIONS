@@ -21,7 +21,7 @@
     </div>
     <div class="service-card-list">
         @for (data of serviceData; track $index) {
-        <app-service-card [imgUrl]="data.imgUrl" [title]="data.title"></app-service-card>
+        <app-service-card [imgUrl]="data.imgUrl" [title]="data.title" [navigation]="data.navUrl"></app-service-card>
         }
     </div>
     <!-- <button mat-button class="explore-btn">Explore More<mat-icon class="arrow-icon"

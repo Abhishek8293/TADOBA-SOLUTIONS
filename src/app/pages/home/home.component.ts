@@ -43,7 +43,7 @@ import { StatsComponent } from "../stats/stats.component";
 interface ServiceCardData {
   imgUrl: string;
   title: string;
-  navigation: string;
+  navUrl: string;
 }
 
 @Component({
@@ -93,32 +93,32 @@ export class HomeComponent implements OnInit {
     {
       imgUrl: './assets/images/service/electromechanical.png',
       title: 'Electromechanical Product Design & Development',
-      navigation: 'Go to Service 1',
+      navUrl: 'Go to Service 1',
     },
     {
       imgUrl: './assets/images/service/solar-energy.png',
       title: 'Solar PV Plant/EV/Batteries',
-      navigation: 'Go to Service 2',
+      navUrl: 'Go to Service 2',
     },
     {
       imgUrl: './assets/images/service/custom.png',
       title: 'Customized Industrial Solutions',
-      navigation: 'Go to Service 3',
+      navUrl: 'Go to Service 3',
     },
     {
       imgUrl: './assets/images/service/pcb-board.png',
       title: 'PCB Design, Development & Fabrication',
-      navigation: 'Go to Service 4',
+      navUrl: 'Go to Service 4',
     },
     {
       imgUrl: './assets/images/service/3d-printing.png',
       title: '3D Prototype Product Design & Printing',
-      navigation: 'Go to Service 4',
+      navUrl: '3d-design-printing-service',
     },
     {
       imgUrl: './assets/images/service/agri.png',
       title: 'Digital Agri Village Products & Solutions',
-      navigation: 'Go to Service 4',
+      navUrl: 'digital-agri-village',
     },
   ];
 
