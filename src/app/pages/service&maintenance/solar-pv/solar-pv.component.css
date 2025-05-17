@@ -213,7 +213,6 @@
   width: fit-content;
 }
 
-
 .solar-pv-projects-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -335,4 +334,238 @@
   font-size: 1.5rem;
   display: inline-block;
   font-family: "Segoe UI", "Roboto", sans-serif;
+}
+
+/* Mobile devices (up to 426px) */
+@media (max-width: 426px) {
+  .container {
+    padding: 10px;
+  }
+
+  .page-heading {
+    font-size: 1.1rem;
+    padding: 15px;
+    margin: 30px 0 15px;
+  }
+
+  .icon-div-heading {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .icon-div-heading .icon-div img {
+    height: 100px;
+    width: 100px;
+  }
+
+  .second-section {
+    flex-direction: column;
+    padding: 20px 5px;
+    width: 95%;
+  }
+
+  .bullet-div {
+    flex: 1 1 100%;
+    margin-bottom: 30px;
+  }
+
+  .bullet-div li {
+    font-size: .9rem;
+    margin-bottom: 0px;
+    margin-top: 15px;
+  }
+
+  .images-div {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .about-us-container{
+    padding: 40px 0;
+  }
+  .about-us-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .about-us-text,
+  .about-us-images {
+    flex: 1 1 100%;
+  }
+  .about-us-content p{
+    font-size: .9rem;
+  }
+  .service-includes-content ul li p{
+    font-size: .9rem;
+  }
+  .about-us-images {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+  }
+
+  .about-us-image-box img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .solar-pv-projects-container {
+    grid-template-columns: 1fr;
+    padding: 15px;
+  }
+  .solar-pv-project-box-image{
+    height: 250px;
+  }
+  .solar-pv-project-box-image-title p{
+    font-size: 1rem;
+  }
+  .solar-grid-container {
+    grid-template-areas:
+      "sp1"
+      "sp2"
+      "sp3"
+      "sp4"
+      "sp5"
+      "sp6"
+      "sp7";
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 200px);
+  }
+
+  .section-title {
+    font-size: 1.3rem;
+  }
+}
+
+/* Small tablets (426px to 769px) */
+@media (min-width: 426px) and (max-width: 769px) {
+  .icon-div-heading {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .icon-div-heading .icon-div {
+    flex: 0 0 calc(50% - 40px);
+  }
+
+  .second-section {
+    flex-direction: column;
+  }
+
+  .bullet-div {
+    margin-bottom: 30px;
+  }
+
+  .images-div {
+    width: 100%;
+  }
+
+  .about-us-container {
+    flex-direction: column;
+  }
+
+  .about-us-images {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .solar-pv-projects-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .solar-grid-container {
+    grid-template-areas:
+      "sp1 sp4"
+      "sp2 sp4"
+      "sp3 sp5"
+      "sp6 sp7";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 200px);
+  }
+}
+
+/* Medium devices (769px to 1025px) */
+@media (min-width: 769px) and (max-width: 1025px) {
+  .icon-div-heading .icon-div {
+    padding: 15px;
+  }
+
+  .icon-div-heading .icon-div img {
+    height: 120px;
+    width: 120px;
+  }
+
+  .bullet-div li {
+    font-size: 1.2rem;
+  }
+
+  .about-us-images {
+    grid-auto-rows: 300px;
+  }
+
+  .about-us-image-box img {
+    height: 200px;
+  }
+
+  .solar-pv-projects-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .solar-grid-container {
+    grid-template-rows: 200px 200px 200px;
+  }
+}
+
+/* Large devices (1025px to 1441px) */
+@media (min-width: 1025px) and (max-width: 1441px) {
+  .about-us-image-box img {
+    width: 350px;
+  }
+
+  .solar-pv-projects-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .solar-grid-container {
+    grid-template-rows: 220px 220px 220px;
+  }
+}
+
+/* Extra large devices (1441px and above) */
+@media (min-width: 1441px) {
+  .container {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  .bullet-div ul li{
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+  .about-us-image-box img {
+    width: 450px;
+    height: 300px;
+  }
+
+  .solar-grid-container {
+    grid-template-rows: 280px 280px 280px;
+  }
+}
+
+/* Special adjustments for very small screens */
+@media (max-width: 350px) {
+  .page-heading {
+    font-size: 1.1rem;
+    padding: 10px 15px;
+  }
+
+  .bullet-div li {
+    font-size: 1rem;
+    padding-left: 25px;
+  }
+
+  .about-us-image-box img {
+    height: 180px;
+  }
+
+  .section-title {
+    font-size: 1.1rem;
+  }
 }

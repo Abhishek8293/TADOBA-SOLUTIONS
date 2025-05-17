@@ -98,7 +98,7 @@ export class HomeComponent implements OnInit {
     {
       imgUrl: './assets/images/service/solar-energy.png',
       title: 'Solar PV Plant/EV/Batteries',
-      navUrl: 'Go to Service 2',
+      navUrl: 'solar-pv-plant',
     },
     {
       imgUrl: './assets/images/service/custom.png',
