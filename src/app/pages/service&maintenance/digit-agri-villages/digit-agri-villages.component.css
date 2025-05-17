@@ -361,3 +361,174 @@
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(46, 125, 50, 0.3);
 }
+
+/* Mobile devices (up to 426px) */
+@media (max-width: 426px) {
+  .agri-section {
+    padding: 30px 15px;
+  }
+
+  .page-heading {
+    font-size: 1.8rem;
+    padding-left: 15px;
+    margin-bottom: 20px;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .hero-text {
+    padding: 30px 20px;
+    order: 2;
+  }
+
+  .hero-image {
+    height: 300px;
+    order: 1;
+    flex: none;
+  }
+
+  .hero-description {
+    font-size: 1.1rem;
+  }
+
+  .hero-cta {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .agri-header h2,
+  .section-header h2 {
+    font-size: 1.8rem;
+  }
+
+  .agri-benefits,
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .benefit-item {
+    padding: 20px;
+  }
+
+  .product-card {
+    min-width: 100%;
+  }
+}
+
+/* Tablets and small devices (426px to 769px) */
+@media (min-width: 426px) and (max-width: 769px) {
+  .page-heading {
+    font-size: 2.2rem;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .hero-text {
+    padding: 40px 30px;
+    order: 2;
+  }
+
+  .hero-image {
+    padding-top: 10px;
+    height: 350px;
+    flex: none;
+  }
+
+  .agri-benefits {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .product-card {
+    min-width: 100%;
+  }
+}
+
+/* Medium devices (769px to 1025px) */
+@media (min-width: 769px) and (max-width: 1025px) {
+  .page-heading {
+    font-size: 2.4rem;
+  }
+
+  .hero-description {
+    font-size: 1.15rem;
+  }
+
+  .hero-image {
+    height: 450px;
+    padding-right: 10px;
+  }
+
+  .agri-benefits {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Large devices (1025px to 1441px) */
+@media (min-width: 1025px) and (max-width: 1441px) {
+  .page-heading {
+    font-size: 2.6rem;
+  }
+
+  .hero-image {
+    height: 500px;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+
+/* Additional responsive tweaks for hero section */
+@media (max-width: 1024px) {
+  .hero-container {
+    border-radius: 8px;
+  }
+
+  .image-overlay {
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  }
+}
+
+/* Adjustments for very small mobile devices */
+@media (max-width: 360px) {
+  .page-heading {
+    font-size: 1.6rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    padding: 10px 18px;
+    font-size: 0.9rem;
+  }
+
+  .benefit-content h3 {
+    font-size: 1.1rem;
+  }
+
+  .product-content h3 {
+    font-size: 1.2rem;
+  }
+}

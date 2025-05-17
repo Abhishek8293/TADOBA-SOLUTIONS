@@ -82,17 +82,17 @@
   justify-content: center;
   align-items: center;
 }
-.step:hover{
-    border: 2px solid lightgray;
+.step:hover {
+  border: 2px solid lightgray;
 }
 .step h3 {
   font-size: 1.2rem;
   color: #3d5a99;
   margin-bottom: 0px;
 }
-.step p{
-    text-align: center;
-    font-size: 1.1rem;
+.step p {
+  text-align: center;
+  font-size: 1.1rem;
 }
 .applications h2 {
   font-size: 1.6rem;
@@ -131,4 +131,118 @@
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Mobile devices (up to 426px) */
+@media (max-width: 426px) {
+  .prototype-section {
+    padding: 30px 15px;
+    width: 95%;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p,
+  .intro p {
+    font-size: 1rem;
+  }
+
+  .features ul {
+    grid-template-columns: 1fr;
+  }
+
+  .process .steps,
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .step,
+  .features li {
+    padding: 15px;
+  }
+}
+
+/* Tablets and small devices (426px to 769px) */
+@media (min-width: 426px) and (max-width: 769px) {
+  .prototype-section {
+    padding: 35px 15px;
+    width: 95%;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .features ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .process .steps,
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Medium devices (769px to 1025px) */
+@media (min-width: 769px) and (max-width: 1025px) {
+  .prototype-section {
+    width: 95%;
+  }
+
+  .features ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .process .steps,
+  .gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Large devices (1025px to 1441px) */
+@media (min-width: 1025px) and (max-width: 1441px) {
+  .prototype-section {
+    width: 95%;
+    max-width: 1200px;
+  }
+
+  .features ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .process .steps,
+  .gallery-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Extra large devices (1441px and above) */
+@media (min-width: 1441px) {
+  .prototype-section {
+    max-width: 1400px;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p,
+  .intro p {
+    font-size: 1.3rem;
+  }
+
+  .features ul {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .process .steps,
+  .gallery-grid {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1400px;
+    margin: 0 auto;
+  }
 }
