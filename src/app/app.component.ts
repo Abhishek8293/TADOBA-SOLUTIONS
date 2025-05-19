@@ -4,16 +4,10 @@ import { HeaderComponent } from './pages/header/header.component';
 import { FooterComponent } from './pages/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
 import { MatIconModule } from '@angular/material/icon';
-import {
-  faYoutube,
-  faFacebook,
-  faInstagram,
-  faXTwitter,
-  faWhatsapp
-} from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { CommonModule } from '@angular/common';
 import { MatButtonModule } from '@angular/material/button';
+import { TopContactBarComponent } from "./components/top-contact-bar/top-contact-bar.component";
 
 @Component({
   selector: 'app-root',
@@ -26,19 +20,13 @@ import { MatButtonModule } from '@angular/material/button';
     RouterModule,
     CommonModule,
     MatButtonModule,
-  ],
+    TopContactBarComponent
+],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
 export class AppComponent {
   title = 'Tadoba-Solutions';
-
-  instagram = faInstagram;
-  facebook = faFacebook;
-  youtube = faYoutube;
-  twitter = faXTwitter;
-  whatsapp = faWhatsapp;
-
   showButton = false;
 
   @HostListener('window:scroll', [])
