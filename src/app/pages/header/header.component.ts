@@ -5,6 +5,7 @@ import { Router, RouterModule } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import {
   faAngleDown,
+  faAngleRight,
   faBars,
   faBoxOpen,
   faBriefcase,
@@ -28,7 +29,7 @@ import { MatIconModule } from '@angular/material/icon';
     RouterModule,
     SignUpComponent,
     MatIconModule,
-  ],
+],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css',
 })
@@ -42,6 +43,7 @@ export class HeaderComponent {
   closeMenu = faTimes;
   career = faBriefcase;
   angleDown = faAngleDown;
+  angleRight = faAngleRight;
 
   isMenuOpen = false;
   isSignUpVisible = false;
@@ -53,7 +55,6 @@ export class HeaderComponent {
   }
   dropdowns: { [key: string]: boolean } = {
     products: false,
-    ourProducts: false,
     trainings: false,
     services: false,
     customSolutions: false,

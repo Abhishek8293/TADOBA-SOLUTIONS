@@ -136,7 +136,7 @@
 /* Mobile devices (up to 426px) */
 @media (max-width: 426px) {
   .prototype-section {
-    padding: 30px 15px;
+    padding: 30px 10px;
     width: 95%;
   }
 
