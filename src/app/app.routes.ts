@@ -18,6 +18,7 @@ import { SolarPvComponent } from './pages/service&maintenance/solar-pv/solar-pv.
 import { DigitAgriVillagesComponent } from './pages/service&maintenance/digit-agri-villages/digit-agri-villages.component';
 import { WaterOverflowControllerComponent } from './pages/service&maintenance/water-overflow-controller/water-overflow-controller.component';
 import { ThreeDServiceComponent } from './pages/service&maintenance/three-d-service/three-d-service.component';
+import { PcbComponent } from './pages/service&maintenance/pcb/pcb.component';
 
 export const routes: Routes = [
     {path: '',component:HomeComponent},
@@ -39,5 +40,6 @@ export const routes: Routes = [
     {path:'solar-pv-plant',component:SolarPvComponent},
     {path:'digital-agri-village',component:DigitAgriVillagesComponent},
     {path:'water-overflow-controller',component:WaterOverflowControllerComponent},
-    {path:'3d-design-printing-service',component:ThreeDServiceComponent}
+    {path:'3d-design-printing-service',component:ThreeDServiceComponent},
+    {path:'pcb-design-development',component:PcbComponent}
 ];
