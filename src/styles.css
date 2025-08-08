@@ -25,7 +25,7 @@ body {
   white-space: pre-wrap;
 }
 
-@media (min-width: 1790px) {
+@media (min-width: 2000px) {
   body {
     width: 85%;
     margin: auto;
