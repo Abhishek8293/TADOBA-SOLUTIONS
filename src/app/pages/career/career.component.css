@@ -79,7 +79,7 @@ input[type="file"] {
   word-break: break-word;
 }
 .submit-btn {
-  background-color: #3D4494;
+  background-color: #3D4494 !important;
   color: #fff !important;
   padding: 5px !important;
   margin-top: 10px;

@@ -428,6 +428,7 @@ export class HomeComponent implements OnInit {
       ],
     },
   ];
+  
 
   constructor(
     @Inject(PLATFORM_ID) private platformId: any,
