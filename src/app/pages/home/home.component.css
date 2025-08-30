@@ -212,7 +212,9 @@
 .mguevv img {
   width: 110px;
 }
-
+.invariance img {
+  width: 150px;
+}
 .partner-name {
   font-family: "Roboto", serif;
   font-size: 13px;
