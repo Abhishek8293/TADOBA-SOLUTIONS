@@ -41,6 +41,9 @@
                     </button>
                     <div class="dropdown-menu wide-menu">
                         <ul class="dropdown-list">
+                             <li class="dropdown-item">
+                                <a routerLink="software-development" class="dropdown-link">Software Development</a>
+                            </li>
                             <li class="dropdown-item">
                                 <a routerLink="solar-pv-plant" class="dropdown-link">Solar PV Plant Installation</a>
                             </li>
@@ -63,7 +66,7 @@
                                             <a class="dropdown-link">Electromechanical Product Design & Development</a>
                                         </li>
                                         <li class="dropdown-item">
-                                            <a  class="dropdown-link">PCB Design,
+                                            <a class="dropdown-link">PCB Design,
                                                 Development & Fabrication</a>
                                         </li>
                                         <li class="dropdown-item">
@@ -170,6 +173,9 @@
                 <div class="accordion-content" *ngIf="dropdowns['services']"
                     [ngClass]="{ 'active': dropdowns['services'] }">
                     <ul class="mobile-dropdown-list">
+                         <li class="mobile-dropdown-item">
+                            <a routerLink="software-development" class="mobile-dropdown-link">Software Development</a>
+                        </li>
                         <li class="mobile-dropdown-item">
                             <a routerLink="solar-pv-plant" class="mobile-dropdown-link">Solar PV Plant Installation</a>
                         </li>

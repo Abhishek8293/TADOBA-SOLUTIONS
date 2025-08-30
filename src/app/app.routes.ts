@@ -19,27 +19,32 @@ import { DigitAgriVillagesComponent } from './pages/service&maintenance/digit-ag
 import { WaterOverflowControllerComponent } from './pages/service&maintenance/water-overflow-controller/water-overflow-controller.component';
 import { ThreeDServiceComponent } from './pages/service&maintenance/three-d-service/three-d-service.component';
 import { PcbComponent } from './pages/service&maintenance/pcb/pcb.component';
+import { SoftwareDevelopmentComponent } from './pages/software-development/software-development.component';
 
 export const routes: Routes = [
-    {path: '',component:HomeComponent},
-    {path:'career',component:CareerComponent},
-    {path:'our-products',component:OurProductsComponent},
-    {path:'retail-products',component:RetailProductsComponent},
-    {path:'product',component:ViewProductComponent},
-    {path:"about-us", component:AboutUsComponent},
-    {path:'terms&conditions', component:TermsAndConditionComponent},
-    {path:'privacy-policy', component:PrivacyPolicyComponent},
-    {path:'product/:productId',component:ViewProductComponent},
-    {path:'sign-up', component:SignUpComponent},
-    {path:'contact-us', component:ContactUsComponent},
-    {path:'workshop',component:WorkshopComponent},
-    {path:'ev-workshop',component:EvWorkshopComponent},
-    {path:'iiot-workshop',component:IiotWorkshopComponent},
-    {path:'solar-pv-plant-workshop',component:SolarWorkshopComponent},
-    {path:'3d-workshop',component:ThreeDComponent},
-    {path:'solar-pv-plant',component:SolarPvComponent},
-    {path:'digital-agri-village',component:DigitAgriVillagesComponent},
-    {path:'water-overflow-controller',component:WaterOverflowControllerComponent},
-    {path:'3d-design-printing-service',component:ThreeDServiceComponent},
-    {path:'pcb-design-development',component:PcbComponent}
+  { path: '', component: HomeComponent },
+  { path: 'career', component: CareerComponent },
+  { path: 'our-products', component: OurProductsComponent },
+  { path: 'retail-products', component: RetailProductsComponent },
+  { path: 'product', component: ViewProductComponent },
+  { path: 'about-us', component: AboutUsComponent },
+  { path: 'terms&conditions', component: TermsAndConditionComponent },
+  { path: 'privacy-policy', component: PrivacyPolicyComponent },
+  { path: 'product/:productId', component: ViewProductComponent },
+  { path: 'sign-up', component: SignUpComponent },
+  { path: 'contact-us', component: ContactUsComponent },
+  { path: 'workshop', component: WorkshopComponent },
+  { path: 'ev-workshop', component: EvWorkshopComponent },
+  { path: 'iiot-workshop', component: IiotWorkshopComponent },
+  { path: 'solar-pv-plant-workshop', component: SolarWorkshopComponent },
+  { path: '3d-workshop', component: ThreeDComponent },
+  { path: 'solar-pv-plant', component: SolarPvComponent },
+  { path: 'digital-agri-village', component: DigitAgriVillagesComponent },
+  {
+    path: 'water-overflow-controller',
+    component: WaterOverflowControllerComponent,
+  },
+  { path: '3d-design-printing-service', component: ThreeDServiceComponent },
+  { path: 'pcb-design-development', component: PcbComponent },
+  { path: 'software-development', component: SoftwareDevelopmentComponent },
 ];
