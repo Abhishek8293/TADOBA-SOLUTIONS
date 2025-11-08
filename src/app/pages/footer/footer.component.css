@@ -202,4 +202,7 @@
   .footer-container{
     padding: 10px;
   }
+  .fa-solid {
+    display: none;
+  }
 }
