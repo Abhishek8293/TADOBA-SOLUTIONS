@@ -24,35 +24,35 @@ export class Product {
 }
 
 export const ourProductList: Product[] = [
-  {
-    productId: 'TSWC1PHS',
-    productName: 'AquaController-AO (1-Φ Submersible)',
-    productRating: 3.5,
-    productAvailability: 'in-stock',
-    productPrice: '1799.00',
-    productType:'OUR',
-    productImgUrl: [
-      './assets/images/product/own-product/TSWC1PHS.png',
-      './assets/images/product/own-product/TSWC1PHS-2.png',
-    ],
-    productCategory: 'Electronic',
-    productDescription: [
-      'Semi-Automatic Device',
-      'Overflow Controller for underground tank or overhead tank',
-      ' Work With Any Single Phase Motor For Home ,Office, Hospital,Restaurant.',
-      'LED base for long time durability.',
-      'Single tank controller.',
-      'Suitable for single phase contractor starter panel of submersible motor',
-      'Single/multi tank controller',
-    ],
-  },
+  // {
+  //   productId: 'TSWC1PHS',
+  //   productName: 'AquaController-AO (1-Φ Submersible)',
+  //   productRating: 3.5,
+  //   productAvailability: 'in-stock',
+  //   productPrice: '1799.00',
+  //   productType:'OUR',
+  //   productImgUrl: [
+  //     './assets/images/product/own-product/TSWC1PHS.png',
+  //     './assets/images/product/own-product/TSWC1PHS-2.png',
+  //   ],
+  //   productCategory: 'Electronic',
+  //   productDescription: [
+  //     'Semi-Automatic Device',
+  //     'Overflow Controller for underground tank or overhead tank',
+  //     ' Work With Any Single Phase Motor For Home ,Office, Hospital,Restaurant.',
+  //     'LED base for long time durability.',
+  //     'Single tank controller.',
+  //     'Suitable for single phase contractor starter panel of submersible motor',
+  //     'Single/multi tank controller',
+  //   ],
+  // },
 
   {
     productId: 'TSWC1PHT',
     productName: 'AquaController-AO (Tullu)',
     productRating: 3.5,
     productAvailability: 'in-stock',
-    productPrice: '1799.00',
+    productPrice: '1350.00',
     productType:'OUR',
     productImgUrl: [
       './assets/images/product/own-product/TSWC1PHT.png',
@@ -73,7 +73,7 @@ export const ourProductList: Product[] = [
     productName: 'AquaController-AO (1-Φ Universal)',
     productRating: 3.5,
     productAvailability: 'in-stock',
-    productPrice: '1799.00',
+    productPrice: '1350.00',
     productType:'OUR',
     productImgUrl: [
       './assets/images/product/own-product/TSWC1PHU.png',
@@ -92,10 +92,10 @@ export const ourProductList: Product[] = [
   },
   {
     productId: 'TSWC3PHU',
-    productName: 'AquaController-AO (3-Φ Universal)',
+    productName: 'AquaController-AO (3-Φ Submersible)',
     productRating: 3.5,
     productAvailability: 'in-stock',
-    productPrice: '2999.00',
+    productPrice: '1550.00',
     productType:'OUR',
     productImgUrl: [
       './assets/images/product/own-product/TSWC3PHU-2.png',
@@ -118,7 +118,7 @@ export const ourProductList: Product[] = [
     productName: 'Day Night Smart Switch D2D(Dusk To Down) AC',
     productRating: 3.5,
     productAvailability: 'in-stock',
-    productPrice: '450.00',
+    productPrice: '150.00',
     productType:'OUR',
     productImgUrl: [
       './assets/images/product/own-product/TSD2DAC.png',

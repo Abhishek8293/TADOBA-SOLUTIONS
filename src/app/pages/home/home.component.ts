@@ -37,8 +37,9 @@ import { SnackbarService } from '../../services/snackbar.service';
 import { ApiService } from '../../services/api.service';
 import { Quote } from '../../models/Quote';
 import { ApiResponse } from '../../models/ApiResponse';
-import { AwardsSliderComponent } from "../../components/awards-slider/awards-slider.component";
-import { StatsComponent } from "../stats/stats.component";
+import { AwardsSliderComponent } from '../../components/awards-slider/awards-slider.component';
+import { StatsComponent } from '../stats/stats.component';
+import { VocationalTrainingComponent } from '../../components/vocational-training/vocational-training.component';
 
 interface ServiceCardData {
   imgUrl: string;
@@ -64,8 +65,9 @@ interface ServiceCardData {
     RouterModule,
     ReactiveFormsModule,
     AwardsSliderComponent,
-    StatsComponent
-],
+    StatsComponent,
+    VocationalTrainingComponent,
+  ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })
@@ -124,25 +126,24 @@ export class HomeComponent implements OnInit {
 
   ourProducts: Product[] = [
     {
-      productId: 'TSWC1PHS',
-      productName: 'Auto OFF Single Phase With (Submersible)',
+      productId: 'TSWC1PHT',
+      productName: 'AquaController-AO (Tullu)',
       productRating: 3.5,
       productAvailability: 'in-stock',
-      productPrice: '1799.00',
-      productType:'OUR',
+      productPrice: '1350.00',
+      productType: 'OUR',
       productImgUrl: [
-        './assets/images/product/own-product/TSWC1PHS.png',
-        './assets/images/product/own-product/TSWC1PHS-2.png',
+        './assets/images/product/own-product/TSWC1PHT.png',
+        './assets/images/product/own-product/TSWC1PHT-2.png',
       ],
       productCategory: 'Electronic',
       productDescription: [
+        'Water Overflow Controller',
         'Semi-Automatic Device',
-        'Overflow Controller for underground tank or overhead tank',
-        ' Work With Any Single Phase Motor For Home ,Office, Hospital,Restaurant.',
-        'LED base for long time durability.',
-        'Single tank controller.',
-        'Suitable for single phase contractor starter panel of submersible motor',
-        'Single/multi tank controller',
+        'Overflow Controller for underground tank or overhead tank.',
+        'Work With Any Single Phase Motor For Home ,Office, Hospital, Restaurant.',
+        'LED base for long time durability',
+        'Single/ Multi tank controller.',
       ],
     },
 
@@ -153,7 +154,7 @@ export class HomeComponent implements OnInit {
       productRating: 3.5,
       productAvailability: 'in-stock',
       productPrice: '27500.0',
-      productType:'OUR',
+      productType: 'OUR',
       productImgUrl: ['./assets/images/product/own-product/TSSSDM.png'],
       productCategory: 'Electronic',
       productDescription: [
@@ -175,7 +176,7 @@ export class HomeComponent implements OnInit {
       productRating: 3.5,
       productAvailability: 'in-stock',
       productPrice: '150.00',
-      productType:'OUR',
+      productType: 'OUR',
       productImgUrl: [
         './assets/images/product/own-product/TSD2DAC.png',
         './assets/images/product/own-product/TSD2DAC-2.png',
@@ -189,11 +190,12 @@ export class HomeComponent implements OnInit {
     },
     {
       productId: 'TSPSSDD',
-      productName: 'FarmEye+ (Solar Power IOT Enabled Soil Health Monitoring System)',
+      productName:
+        'FarmEye+ (Solar Power IOT Enabled Soil Health Monitoring System)',
       productRating: 3.5,
       productAvailability: 'in-stock',
       productPrice: '50700.00',
-      productType:'OUR',
+      productType: 'OUR',
       productImgUrl: [
         './assets/images/product/own-product/TSPSSDD.png',
         './assets/images/product/own-product/TSPSSDD-2.jpg',
@@ -220,7 +222,7 @@ export class HomeComponent implements OnInit {
       productRating: 3.5,
       productAvailability: 'in-stock',
       productPrice: '559.00',
-      productType:'OUR',
+      productType: 'OUR',
       productImgUrl: [
         './assets/images/product/own-product/TSWC1PHS.png',
         './assets/images/product/own-product/TSWC1PHS-2.png',
@@ -244,7 +246,7 @@ export class HomeComponent implements OnInit {
       productRating: 3.5,
       productAvailability: 'in-stock',
       productPrice: '27500.00',
-      productType:'OUR',
+      productType: 'OUR',
       productImgUrl: ['./assets/images/product/own-product/TSSSDM.png'],
       productCategory: 'Electronic',
       productDescription: [
@@ -266,7 +268,7 @@ export class HomeComponent implements OnInit {
       productRating: 3.5,
       productAvailability: 'in-stock',
       productPrice: '150.00',
-      productType:'OUR',
+      productType: 'OUR',
       productImgUrl: [
         './assets/images/product/own-product/TSD2DAC.png',
         './assets/images/product/own-product/TSD2DAC-2.png',
@@ -280,9 +282,8 @@ export class HomeComponent implements OnInit {
     },
   ];
 
+  //
 
-  // 
-  
   retailProducts: Product[] = [
     {
       productId: 'TSPB',
@@ -290,10 +291,8 @@ export class HomeComponent implements OnInit {
       productRating: 3.5,
       productAvailability: 'in-stock',
       productPrice: '12.00',
-      productType:'RETAIL',
-      productImgUrl: [
-        './assets/images/product/retail-product/TSPB.jpg',
-      ],
+      productType: 'RETAIL',
+      productImgUrl: ['./assets/images/product/retail-product/TSPB.jpg'],
       productCategory: 'Electronic',
       productDescription: [
         'Latching switch: Push ON, push again OFF.',
@@ -302,7 +301,7 @@ export class HomeComponent implements OnInit {
         'Rating: 1.5A at 125V; 3A at 250V.',
         'Type: Momentary reset with 2-pin terminal.',
         'Flush mount design with red button.',
-      ]    
+      ],
     },
     {
       productId: 'TSOS',
@@ -310,7 +309,7 @@ export class HomeComponent implements OnInit {
       productRating: 3.5,
       productAvailability: 'in-stock',
       productPrice: '26.00',
-      productType:'RETAIL',
+      productType: 'RETAIL',
       productImgUrl: [
         './assets/images/product/retail-product/TSOS.jpg',
         './assets/images/product/retail-product/TSOS-2.jpg',
@@ -320,8 +319,8 @@ export class HomeComponent implements OnInit {
         '16A output socket for reliable power delivery.',
         'High-capacity outlet for heavy-duty applications.',
         'Efficient power supply for industrial and construction use.',
-        'Ideal for powering high-energy devices and large events.'
-      ]       
+        'Ideal for powering high-energy devices and large events.',
+      ],
     },
     {
       productId: ' TSACSL',
@@ -329,7 +328,7 @@ export class HomeComponent implements OnInit {
       productRating: 3.5,
       productAvailability: 'in-stock',
       productPrice: '650.00',
-      productType:'RETAIL',
+      productType: 'RETAIL',
       productImgUrl: [
         './assets/images/product/retail-product/TSACSL.png',
         './assets/images/product/retail-product/TSACSL-2.jpeg',
@@ -350,7 +349,7 @@ export class HomeComponent implements OnInit {
       productRating: 3.5,
       productAvailability: 'in-stock',
       productPrice: '16.00',
-      productType:'RETAIL',
+      productType: 'RETAIL',
       productImgUrl: [
         './assets/images/product/retail-product/TSRJQC3FC.jpg',
         './assets/images/product/retail-product/TSRJQC3FC-2.jpg',
@@ -373,10 +372,8 @@ export class HomeComponent implements OnInit {
       productRating: 3.5,
       productAvailability: 'in-stock',
       productPrice: '12.00',
-      productType:'RETAIL',
-      productImgUrl: [
-        './assets/images/product/retail-product/TSPB.jpg',
-      ],
+      productType: 'RETAIL',
+      productImgUrl: ['./assets/images/product/retail-product/TSPB.jpg'],
       productCategory: 'Electronic',
       productDescription: [
         'Latching switch: Push ON, push again OFF.',
@@ -385,7 +382,7 @@ export class HomeComponent implements OnInit {
         'Rating: 1.5A at 125V; 3A at 250V.',
         'Type: Momentary reset with 2-pin terminal.',
         'Flush mount design with red button.',
-      ]    
+      ],
     },
     {
       productId: 'TSOS',
@@ -393,7 +390,7 @@ export class HomeComponent implements OnInit {
       productRating: 3.5,
       productAvailability: 'in-stock',
       productPrice: '26.00',
-      productType:'RETAIL',
+      productType: 'RETAIL',
       productImgUrl: [
         './assets/images/product/retail-product/TSOS.jpg',
         './assets/images/product/retail-product/TSOS-2.jpg',
@@ -403,8 +400,8 @@ export class HomeComponent implements OnInit {
         '16A output socket for reliable power delivery.',
         'High-capacity outlet for heavy-duty applications.',
         'Efficient power supply for industrial and construction use.',
-        'Ideal for powering high-energy devices and large events.'
-      ]       
+        'Ideal for powering high-energy devices and large events.',
+      ],
     },
     {
       productId: ' TSACSL',
@@ -412,7 +409,7 @@ export class HomeComponent implements OnInit {
       productRating: 3.5,
       productAvailability: 'in-stock',
       productPrice: '650.00',
-      productType:'RETAIL',
+      productType: 'RETAIL',
       productImgUrl: [
         './assets/images/product/retail-product/TSACSL.png',
         './assets/images/product/retail-product/TSACSL-2.jpeg',
@@ -428,11 +425,10 @@ export class HomeComponent implements OnInit {
       ],
     },
   ];
-  
 
   constructor(
     @Inject(PLATFORM_ID) private platformId: any,
-    private fb: FormBuilder
+    private fb: FormBuilder,
   ) {
     this.quoteForm = this.fb.group({
       name: ['', Validators.required],
@@ -474,7 +470,7 @@ export class HomeComponent implements OnInit {
       this.apiService.submitQuoteForm(formData).subscribe({
         next: (responseData: ApiResponse<string>) => {
           this.snackBarService.openSuccessSnackBar(
-            'Form submitted, we will reach you in some days'
+            'Form submitted, we will reach you in some days',
           );
           this.quoteForm.reset();
           console.log('Form submitted', responseData.data);
@@ -487,16 +483,12 @@ export class HomeComponent implements OnInit {
     }
   }
 
-
-  updateVisitCount(){
+  updateVisitCount() {
     this.apiService.UpdateVisitCount().subscribe({
-      next: (responseData:ApiResponse<string>) =>{
-      },
+      next: (responseData: ApiResponse<string>) => {},
       error: (error) => {
         console.error('Something Went Wrong', error);
       },
-    })
+    });
   }
-
-
 }
